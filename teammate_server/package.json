@@ -15,7 +15,7 @@
     "bootstrap-select": "^1.13.17",
     "debug": "^4.1.1",
     "ejs": "~2.3.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jsonwebtoken": "^8.5.1",
     "koa": "^2.7.0",
     "koa-body": "^4.1.3",
