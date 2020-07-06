@@ -1,0 +1,204 @@
+[2020-06-04T21:59:00.757] [INFO] response - { method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-06-04T21:59:12.764] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { account: '1001', password: '123456', code: '2z3n' },
+  costTime: 10,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-06-04T21:59:12.780] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3297' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>张三</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n\n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>        \n\t  </li>\n     \n     \n      <li>\n        <h4 class="M2"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n    \n\n    <li>\n        <h4 class="M3"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M4"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M5"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M6"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome"  scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n\n' } }
+[2020-06-04T21:59:13.954] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 249,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '478' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n\r\n    <div class="jumbotron">\r\n        <h1>Hello, world!</h1>\r\n      </div>\r\n\r\n\r\n</body>\r\n</html>\r\n' } }
+[2020-06-04T21:59:19.600] [INFO] response - { method: 'GET',
+  url: '/teams/teamlist',
+  body: {},
+  costTime: 777,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2112' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>队伍信息列表</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-primary" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    队伍信息列表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="panel-body">\r\n        <form role="form" class="form-inline" method="GET" action="/activitys/activitylist">\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                <label for="name">输入关键词</label>\r\n                <input type="text" class="form-control" value="" id="name" name="keyword" placeholder="请输入">\r\n            </div>\r\n    <div class="row templatemo-form-buttons">\r\n        <div class="col-md-2">\r\n                <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 40px;">查询</button>\r\n        </div>\r\n    </div>\r\n        </form>\r\n</div>\r\n \r\n\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>队伍id</th>             \r\n              <th>比赛id</th>\r\n              <th>负责人账号</th>\r\n              <th>队伍成员</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-04T21:59:20.523] [INFO] response - { method: 'GET',
+  url: '/teams/task',
+  body: {},
+  costTime: 197,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2118' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>队伍任务列表</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-primary" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    队伍任务信息列表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="panel-body">\r\n        <form role="form" class="form-inline" method="GET" action="/activitys/activitylist">\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                <label for="name">输入关键词</label>\r\n                <input type="text" class="form-control" value="" id="name" name="keyword" placeholder="请输入">\r\n            </div>\r\n    <div class="row templatemo-form-buttons">\r\n        <div class="col-md-2">\r\n                <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 40px;">查询</button>\r\n        </div>\r\n    </div>\r\n        </form>\r\n</div>\r\n \r\n\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>任务id</th>             \r\n              <th>队伍id</th>\r\n              <th>任务完成人</th>\r\n              <th>内容</th>\r\n              <th>截止时间</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-04T21:59:23.475] [INFO] response - { method: 'GET',
+  url: '/teams/message',
+  body: {},
+  costTime: 1549,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2068' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>队伍任务列表</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-primary" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    队伍任务信息列表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="panel-body">\r\n        <form role="form" class="form-inline" method="GET" action="/activitys/activitylist">\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                <label for="name">输入关键词</label>\r\n                <input type="text" class="form-control" value="" id="name" name="keyword" placeholder="请输入">\r\n            </div>\r\n    <div class="row templatemo-form-buttons">\r\n        <div class="col-md-2">\r\n                <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 40px;">查询</button>\r\n        </div>\r\n    </div>\r\n        </form>\r\n</div>\r\n \r\n\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>留言id</th>             \r\n              <th>队伍id</th>\r\n              <th>姓名</th>\r\n              <th>内容</th>\r\n              <th>时间</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n' } }
+[2020-06-04T21:59:34.127] [INFO] response - { method: 'GET',
+  url: '/teams/teamlist',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2112' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>队伍信息列表</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-primary" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    队伍信息列表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="panel-body">\r\n        <form role="form" class="form-inline" method="GET" action="/activitys/activitylist">\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                <label for="name">输入关键词</label>\r\n                <input type="text" class="form-control" value="" id="name" name="keyword" placeholder="请输入">\r\n            </div>\r\n    <div class="row templatemo-form-buttons">\r\n        <div class="col-md-2">\r\n                <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 40px;">查询</button>\r\n        </div>\r\n    </div>\r\n        </form>\r\n</div>\r\n \r\n\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>队伍id</th>             \r\n              <th>比赛id</th>\r\n              <th>负责人账号</th>\r\n              <th>队伍成员</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-04T21:59:42.269] [INFO] response - { method: 'GET',
+  url: '/activitys/activitylist',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2818' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>活动列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入分页插件-->\r\n    <script type="text/javascript" src="/javascripts/jqPaginator.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n<div class="panel panel-primary" style="margin: 10px 10px;">\r\n    <div class="panel-heading">\r\n        活动列表\r\n    </div>\r\n\r\n\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="panel-body">\r\n            <form role="form" class="form-inline" method="GET" action="/activitys/activitylist">\r\n            <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                    <label for="name">输入关键词</label>\r\n                    <input type="text" class="form-control" value="" id="name" name="keyword" placeholder="请输入活动标题">\r\n                </div>\r\n        <div class="row templatemo-form-buttons">\r\n            <div class="col-md-2">\r\n                    <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 40px;">查询</button>\r\n            </div>\r\n        </div>\r\n            </form>\r\n    </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n            <div class="table-responsive">\r\n                <table class="table table-striped table-hover table-bordered">\r\n                    <thead>\r\n                        <tr>\r\n                            <th>比赛id</th>\r\n                            <th>比赛标题</th>\r\n                            <th>比赛人数</th>\r\n                            <th>比赛负责人</th>\r\n                            <th>负责人电话</th>\r\n                            <th>发布时间</th>\r\n                            <th>开始时间</th>\r\n                            <th>结束时间</th>\r\n                            <th>比赛内容</th>\r\n                            <th>操作</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n\r\n                        \r\n\r\n           \r\n                    </tbody>\r\n        </table>\r\n\r\n        <div id="page" class="pagination pull-right"></div>\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n    <script>\r\n\r\n      \r\n\r\n    </script>\r\n\r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-04T21:59:44.249] [INFO] response - { method: 'GET',
+  url: '/activitys/examine',
+  body: {},
+  costTime: 51,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3024' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>活动审核</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入分页插件-->\r\n    <script type="text/javascript" src="/javascripts/jqPaginator.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-primary" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            活动审核列表\r\n        </div>\r\n\r\n\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="panel-body">\r\n                <form role="form" class="form-inline" method="GET" action="/activitys/examine">\r\n                    <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                        <label for="name">输入关键词</label>\r\n                        <input type="text" class="form-control" value="" id="name" name="keyword" placeholder="请输入活动id">\r\n                    </div>\r\n                    <div class="row templatemo-form-buttons">\r\n                        <div class="col-md-2">\r\n                            <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 40px;">查询</button>\r\n                        </div>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="col-md-10 col-md-offset-1">\r\n                <div class="table-responsive">\r\n                    <table class="table table-striped table-hover table-bordered">\r\n                        <thead>\r\n                            <tr>\r\n                                <th>活动id</th>\r\n                                <th>用户账号</th>\r\n                                <th>用户姓名</th>\r\n                                <th>用户身份</th>\r\n                                <th>活动标题</th>\r\n                                <th>活动开始时间</th>\r\n                                <th>活动结束时间</th>\r\n                                <th>活动身份</th>\r\n                                <th>审核状态</th>\r\n                                <th>操作</th>\r\n                            </tr>\r\n                        </thead>\r\n    <tbody>\r\n    \r\n        \r\n               \r\n    </tbody>\r\n                    </table>\r\n\r\n                    <div id="page" class="pagination pull-right"></div>\r\n\r\n\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n\r\n    <script>\r\n\r\n       \r\n\r\n    </script>\r\n\r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-04T21:59:48.855] [INFO] response - { method: 'GET',
+  url: '/teams/teamlist',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2112' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>队伍信息列表</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-primary" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    队伍信息列表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="panel-body">\r\n        <form role="form" class="form-inline" method="GET" action="/activitys/activitylist">\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                <label for="name">输入关键词</label>\r\n                <input type="text" class="form-control" value="" id="name" name="keyword" placeholder="请输入">\r\n            </div>\r\n    <div class="row templatemo-form-buttons">\r\n        <div class="col-md-2">\r\n                <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 40px;">查询</button>\r\n        </div>\r\n    </div>\r\n        </form>\r\n</div>\r\n \r\n\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>队伍id</th>             \r\n              <th>比赛id</th>\r\n              <th>负责人账号</th>\r\n              <th>队伍成员</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-04T21:59:54.366] [INFO] response - { method: 'GET',
+  url: '/activitys/activitylist',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2818' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>活动列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入分页插件-->\r\n    <script type="text/javascript" src="/javascripts/jqPaginator.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n<div class="panel panel-primary" style="margin: 10px 10px;">\r\n    <div class="panel-heading">\r\n        活动列表\r\n    </div>\r\n\r\n\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="panel-body">\r\n            <form role="form" class="form-inline" method="GET" action="/activitys/activitylist">\r\n            <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                    <label for="name">输入关键词</label>\r\n                    <input type="text" class="form-control" value="" id="name" name="keyword" placeholder="请输入活动标题">\r\n                </div>\r\n        <div class="row templatemo-form-buttons">\r\n            <div class="col-md-2">\r\n                    <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 40px;">查询</button>\r\n            </div>\r\n        </div>\r\n            </form>\r\n    </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n            <div class="table-responsive">\r\n                <table class="table table-striped table-hover table-bordered">\r\n                    <thead>\r\n                        <tr>\r\n                            <th>比赛id</th>\r\n                            <th>比赛标题</th>\r\n                            <th>比赛人数</th>\r\n                            <th>比赛负责人</th>\r\n                            <th>负责人电话</th>\r\n                            <th>发布时间</th>\r\n                            <th>开始时间</th>\r\n                            <th>结束时间</th>\r\n                            <th>比赛内容</th>\r\n                            <th>操作</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n\r\n                        \r\n\r\n           \r\n                    </tbody>\r\n        </table>\r\n\r\n        <div id="page" class="pagination pull-right"></div>\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n    <script>\r\n\r\n      \r\n\r\n    </script>\r\n\r\n\r\n</body>\r\n\r\n</html>' } }

@@ -1,0 +1,2110 @@
+[2019-12-20T00:00:11.777] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '628' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        \r\n        <tr>\r\n          <td>1001</td>\r\n          <td>1</td>\r\n          <td>12313</td>\r\n          <td>1123</td>\r\n          <td>1231231123</td>\r\n\r\n        </tr>\r\n        \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-20T00:00:25.870] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '686' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        \r\n        <tr>\r\n          <td>1001</td>\r\n          <td>1</td>\r\n          <td>12313</td>\r\n          <td>1123</td>\r\n          <td>1231231123</td>\r\n          <td><a href="/users/delect/1001">编辑</a></td>\r\n        </tr>\r\n        \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-20T00:00:27.269] [INFO] response - { method: 'GET',
+  url: '/users/delect/1001',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userInfo',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userInfo">/users/userInfo</a>.' } }
+[2019-12-20T00:00:27.279] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '550' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n          <th>不看他的</th>\n        </tr>\n        \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-20T00:00:30.844] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '550' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n          <th>不看他的</th>\n        </tr>\n        \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-20T00:01:02.565] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '550' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n          <th>不看他的</th>\n        </tr>\n        \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-20T00:01:06.934] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '458' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-20T00:01:10.265] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '458' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-20T00:01:24.864] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '270' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>joint</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>      \r\n    <h1>JOINT</h1>\r\n    <p><a href="/login">登陆</a></p>\r\n    <p><a href="/register">注册</a></p>\r\n  </body>\r\n</html>' } }
+[2019-12-20T00:01:26.565] [INFO] response - { method: 'GET',
+  url: '/login',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1849' },
+     body:
+      '<!DOCTYPE html>\n<html>\n<head>\n    <link rel="stylesheet" href=\'/stylesheets/login.css\'>\n    <title>登陆</title>\n</head>\n<body>\n    <div class="header" id="head">\n      <div class="title">JOINt系统登陆</div>\n    </div>\n          \n    <div class="wrap" id="wrap">\n        <div class="logGet">\n                <!-- 头部提示信息 -->\n                <div class="logD logDtip">\n                    <p class="p1">登录</p>\n                </div>\n                <form action="/checkLogin" method="POST">\n                  <!-- 输入框 -->\n                  <div class="lgD">\n                      <input type="text" name="user_id"\n                          placeholder="输入id" />\n                  </div>\n                  <div class="lgD">\n                      <input type="password" name="password"\n                          placeholder="输入用户密码" />\n                  </div>\n                  <div class="logC">\n                      <button type="submit">登 录</button>\n                  </div>\n                  <!-- <div class="logC">\n                    <p>没有账号? <button href="/register">点击创建</button></p>\n                </div> -->\n                </form>\n            </div>\n      </div>\n      <div class="footer" id="foot">\n        <div class="copyright">\n          <p>Copyright © 2019 huaruan.com Inc. All Rights Reserved.</p>\n          <div class="img">\n              <i class="icon"></i><span>联系邮箱：123123@sise.com</span>\n          </div>\n          \n          <div class="img">\n              <i class="icon1"></i><span>联系地址：广州大学华软软件学院</span>\n          </div>\n            \n          <div class="img">\n            <i class="icon2"></i><span>联系电话：12345678</span>\n          </div>\n       \n       \n        </div>\n          \n      </div>\n</body>\n</html>' } }
+[2019-12-20T00:01:35.769] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 13,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2019-12-20T00:01:35.778] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '333' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>JOINT</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>JOINT</h1>\n    <p>Welcome to JOINT</p>\n    <p><a href="/logout">注销</a></p>\n    <p>用户名：zhangliu</p>\n    <p><a href="/users/userInfo">用户详情页</a></p>   \n  </body>\n</html>\n' } }
+[2019-12-20T00:01:37.053] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '550' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n          <th>不看他的</th>\n        </tr>\n        \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-20T00:01:57.310] [INFO] response - { method: 'GET',
+  url: '/users/add',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '741' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程编辑页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h2>添加你的日程</h2>\r\n\r\n  <form action="users/add" method="POST">\r\n\r\n  <!-- <input type="text" name="user_id" placeholder="输入id" />\r\n  <br/>\r\n  <br/> -->\r\n   6：00--10:00:<input type="text" name="time_one" />\r\n   <br/>\r\n   <br/>\r\n\r\n   10:00--14:00:<input type="text" name="time_two" />\r\n   <br/>\r\n   <br/>\r\n\r\n    14:00--18：00:<input type="text" name="time_three" />\r\n    <br/>\r\n    <br/>\r\n\r\n    18:00--20：00:<input type="text" name="time_four" />\r\n    <br/>\r\n    <br/>\r\n    \r\n    <input type="submit" value="提交" />\r\n\r\n  </form>\r\n    \r\n  </body>\r\n</html>\r\n' } }
+[2019-12-20T00:02:02.332] [INFO] response - { method: 'POST',
+  url: '/users/users/add',
+  body:
+   { time_one: '1',
+     time_two: '12313',
+     time_three: '1w3424速度发顺丰',
+     time_four: '1231231123',
+     user_id: 1001 },
+  costTime: 2,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userInfo',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userInfo">/users/userInfo</a>.' } }
+[2019-12-20T00:02:02.754] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 407,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '550' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n          <th>不看他的</th>\n        </tr>\n        \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-20T00:02:04.415] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '783' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n          <th>不看他的</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1w3424速度发顺丰</td>\n          <td>1231231123</td>\n          <td><a href="/users/delect/1001">x</a></td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-20T00:02:07.106] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '701' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        \r\n        <tr>\r\n          <td>1001</td>\r\n          <td>1</td>\r\n          <td>12313</td>\r\n          <td>1w3424速度发顺丰</td>\r\n          <td>1231231123</td>\r\n          <td><a href="/users/edit/1001">编辑</a></td>\r\n        </tr>\r\n        \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-20T00:02:08.630] [INFO] response - { method: 'GET',
+  url: '/users/edit/1001',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '811' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程编辑页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h2>编辑你的日程</h2>\r\n\r\n  <form action="users/doedit" method="POST">\r\n\r\n  <!-- <input type="text" name="user_id" placeholder="输入id" />\r\n  <br/>\r\n  <br/> -->\r\n   6：00--10:00:<input type="text" name="time_one" value="1"/>\r\n   <br/>\r\n   <br/>\r\n\r\n   10:00--14:00:<input type="text" name="time_two" value="12313"/>\r\n   <br/>\r\n   <br/>\r\n\r\n    14:00--18：00:<input type="text" name="time_three" value="1w3424速度发顺丰"/>\r\n    <br/>\r\n    <br/>\r\n\r\n    18:00--20：00:<input type="text" name="time_four" value="1231231123"/>\r\n    <br/>\r\n    <br/>\r\n    \r\n    <input type="submit" value="提交" />\r\n\r\n  </form>\r\n    \r\n  </body>\r\n</html>' } }
+[2019-12-20T00:02:12.550] [INFO] response - { method: 'POST',
+  url: '/users/edit/users/doedit',
+  body:
+   { time_one: '12',
+     time_two: '12313',
+     time_three: '1w3424速度发顺丰',
+     time_four: '1231231123' },
+  costTime: 5,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userInfo',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userInfo">/users/userInfo</a>.' } }
+[2019-12-20T00:02:13.126] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 564,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '783' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n          <th>不看他的</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1w3424速度发顺丰</td>\n          <td>1231231123</td>\n          <td><a href="/users/delect/1001">x</a></td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-20T00:02:16.403] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '784' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n          <th>不看他的</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>12</td>\n          <td>12313</td>\n          <td>1w3424速度发顺丰</td>\n          <td>1231231123</td>\n          <td><a href="/users/delect/1001">x</a></td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-20T00:03:22.772] [INFO] response - { method: 'GET',
+  url: '/users/add',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '741' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程编辑页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h2>添加你的日程</h2>\r\n\r\n  <form action="users/add" method="POST">\r\n\r\n  <!-- <input type="text" name="user_id" placeholder="输入id" />\r\n  <br/>\r\n  <br/> -->\r\n   6：00--10:00:<input type="text" name="time_one" />\r\n   <br/>\r\n   <br/>\r\n\r\n   10:00--14:00:<input type="text" name="time_two" />\r\n   <br/>\r\n   <br/>\r\n\r\n    14:00--18：00:<input type="text" name="time_three" />\r\n    <br/>\r\n    <br/>\r\n\r\n    18:00--20：00:<input type="text" name="time_four" />\r\n    <br/>\r\n    <br/>\r\n    \r\n    <input type="submit" value="提交" />\r\n\r\n  </form>\r\n    \r\n  </body>\r\n</html>\r\n' } }
+[2019-12-20T12:37:07.588] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 57,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '270' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>joint</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>      \r\n    <h1>JOINT</h1>\r\n    <p><a href="/login">登陆</a></p>\r\n    <p><a href="/register">注册</a></p>\r\n  </body>\r\n</html>' } }
+[2019-12-20T12:37:07.997] [INFO] response - { method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '830' },
+     body:
+      '<!-- <h1>抱歉，找不到你的诗和远方了！</h1>\n<h2>404</h2>\n<pre>NotFoundError: Not Found\n    at Object.throw (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\node_modules\\koa\\lib\\context.js:97:11)\n    at module.exports (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\middlewares\\error.js:5:22)</pre> -->\n\n\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2019-12-20T12:37:09.946] [INFO] response - { method: 'GET',
+  url: '/login',
+  body: {},
+  costTime: 263,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1849' },
+     body:
+      '<!DOCTYPE html>\n<html>\n<head>\n    <link rel="stylesheet" href=\'/stylesheets/login.css\'>\n    <title>登陆</title>\n</head>\n<body>\n    <div class="header" id="head">\n      <div class="title">JOINt系统登陆</div>\n    </div>\n          \n    <div class="wrap" id="wrap">\n        <div class="logGet">\n                <!-- 头部提示信息 -->\n                <div class="logD logDtip">\n                    <p class="p1">登录</p>\n                </div>\n                <form action="/checkLogin" method="POST">\n                  <!-- 输入框 -->\n                  <div class="lgD">\n                      <input type="text" name="user_id"\n                          placeholder="输入id" />\n                  </div>\n                  <div class="lgD">\n                      <input type="password" name="password"\n                          placeholder="输入用户密码" />\n                  </div>\n                  <div class="logC">\n                      <button type="submit">登 录</button>\n                  </div>\n                  <!-- <div class="logC">\n                    <p>没有账号? <button href="/register">点击创建</button></p>\n                </div> -->\n                </form>\n            </div>\n      </div>\n      <div class="footer" id="foot">\n        <div class="copyright">\n          <p>Copyright © 2019 huaruan.com Inc. All Rights Reserved.</p>\n          <div class="img">\n              <i class="icon"></i><span>联系邮箱：123123@sise.com</span>\n          </div>\n          \n          <div class="img">\n              <i class="icon1"></i><span>联系地址：广州大学华软软件学院</span>\n          </div>\n            \n          <div class="img">\n            <i class="icon2"></i><span>联系电话：12345678</span>\n          </div>\n       \n       \n        </div>\n          \n      </div>\n</body>\n</html>' } }
+[2019-12-20T12:37:18.119] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 262,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2019-12-20T12:37:18.173] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '333' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>JOINT</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>JOINT</h1>\n    <p>Welcome to JOINT</p>\n    <p><a href="/logout">注销</a></p>\n    <p>用户名：zhangliu</p>\n    <p><a href="/users/userInfo">用户详情页</a></p>   \n  </body>\n</html>\n' } }
+[2019-12-20T12:37:19.719] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 105,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '784' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n          <th>不看他的</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>12</td>\n          <td>12313</td>\n          <td>1w3424速度发顺丰</td>\n          <td>1231231123</td>\n          <td><a href="/users/delect/1001">x</a></td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-20T12:37:23.036] [INFO] response - { method: 'GET',
+  url: '/users/add',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '741' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程编辑页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h2>添加你的日程</h2>\r\n\r\n  <form action="users/add" method="POST">\r\n\r\n  <!-- <input type="text" name="user_id" placeholder="输入id" />\r\n  <br/>\r\n  <br/> -->\r\n   6：00--10:00:<input type="text" name="time_one" />\r\n   <br/>\r\n   <br/>\r\n\r\n   10:00--14:00:<input type="text" name="time_two" />\r\n   <br/>\r\n   <br/>\r\n\r\n    14:00--18：00:<input type="text" name="time_three" />\r\n    <br/>\r\n    <br/>\r\n\r\n    18:00--20：00:<input type="text" name="time_four" />\r\n    <br/>\r\n    <br/>\r\n    \r\n    <input type="submit" value="提交" />\r\n\r\n  </form>\r\n    \r\n  </body>\r\n</html>\r\n' } }
+[2019-12-20T12:37:27.591] [INFO] response - { method: 'POST',
+  url: '/users/users/add',
+  body:
+   { time_one: '1',
+     time_two: '1',
+     time_three: '1',
+     time_four: '1',
+     user_id: 1001 },
+  costTime: 4,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userInfo',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userInfo">/users/userInfo</a>.' } }
+[2019-12-20T12:37:27.609] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '784' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n          <th>不看他的</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>12</td>\n          <td>12313</td>\n          <td>1w3424速度发顺丰</td>\n          <td>1231231123</td>\n          <td><a href="/users/delect/1001">x</a></td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-20T12:37:29.311] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '984' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n          <th>不看他的</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>12</td>\n          <td>12313</td>\n          <td>1w3424速度发顺丰</td>\n          <td>1231231123</td>\n          <td><a href="/users/delect/1001">x</a></td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td><a href="/users/delect/1001">x</a></td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-20T12:37:30.917] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '912' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        \r\n        <tr>\r\n          <td>1001</td>\r\n          <td>12</td>\r\n          <td>12313</td>\r\n          <td>1w3424速度发顺丰</td>\r\n          <td>1231231123</td>\r\n          <td><a href="/users/edit/1001">编辑</a></td>\r\n        </tr>\r\n        \r\n        <tr>\r\n          <td>1001</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td><a href="/users/edit/1001">编辑</a></td>\r\n        </tr>\r\n        \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-20T12:37:32.863] [INFO] response - { method: 'GET',
+  url: '/users/edit/1001',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '812' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程编辑页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h2>编辑你的日程</h2>\r\n\r\n  <form action="users/doedit" method="POST">\r\n\r\n  <!-- <input type="text" name="user_id" placeholder="输入id" />\r\n  <br/>\r\n  <br/> -->\r\n   6：00--10:00:<input type="text" name="time_one" value="12"/>\r\n   <br/>\r\n   <br/>\r\n\r\n   10:00--14:00:<input type="text" name="time_two" value="12313"/>\r\n   <br/>\r\n   <br/>\r\n\r\n    14:00--18：00:<input type="text" name="time_three" value="1w3424速度发顺丰"/>\r\n    <br/>\r\n    <br/>\r\n\r\n    18:00--20：00:<input type="text" name="time_four" value="1231231123"/>\r\n    <br/>\r\n    <br/>\r\n    \r\n    <input type="submit" value="提交" />\r\n\r\n  </form>\r\n    \r\n  </body>\r\n</html>' } }
+[2019-12-20T12:37:36.805] [INFO] response - { method: 'POST',
+  url: '/users/edit/users/doedit',
+  body:
+   { time_one: '123244',
+     time_two: '12313',
+     time_three: '1w3424速度发顺丰',
+     time_four: '1231231123' },
+  costTime: 3,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userInfo',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userInfo">/users/userInfo</a>.' } }
+[2019-12-20T12:37:36.816] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '984' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n          <th>不看他的</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>12</td>\n          <td>12313</td>\n          <td>1w3424速度发顺丰</td>\n          <td>1231231123</td>\n          <td><a href="/users/delect/1001">x</a></td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td><a href="/users/delect/1001">x</a></td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-20T12:37:39.362] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1026' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n          <th>不看他的</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>123244</td>\n          <td>12313</td>\n          <td>1w3424速度发顺丰</td>\n          <td>1231231123</td>\n          <td><a href="/users/delect/1001">x</a></td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>123244</td>\n          <td>12313</td>\n          <td>1w3424速度发顺丰</td>\n          <td>1231231123</td>\n          <td><a href="/users/delect/1001">x</a></td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-20T12:39:21.334] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2019-12-20T12:39:21.830] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T13:04:02.942] [INFO] response - { method: 'OPTIONS',
+  url: '/createmessage',
+  body: {},
+  costTime: 0,
+  response:
+   { status: 204,
+     message: 'No Content',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-max-age': '5',
+        'access-control-allow-credentials': 'true',
+        'access-control-allow-methods': 'GET,POST,PUT,DELETE,OPTIONS',
+        'access-control-allow-headers': 'Content-Type,Authorization,Accept' },
+     body: undefined } }
+[2019-12-20T13:08:21.977] [INFO] response - { method: 'GET',
+  url: '/userinfo',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '830' },
+     body:
+      '<!-- <h1>抱歉，找不到你的诗和远方了！</h1>\n<h2>404</h2>\n<pre>NotFoundError: Not Found\n    at Object.throw (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\node_modules\\koa\\lib\\context.js:97:11)\n    at module.exports (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\middlewares\\error.js:5:22)</pre> -->\n\n\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2019-12-20T13:11:51.689] [INFO] response - { method: 'GET',
+  url: '/userinfo',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '830' },
+     body:
+      '<!-- <h1>抱歉，找不到你的诗和远方了！</h1>\n<h2>404</h2>\n<pre>NotFoundError: Not Found\n    at Object.throw (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\node_modules\\koa\\lib\\context.js:97:11)\n    at module.exports (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\middlewares\\error.js:5:22)</pre> -->\n\n\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2019-12-20T13:15:24.717] [INFO] response - { method: 'GET',
+  url: '/userinfo',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '830' },
+     body:
+      '<!-- <h1>抱歉，找不到你的诗和远方了！</h1>\n<h2>404</h2>\n<pre>NotFoundError: Not Found\n    at Object.throw (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\node_modules\\koa\\lib\\context.js:97:11)\n    at module.exports (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\middlewares\\error.js:5:22)</pre> -->\n\n\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2019-12-20T14:08:22.481] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 401,
+     message: 'Unauthorized',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/plain; charset=utf-8',
+        'content-length': '12' },
+     body: 'Unauthorized' } }
+[2019-12-20T14:09:50.469] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 181,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2019-12-20T14:09:50.547] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:09:57.977] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:10:10.244] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 109,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:10:10.562] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:10:14.167] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:10:15.872] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:20:45.278] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 70,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:20:46.686] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:20:51.738] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:20:53.840] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:20:57.017] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:20:58.065] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:20:59.987] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:21:07.719] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:21:12.999] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:34:42.974] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 91,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:34:49.975] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:34:57.155] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:35:56.444] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:51:17.453] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 50,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2019-12-20T14:51:17.810] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:51:39.266] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:51:40.200] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:51:41.542] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:51:46.329] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:52:05.208] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:52:05.857] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:52:09.053] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:53:35.072] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:53:41.832] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:53:42.218] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:53:42.936] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:53:44.357] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:53:44.861] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:53:46.317] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:53:46.577] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:53:46.849] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:53:47.549] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T14:53:49.795] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T15:36:13.014] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 45,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T15:36:18.607] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T15:36:46.769] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 195,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T15:36:48.861] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T15:36:50.570] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T15:37:06.739] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T17:40:01.675] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 55,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2019-12-20T17:40:34.677] [INFO] response - { method: 'POST',
+  url: '/api/users/register',
+  body: { user_id: '1004', username: 'dasda', password: '123456' },
+  costTime: 56,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '830' },
+     body:
+      '<!-- <h1>抱歉，找不到你的诗和远方了！</h1>\n<h2>404</h2>\n<pre>NotFoundError: Not Found\n    at Object.throw (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\node_modules\\koa\\lib\\context.js:97:11)\n    at module.exports (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\middlewares\\error.js:5:22)</pre> -->\n\n\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2019-12-20T17:42:17.619] [INFO] response - { method: 'POST',
+  url: '/api/users/register',
+  body: { user_id: '1009', username: '123das', password: '123456' },
+  costTime: 35,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '830' },
+     body:
+      '<!-- <h1>抱歉，找不到你的诗和远方了！</h1>\n<h2>404</h2>\n<pre>NotFoundError: Not Found\n    at Object.throw (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\node_modules\\koa\\lib\\context.js:97:11)\n    at module.exports (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\middlewares\\error.js:5:22)</pre> -->\n\n\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2019-12-20T17:46:55.423] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 34,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T17:47:08.859] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T17:47:28.279] [INFO] response - { method: 'POST',
+  url: '/api/users/register',
+  body: { user_id: '1009', username: 'fgfhfgh', password: '123456' },
+  costTime: 41,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '830' },
+     body:
+      '<!-- <h1>抱歉，找不到你的诗和远方了！</h1>\n<h2>404</h2>\n<pre>NotFoundError: Not Found\n    at Object.throw (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\node_modules\\koa\\lib\\context.js:97:11)\n    at module.exports (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\middlewares\\error.js:5:22)</pre> -->\n\n\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2019-12-20T17:47:44.151] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T17:47:51.936] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2019-12-20T17:48:44.471] [INFO] response - { method: 'POST',
+  url: '/api/users/register',
+  body: { user_id: '1001', username: 'ansdnas', password: '123456' },
+  costTime: 9,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '830' },
+     body:
+      '<!-- <h1>抱歉，找不到你的诗和远方了！</h1>\n<h2>404</h2>\n<pre>NotFoundError: Not Found\n    at Object.throw (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\node_modules\\koa\\lib\\context.js:97:11)\n    at module.exports (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\middlewares\\error.js:5:22)</pre> -->\n\n\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2019-12-20T17:50:19.262] [INFO] response - { method: 'POST',
+  url: '/api/users/register',
+  body: { user_id: '1001', username: 'ansdnas', password: '123456' },
+  costTime: 8,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '830' },
+     body:
+      '<!-- <h1>抱歉，找不到你的诗和远方了！</h1>\n<h2>404</h2>\n<pre>NotFoundError: Not Found\n    at Object.throw (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\node_modules\\koa\\lib\\context.js:97:11)\n    at module.exports (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\middlewares\\error.js:5:22)</pre> -->\n\n\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2019-12-20T17:51:22.338] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2019-12-20T17:53:46.840] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '1009',
+     username: '1234qweass',
+     password: 'b2f9669d409b2033f713ffa7eb1949a8',
+     solt: '4bf31012-8c44-4616-a706-57b0a2982f27' },
+  costTime: 9,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2019-12-20T17:56:35.599] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '1004',
+     username: '1234qweass',
+     password: 'ca1744020eac39baa627890f17b53b3e',
+     solt: '5de648d2-5efc-4569-b07d-e956d5f7f3d4' },
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2019-12-20T17:56:59.993] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '1004',
+     username: '1234qweass',
+     password: '120673236193b9b7d73a9c2c637e6809',
+     solt: '6cd80318-b52c-4fb9-927c-f71376da4678' },
+  costTime: 10,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '33' },
+     body: 'Redirecting to <a href="/">/</a>.' } }
+[2019-12-20T17:58:35.833] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '10011',
+     username: '1234qweass',
+     password: '936365f874c13665963314908b94361e',
+     solt: '1cdad409-4ccb-4f0e-bef9-d14b425ecda1' },
+  costTime: 1,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '33' },
+     body: 'Redirecting to <a href="/">/</a>.' } }
+[2019-12-20T18:05:29.036] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '10017',
+     password: '2be967c488984f7c9199d7d43b82a8af',
+     solt: 'a92e6262-b418-4d24-a5f4-b455a1a85861' },
+  costTime: 1,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '33' },
+     body: 'Redirecting to <a href="/">/</a>.' } }
+[2019-12-20T19:42:38.702] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '10017',
+     password: 'b3228d860dbb0ea9d2ea7a91d8bad550',
+     solt: 'e8bc3151-8971-48ac-a104-cb58b08898e4' },
+  costTime: 1,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '33' },
+     body: 'Redirecting to <a href="/">/</a>.' } }
+[2019-12-20T19:46:31.007] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '10019',
+     password: 'be26f72327ee1f231081be66b735bbe0',
+     solt: 'ac10bf8a-f356-4847-90f9-93621213980f' },
+  costTime: 1,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '33' },
+     body: 'Redirecting to <a href="/">/</a>.' } }
+[2019-12-20T19:54:42.406] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '10021',
+     username: 'sdfsad',
+     password: '671458905fad9007d948c245ce97b3d4',
+     solt: '204a8069-5d2d-4ce8-9026-22f5994594a0' },
+  costTime: 3,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '33' },
+     body: 'Redirecting to <a href="/">/</a>.' } }
+[2019-12-20T19:58:49.572] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '10023',
+     username: 'sdfsad',
+     password: '97fa3d73347f5d6eedbd313099fa51c4',
+     solt: 'db6de55a-2dae-4740-b2db-5da0ecd7ff3e' },
+  costTime: 6,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2019-12-20T19:59:03.468] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '10023',
+     username: 'sdfsdfs',
+     password: '5372609a8380f4fb2fc4c2d6aec1d7de',
+     solt: 'b55242d7-7279-4e50-9ea0-d4a9eb55131b' },
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2019-12-20T19:59:31.128] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '10099',
+     user_name: 'asdsad',
+     password: '9bb67cf4603be685dccfcf903ecba8ed',
+     solt: '7fb36937-e89d-4d4b-bc36-a480dfd2264b' },
+  costTime: 1,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2019-12-20T20:01:21.832] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '1007',
+     user_name: 'asdsad',
+     password: '0d81fed47c74205d3d160fb63f917a9c',
+     solt: '592f9ff8-4c73-4918-893e-47f9642c313e' },
+  costTime: 10,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '33' },
+     body: 'Redirecting to <a href="/">/</a>.' } }
+[2019-12-20T20:02:13.576] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '1007',
+     user_name: 'asdsad',
+     password: '922132be875a5d3dbf43f0b210af3ba8',
+     solt: 'a70822fb-56e3-497e-b24c-c122490604b4' },
+  costTime: 2,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '33' },
+     body: 'Redirecting to <a href="/">/</a>.' } }
+[2019-12-20T20:02:27.838] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '1008',
+     user_name: 'adhkja',
+     password: 'eca9a6a218cd1ead456feb6ece2d1ad5',
+     solt: '5b69a8a3-bdce-4482-bf94-0f24bccdef2e' },
+  costTime: 1,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '33' },
+     body: 'Redirecting to <a href="/">/</a>.' } }
+[2019-12-20T20:04:32.528] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '1008',
+     user_name: 'adhkja',
+     password: 'cd7265c89cc79144d33594d4205f7879',
+     solt: '169e6cc7-e01f-4caa-971c-c809e4dfe67c' },
+  costTime: 2,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '33' },
+     body: 'Redirecting to <a href="/">/</a>.' } }
+[2019-12-20T20:04:43.927] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '1008',
+     user_name: 'adhkja',
+     password: '2916079e0c3edc152fa9be4564e3cdc3',
+     solt: '4b74f243-2883-4053-ba28-876b055ac110' },
+  costTime: 7,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2019-12-20T20:06:25.134] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '10011',
+     user_name: 'asdas',
+     password: '75b4e0f29093c4ffc5c9ae2b22d13727',
+     solt: 'f113d922-6ae7-4d6c-b0e4-6d3803759ad0' },
+  costTime: 1,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2019-12-20T20:07:19.919] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '10011', password: '123456' },
+  costTime: 156,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2019-12-20T20:07:23.390] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '10011', password: '123456' },
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2019-12-20T20:07:59.793] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '10011', password: '123456' },
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2019-12-20T20:08:28.454] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '100000', password: '123' },
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: -1, data: [Object] } } }
+[2019-12-20T20:08:33.482] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '10011', password: '123' },
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 0, data: [Object] } } }
+[2019-12-20T20:12:55.970] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '10011',
+     user_name: '萨达',
+     password: '8d084b312b360080a56026ac84f8322b',
+     solt: '925976aa-43b1-41b7-9d1d-c78bea6f40c3' },
+  costTime: 44,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: -1, data: [Object] } } }
+[2019-12-20T20:13:02.930] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '10012',
+     user_name: '萨达',
+     password: 'aab7b041117573e6a3333c85766ff57c',
+     solt: '926915ce-6b99-49a6-bf07-594c98934e7d' },
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2019-12-20T20:14:00.653] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '10013',
+     user_name: '撒大声地',
+     password: '20738e0f2b88a14d7b5ff667e2340798',
+     solt: '85075009-b40d-4cb7-b6b0-10c3629a3a63' },
+  costTime: 111,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }

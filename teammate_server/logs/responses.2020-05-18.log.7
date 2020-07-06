@@ -1,0 +1,522 @@
+[2020-05-18T23:09:06.378] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '30' },
+     body: '找队友APP后台管理系统' } }
+[2020-05-18T23:09:08.465] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4922' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default">\r\n        <div class="panel-heading">\r\n            <h3 class="panel-title">\r\n               管理员列表\r\n            </h3>\r\n        </div>\r\n        <div class="panel-body">          \r\n            <div class="clearfix" style="margin-bottom: 10px;">\r\n              </div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="account" class="control-label">工号</label>\r\n          <input type="text" class="form-control" id="account" value="" name="account">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="user_name" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="user_name" value="" name="userName">                 \r\n        </div>     \r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n       \r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>账号</th>\r\n                <th>姓名</th>\r\n                <th>性别</th>\r\n                <th>电话</th>\r\n                <th>状态</th>\r\n                <th>身份</th>\r\n                <th>操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                \r\n                    <tr>\r\n                      <td>1</td>\r\n                      <td>1001</td>\r\n                      <td>张三</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-default" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>2</td>\r\n                      <td>1002</td>\r\n                      <td>老二</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-default" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1002" class="btn btn-default">删除</a></td>\r\n                    </tr>\r\n                      \r\n            </tbody>\r\n        </table>  \r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n        </div>\r\n    </div>\r\n\r\n</body>\r\n\r\n\r\n<style> \r\n  .black_overlay{ \r\n      display: none; \r\n      position: absolute; \r\n      top: 0%; \r\n      left: 0%; \r\n      width: 100%; \r\n      height: 100%; \r\n      background-color: black; \r\n      z-index:1001; \r\n      -moz-opacity: 0.8; \r\n      opacity:.80; \r\n      filter: alpha(opacity=88); \r\n  } \r\n  .white_content { \r\n      display: none; \r\n      position: absolute; \r\n      top: 25%; \r\n      left: 25%; \r\n      width: 55%; \r\n      height: 55%; \r\n      padding: 20px; \r\n      border: 10px solid rgb(120, 196, 231); \r\n      border-radius: 20px;\r\n      background-color: white; \r\n      z-index:1002; \r\n      overflow: auto; \r\n  } \r\n</style> \r\n</html>' } }
+[2020-05-18T23:09:36.501] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4922' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default">\r\n        <div class="panel-heading">\r\n            <h3 class="panel-title">\r\n               管理员列表\r\n            </h3>\r\n        </div>\r\n        <div class="panel-body">          \r\n            <div class="clearfix" style="margin-bottom: 10px;">\r\n              </div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="account" class="control-label">账号</label>\r\n          <input type="text" class="form-control" id="account" value="" name="account">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="user_name" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="user_name" value="" name="userName">                 \r\n        </div>     \r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n       \r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>账号</th>\r\n                <th>姓名</th>\r\n                <th>性别</th>\r\n                <th>电话</th>\r\n                <th>状态</th>\r\n                <th>身份</th>\r\n                <th>操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                \r\n                    <tr>\r\n                      <td>1</td>\r\n                      <td>1001</td>\r\n                      <td>张三</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-default" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>2</td>\r\n                      <td>1002</td>\r\n                      <td>老二</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-default" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1002" class="btn btn-default">删除</a></td>\r\n                    </tr>\r\n                      \r\n            </tbody>\r\n        </table>  \r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n        </div>\r\n    </div>\r\n\r\n</body>\r\n\r\n\r\n<style> \r\n  .black_overlay{ \r\n      display: none; \r\n      position: absolute; \r\n      top: 0%; \r\n      left: 0%; \r\n      width: 100%; \r\n      height: 100%; \r\n      background-color: black; \r\n      z-index:1001; \r\n      -moz-opacity: 0.8; \r\n      opacity:.80; \r\n      filter: alpha(opacity=88); \r\n  } \r\n  .white_content { \r\n      display: none; \r\n      position: absolute; \r\n      top: 25%; \r\n      left: 25%; \r\n      width: 55%; \r\n      height: 55%; \r\n      padding: 20px; \r\n      border: 10px solid rgb(120, 196, 231); \r\n      border-radius: 20px;\r\n      background-color: white; \r\n      z-index:1002; \r\n      overflow: auto; \r\n  } \r\n</style> \r\n</html>' } }
+[2020-05-18T23:09:43.242] [INFO] response - { method: 'GET',
+  url: '/users/add',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2627' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>增加用户</title>\r\n</head>\r\n\r\n<body>\r\n<div class="panel panel-default">\r\n    <div class="panel-heading">\r\n        新增用户\r\n    </div>\r\n\r\n    <div class="message">消息提醒</div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/users/doAdd" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 用户账号: <input type="text" name="account" /></li>\r\n\r\n                    <li> 用户密码: <input type="password" name="password"></li>\r\n\r\n                    <li> 用户姓名: <input type="text" name="userName" /></li>\r\n\r\n                    <li> 用户性别:\r\n                         <select name="userSex">\r\n                             <option value="1">男</option>\r\n                             <option value="2">女</option>\r\n                         </select>\r\n                    </li>\r\n\r\n                    <li> 联系方式: <input type="text" name="userPhone" /></li>\r\n                  \r\n\r\n                    <li> 用户状态:\r\n                        <select name="userStatus">\r\n                           \r\n                            <option value="0">未审核</option>\r\n                            <option value="1">审核成功</option>\r\n                            <option value="2">审核失败</option>\r\n\r\n                        </select>\r\n                        \r\n                        </li>\r\n                  \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n\r\n<script>\r\n     //消息提醒\r\n     function  fade(txt) {\r\n            $(\'.message\').text(txt) //内容撑开\r\n            $(\'.message\').animate({\r\n                top: 0\r\n            })\r\n            setTimeout(function () {\r\n                $(\'.message\').animate({\r\n                    top: \'-100%\'\r\n                })\r\n            }, 1500)\r\n        }\r\n\r\n\r\n</script>\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T23:09:49.365] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4922' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default">\r\n        <div class="panel-heading">\r\n            <h3 class="panel-title">\r\n               管理员列表\r\n            </h3>\r\n        </div>\r\n        <div class="panel-body">          \r\n            <div class="clearfix" style="margin-bottom: 10px;">\r\n              </div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="account" class="control-label">账号</label>\r\n          <input type="text" class="form-control" id="account" value="" name="account">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="user_name" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="user_name" value="" name="userName">                 \r\n        </div>     \r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n       \r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>账号</th>\r\n                <th>姓名</th>\r\n                <th>性别</th>\r\n                <th>电话</th>\r\n                <th>状态</th>\r\n                <th>身份</th>\r\n                <th>操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                \r\n                    <tr>\r\n                      <td>1</td>\r\n                      <td>1001</td>\r\n                      <td>张三</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-default" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>2</td>\r\n                      <td>1002</td>\r\n                      <td>老二</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-default" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1002" class="btn btn-default">删除</a></td>\r\n                    </tr>\r\n                      \r\n            </tbody>\r\n        </table>  \r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n        </div>\r\n    </div>\r\n\r\n</body>\r\n\r\n\r\n<style> \r\n  .black_overlay{ \r\n      display: none; \r\n      position: absolute; \r\n      top: 0%; \r\n      left: 0%; \r\n      width: 100%; \r\n      height: 100%; \r\n      background-color: black; \r\n      z-index:1001; \r\n      -moz-opacity: 0.8; \r\n      opacity:.80; \r\n      filter: alpha(opacity=88); \r\n  } \r\n  .white_content { \r\n      display: none; \r\n      position: absolute; \r\n      top: 25%; \r\n      left: 25%; \r\n      width: 55%; \r\n      height: 55%; \r\n      padding: 20px; \r\n      border: 10px solid rgb(120, 196, 231); \r\n      border-radius: 20px;\r\n      background-color: white; \r\n      z-index:1002; \r\n      overflow: auto; \r\n  } \r\n</style> \r\n</html>' } }
+[2020-05-18T23:09:50.119] [INFO] response - { method: 'GET',
+  url: '/users/add',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2627' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>增加用户</title>\r\n</head>\r\n\r\n<body>\r\n<div class="panel panel-default">\r\n    <div class="panel-heading">\r\n        新增用户\r\n    </div>\r\n\r\n    <div class="message">消息提醒</div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/users/doAdd" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 用户账号: <input type="text" name="account" /></li>\r\n\r\n                    <li> 用户密码: <input type="password" name="password"></li>\r\n\r\n                    <li> 用户姓名: <input type="text" name="userName" /></li>\r\n\r\n                    <li> 用户性别:\r\n                         <select name="userSex">\r\n                             <option value="1">男</option>\r\n                             <option value="2">女</option>\r\n                         </select>\r\n                    </li>\r\n\r\n                    <li> 联系方式: <input type="text" name="userPhone" /></li>\r\n                  \r\n\r\n                    <li> 用户状态:\r\n                        <select name="userStatus">\r\n                           \r\n                            <option value="0">未审核</option>\r\n                            <option value="1">审核成功</option>\r\n                            <option value="2">审核失败</option>\r\n\r\n                        </select>\r\n                        \r\n                        </li>\r\n                  \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n\r\n<script>\r\n     //消息提醒\r\n     function  fade(txt) {\r\n            $(\'.message\').text(txt) //内容撑开\r\n            $(\'.message\').animate({\r\n                top: 0\r\n            })\r\n            setTimeout(function () {\r\n                $(\'.message\').animate({\r\n                    top: \'-100%\'\r\n                })\r\n            }, 1500)\r\n        }\r\n\r\n\r\n</script>\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T23:11:36.951] [INFO] response - { method: 'GET',
+  url: '/roles/rolelist',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2664' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>角色列表</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    角色列表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n\r\n \r\n\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>角色id</th>\r\n              <th>角色名</th>\r\n              <th>角色描述</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td>管理员</td>\r\n\r\n               <td>负责管理后台系统</td>\r\n\r\n               <td>\r\n                 <!-- <a href="/roles/edit?id=1" class="btn btn-info">修改</a> -->\r\n                 <!-- <a href="/delete?model=role&id=1" class="btn btn-danger delete">删除</a> -->\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td>队长</td>\r\n\r\n               <td>负责管理队伍</td>\r\n\r\n               <td>\r\n                 <!-- <a href="/roles/edit?id=2" class="btn btn-info">修改</a> -->\r\n                 <!-- <a href="/delete?model=role&id=2" class="btn btn-danger delete">删除</a> -->\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>3</td>\r\n\r\n               <td>队员</td>\r\n\r\n               <td>参与比赛活动</td>\r\n\r\n               <td>\r\n                 <!-- <a href="/roles/edit?id=3" class="btn btn-info">修改</a> -->\r\n                 <!-- <a href="/delete?model=role&id=3" class="btn btn-danger delete">删除</a> -->\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T23:12:22.876] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3238' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>张三</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n      \n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>\n\t  </li>\n     \n      \n      <li>\n        <h4 class="M1"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n\n\n    <li>\n        <h4 class="M5"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M3"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-18T23:12:22.953] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '30' },
+     body: '找队友APP后台管理系统' } }
+[2020-05-18T23:12:26.581] [INFO] response - { method: 'GET',
+  url: '/roles/rolelist',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2610' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>角色列表</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    角色列表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n\r\n \r\n\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>角色id</th>\r\n              <th>角色名</th>\r\n              <th>角色描述</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td>管理员</td>\r\n\r\n               <td>负责管理后台系统</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td>队长</td>\r\n\r\n               <td>负责管理队伍</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>3</td>\r\n\r\n               <td>队员</td>\r\n\r\n               <td>参与比赛活动</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=3" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=3" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T23:12:32.411] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4922' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default">\r\n        <div class="panel-heading">\r\n            <h3 class="panel-title">\r\n               管理员列表\r\n            </h3>\r\n        </div>\r\n        <div class="panel-body">          \r\n            <div class="clearfix" style="margin-bottom: 10px;">\r\n              </div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="account" class="control-label">账号</label>\r\n          <input type="text" class="form-control" id="account" value="" name="account">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="user_name" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="user_name" value="" name="userName">                 \r\n        </div>     \r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n       \r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>账号</th>\r\n                <th>姓名</th>\r\n                <th>性别</th>\r\n                <th>电话</th>\r\n                <th>状态</th>\r\n                <th>身份</th>\r\n                <th>操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                \r\n                    <tr>\r\n                      <td>1</td>\r\n                      <td>1001</td>\r\n                      <td>张三</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-default" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>2</td>\r\n                      <td>1002</td>\r\n                      <td>老二</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-default" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1002" class="btn btn-default">删除</a></td>\r\n                    </tr>\r\n                      \r\n            </tbody>\r\n        </table>  \r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n        </div>\r\n    </div>\r\n\r\n</body>\r\n\r\n\r\n<style> \r\n  .black_overlay{ \r\n      display: none; \r\n      position: absolute; \r\n      top: 0%; \r\n      left: 0%; \r\n      width: 100%; \r\n      height: 100%; \r\n      background-color: black; \r\n      z-index:1001; \r\n      -moz-opacity: 0.8; \r\n      opacity:.80; \r\n      filter: alpha(opacity=88); \r\n  } \r\n  .white_content { \r\n      display: none; \r\n      position: absolute; \r\n      top: 25%; \r\n      left: 25%; \r\n      width: 55%; \r\n      height: 55%; \r\n      padding: 20px; \r\n      border: 10px solid rgb(120, 196, 231); \r\n      border-radius: 20px;\r\n      background-color: white; \r\n      z-index:1002; \r\n      overflow: auto; \r\n  } \r\n</style> \r\n</html>' } }
+[2020-05-18T23:12:37.450] [INFO] response - { method: 'GET',
+  url: '/roles/rolelist',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2610' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>角色列表</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    角色列表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n\r\n \r\n\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>角色id</th>\r\n              <th>角色名</th>\r\n              <th>角色描述</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td>管理员</td>\r\n\r\n               <td>负责管理后台系统</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td>队长</td>\r\n\r\n               <td>负责管理队伍</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>3</td>\r\n\r\n               <td>队员</td>\r\n\r\n               <td>参与比赛活动</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=3" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=3" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T23:13:20.106] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4916' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default">\r\n        <div class="panel-heading">\r\n            <h3 class="panel-title">\r\n               管理员列表\r\n            </h3>\r\n        </div>\r\n        <div class="panel-body">          \r\n            <div class="clearfix" style="margin-bottom: 10px;">\r\n              </div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="account" class="control-label">账号</label>\r\n          <input type="text" class="form-control" id="account" value="" name="account">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="user_name" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="user_name" value="" name="userName">                 \r\n        </div>     \r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n       \r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>账号</th>\r\n                <th>姓名</th>\r\n                <th>性别</th>\r\n                <th>电话</th>\r\n                <th>状态</th>\r\n                <th>身份</th>\r\n                <th>操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                \r\n                    <tr>\r\n                      <td>1</td>\r\n                      <td>1001</td>\r\n                      <td>张三</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-info" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>2</td>\r\n                      <td>1002</td>\r\n                      <td>老二</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-info" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1002" class="btn btn-default">删除</a></td>\r\n                    </tr>\r\n                      \r\n            </tbody>\r\n        </table>  \r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n        </div>\r\n    </div>\r\n\r\n</body>\r\n\r\n\r\n<style> \r\n  .black_overlay{ \r\n      display: none; \r\n      position: absolute; \r\n      top: 0%; \r\n      left: 0%; \r\n      width: 100%; \r\n      height: 100%; \r\n      background-color: black; \r\n      z-index:1001; \r\n      -moz-opacity: 0.8; \r\n      opacity:.80; \r\n      filter: alpha(opacity=88); \r\n  } \r\n  .white_content { \r\n      display: none; \r\n      position: absolute; \r\n      top: 25%; \r\n      left: 25%; \r\n      width: 55%; \r\n      height: 55%; \r\n      padding: 20px; \r\n      border: 10px solid rgb(120, 196, 231); \r\n      border-radius: 20px;\r\n      background-color: white; \r\n      z-index:1002; \r\n      overflow: auto; \r\n  } \r\n</style> \r\n</html>' } }
+[2020-05-18T23:13:40.435] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3238' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>张三</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n      \n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>\n\t  </li>\n     \n      \n      <li>\n        <h4 class="M1"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n\n\n    <li>\n        <h4 class="M5"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M3"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-18T23:13:40.511] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '30' },
+     body: '找队友APP后台管理系统' } }
+[2020-05-18T23:13:42.150] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4928' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default">\r\n        <div class="panel-heading">\r\n            <h3 class="panel-title">\r\n               管理员列表\r\n            </h3>\r\n        </div>\r\n        <div class="panel-body">          \r\n            <div class="clearfix" style="margin-bottom: 10px;">\r\n              </div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="account" class="control-label">账号</label>\r\n          <input type="text" class="form-control" id="account" value="" name="account">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="user_name" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="user_name" value="" name="userName">                 \r\n        </div>     \r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n       \r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>账号</th>\r\n                <th>姓名</th>\r\n                <th>性别</th>\r\n                <th>电话</th>\r\n                <th>状态</th>\r\n                <th>身份</th>\r\n                <th>操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                \r\n                    <tr>\r\n                      <td>1</td>\r\n                      <td>1001</td>\r\n                      <td>张三</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-info" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1001" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>2</td>\r\n                      <td>1002</td>\r\n                      <td>老二</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-info" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1002" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n            </tbody>\r\n        </table>  \r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n        </div>\r\n    </div>\r\n\r\n</body>\r\n\r\n\r\n<style> \r\n  .black_overlay{ \r\n      display: none; \r\n      position: absolute; \r\n      top: 0%; \r\n      left: 0%; \r\n      width: 100%; \r\n      height: 100%; \r\n      background-color: black; \r\n      z-index:1001; \r\n      -moz-opacity: 0.8; \r\n      opacity:.80; \r\n      filter: alpha(opacity=88); \r\n  } \r\n  .white_content { \r\n      display: none; \r\n      position: absolute; \r\n      top: 25%; \r\n      left: 25%; \r\n      width: 55%; \r\n      height: 55%; \r\n      padding: 20px; \r\n      border: 10px solid rgb(120, 196, 231); \r\n      border-radius: 20px;\r\n      background-color: white; \r\n      z-index:1002; \r\n      overflow: auto; \r\n  } \r\n</style> \r\n</html>' } }
+[2020-05-18T23:13:45.722] [INFO] response - { method: 'GET',
+  url: '/users/add',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2627' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>增加用户</title>\r\n</head>\r\n\r\n<body>\r\n<div class="panel panel-default">\r\n    <div class="panel-heading">\r\n        新增用户\r\n    </div>\r\n\r\n    <div class="message">消息提醒</div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/users/doAdd" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 用户账号: <input type="text" name="account" /></li>\r\n\r\n                    <li> 用户密码: <input type="password" name="password"></li>\r\n\r\n                    <li> 用户姓名: <input type="text" name="userName" /></li>\r\n\r\n                    <li> 用户性别:\r\n                         <select name="userSex">\r\n                             <option value="1">男</option>\r\n                             <option value="2">女</option>\r\n                         </select>\r\n                    </li>\r\n\r\n                    <li> 联系方式: <input type="text" name="userPhone" /></li>\r\n                  \r\n\r\n                    <li> 用户状态:\r\n                        <select name="userStatus">\r\n                           \r\n                            <option value="0">未审核</option>\r\n                            <option value="1">审核成功</option>\r\n                            <option value="2">审核失败</option>\r\n\r\n                        </select>\r\n                        \r\n                        </li>\r\n                  \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n\r\n<script>\r\n     //消息提醒\r\n     function  fade(txt) {\r\n            $(\'.message\').text(txt) //内容撑开\r\n            $(\'.message\').animate({\r\n                top: 0\r\n            })\r\n            setTimeout(function () {\r\n                $(\'.message\').animate({\r\n                    top: \'-100%\'\r\n                })\r\n            }, 1500)\r\n        }\r\n\r\n\r\n</script>\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T23:13:47.884] [INFO] response - { method: 'GET',
+  url: '/roles/rolelist',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2610' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>角色列表</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    角色列表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n\r\n \r\n\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>角色id</th>\r\n              <th>角色名</th>\r\n              <th>角色描述</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td>管理员</td>\r\n\r\n               <td>负责管理后台系统</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td>队长</td>\r\n\r\n               <td>负责管理队伍</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>3</td>\r\n\r\n               <td>队员</td>\r\n\r\n               <td>参与比赛活动</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=3" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=3" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T23:13:49.321] [INFO] response - { method: 'GET',
+  url: '/roles/add',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1204' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    <title>增加角色</title>\r\n</head>\r\n\r\n<body>\r\n<div class="panel panel-default">\r\n    <div class="panel-heading">\r\n        新增角色\r\n    </div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/roles/doAdd" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 角色名称: <input type="text" name="role_name" /></li>\r\n\r\n\r\n                    <li> 角色描述: <textarea name="description" cols="60" rows="8"></textarea></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T23:14:12.540] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3238' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>张三</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n      \n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>\n\t  </li>\n     \n      \n      <li>\n        <h4 class="M1"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n\n\n    <li>\n        <h4 class="M5"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M3"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-18T23:14:12.638] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '30' },
+     body: '找队友APP后台管理系统' } }
+[2020-05-18T23:14:14.693] [INFO] response - { method: 'GET',
+  url: '/roles/add',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1204' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    <title>增加角色</title>\r\n</head>\r\n\r\n<body>\r\n<div class="panel panel-default">\r\n    <div class="panel-heading">\r\n        新增角色\r\n    </div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/roles/doAdd" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 角色名称: <input type="text" name="role_name" /></li>\r\n\r\n\r\n                    <li> 角色描述: <textarea name="description" cols="30" rows="8"></textarea></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T23:14:25.788] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3238' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>张三</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n      \n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>\n\t  </li>\n     \n      \n      <li>\n        <h4 class="M1"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n\n\n    <li>\n        <h4 class="M5"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M3"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-18T23:14:25.891] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '30' },
+     body: '找队友APP后台管理系统' } }
+[2020-05-18T23:14:28.238] [INFO] response - { method: 'GET',
+  url: '/roles/add',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1204' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    <title>增加角色</title>\r\n</head>\r\n\r\n<body>\r\n<div class="panel panel-default">\r\n    <div class="panel-heading">\r\n        新增角色\r\n    </div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/roles/doAdd" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 角色名称: <input type="text" name="role_name" /></li>\r\n\r\n\r\n                    <li> 角色描述: <textarea name="description" cols="30" rows="4"></textarea></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T23:18:07.559] [INFO] response - { method: 'GET',
+  url: '/roles/rolelist',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2610' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>角色列表</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    角色列表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n\r\n \r\n\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>角色id</th>\r\n              <th>角色名</th>\r\n              <th>角色描述</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td>管理员</td>\r\n\r\n               <td>负责管理后台系统</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td>队长</td>\r\n\r\n               <td>负责管理队伍</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>3</td>\r\n\r\n               <td>队员</td>\r\n\r\n               <td>参与比赛活动</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=3" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=3" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T23:18:09.700] [INFO] response - { method: 'GET',
+  url: '/roles/add',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1204' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    <title>增加角色</title>\r\n</head>\r\n\r\n<body>\r\n<div class="panel panel-default">\r\n    <div class="panel-heading">\r\n        新增角色\r\n    </div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/roles/doAdd" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 角色名称: <input type="text" name="role_name" /></li>\r\n\r\n\r\n                    <li> 角色描述: <textarea name="description" cols="30" rows="4"></textarea></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T23:18:11.236] [INFO] response - { method: 'GET',
+  url: '/roles/rolelist',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2610' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>角色列表</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    角色列表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n\r\n \r\n\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>角色id</th>\r\n              <th>角色名</th>\r\n              <th>角色描述</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td>管理员</td>\r\n\r\n               <td>负责管理后台系统</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td>队长</td>\r\n\r\n               <td>负责管理队伍</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>3</td>\r\n\r\n               <td>队员</td>\r\n\r\n               <td>参与比赛活动</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=3" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=3" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T23:18:13.263] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4928' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default">\r\n        <div class="panel-heading">\r\n            <h3 class="panel-title">\r\n               管理员列表\r\n            </h3>\r\n        </div>\r\n        <div class="panel-body">          \r\n            <div class="clearfix" style="margin-bottom: 10px;">\r\n              </div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="account" class="control-label">账号</label>\r\n          <input type="text" class="form-control" id="account" value="" name="account">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="user_name" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="user_name" value="" name="userName">                 \r\n        </div>     \r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n       \r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>账号</th>\r\n                <th>姓名</th>\r\n                <th>性别</th>\r\n                <th>电话</th>\r\n                <th>状态</th>\r\n                <th>身份</th>\r\n                <th>操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                \r\n                    <tr>\r\n                      <td>1</td>\r\n                      <td>1001</td>\r\n                      <td>张三</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-info" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1001" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>2</td>\r\n                      <td>1002</td>\r\n                      <td>老二</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-info" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1002" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n            </tbody>\r\n        </table>  \r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n        </div>\r\n    </div>\r\n\r\n</body>\r\n\r\n\r\n<style> \r\n  .black_overlay{ \r\n      display: none; \r\n      position: absolute; \r\n      top: 0%; \r\n      left: 0%; \r\n      width: 100%; \r\n      height: 100%; \r\n      background-color: black; \r\n      z-index:1001; \r\n      -moz-opacity: 0.8; \r\n      opacity:.80; \r\n      filter: alpha(opacity=88); \r\n  } \r\n  .white_content { \r\n      display: none; \r\n      position: absolute; \r\n      top: 25%; \r\n      left: 25%; \r\n      width: 55%; \r\n      height: 55%; \r\n      padding: 20px; \r\n      border: 10px solid rgb(120, 196, 231); \r\n      border-radius: 20px;\r\n      background-color: white; \r\n      z-index:1002; \r\n      overflow: auto; \r\n  } \r\n</style> \r\n</html>' } }
+[2020-05-18T23:18:16.534] [INFO] response - { method: 'GET',
+  url: '/roles/rolelist',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2610' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>角色列表</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    角色列表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n\r\n \r\n\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>角色id</th>\r\n              <th>角色名</th>\r\n              <th>角色描述</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td>管理员</td>\r\n\r\n               <td>负责管理后台系统</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td>队长</td>\r\n\r\n               <td>负责管理队伍</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>3</td>\r\n\r\n               <td>队员</td>\r\n\r\n               <td>参与比赛活动</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=3" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=3" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T23:18:49.341] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4928' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default">\r\n        <div class="panel-heading">\r\n            <h3 class="panel-title">\r\n               管理员列表\r\n            </h3>\r\n        </div>\r\n        <div class="panel-body">          \r\n            <div class="clearfix" style="margin-bottom: 10px;">\r\n              </div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="account" class="control-label">账号</label>\r\n          <input type="text" class="form-control" id="account" value="" name="account">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="user_name" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="user_name" value="" name="userName">                 \r\n        </div>     \r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n       \r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>账号</th>\r\n                <th>姓名</th>\r\n                <th>性别</th>\r\n                <th>电话</th>\r\n                <th>状态</th>\r\n                <th>身份</th>\r\n                <th>操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                \r\n                    <tr>\r\n                      <td>1</td>\r\n                      <td>1001</td>\r\n                      <td>张三</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-info" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1001" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>2</td>\r\n                      <td>1002</td>\r\n                      <td>老二</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-info" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1002" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n            </tbody>\r\n        </table>  \r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n        </div>\r\n    </div>\r\n\r\n</body>\r\n\r\n\r\n<style> \r\n  .black_overlay{ \r\n      display: none; \r\n      position: absolute; \r\n      top: 0%; \r\n      left: 0%; \r\n      width: 100%; \r\n      height: 100%; \r\n      background-color: black; \r\n      z-index:1001; \r\n      -moz-opacity: 0.8; \r\n      opacity:.80; \r\n      filter: alpha(opacity=88); \r\n  } \r\n  .white_content { \r\n      display: none; \r\n      position: absolute; \r\n      top: 25%; \r\n      left: 25%; \r\n      width: 55%; \r\n      height: 55%; \r\n      padding: 20px; \r\n      border: 10px solid rgb(120, 196, 231); \r\n      border-radius: 20px;\r\n      background-color: white; \r\n      z-index:1002; \r\n      overflow: auto; \r\n  } \r\n</style> \r\n</html>' } }

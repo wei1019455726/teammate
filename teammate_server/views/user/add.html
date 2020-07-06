@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />
+
+    <!--引入Jq插件-->
+    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>
+
+    <title>增加用户</title>
+</head>
+
+<body>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        新增用户
+    </div>
+
+    <div class="message">消息提醒</div>
+
+    <div class="panel-body">
+        <div class="input-form">
+            <form action="/users/doAdd" class="form" method="post">
+
+                <ul>
+                    <li> 用户账号: <input type="text" name="account" /></li>
+
+                    <li> 用户密码: <input type="password" name="password"></li>
+
+                    <li> 用户姓名: <input type="text" name="user_name" /></li>
+
+                    <li> 用户性别:
+                         <select name="user_sex">
+                             <option value="1">男</option>
+                             <option value="2">女</option>
+                         </select>
+                    </li>
+
+                    <li> 联系方式: <input type="text" name="user_phone" /></li>
+                  
+
+                    <li> 用户角色:
+                        <%for(var i=0;i<roleResult.length;i++) {%>
+        
+                        <input type="radio" value="<%=roleResult[i].id%>" name="roleId">
+                        <%=roleResult[i].role_name%>
+                        
+                        <%}%>
+
+                        </li>
+                  
+
+                        <li>
+                            <br />
+                            <button type="submit" class="btn btn-default submit">提交</button>
+                        </li>
+
+                    </ul>
+
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+<script>
+     //消息提醒
+     function  fade(txt) {
+            $('.message').text(txt) //内容撑开
+            $('.message').animate({
+                top: 0
+            })
+            setTimeout(function () {
+                $('.message').animate({
+                    top: '-100%'
+                })
+            }, 1500)
+        }
+
+
+</script>
+
+     
+</body>
+
+</html>

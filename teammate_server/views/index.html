@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理系统</title>
+<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />
+<link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/javascripts/menu.js"></script>
+</head>
+
+<body>
+<div class="top"></div>
+<div id="header">
+	<div class="logo">后台管理</div>
+	<div class="navigation">
+		<ul>
+		 	<li>欢迎您！</li>
+			<li><%=userInfo.user_name%></li>
+			<li><a href="/logout">退出</a></li>
+		</ul>
+	</div>
+</div>
+<div id="content">
+	<div class="left_menu">
+		<ul id="nav_dot">
+
+	  <li>
+        <h4 class="M1"><span></span>用户管理</h4>
+        <div class="list-item none">
+            <a href='/users/userlist' target="iframe1">用户列表</a>
+        </div>
+        <div class="list-item none">
+            <a href='/users/add' target="iframe1">增加用户</a>
+        </div>        
+	  </li>
+     
+     
+      <li>
+        <h4 class="M2"><span></span>角色权限管理</h4>
+        <div class="list-item none">
+            <a href='/roles/rolelist' target="iframe1">角色列表</a>
+        </div>
+        <div class="list-item none">
+            <a href='/roles/add' target="iframe1">增加角色</a>
+        </div>
+    </li>
+    
+
+    <li>
+        <h4 class="M3"><span></span>比赛队伍管理</h4>
+        <div class="list-item none">
+            <a href='/activitys/activitylist' target="iframe1">比赛活动列表</a>
+        </div>       
+    </li>
+
+   
+
+    <li>
+        <h4 class="M5"><span></span>个人信息管理</h4>
+        <div class="list-item none">
+            <a href='/myself/myselflist' target="iframe1">个人审核表</a>
+        </div>
+        <div class="list-item none">
+            <a href='/myself/schedel' target="iframe1">日程表</a>
+        </div>
+        
+    </li>
+
+    <li>
+        <h4 class="M6"><span></span>比赛通告管理</h4>
+        <div class="list-item none">
+            <a href='/announces/announcelist' target="iframe1">比赛通告列表</a>
+        </div>
+        <div class="list-item none">
+            <a href='/announces/add' target="iframe1">增加比赛通告</a>
+        </div>
+    </li>
+
+    </ul>
+    </div>	
+    <div class="m-right">
+        <div class="main">
+            <iframe frameborder="0" name="iframe1" src="welcome"  scrolling="auto"  width="100%" height="100%">
+                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。
+            </iframe>
+        </div>
+</div>
+</div>
+<script>navList(12);</script>
+</body>
+

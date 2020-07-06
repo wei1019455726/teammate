@@ -1,0 +1,612 @@
+[2020-05-18T10:32:33.257] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2887' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>张三</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n      \n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>\n\t  </li>\n     \n      \n      <li>\n        <h4 class="M1"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n\n\n    <li>\n        <h4 class="M5"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/sum\' target="iframe1">比赛证明</a>\n        </div>\n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/schedel/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M3"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n\t</div>\t\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-18T10:32:35.164] [INFO] response - { method: 'GET',
+  url: '/roles/rolelist',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2664' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>角色列表</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    角色列表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n\r\n \r\n\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>角色id</th>\r\n              <th>角色名</th>\r\n              <th>角色描述</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td>管理员</td>\r\n\r\n               <td>负责管理后台系统</td>\r\n\r\n               <td>\r\n                 <!-- <a href="/roles/edit?id=1" class="btn btn-info">修改</a> -->\r\n                 <!-- <a href="/delete?model=role&id=1" class="btn btn-danger delete">删除</a> -->\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td>队长</td>\r\n\r\n               <td>负责管理队伍</td>\r\n\r\n               <td>\r\n                 <!-- <a href="/roles/edit?id=2" class="btn btn-info">修改</a> -->\r\n                 <!-- <a href="/delete?model=role&id=2" class="btn btn-danger delete">删除</a> -->\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>3</td>\r\n\r\n               <td>队员</td>\r\n\r\n               <td>参与比赛活动</td>\r\n\r\n               <td>\r\n                 <!-- <a href="/roles/edit?id=3" class="btn btn-info">修改</a> -->\r\n                 <!-- <a href="/delete?model=role&id=3" class="btn btn-danger delete">删除</a> -->\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T10:35:35.506] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2887' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>张三</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n      \n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>\n\t  </li>\n     \n      \n      <li>\n        <h4 class="M1"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n\n\n    <li>\n        <h4 class="M5"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/sum\' target="iframe1">比赛证明</a>\n        </div>\n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/schedel/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M3"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n\t</div>\t\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-18T10:35:39.025] [INFO] response - { method: 'GET',
+  url: '/roles/add',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1204' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    <title>增加角色</title>\r\n</head>\r\n\r\n<body>\r\n<div class="panel panel-default">\r\n    <div class="panel-heading">\r\n        新增角色\r\n    </div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/roles/doAdd" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 角色名称: <input type="text" name="role_name" /></li>\r\n\r\n\r\n                    <li> 角色描述: <textarea name="description" cols="60" rows="8"></textarea></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T11:22:31.607] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2887' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>张三</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n      \n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>\n\t  </li>\n     \n      \n      <li>\n        <h4 class="M1"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n\n\n    <li>\n        <h4 class="M5"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/sum\' target="iframe1">比赛证明</a>\n        </div>\n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/schedel/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M3"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n\t</div>\t\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-18T11:22:34.812] [INFO] response - { method: 'GET',
+  url: '/activitys/activitylist',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-18T11:23:47.472] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2887' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>张三</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n      \n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>\n\t  </li>\n     \n      \n      <li>\n        <h4 class="M1"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n\n\n    <li>\n        <h4 class="M5"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/sum\' target="iframe1">比赛证明</a>\n        </div>\n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/schedel/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M3"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n\t</div>\t\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-18T11:26:51.956] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2887' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>张三</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n      \n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>\n\t  </li>\n     \n      \n      <li>\n        <h4 class="M1"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n\n\n    <li>\n        <h4 class="M5"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/sum\' target="iframe1">比赛证明</a>\n        </div>\n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/schedel/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M3"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n\t</div>\t\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-18T11:27:43.907] [INFO] response - { method: 'GET',
+  url: '/activitys/activitylist',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2818' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>活动列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入分页插件-->\r\n    <script type="text/javascript" src="/javascripts/jqPaginator.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n    <div class="panel-heading">\r\n        活动列表\r\n    </div>\r\n\r\n\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="panel-body">\r\n            <form role="form" class="form-inline" method="GET" action="/activitys/activitylist">\r\n            <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                    <label for="name">输入关键词</label>\r\n                    <input type="text" class="form-control" value="" id="name" name="keyword" placeholder="请输入活动标题">\r\n                </div>\r\n        <div class="row templatemo-form-buttons">\r\n            <div class="col-md-2">\r\n                    <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n            </div>\r\n        </div>\r\n            </form>\r\n    </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n            <div class="table-responsive">\r\n                <table class="table table-striped table-hover table-bordered">\r\n                    <thead>\r\n                        <tr>\r\n                            <th>比赛id</th>\r\n                            <th>比赛标题</th>\r\n                            <th>比赛人数</th>\r\n                            <th>比赛负责人</th>\r\n                            <th>负责人电话</th>\r\n                            <th>发布时间</th>\r\n                            <th>开始时间</th>\r\n                            <th>结束时间</th>\r\n                            <th>比赛内容</th>\r\n                            <th>操作</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n\r\n                        \r\n\r\n           \r\n                    </tbody>\r\n        </table>\r\n\r\n        <div id="page" class="pagination pull-right"></div>\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n    <script>\r\n\r\n      \r\n\r\n    </script>\r\n\r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T13:24:36.631] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 78,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1252' },
+     body:
+      '<!DOCTYPE html>\n<head>\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n\t<title>登录</title>\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \n</head>\n<body>\n\t<div class="container">\n\t\t<section id="content">\n\t\t\t<form action="/checkLogin" method="post">\n\t\t\t\t<h1>登录</h1>\n\t\t\t\t<div>\n\t\t\t\t\t<input type="text" placeholder="账号" required="" id="account" name="account"/>\n\t\t\t\t</div>\n\t\t\t\t<div>\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\n\t\t\t\t</div>\n\n\t\t\t\t<div> <input placeholder="验证码" id="verify" type="text" name="code">\n\t\t\t\t\t<img id="verify_img" src="/verify" title="看不清？点击刷新"  style="position: relative;top: 15px;"\n\t\t\t\t\t\tonclick="javascript:this.src=\'/verify?mt=\'+Math.random()">\n\t\t\t\t</div>\n\n\t\t\t\t<div class="">\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\n\t\t\t\t</div>\n\n\t\t\t\t<div>\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\n\t\t\t\t</div>\n\t\t\t</form><!-- form -->\n\n\t\t</section><!-- content -->\n\t</div>\n\t<!-- container -->\n</body>\n</html>' } }
+[2020-05-18T13:24:36.761] [INFO] response - { method: 'GET',
+  url: '/verify',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'image/svg+xml',
+        'content-length': '8969' },
+     body:
+      '<svg xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0,0,100,40"><rect width="100%" height="100%" fill="#cc9966"/><path fill="#32292f" d="M32.34 14.79L32.41 14.86L32.38 14.83Q33.39 18.83 33.53 21.69L33.56 21.72L33.41 21.57Q33.91 21.66 37.82 21.76L37.76 21.70L37.82 21.77Q40.05 21.75 40.39 18.66L40.39 18.65L40.40 18.67Q40.72 17.25 39.90 16.44L39.81 16.35L39.77 16.30Q38.75 15.62 36.98 15.48L37.00 15.51L36.95 15.46Q34.05 15.24 32.39 14.83ZM33.57 23.36L33.64 23.43L33.67 23.46Q33.70 28.69 32.10 33.99L32.20 34.10L32.10 33.99Q31.09 34.38 28.78 35.29L28.72 35.24L28.72 35.24Q31.17 29.35 30.86 22.69L31.00 22.83L31.01 22.84Q30.67 16.22 27.72 10.40L27.73 10.41L27.65 10.34Q32.01 12.86 38.23 12.86L38.21 12.84L38.30 12.93Q43.27 12.87 43.51 16.04L43.63 16.16L43.52 16.04Q43.55 16.55 43.48 17.09L43.62 17.24L43.52 18.21L43.60 18.29Q42.85 21.79 40.94 23.32L40.86 23.24L40.81 23.19Q40.19 23.89 39.27 23.89L39.25 23.87L36.81 23.75L36.82 23.75Q41.95 30.35 45.99 34.42L45.92 34.35L46.01 34.44Q44.00 33.73 41.39 33.42L41.46 33.49L41.34 33.38Q37.94 29.80 33.55 23.35ZM41.23 33.71L41.19 33.67L41.54 33.75L42.70 34.91L42.68 34.88Q43.23 35.40 43.81 35.94L43.76 35.90L43.69 35.83Q46.85 36.37 50.04 38.03L50.14 38.13L50.03 38.02Q43.91 32.07 39.08 25.88L39.18 25.98L40.60 25.83L40.56 25.80Q43.38 25.86 44.57 21.82L44.57 21.82L44.59 21.84Q45.11 19.78 45.11 17.36L45.22 17.47L45.18 17.43Q45.26 15.48 43.73 14.90L43.70 14.86L43.57 14.74Q43.53 14.46 43.02 13.85L43.00 13.83L42.96 13.79Q41.64 12.66 38.37 12.60L38.37 12.59L38.25 12.47Q31.25 12.38 27.07 9.69L27.07 9.69L27.01 9.63Q30.45 15.82 30.75 22.68L30.73 22.67L30.71 22.64Q31.09 29.82 28.31 35.94L28.30 35.93L28.25 35.88Q29.39 35.39 30.10 35.12L30.02 35.04L29.23 37.18L29.18 37.12Q31.67 36.25 34.05 35.81L34.06 35.82L34.02 35.78Q35.20 31.25 35.37 26.59L35.23 26.45L35.35 26.56Q38.40 30.91 41.22 33.70ZM40.15 17.74L40.19 17.77L40.04 17.63Q40.10 17.90 40.10 18.20L40.16 18.26L40.10 18.71L40.19 18.80Q40.13 19.73 39.52 20.58L39.53 20.59L39.57 20.63Q39.07 21.35 38.26 21.52L38.21 21.47L38.28 21.54Q37.98 21.48 36.55 21.52L36.50 21.46L36.66 21.62Q36.07 21.57 35.32 21.47L35.40 21.56L35.32 21.48Q35.20 20.10 34.90 17.38L35.00 17.48L34.81 17.29Q36.13 17.53 36.74 17.53L36.69 17.47L36.69 17.48Q38.39 17.55 40.13 17.72Z"/><path fill="#4a4744" d="M16.22 23.18L16.17 23.13L16.22 23.18Q13.65 23.13 12.97 25.13L13.04 25.20L13.16 25.32Q12.85 25.86 12.75 26.44L12.80 26.49L12.81 26.50Q15.02 26.57 16.48 26.57L16.46 26.55L16.47 26.56Q18.08 26.70 20.39 26.60L20.35 26.57L20.42 26.63Q20.17 24.96 18.92 24.01L19.07 24.16L19.05 24.14Q17.83 23.19 16.23 23.19ZM16.26 34.37L16.42 34.53L16.25 34.36Q12.66 34.54 11.50 33.28L11.31 33.09L11.46 33.24Q10.65 31.98 10.51 29.06L10.38 28.93L10.34 28.89Q10.46 28.80 10.39 27.58L10.45 27.64L10.43 27.63Q10.25 25.50 10.25 24.86L10.27 24.88L10.21 24.82Q10.23 23.17 10.87 22.18L10.78 22.10L10.78 22.09Q12.16 20.96 14.82 20.96L14.85 21.00L16.09 20.84L16.15 20.90Q18.03 20.95 19.39 21.22L19.36 21.19L19.45 21.27Q21.13 21.53 22.02 22.62L22.17 22.77L22.06 22.66Q22.69 23.71 22.76 25.57L22.76 25.57L22.74 25.55Q22.77 26.60 22.81 28.54L22.77 28.51L22.65 28.38Q20.08 28.40 17.60 28.40L17.78 28.58L12.67 28.47L12.65 28.45Q12.79 32.39 16.42 32.19L16.57 32.34L16.46 32.23Q19.78 32.01 20.87 30.38L21.01 30.52L20.99 30.50Q21.61 30.82 23.04 31.87L23.23 32.06L23.13 31.96Q21.98 34.18 18.28 34.42L18.24 34.38L18.27 34.41Q17.49 34.30 16.26 34.37ZM18.50 36.64L18.35 36.50L18.46 36.60Q19.43 36.55 20.52 36.62L20.46 36.56L20.49 36.60Q24.83 36.65 25.64 34.17L25.67 34.20L25.69 34.21Q24.21 33.08 23.23 32.40L23.28 32.45L23.30 32.47Q23.42 32.08 23.59 31.87L23.52 31.80L23.67 31.96Q22.97 31.49 21.75 30.64L21.68 30.57L21.71 30.60Q22.79 30.77 24.62 31.04L24.63 31.04L24.59 31.01Q24.34 29.70 24.27 29.09L24.42 29.24L24.26 27.48L24.12 27.34Q24.02 25.27 23.44 23.95L23.53 24.03L23.48 23.99Q23.17 23.60 22.66 23.06L22.72 23.12L22.68 23.08Q22.62 22.89 22.42 22.38L22.42 22.38L22.41 22.36Q20.66 20.48 16.14 20.48L16.18 20.52L14.58 20.42L14.66 20.50Q11.79 20.52 10.50 21.84L10.49 21.83L10.51 21.85Q9.93 22.87 9.96 24.71L9.83 24.57L9.82 24.56Q10.04 25.60 10.14 27.61L10.02 27.48L10.15 27.61Q10.18 29.00 10.28 30.84L10.27 30.83L10.22 30.78Q10.58 32.90 11.36 33.85L11.25 33.75L11.26 33.76Q11.39 33.89 11.56 33.99L11.67 34.09L11.86 34.59L11.90 34.63Q12.57 36.26 18.45 36.60ZM16.57 31.96L16.59 31.98L16.43 31.82Q15.41 31.93 14.60 31.52L14.66 31.58L14.73 31.64Q14.58 31.19 14.41 30.58L14.42 30.59L14.49 30.66Q15.98 30.55 17.41 30.55L17.35 30.49L17.36 30.51Q18.76 30.41 20.26 30.51L20.30 30.56L20.30 30.56Q19.11 31.71 16.42 31.81ZM18.03 25.39L17.90 25.26L18.01 25.38Q18.56 25.38 19.75 25.72L19.75 25.72L19.82 25.96L19.84 26.16L19.99 26.30Q18.71 26.35 17.89 26.31L17.80 26.23L17.94 26.37Q15.74 26.17 15.70 26.17L15.80 26.26L15.72 26.18Q16.55 25.51 18.04 25.41Z"/><path fill="#393940" d="M77.47 24.30L77.55 24.38L77.47 24.30Q75.18 24.15 73.99 25.24L74.06 25.32L74.09 25.34Q72.87 26.40 73.15 28.65L73.09 28.59L73.26 28.76Q73.46 30.93 74.55 32.05L74.55 32.06L74.61 32.11Q75.49 33.23 77.39 33.16L77.48 33.26L77.45 33.23Q77.92 33.19 78.09 33.19L77.96 33.05L78.01 33.11Q81.19 32.58 81.30 28.47L81.40 28.57L81.24 28.42Q81.39 26.39 80.78 25.68L80.85 25.75L80.74 25.64Q79.76 24.45 77.48 24.32ZM80.59 34.94L80.55 34.89L80.59 34.93Q79.31 35.36 77.92 35.29L77.85 35.22L77.86 35.23Q74.52 35.50 73.37 33.19L73.34 33.16L73.33 33.15Q73.13 37.87 71.94 41.68L71.99 41.74L71.98 41.72Q70.47 42.25 69.01 42.90L69.05 42.94L68.89 42.78Q71.16 37.43 70.92 31.21L70.98 31.27L70.98 31.28Q70.70 25.11 68.12 19.71L68.20 19.80L68.30 19.90Q69.92 20.83 71.45 21.24L71.43 21.22L71.93 22.57L71.96 22.60Q71.96 22.81 72.20 23.79L72.19 23.78L72.33 23.92Q73.20 22.04 76.40 21.87L76.31 21.79L76.44 21.91Q77.12 21.77 77.90 21.77L77.85 21.73L78.28 21.71L78.35 21.78Q78.41 21.74 78.58 21.78L78.57 21.76L78.96 21.88L78.82 21.75Q80.81 22.13 81.45 22.34L81.35 22.23L81.36 22.25Q82.81 22.78 83.59 23.63L83.43 23.47L83.60 23.64Q84.34 24.69 84.31 25.94L84.29 25.93L84.33 25.96Q84.27 28.46 83.56 30.84L83.52 30.80L83.57 30.85Q82.69 34.01 80.58 34.92ZM84.40 35.48L84.27 35.32L84.28 35.33Q85.39 33.69 85.66 30.02L85.52 29.87L85.50 29.86Q85.63 28.28 85.63 27.16L85.71 27.24L85.67 27.20Q85.82 25.99 85.14 24.73L85.14 24.74L84.98 24.58Q84.65 24.21 84.21 23.87L84.23 23.89L84.01 23.57L83.82 23.28L83.81 23.17L83.88 23.24Q82.33 21.41 78.45 21.41L78.43 21.39L77.93 21.43L78.00 21.51Q73.76 21.41 72.30 22.84L72.41 22.95L72.24 22.78Q72.12 22.35 71.98 21.91L71.92 21.85L71.84 21.05L71.86 21.07Q69.64 20.52 67.67 19.19L67.57 19.10L67.59 19.12Q70.42 24.67 70.70 31.13L70.66 31.09L70.70 31.13Q70.92 37.57 68.37 43.35L68.46 43.44L70.28 42.71L70.23 42.66Q69.91 43.23 69.30 44.62L69.45 44.77L69.30 44.62Q71.87 43.83 73.94 43.52L73.81 43.39L73.97 43.54Q74.84 39.11 74.98 35.78L75.08 35.89L75.10 35.91Q76.34 37.21 79.57 37.42L79.53 37.37L79.43 37.28Q83.11 37.66 84.41 35.49L84.22 35.31ZM79.17 26.31L79.19 26.33L79.19 26.33Q79.90 26.40 80.89 26.71L80.84 26.65L80.86 26.68Q80.96 27.42 80.93 28.48L81.10 28.64L81.06 28.61Q80.93 29.29 80.76 29.87L80.90 30.01L80.77 29.88Q80.24 32.58 77.99 32.85L77.96 32.82L78.09 32.84L78.13 32.89Q78.07 32.89 77.96 32.92L77.90 32.86L77.36 32.80L77.42 32.85Q76.35 32.83 75.46 32.39L75.56 32.49L75.11 30.51L75.15 30.55Q75.07 28.53 76.23 27.61L76.23 27.62L76.25 27.64Q77.04 26.56 79.18 26.32Z"/><path d="M4 5 C60 29,32 14,98 31" stroke="#d6b246" fill="none"/><path fill="#524145" d="M57.06 24.89L57.00 24.82L57.05 24.88Q53.89 30.48 50.83 34.02L50.92 34.11L50.75 33.94Q49.17 34.40 46.99 35.18L46.95 35.14L46.93 35.12Q51.46 30.26 55.70 22.75L55.62 22.66L55.65 22.70Q51.44 16.38 46.10 10.67L46.21 10.77L46.27 10.83Q48.81 11.84 50.85 12.29L50.82 12.26L50.90 12.34Q54.93 16.88 57.11 20.42L57.26 20.57L57.07 20.38Q59.51 16.63 63.01 12.69L62.86 12.54L62.93 12.61Q64.26 12.24 67.12 11.56L67.20 11.64L67.22 11.67Q61.69 17.31 58.59 22.62L58.60 22.62L58.75 22.77Q63.33 30.47 67.23 34.55L67.19 34.51L67.13 34.45Q64.81 33.72 62.94 33.52L63.00 33.58L63.11 33.69Q60.49 30.90 56.99 24.81ZM62.86 33.81L63.05 34.00L63.03 33.99Q63.25 33.97 63.66 34.07L63.57 33.98L63.68 34.09Q64.37 34.74 65.73 36.17L65.67 36.12L65.70 36.14Q68.70 36.87 71.42 38.09L71.40 38.07L71.44 38.11Q64.96 32.11 60.41 24.30L60.44 24.32L60.40 24.29Q63.76 18.37 69.03 12.25L69.08 12.30L69.05 12.27Q67.84 12.93 65.90 13.40L65.92 13.42L65.95 13.45Q66.59 12.49 68.15 10.89L68.18 10.93L68.21 10.95Q66.08 11.74 62.78 12.25L62.70 12.17L62.68 12.15Q59.81 15.74 57.50 19.58L57.32 19.40L57.37 19.45Q56.52 17.99 55.46 16.66L55.59 16.79L53.54 14.16L53.12 14.08L53.12 14.08Q53.12 14.21 52.91 14.15L52.86 14.09L52.80 14.03Q52.19 13.29 50.86 11.89L50.84 11.87L50.81 11.84Q47.51 11.16 45.20 9.93L45.07 9.81L45.15 9.88Q51.26 16.47 55.34 22.76L55.27 22.69L55.22 22.64Q51.32 30.06 46.19 35.94L46.12 35.87L46.06 35.81Q47.22 35.21 49.13 34.70L49.18 34.75L48.00 36.02L48.06 36.08Q48.16 36.17 46.97 37.36L46.86 37.26L46.81 37.21Q49.54 36.30 52.36 35.86L52.47 35.97L52.31 35.80Q56.03 31.92 58.34 27.67L58.33 27.65L58.28 27.60Q60.48 31.30 62.90 33.85Z"/></svg>' } }
+[2020-05-18T13:24:36.771] [INFO] response - { method: 'GET',
+  url: '/verify',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'image/svg+xml',
+        'content-length': '9821' },
+     body:
+      '<svg xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0,0,100,40"><rect width="100%" height="100%" fill="#cc9966"/><path fill="#4e5451" d="M53.35 27.36L53.33 27.34L53.40 27.42Q53.19 29.86 52.14 34.01L52.26 34.12L52.24 34.11Q50.56 34.50 49.13 35.21L49.17 35.25L49.08 35.17Q51.51 28.99 51.28 22.37L51.38 22.47L51.20 22.30Q51.05 15.79 48.30 9.77L48.23 9.70L48.27 9.74Q49.98 10.84 51.65 11.35L51.67 11.38L51.63 11.33Q53.68 17.70 53.68 23.65L53.66 23.63L53.66 23.63Q53.51 24.77 53.44 26.10L53.60 26.26L53.46 26.11Q54.56 25.11 59.21 20.69L59.30 20.78L59.28 20.75Q60.21 20.70 61.10 20.63L61.09 20.63L62.95 20.48L62.99 20.52Q60.04 23.08 56.20 26.44L56.27 26.51L56.30 26.54Q59.20 28.90 64.98 34.10L65.07 34.19L65.03 34.15Q62.62 33.37 59.97 33.20L59.92 33.15L59.93 33.16Q57.82 31.43 53.47 27.49ZM62.15 35.52L62.29 35.66L62.24 35.61Q66.52 36.42 69.31 38.16L69.29 38.14L69.26 38.11Q68.15 36.90 65.81 34.76L65.82 34.76L65.76 34.71Q65.98 34.79 66.22 34.90L66.37 35.05L66.19 34.86Q64.34 33.08 62.33 31.38L62.46 31.51L58.54 28.07L58.52 28.05Q62.87 24.21 65.05 21.63L65.07 21.65L65.14 21.72Q64.01 21.75 61.80 21.98L61.67 21.85L61.83 22.01Q63.26 20.72 63.87 19.97L63.89 19.99L63.87 19.98Q61.36 20.38 59.15 20.38L59.18 20.41L59.13 20.36Q57.82 21.47 55.38 23.85L55.37 23.85L55.36 23.83Q55.31 18.62 54.43 13.42L54.44 13.43L54.48 13.47Q53.81 13.28 52.49 13.04L52.64 13.19L52.52 13.07Q52.43 12.47 52.02 11.15L51.94 11.07L52.05 11.18Q49.73 10.49 47.72 9.09L47.58 8.95L47.62 8.99Q50.80 15.19 51.11 22.43L51.06 22.38L50.92 22.25Q51.31 29.41 48.63 35.87L48.70 35.94L48.56 35.79Q49.21 35.56 50.40 34.99L50.35 34.94L50.36 34.95Q50.18 35.72 49.61 37.01L49.71 37.12L49.67 37.08Q52.09 36.00 53.99 35.66L54.15 35.81L54.02 35.68Q54.54 33.45 54.98 29.64L55.09 29.75L55.11 29.77Q57.39 31.74 62.25 35.62Z"/><path fill="#3b3436" d="M16.89 23.62L16.96 23.70L17.02 23.76Q15.26 23.53 14.16 24.80L14.14 24.79L14.19 24.84Q13.15 26.18 12.98 27.88L12.94 27.84L12.92 27.82Q12.77 29.71 13.74 30.58L13.61 30.45L13.64 30.47Q14.74 31.47 16.61 31.37L16.42 31.19L16.48 31.24Q18.34 31.09 19.32 30.48L19.37 30.53L19.32 30.47Q20.42 29.58 20.42 28.18L20.34 28.10L20.47 28.23Q20.38 27.79 20.31 27.46L20.32 27.47L20.23 27.38Q20.49 26.07 19.50 24.86L19.47 24.83L19.41 24.77Q18.48 23.62 16.98 23.72ZM16.64 33.68L16.64 33.68L16.63 33.67Q12.60 33.55 11.35 32.87L11.34 32.87L11.48 33.01Q10.43 32.19 10.26 30.66L10.30 30.70L10.36 30.76Q10.25 30.08 10.29 29.43L10.23 29.38L10.33 29.48Q10.46 28.62 10.46 28.21L10.43 28.18L10.36 28.11Q10.91 25.70 11.04 25.09L10.94 24.99L11.00 25.05Q11.36 23.27 12.11 22.01L12.08 21.98L12.05 21.96Q14.56 18.17 19.86 12.50L19.84 12.48L19.73 12.37Q22.20 12.19 24.18 11.47L24.12 11.41L24.07 11.37Q18.06 18.13 15.20 21.91L15.22 21.93L15.07 21.77Q16.04 21.42 17.20 21.42L17.28 21.51L17.27 21.50Q20.23 21.50 21.59 23.23L21.50 23.15L21.50 23.14Q22.71 24.63 23.02 27.79L23.04 27.81L23.06 27.83Q23.06 28.40 23.06 28.95L23.04 28.93L23.17 29.06Q23.03 31.71 21.06 32.66L21.07 32.67L21.09 32.69Q20.04 33.27 16.57 33.61ZM18.61 35.75L18.52 35.66L18.65 35.79Q19.76 35.71 21.53 35.78L21.61 35.86L21.58 35.84Q22.97 35.82 24.36 35.18L24.33 35.15L24.45 35.27Q25.26 34.38 25.26 32.78L25.33 32.85L25.37 32.89Q25.26 32.34 25.11 31.46L25.12 31.47L25.20 31.55Q25.13 30.74 25.13 30.34L25.15 30.36L24.96 30.17Q24.23 26.01 22.80 24.31L22.78 24.28L22.95 24.45Q22.79 24.26 22.65 24.06L22.65 24.06L22.46 23.93L22.39 23.90L22.31 23.82Q21.90 23.27 21.35 22.42L21.46 22.53L21.45 22.51Q20.66 21.69 18.89 21.28L18.86 21.24L18.90 21.29Q19.87 19.74 22.52 16.45L22.70 16.63L26.32 11.75L26.31 11.74Q24.98 12.58 22.84 13.26L22.82 13.25L22.77 13.19Q23.68 12.40 25.28 10.64L25.28 10.64L25.27 10.63Q23.14 11.59 19.67 12.10L19.58 12.01L19.69 12.12Q14.57 17.37 11.92 21.78L11.93 21.80L11.95 21.82Q10.58 24.05 10.07 29.62L10.00 29.55L10.09 29.64Q9.93 30.06 10.00 30.91L9.97 30.89L10.00 30.91Q10.16 32.57 11.15 33.39L11.14 33.38L11.11 33.35Q11.49 33.52 11.45 33.56L11.40 33.50L11.37 33.48Q11.64 34.22 12.35 34.59L12.36 34.60L12.43 34.67Q13.65 35.21 15.39 35.38L15.43 35.43L15.39 35.39Q15.46 35.46 18.59 35.73ZM18.47 25.79L18.41 25.72L18.47 25.78Q18.88 25.58 19.72 26.02L19.71 26.01L19.69 25.99Q20.06 26.91 20.06 27.48L20.10 27.52L20.11 27.53Q20.25 29.16 19.40 30.05L19.36 30.01L19.46 30.10Q18.37 30.62 16.50 30.89L16.57 30.96L16.50 30.89Q15.28 30.96 14.81 30.72L14.81 30.72L14.80 30.71Q14.60 30.28 14.60 30.01L14.70 30.10L14.61 30.02Q14.35 27.04 16.97 25.88L17.00 25.92L16.94 25.86Q17.71 25.64 18.39 25.71Z"/><path d="M3 9 C43 4,39 30,87 36" stroke="#e55ba0" fill="none"/><path fill="#554b48" d="M75.85 23.79L75.85 23.79L75.90 23.83Q74.22 23.82 73.13 25.01L73.08 24.96L73.14 25.02Q71.89 26.05 71.76 27.75L71.86 27.86L71.87 27.86Q71.64 29.70 72.72 30.60L72.81 30.69L72.83 30.71Q73.92 31.61 75.82 31.54L75.70 31.42L75.66 31.38Q77.74 31.25 78.59 30.40L78.59 30.41L78.72 30.53Q79.54 29.15 79.44 27.52L79.49 27.56L79.51 27.58Q79.38 25.89 78.41 24.82L78.49 24.90L78.49 24.90Q77.38 23.69 75.75 23.69ZM75.84 15.38L75.69 15.23L75.71 15.26Q74.55 15.25 73.36 15.69L73.39 15.72L73.41 15.74Q72.16 16.36 72.37 18.03L72.27 17.93L72.46 18.12Q72.89 21.44 75.88 21.44L75.75 21.31L75.70 21.26Q77.26 21.59 78.14 20.57L78.17 20.61L77.99 20.42Q79.00 19.52 79.03 18.13L79.09 18.19L79.08 18.18Q79.00 16.47 78.35 15.92L78.40 15.97L78.37 15.94Q76.83 15.15 75.67 15.22ZM75.46 33.60L75.47 33.60L72.80 33.66L72.72 33.57Q71.38 33.59 70.19 32.81L70.30 32.92L70.18 32.80Q69.00 31.83 69.14 29.28L69.25 29.39L69.15 29.30Q69.53 23.15 72.76 22.27L72.80 22.30L72.91 22.41Q70.68 21.41 69.49 16.61L69.54 16.66L69.59 16.71Q69.34 15.51 69.41 14.80L69.33 14.72L69.36 14.75Q69.70 12.92 73.00 12.88L72.92 12.80L72.88 12.77Q76.78 12.82 78.07 12.99L78.04 12.96L78.07 12.99Q81.33 13.30 81.74 15.10L81.83 15.19L81.84 15.20Q81.99 15.79 81.99 16.13L82.00 16.14L81.88 16.02Q81.90 16.66 81.73 17.20L81.83 17.29L81.75 17.21Q81.18 20.96 78.57 22.32L78.66 22.42L78.52 22.28Q81.71 23.05 82.15 27.78L82.24 27.86L82.24 27.87Q82.25 28.01 82.28 29.16L82.25 29.13L82.11 28.99Q82.27 31.54 80.84 32.49L80.91 32.56L80.85 32.50Q79.56 33.21 75.48 33.62ZM77.47 35.64L77.64 35.81L80.52 35.77L80.58 35.83Q82.08 35.87 83.44 35.22L83.48 35.26L83.37 35.15Q84.46 34.57 84.53 32.91L84.49 32.87L84.49 32.87Q84.55 31.91 84.21 30.18L84.26 30.23L84.14 30.10Q83.40 26.04 81.53 24.37L81.59 24.43L81.42 24.09L81.25 23.86L81.01 23.51L81.10 23.60Q82.46 22.27 83.27 18.57L83.38 18.68L83.30 18.59Q83.34 18.29 83.41 17.54L83.41 17.55L83.43 17.57Q83.55 17.01 83.49 16.47L83.51 16.49L83.41 16.39Q83.26 15.08 82.20 14.64L82.21 14.65L82.21 14.62L82.16 14.63L82.08 14.55Q81.85 13.92 80.80 13.20L80.84 13.25L80.76 13.14L80.74 13.11Q79.13 12.65 75.49 12.48L75.41 12.40L75.46 12.46Q73.97 12.26 72.75 12.36L72.74 12.35L72.84 12.45Q72.06 12.42 70.91 12.56L70.92 12.57L71.02 12.67Q69.16 12.89 68.96 14.35L68.93 14.32L69.04 14.43Q68.93 14.79 68.96 15.51L69.01 15.56L68.91 15.46Q69.13 16.05 69.64 18.16L69.56 18.08L69.60 18.11Q70.29 20.98 71.85 22.17L71.83 22.15L71.92 22.24L71.99 22.30Q69.52 23.48 69.04 28.10L69.07 28.12L68.97 28.02Q68.81 30.00 68.81 30.82L68.88 30.90L68.92 30.93Q68.84 32.38 69.90 33.20L69.88 33.19L70.04 33.34Q70.01 33.28 70.25 33.45L70.20 33.40L70.24 33.44Q71.22 35.54 77.57 35.74ZM77.20 25.78L77.20 25.78L77.33 25.92Q78.07 25.77 78.85 26.18L78.89 26.22L78.82 26.15Q79.21 27.08 79.17 27.55L79.25 27.63L79.15 27.53Q79.14 27.76 79.14 28.03L79.24 28.13L79.15 28.05Q79.17 30.17 77.13 30.92L77.17 30.96L77.24 31.02Q76.54 31.31 75.82 31.21L75.77 31.15L75.70 31.08Q74.73 31.20 73.71 30.79L73.76 30.85L73.80 30.89Q73.43 30.18 73.50 29.29L73.57 29.36L73.50 29.29Q73.60 27.83 74.68 26.74L74.74 26.81L74.84 26.91Q75.93 25.84 77.35 25.94ZM77.53 17.45L77.56 17.48L77.56 17.48Q78.19 17.29 78.67 17.43L78.57 17.33L78.62 18.10L78.68 18.15Q78.59 19.33 77.78 20.23L77.79 20.23L77.82 20.27Q76.93 21.09 75.70 20.92L75.76 20.98L75.83 21.05Q74.99 21.09 74.61 20.89L74.50 20.77L74.50 20.77Q74.60 20.67 74.50 20.06L74.42 19.98L74.44 20.00Q74.15 18.69 75.24 17.94L75.34 18.04L75.27 17.98Q76.11 17.25 77.37 17.29Z"/><path fill="#443d3b" d="M37.41 34.68L37.30 34.57L37.29 34.56Q34.74 34.73 33.62 34.25L33.61 34.25L33.54 34.18Q31.94 33.59 32.01 31.38L31.94 31.31L31.98 31.36Q32.16 28.37 32.16 28.88L32.14 28.86L32.19 28.91Q32.11 24.08 29.56 19.76L29.65 19.85L29.57 19.76Q31.36 20.64 33.13 20.98L33.08 20.94L33.07 20.93Q34.69 25.12 34.59 29.14L34.55 29.10L34.48 29.03Q34.46 30.48 35.21 31.56L35.18 31.54L35.19 31.54Q35.92 32.64 37.28 32.47L37.27 32.47L37.68 32.43L37.65 32.41Q38.79 32.28 39.52 31.60L39.51 31.60L39.50 31.58Q40.40 31.07 40.40 30.22L40.28 30.10L40.36 30.19Q40.36 29.98 40.32 29.81L40.23 29.72L40.21 29.70Q40.18 25.04 41.20 21.16L41.18 21.14L41.21 21.18Q42.24 21.22 43.12 21.02L43.00 20.90L44.75 20.40L44.80 20.45Q42.48 24.90 42.76 29.86L42.91 30.02L42.85 29.95Q42.94 32.63 41.41 33.65L41.43 33.67L41.38 33.62Q40.28 34.45 37.32 34.59ZM39.42 36.75L39.52 36.85L39.43 36.76Q42.58 36.96 44.22 36.28L44.18 36.24L44.19 36.25Q44.89 35.47 44.89 34.21L45.02 34.34L44.94 34.26Q45.06 33.56 44.82 32.17L44.67 32.01L44.74 32.08Q44.38 29.34 44.72 26.66L44.65 26.59L44.69 26.62Q45.08 23.85 46.33 21.41L46.22 21.29L46.21 21.28Q45.63 21.55 44.44 21.92L44.40 21.89L44.42 21.91Q44.77 21.51 45.04 21.00L44.88 20.84L45.51 19.94L45.52 19.95Q43.75 20.49 40.93 20.93L40.88 20.89L40.89 20.89Q39.92 25.29 40.05 29.85L39.92 29.71L39.96 29.76Q40.13 31.72 37.75 32.17L37.72 32.13L37.33 32.15L37.30 32.26L36.35 32.02L36.32 31.99Q36.27 31.23 36.30 30.79L36.21 30.69L36.21 30.70Q36.55 26.81 35.93 22.87L35.90 22.84L34.86 22.61L34.96 22.71Q34.38 22.57 33.91 22.47L34.00 22.57L33.93 22.50Q33.65 21.30 33.42 20.62L33.42 20.63L33.32 20.53Q30.93 20.24 28.92 19.09L28.94 19.10L28.84 19.01Q30.80 22.19 31.45 25.22L31.44 25.21L31.53 25.29Q31.96 27.25 31.82 30.38L31.83 30.39L31.79 30.35Q31.75 30.42 31.69 31.40L31.79 31.51L31.66 31.38Q31.58 33.54 32.81 34.39L32.83 34.41L32.81 34.39Q33.14 36.39 39.40 36.73Z"/></svg>' } }
+[2020-05-18T13:24:48.049] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { account: '1002', password: '123456', code: 'erxp' },
+  costTime: 34,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1252' },
+     body:
+      '<!DOCTYPE html>\n<head>\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n\t<title>登录</title>\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \n</head>\n<body>\n\t<div class="container">\n\t\t<section id="content">\n\t\t\t<form action="/checkLogin" method="post">\n\t\t\t\t<h1>登录</h1>\n\t\t\t\t<div>\n\t\t\t\t\t<input type="text" placeholder="账号" required="" id="account" name="account"/>\n\t\t\t\t</div>\n\t\t\t\t<div>\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\n\t\t\t\t</div>\n\n\t\t\t\t<div> <input placeholder="验证码" id="verify" type="text" name="code">\n\t\t\t\t\t<img id="verify_img" src="/verify" title="看不清？点击刷新"  style="position: relative;top: 15px;"\n\t\t\t\t\t\tonclick="javascript:this.src=\'/verify?mt=\'+Math.random()">\n\t\t\t\t</div>\n\n\t\t\t\t<div class="">\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\n\t\t\t\t</div>\n\n\t\t\t\t<div>\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\n\t\t\t\t</div>\n\t\t\t</form><!-- form -->\n\n\t\t</section><!-- content -->\n\t</div>\n\t<!-- container -->\n</body>\n</html>' } }
+[2020-05-18T13:25:03.352] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { account: '1001', password: '123456', code: '6uk8' },
+  costTime: 9,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-05-18T13:25:03.363] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2887' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>张三</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n      \n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>\n\t  </li>\n     \n      \n      <li>\n        <h4 class="M1"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n\n\n    <li>\n        <h4 class="M5"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/sum\' target="iframe1">比赛证明</a>\n        </div>\n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/schedel/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M3"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n\t</div>\t\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-18T13:31:37.063] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2887' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>张三</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n      \n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>\n\t  </li>\n     \n      \n      <li>\n        <h4 class="M1"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n\n\n    <li>\n        <h4 class="M5"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/sum\' target="iframe1">比赛证明</a>\n        </div>\n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/schedel/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M3"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n\t</div>\t\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-18T13:33:32.409] [INFO] response - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2718' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>通告列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            通告列表\r\n        </div>\r\n\r\n\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="panel-body">\r\n                <form role="form" class="form-inline" method="GET" action="/announces/announcelist">\r\n                    <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                        <label for="name">输入通告标题</label>\r\n                        <input type="text" class="form-control" id="name" name="keyword"\r\n                            placeholder="请输入通告标题">\r\n                    </div>\r\n                    <div class="row templatemo-form-buttons">\r\n                        <div class="col-md-2">\r\n                            <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n                        </div>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="col-md-10 col-md-offset-1">\r\n                <div class="table-responsive">\r\n                    <table class="table table-striped table-hover table-bordered">\r\n                        <thead>\r\n                            <tr>\r\n                                <th>通告id</th>\r\n                                <th>通告标题</th>\r\n                                <th>通告内容</th>\r\n                                <th>发布人姓名</th>\r\n                                <th>发布人电话</th>\r\n                                <th>通告时间</th>\r\n                                <th>操作</th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                         \r\n                            \r\n\r\n                        </tbody>\r\n        </table>\r\n\r\n\r\n        \r\n        \r\n       \r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T13:34:42.953] [INFO] response - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2766' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>比赛通告列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            比赛通告列表\r\n        </div>\r\n\r\n\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="panel-body">\r\n                <form role="form" class="form-inline" method="GET" action="/announces/announcelist">\r\n                    <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                        <label for="name">输入比赛标题</label>\r\n                        <input type="text" class="form-control" id="name" name="keyword"\r\n                            placeholder="请输入比赛标题">\r\n                    </div>\r\n                    <div class="row templatemo-form-buttons">\r\n                        <div class="col-md-2">\r\n                            <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n                        </div>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="col-md-10 col-md-offset-1">\r\n                <div class="table-responsive">\r\n                    <table class="table table-striped table-hover table-bordered">\r\n                        <thead>\r\n                            <tr>\r\n                                <th>比赛通告id</th>\r\n                                <th>比赛通告标题</th>\r\n                                <th>比赛通告内容</th>\r\n                                <th>比赛发布人姓名</th>\r\n                                <th>比赛发布人电话</th>\r\n                                <th>比赛通告时间</th>\r\n                                <th>操作</th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                         \r\n                            \r\n\r\n                        </tbody>\r\n        </table>\r\n\r\n\r\n        \r\n        \r\n       \r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T13:34:54.979] [INFO] response - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2766' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>比赛通告列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            比赛通告列表\r\n        </div>\r\n\r\n\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="panel-body">\r\n                <form role="form" class="form-inline" method="GET" action="/announces/announcelist">\r\n                    <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                        <label for="name">输入比赛标题</label>\r\n                        <input type="text" class="form-control" id="name" name="keyword"\r\n                            placeholder="请输入比赛标题">\r\n                    </div>\r\n                    <div class="row templatemo-form-buttons">\r\n                        <div class="col-md-2">\r\n                            <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n                        </div>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="col-md-10 col-md-offset-1">\r\n                <div class="table-responsive">\r\n                    <table class="table table-striped table-hover table-bordered">\r\n                        <thead>\r\n                            <tr>\r\n                                <th>比赛通告id</th>\r\n                                <th>比赛通告标题</th>\r\n                                <th>比赛通告内容</th>\r\n                                <th>比赛发布人姓名</th>\r\n                                <th>比赛发布人电话</th>\r\n                                <th>比赛通告时间</th>\r\n                                <th>操作</th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                         \r\n                            \r\n\r\n                        </tbody>\r\n        </table>\r\n\r\n\r\n        \r\n        \r\n       \r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T13:35:05.817] [INFO] response - { method: 'GET',
+  url: '/activitys/activitylist',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2818' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>活动列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入分页插件-->\r\n    <script type="text/javascript" src="/javascripts/jqPaginator.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n    <div class="panel-heading">\r\n        活动列表\r\n    </div>\r\n\r\n\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="panel-body">\r\n            <form role="form" class="form-inline" method="GET" action="/activitys/activitylist">\r\n            <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                    <label for="name">输入关键词</label>\r\n                    <input type="text" class="form-control" value="" id="name" name="keyword" placeholder="请输入活动标题">\r\n                </div>\r\n        <div class="row templatemo-form-buttons">\r\n            <div class="col-md-2">\r\n                    <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n            </div>\r\n        </div>\r\n            </form>\r\n    </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n            <div class="table-responsive">\r\n                <table class="table table-striped table-hover table-bordered">\r\n                    <thead>\r\n                        <tr>\r\n                            <th>比赛id</th>\r\n                            <th>比赛标题</th>\r\n                            <th>比赛人数</th>\r\n                            <th>比赛负责人</th>\r\n                            <th>负责人电话</th>\r\n                            <th>发布时间</th>\r\n                            <th>开始时间</th>\r\n                            <th>结束时间</th>\r\n                            <th>比赛内容</th>\r\n                            <th>操作</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n\r\n                        \r\n\r\n           \r\n                    </tbody>\r\n        </table>\r\n\r\n        <div id="page" class="pagination pull-right"></div>\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n    <script>\r\n\r\n      \r\n\r\n    </script>\r\n\r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T13:35:10.068] [INFO] response - { method: 'GET',
+  url: '/activitys/examine',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-18T13:35:13.284] [INFO] response - { method: 'GET',
+  url: '/activitys/sum',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-18T13:35:22.439] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 226,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5236' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default">\r\n        <div class="panel-heading">\r\n            <h3 class="panel-title">\r\n               管理员列表\r\n            </h3>\r\n        </div>\r\n        <div class="panel-body">          \r\n            <div class="clearfix" style="margin-bottom: 10px;">\r\n              <div class="row templatemo-form-buttons">\r\n                <a href = "javascript:void(0)" onclick = "document.getElementById(\'light\').style.display=\'block\';document.getElementById(\'fade\').style.display=\'block\'"><button type="button" class="btn btn-primary">管理员申请</button> </a>    \r\n                </div></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="account" class="control-label">工号</label>\r\n          <input type="text" class="form-control" id="account" value="" name="account">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="user_name" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="user_name" value="" name="userName">                 \r\n        </div>     \r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n       \r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>账号</th>\r\n                <th>姓名</th>\r\n                <th>性别</th>\r\n                <th>电话</th>\r\n                <th>状态</th>\r\n                <th>身份</th>\r\n                <th>操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                \r\n                    <tr>\r\n                      <td>1</td>\r\n                      <td>1001</td>\r\n                      <td>张三</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-default" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>2</td>\r\n                      <td>1002</td>\r\n                      <td>老二</td>\r\n                      <td>1</td>\r\n                      <td>13049213960</td>\r\n                      <td>1</td>\r\n\r\n                      <td></td>\r\n                      <td>\r\n                        <a href = "javascript:void(0)" class="btn btn-default" onclick = "document.getElementById(\'light1\').style.display=\'block\';\r\n                        document.getElementById(\'fade\').style.display=\'block\'">编辑</a>\r\n                        <a href="/users/delect/1002" class="btn btn-default">删除</a></td>\r\n                    </tr>\r\n                      \r\n            </tbody>\r\n        </table>  \r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n        </div>\r\n    </div>\r\n\r\n</body>\r\n\r\n\r\n<style> \r\n  .black_overlay{ \r\n      display: none; \r\n      position: absolute; \r\n      top: 0%; \r\n      left: 0%; \r\n      width: 100%; \r\n      height: 100%; \r\n      background-color: black; \r\n      z-index:1001; \r\n      -moz-opacity: 0.8; \r\n      opacity:.80; \r\n      filter: alpha(opacity=88); \r\n  } \r\n  .white_content { \r\n      display: none; \r\n      position: absolute; \r\n      top: 25%; \r\n      left: 25%; \r\n      width: 55%; \r\n      height: 55%; \r\n      padding: 20px; \r\n      border: 10px solid rgb(120, 196, 231); \r\n      border-radius: 20px;\r\n      background-color: white; \r\n      z-index:1002; \r\n      overflow: auto; \r\n  } \r\n</style> \r\n</html>' } }
+[2020-05-18T13:35:25.954] [INFO] response - { method: 'GET',
+  url: '/users/add',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2627' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>增加用户</title>\r\n</head>\r\n\r\n<body>\r\n<div class="panel panel-default">\r\n    <div class="panel-heading">\r\n        新增用户\r\n    </div>\r\n\r\n    <div class="message">消息提醒</div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/users/doAdd" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 用户账号: <input type="text" name="account" /></li>\r\n\r\n                    <li> 用户密码: <input type="password" name="password"></li>\r\n\r\n                    <li> 用户姓名: <input type="text" name="userName" /></li>\r\n\r\n                    <li> 用户性别:\r\n                         <select name="userSex">\r\n                             <option value="1">男</option>\r\n                             <option value="2">女</option>\r\n                         </select>\r\n                    </li>\r\n\r\n                    <li> 联系方式: <input type="text" name="userPhone" /></li>\r\n                  \r\n\r\n                    <li> 用户状态:\r\n                        <select name="userStatus">\r\n                           \r\n                            <option value="0">未审核</option>\r\n                            <option value="1">审核成功</option>\r\n                            <option value="2">审核失败</option>\r\n\r\n                        </select>\r\n                        \r\n                        </li>\r\n                  \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n\r\n<script>\r\n     //消息提醒\r\n     function  fade(txt) {\r\n            $(\'.message\').text(txt) //内容撑开\r\n            $(\'.message\').animate({\r\n                top: 0\r\n            })\r\n            setTimeout(function () {\r\n                $(\'.message\').animate({\r\n                    top: \'-100%\'\r\n                })\r\n            }, 1500)\r\n        }\r\n\r\n\r\n</script>\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T14:46:59.885] [INFO] response - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2766' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>比赛通告列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            比赛通告列表\r\n        </div>\r\n\r\n\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="panel-body">\r\n                <form role="form" class="form-inline" method="GET" action="/announces/announcelist">\r\n                    <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                        <label for="name">输入比赛标题</label>\r\n                        <input type="text" class="form-control" id="name" name="keyword"\r\n                            placeholder="请输入比赛标题">\r\n                    </div>\r\n                    <div class="row templatemo-form-buttons">\r\n                        <div class="col-md-2">\r\n                            <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n                        </div>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="col-md-10 col-md-offset-1">\r\n                <div class="table-responsive">\r\n                    <table class="table table-striped table-hover table-bordered">\r\n                        <thead>\r\n                            <tr>\r\n                                <th>比赛通告id</th>\r\n                                <th>比赛通告标题</th>\r\n                                <th>比赛通告内容</th>\r\n                                <th>比赛发布人姓名</th>\r\n                                <th>比赛发布人电话</th>\r\n                                <th>比赛通告时间</th>\r\n                                <th>操作</th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                         \r\n                            \r\n\r\n                        </tbody>\r\n        </table>\r\n\r\n\r\n        \r\n        \r\n       \r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T14:57:22.738] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2887' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>张三</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n      \n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>\n\t  </li>\n     \n      \n      <li>\n        <h4 class="M1"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n\n\n    <li>\n        <h4 class="M5"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/sum\' target="iframe1">比赛证明</a>\n        </div>\n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M7"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/schedel/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M3"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n\t</div>\t\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-18T14:57:25.957] [INFO] response - { method: 'GET',
+  url: '/announces/add',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3145' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link rel="stylesheet" href="/select/bootstrap/css/bootstrap.min.css" />\r\n    <link href="/select/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    \r\n    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">\r\n    <script src="/select/jquery.min.js"></script>\r\n    <script src="/select/bootstrap/js/bootstrap.min.js"></script>\r\n    <script src="/select/bootstrap-select/js/bootstrap-select.min.js"></script>\r\n    <script src="/select/bootstrap-select/js/i18n/defaults-zh_CN.min.js"></script>\r\n    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>\r\n    \r\n    <!--百度富文本编辑器-->\r\n    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>\r\n    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js"> </script>\r\n    <script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"></script>\r\n\r\n\r\n\r\n\r\n    <title>新增通告</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default">\r\n        <div class="panel-heading">\r\n            新增通告\r\n        </div>\r\n\r\n        <div class="panel-body">\r\n            <div class="input-form">\r\n                <form action="/announces/doAdd" class="form" method="post" enctype="multipart/form-data">\r\n\r\n                    <ul>\r\n                        <li> 通告标题: <input type="text" name="announce_title" /></li>\r\n\r\n                        <li> 发布人姓名: <input type="text" name="announce_sperson" /></li>\r\n\r\n                        <li> 发布人电话: <input type="file" name="announce_phone    " /></li>\r\n\r\n                        <li> 通告时间: <input style="width: 180px; background-color: #ffffff;" id="announce_time" name="announce_time"></li>\r\n\r\n                        <li> 通告内容: <script name="announce_content" id="editor" type="text/plain" style="width:800px;height:300px;"></script></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n<script>\r\n    $(function () {\r\n        var now = new Date(),\r\n            minDate = new Date(now.getFullYear() - 20, now.getMonth(), now.getDate()),\r\n            maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());\r\n\r\n        mobiscroll.datetime(\'#announce_time\', {\r\n            theme: \'mobiscroll\',\r\n            lang: \'zh\',\r\n            display: \'center\',\r\n            min: minDate,\r\n            max: maxDate\r\n        })\r\n    })\r\n</script>\r\n\r\n<script>\r\n\r\n    var ue = UE.getEditor(\'editor\'); //注意和第五条的 id 对应起来\r\n\r\n</script>\r\n\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-18T14:57:26.019] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/css/bootstrap-select.min.css',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-18T14:57:26.019] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap/css/bootstrap.min.css',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-18T14:57:26.023] [INFO] response - { method: 'GET',
+  url: '/select/jquery.min.js',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-18T14:57:26.026] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap/js/bootstrap.min.js',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-18T14:57:26.048] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/js/bootstrap-select.min.js',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-18T14:57:26.050] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/js/i18n/defaults-zh_CN.min.js',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-18T14:57:26.052] [INFO] response - { method: 'GET',
+  url: '/ueditor/ueditor.config.js',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-18T14:57:26.053] [INFO] response - { method: 'GET',
+  url: '/ueditor/ueditor.all.min.js',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-18T14:57:26.069] [INFO] response - { method: 'GET',
+  url: '/ueditor/lang/zh-cn/zh-cn.js',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }

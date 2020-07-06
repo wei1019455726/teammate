@@ -1,0 +1,1296 @@
+[2019-12-19T16:21:27.553] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1410' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T16:21:42.423] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '647' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td>1001</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T16:21:43.604] [INFO] response - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '778' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程编辑页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h2>编辑你的日程</h2>\r\n\r\n  <form action="users/doedit" method="POST">\r\n\r\n  <!-- <input type="text" name="user_id" placeholder="输入id" />\r\n  <br/>\r\n  <br/> -->\r\n   6：00--10:00:<input type="text" name="time_one" value="1"/>\r\n   <br/>\r\n   <br/>\r\n\r\n   10:00--14:00:<input type="text" name="time_two" value="1"/>\r\n   <br/>\r\n   <br/>\r\n\r\n    14:00--18：00:<input type="text" name="time_three" value="1"/>\r\n    <br/>\r\n    <br/>\r\n\r\n    18:00--20：00:<input type="text" name="time_four" value="1"/>\r\n    <br/>\r\n    <br/>\r\n    \r\n    <input type="submit" value="提交" />\r\n\r\n  </form>\r\n    \r\n  </body>\r\n</html>' } }
+[2019-12-19T16:21:57.157] [INFO] response - { method: 'POST',
+  url: '/users/users/doedit',
+  body:
+   { time_one: '1',
+     time_two: '12313u',
+     time_three: '1',
+     time_four: '1',
+     user_id: 1001 },
+  costTime: 115,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userInfo',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userInfo">/users/userInfo</a>.' } }
+[2019-12-19T16:21:57.259] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1410' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T16:21:59.160] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1410' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T16:42:16.970] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1410' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T16:42:21.563] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '647' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td>1001</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T16:42:23.214] [INFO] response - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '778' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程编辑页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h2>编辑你的日程</h2>\r\n\r\n  <form action="users/doedit" method="POST">\r\n\r\n  <!-- <input type="text" name="user_id" placeholder="输入id" />\r\n  <br/>\r\n  <br/> -->\r\n   6：00--10:00:<input type="text" name="time_one" value="1"/>\r\n   <br/>\r\n   <br/>\r\n\r\n   10:00--14:00:<input type="text" name="time_two" value="1"/>\r\n   <br/>\r\n   <br/>\r\n\r\n    14:00--18：00:<input type="text" name="time_three" value="1"/>\r\n    <br/>\r\n    <br/>\r\n\r\n    18:00--20：00:<input type="text" name="time_four" value="1"/>\r\n    <br/>\r\n    <br/>\r\n    \r\n    <input type="submit" value="提交" />\r\n\r\n  </form>\r\n    \r\n  </body>\r\n</html>' } }
+[2019-12-19T16:42:27.408] [INFO] response - { method: 'POST',
+  url: '/users/users/doedit',
+  body:
+   { time_one: '1',
+     time_two: '12313u',
+     time_three: '1',
+     time_four: '1' },
+  costTime: 4,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userInfo',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userInfo">/users/userInfo</a>.' } }
+[2019-12-19T16:42:27.454] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1410' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T16:49:15.584] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1410' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T16:49:18.110] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '270' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>joint</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>      \r\n    <h1>JOINT</h1>\r\n    <p><a href="/login">登陆</a></p>\r\n    <p><a href="/register">注册</a></p>\r\n  </body>\r\n</html>' } }
+[2019-12-19T16:49:20.721] [INFO] response - { method: 'GET',
+  url: '/register',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2804' },
+     body:
+      '\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <link rel="stylesheet" href=\'/stylesheets/login.css\'>\r\n    <title>登陆</title>\r\n</head>\r\n<body>\r\n    <div class="header" id="head">\r\n      <div class="title">JOINT系统注册</div>\r\n    </div>\r\n          \r\n    <div class="wrap" id="wrap">\r\n      \r\n        <div class="logGet">\r\n                <!-- 头部提示信息 -->\r\n                <div class="logD logDtip">\r\n                    <p class="p1">注册</p>                 \r\n                </div>\r\n                <form action="/register" method="POST">\r\n                  <!-- 输入框 -->\r\n                  <div class="lgD">\r\n                      <input type="text" name="user_id"\r\n                          placeholder="输入id" />\r\n                  </div>\r\n                  <div class="lgD">\r\n                      <input type="text" name="user_name"\r\n                          placeholder="输入用户名" />\r\n                  </div>\r\n                  <div class="lgD">\r\n                    <input type="password" name="password"\r\n                        placeholder="输入用户密码" />\r\n                </div>\r\n                  <div class="logC">\r\n                      <button type="submit">注 册</button>\r\n                  </div>\r\n\r\n                </form>\r\n            </div>\r\n      </div>\r\n      <div class="footer" id="foot">\r\n        <div class="copyright">\r\n          <p>Copyright © 2019 huaruan.com Inc. All Rights Reserved.</p>\r\n          <div class="img">\r\n              <i class="icon"></i><span>联系邮箱：123123@sise.com</span>\r\n          </div>\r\n          \r\n          <div class="img">\r\n              <i class="icon1"></i><span>联系地址：广州大学华软软件学院</span>\r\n          </div>\r\n            \r\n          <div class="img">\r\n            <i class="icon2"></i><span>联系电话：12345678</span>\r\n          </div>\r\n       \r\n       \r\n        </div>\r\n          \r\n      </div>\r\n      <script>\r\n         $(\'#register_form\').on(\'submit\', function (e) {\r\n      e.preventDefault()\r\n      var formData = $(this).serialize()\r\n      $.ajax({\r\n        url: \'/register\',\r\n        type: \'post\',\r\n        data: formData,\r\n        dataType: \'json\',\r\n        success: function (data) {\r\n          var err_code = data.err_code\r\n          if (err_code === 0) {\r\n            // window.alert(\'注册成功！\')\r\n            // 服务端重定向针对异步请求无效\r\n            window.location.href = \'/\'\r\n          } else if (err_code === 1) {\r\n            window.alert(\'邮箱已存在！\')\r\n          } else if (err_code === 2) {\r\n            window.alert(\'昵称已存在！\')\r\n          } else if (err_code === 500) {\r\n            window.alert(\'服务器忙，请稍后重试！\')\r\n          }\r\n        }\r\n      })\r\n    })\r\n      </script>\r\n</body>\r\n</html>' } }
+[2019-12-19T16:49:32.411] [INFO] response - { method: 'POST',
+  url: '/register',
+  body:
+   { user_id: '1001',
+     user_name: '王五',
+     password: '0e317d9b6439761d82f40972c0e29b9d',
+     solt: 'ab006808-ca25-4466-95fe-55356d3aa3ad' },
+  costTime: 4,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2019-12-19T16:50:00.070] [INFO] response - { method: 'POST',
+  url: '/register',
+  body:
+   { user_id: '1009',
+     user_name: '王五111',
+     password: '64c8d23298811489fe50173f4011f046',
+     solt: 'ed79bdb4-d6a2-4013-a4b7-d5b52723852d' },
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2019-12-19T16:50:51.627] [INFO] response - { method: 'POST',
+  url: '/register',
+  body:
+   { user_id: '1009',
+     user_name: '王五111',
+     password: '9e52b82421bacc4e6d5ce242fa612435',
+     solt: 'cf81664c-f9dd-45ff-85e9-d3e3a8a2fcfd' },
+  costTime: 9,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2019-12-19T16:51:18.751] [INFO] response - { method: 'POST',
+  url: '/register',
+  body:
+   { user_id: '1009',
+     user_name: '王五111',
+     password: '549ef3f42649073dc4d754b658f731f7',
+     solt: '4c84f9fa-d53c-40de-8aad-ca0d467716fa' },
+  costTime: 14,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '33' },
+     body: 'Redirecting to <a href="/">/</a>.' } }
+[2019-12-19T16:51:18.802] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '270' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>joint</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>      \r\n    <h1>JOINT</h1>\r\n    <p><a href="/login">登陆</a></p>\r\n    <p><a href="/register">注册</a></p>\r\n  </body>\r\n</html>' } }
+[2019-12-19T16:51:20.717] [INFO] response - { method: 'GET',
+  url: '/login',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1849' },
+     body:
+      '<!DOCTYPE html>\n<html>\n<head>\n    <link rel="stylesheet" href=\'/stylesheets/login.css\'>\n    <title>登陆</title>\n</head>\n<body>\n    <div class="header" id="head">\n      <div class="title">JOINt系统登陆</div>\n    </div>\n          \n    <div class="wrap" id="wrap">\n        <div class="logGet">\n                <!-- 头部提示信息 -->\n                <div class="logD logDtip">\n                    <p class="p1">登录</p>\n                </div>\n                <form action="/checkLogin" method="POST">\n                  <!-- 输入框 -->\n                  <div class="lgD">\n                      <input type="text" name="user_id"\n                          placeholder="输入id" />\n                  </div>\n                  <div class="lgD">\n                      <input type="password" name="password"\n                          placeholder="输入用户密码" />\n                  </div>\n                  <div class="logC">\n                      <button type="submit">登 录</button>\n                  </div>\n                  <!-- <div class="logC">\n                    <p>没有账号? <button href="/register">点击创建</button></p>\n                </div> -->\n                </form>\n            </div>\n      </div>\n      <div class="footer" id="foot">\n        <div class="copyright">\n          <p>Copyright © 2019 huaruan.com Inc. All Rights Reserved.</p>\n          <div class="img">\n              <i class="icon"></i><span>联系邮箱：123123@sise.com</span>\n          </div>\n          \n          <div class="img">\n              <i class="icon1"></i><span>联系地址：广州大学华软软件学院</span>\n          </div>\n            \n          <div class="img">\n            <i class="icon2"></i><span>联系电话：12345678</span>\n          </div>\n       \n       \n        </div>\n          \n      </div>\n</body>\n</html>' } }
+[2019-12-19T16:51:28.507] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1009', password: '123456' },
+  costTime: 9,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2019-12-19T16:51:28.518] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '331' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>JOINT</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>JOINT</h1>\n    <p>Welcome to JOINT</p>\n    <p><a href="/logout">注销</a></p>\n    <p>用户名：王五</p>\n    <p><a href="/users/userInfo">用户详情页</a></p>   \n  </body>\n</html>\n' } }
+[2019-12-19T16:51:42.406] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1410' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T16:51:57.984] [INFO] response - { method: 'GET',
+  url: '/users/add',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '741' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程编辑页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h2>添加你的日程</h2>\r\n\r\n  <form action="users/add" method="POST">\r\n\r\n  <!-- <input type="text" name="user_id" placeholder="输入id" />\r\n  <br/>\r\n  <br/> -->\r\n   6：00--10:00:<input type="text" name="time_one" />\r\n   <br/>\r\n   <br/>\r\n\r\n   10:00--14:00:<input type="text" name="time_two" />\r\n   <br/>\r\n   <br/>\r\n\r\n    14:00--18：00:<input type="text" name="time_three" />\r\n    <br/>\r\n    <br/>\r\n\r\n    18:00--20：00:<input type="text" name="time_four" />\r\n    <br/>\r\n    <br/>\r\n    \r\n    <input type="submit" value="提交" />\r\n\r\n  </form>\r\n    \r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T16:52:02.637] [INFO] response - { method: 'POST',
+  url: '/users/users/add',
+  body:
+   { time_one: '1',
+     time_two: '12313u',
+     time_three: '1123',
+     time_four: '12',
+     user_id: 1009 },
+  costTime: 7,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userInfo',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userInfo">/users/userInfo</a>.' } }
+[2019-12-19T16:52:02.863] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 183,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1565' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>12313u</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T16:53:38.917] [INFO] response - { method: 'GET',
+  url: '/users/add',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '741' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程编辑页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h2>添加你的日程</h2>\r\n\r\n  <form action="users/add" method="POST">\r\n\r\n  <!-- <input type="text" name="user_id" placeholder="输入id" />\r\n  <br/>\r\n  <br/> -->\r\n   6：00--10:00:<input type="text" name="time_one" />\r\n   <br/>\r\n   <br/>\r\n\r\n   10:00--14:00:<input type="text" name="time_two" />\r\n   <br/>\r\n   <br/>\r\n\r\n    14:00--18：00:<input type="text" name="time_three" />\r\n    <br/>\r\n    <br/>\r\n\r\n    18:00--20：00:<input type="text" name="time_four" />\r\n    <br/>\r\n    <br/>\r\n    \r\n    <input type="submit" value="提交" />\r\n\r\n  </form>\r\n    \r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T16:53:41.646] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '647' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td>1001</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T16:53:42.838] [INFO] response - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '778' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程编辑页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h2>编辑你的日程</h2>\r\n\r\n  <form action="users/doedit" method="POST">\r\n\r\n  <!-- <input type="text" name="user_id" placeholder="输入id" />\r\n  <br/>\r\n  <br/> -->\r\n   6：00--10:00:<input type="text" name="time_one" value="1"/>\r\n   <br/>\r\n   <br/>\r\n\r\n   10:00--14:00:<input type="text" name="time_two" value="1"/>\r\n   <br/>\r\n   <br/>\r\n\r\n    14:00--18：00:<input type="text" name="time_three" value="1"/>\r\n    <br/>\r\n    <br/>\r\n\r\n    18:00--20：00:<input type="text" name="time_four" value="1"/>\r\n    <br/>\r\n    <br/>\r\n    \r\n    <input type="submit" value="提交" />\r\n\r\n  </form>\r\n    \r\n  </body>\r\n</html>' } }
+[2019-12-19T16:53:48.922] [INFO] response - { method: 'POST',
+  url: '/users/users/doedit',
+  body:
+   { time_one: '1',
+     time_two: '12313',
+     time_three: '1w3424',
+     time_four: '1' },
+  costTime: 3,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userInfo',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userInfo">/users/userInfo</a>.' } }
+[2019-12-19T16:53:48.933] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1565' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>12313u</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T16:56:34.880] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1565' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>12313u</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T16:56:36.330] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '647' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td>1001</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T16:56:37.353] [INFO] response - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '778' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程编辑页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h2>编辑你的日程</h2>\r\n\r\n  <form action="users/doedit" method="POST">\r\n\r\n  <!-- <input type="text" name="user_id" placeholder="输入id" />\r\n  <br/>\r\n  <br/> -->\r\n   6：00--10:00:<input type="text" name="time_one" value="1"/>\r\n   <br/>\r\n   <br/>\r\n\r\n   10:00--14:00:<input type="text" name="time_two" value="1"/>\r\n   <br/>\r\n   <br/>\r\n\r\n    14:00--18：00:<input type="text" name="time_three" value="1"/>\r\n    <br/>\r\n    <br/>\r\n\r\n    18:00--20：00:<input type="text" name="time_four" value="1"/>\r\n    <br/>\r\n    <br/>\r\n    \r\n    <input type="submit" value="提交" />\r\n\r\n  </form>\r\n    \r\n  </body>\r\n</html>' } }
+[2019-12-19T16:56:39.944] [INFO] response - { method: 'POST',
+  url: '/users/users/doedit',
+  body:
+   { time_one: '1',
+     time_two: '1',
+     time_three: '1123',
+     time_four: '1' },
+  costTime: 6,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userInfo',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userInfo">/users/userInfo</a>.' } }
+[2019-12-19T16:56:39.964] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1565' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>12313u</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T16:56:50.244] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '647' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td>1001</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T16:56:51.344] [INFO] response - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '778' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程编辑页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h2>编辑你的日程</h2>\r\n\r\n  <form action="users/doedit" method="POST">\r\n\r\n  <!-- <input type="text" name="user_id" placeholder="输入id" />\r\n  <br/>\r\n  <br/> -->\r\n   6：00--10:00:<input type="text" name="time_one" value="1"/>\r\n   <br/>\r\n   <br/>\r\n\r\n   10:00--14:00:<input type="text" name="time_two" value="1"/>\r\n   <br/>\r\n   <br/>\r\n\r\n    14:00--18：00:<input type="text" name="time_three" value="1"/>\r\n    <br/>\r\n    <br/>\r\n\r\n    18:00--20：00:<input type="text" name="time_four" value="1"/>\r\n    <br/>\r\n    <br/>\r\n    \r\n    <input type="submit" value="提交" />\r\n\r\n  </form>\r\n    \r\n  </body>\r\n</html>' } }
+[2019-12-19T16:56:55.828] [INFO] response - { method: 'POST',
+  url: '/users/users/doedit',
+  body:
+   { time_one: '1',
+     time_two: '1',
+     time_three: '1w3424速度发顺丰',
+     time_four: '1' },
+  costTime: 2,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userInfo',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userInfo">/users/userInfo</a>.' } }
+[2019-12-19T16:56:56.744] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 909,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1576' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1w3424速度发顺丰</td>\n          <td>1</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T16:57:19.290] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '647' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td>1001</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T16:57:22.069] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '647' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td>1001</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T16:57:37.675] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '647' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td>1001</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T16:58:42.036] [INFO] response - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '778' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程编辑页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h2>编辑你的日程</h2>\r\n\r\n  <form action="users/doedit" method="POST">\r\n\r\n  <!-- <input type="text" name="user_id" placeholder="输入id" />\r\n  <br/>\r\n  <br/> -->\r\n   6：00--10:00:<input type="text" name="time_one" value="1"/>\r\n   <br/>\r\n   <br/>\r\n\r\n   10:00--14:00:<input type="text" name="time_two" value="1"/>\r\n   <br/>\r\n   <br/>\r\n\r\n    14:00--18：00:<input type="text" name="time_three" value="1"/>\r\n    <br/>\r\n    <br/>\r\n\r\n    18:00--20：00:<input type="text" name="time_four" value="1"/>\r\n    <br/>\r\n    <br/>\r\n    \r\n    <input type="submit" value="提交" />\r\n\r\n  </form>\r\n    \r\n  </body>\r\n</html>' } }
+[2019-12-19T16:58:45.260] [INFO] response - { method: 'POST',
+  url: '/users/users/doedit',
+  body:
+   { time_one: '1',
+     time_two: '12313',
+     time_three: '1',
+     time_four: '1' },
+  costTime: 2,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userInfo',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userInfo">/users/userInfo</a>.' } }
+[2019-12-19T16:58:45.501] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 212,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1576' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1w3424速度发顺丰</td>\n          <td>1</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T16:58:52.532] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1560' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T16:59:04.686] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '647' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td>1001</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T16:59:56.767] [INFO] response - { method: 'GET',
+  url: '/users/add',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '741' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程编辑页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h2>添加你的日程</h2>\r\n\r\n  <form action="users/add" method="POST">\r\n\r\n  <!-- <input type="text" name="user_id" placeholder="输入id" />\r\n  <br/>\r\n  <br/> -->\r\n   6：00--10:00:<input type="text" name="time_one" />\r\n   <br/>\r\n   <br/>\r\n\r\n   10:00--14:00:<input type="text" name="time_two" />\r\n   <br/>\r\n   <br/>\r\n\r\n    14:00--18：00:<input type="text" name="time_three" />\r\n    <br/>\r\n    <br/>\r\n\r\n    18:00--20：00:<input type="text" name="time_four" />\r\n    <br/>\r\n    <br/>\r\n    \r\n    <input type="submit" value="提交" />\r\n\r\n  </form>\r\n    \r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T17:00:02.960] [INFO] response - { method: 'POST',
+  url: '/users/users/add',
+  body:
+   { time_one: '1',
+     time_two: '1',
+     time_three: '1123',
+     time_four: '1',
+     user_id: 1009 },
+  costTime: 3,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userInfo',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userInfo">/users/userInfo</a>.' } }
+[2019-12-19T17:00:03.089] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 122,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1560' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T17:00:07.089] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1709' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T17:00:24.454] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '647' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td>1001</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T17:05:55.275] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '270' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>joint</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>      \r\n    <h1>JOINT</h1>\r\n    <p><a href="/login">登陆</a></p>\r\n    <p><a href="/register">注册</a></p>\r\n  </body>\r\n</html>' } }
+[2019-12-19T17:06:01.465] [INFO] response - { method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '830' },
+     body:
+      '<!-- <h1>抱歉，找不到你的诗和远方了！</h1>\n<h2>404</h2>\n<pre>NotFoundError: Not Found\n    at Object.throw (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\node_modules\\koa\\lib\\context.js:97:11)\n    at module.exports (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\middlewares\\error.js:5:22)</pre> -->\n\n\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2019-12-19T17:06:06.217] [INFO] response - { method: 'GET',
+  url: '/login',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1849' },
+     body:
+      '<!DOCTYPE html>\n<html>\n<head>\n    <link rel="stylesheet" href=\'/stylesheets/login.css\'>\n    <title>登陆</title>\n</head>\n<body>\n    <div class="header" id="head">\n      <div class="title">JOINt系统登陆</div>\n    </div>\n          \n    <div class="wrap" id="wrap">\n        <div class="logGet">\n                <!-- 头部提示信息 -->\n                <div class="logD logDtip">\n                    <p class="p1">登录</p>\n                </div>\n                <form action="/checkLogin" method="POST">\n                  <!-- 输入框 -->\n                  <div class="lgD">\n                      <input type="text" name="user_id"\n                          placeholder="输入id" />\n                  </div>\n                  <div class="lgD">\n                      <input type="password" name="password"\n                          placeholder="输入用户密码" />\n                  </div>\n                  <div class="logC">\n                      <button type="submit">登 录</button>\n                  </div>\n                  <!-- <div class="logC">\n                    <p>没有账号? <button href="/register">点击创建</button></p>\n                </div> -->\n                </form>\n            </div>\n      </div>\n      <div class="footer" id="foot">\n        <div class="copyright">\n          <p>Copyright © 2019 huaruan.com Inc. All Rights Reserved.</p>\n          <div class="img">\n              <i class="icon"></i><span>联系邮箱：123123@sise.com</span>\n          </div>\n          \n          <div class="img">\n              <i class="icon1"></i><span>联系地址：广州大学华软软件学院</span>\n          </div>\n            \n          <div class="img">\n            <i class="icon2"></i><span>联系电话：12345678</span>\n          </div>\n       \n       \n        </div>\n          \n      </div>\n</body>\n</html>' } }
+[2019-12-19T17:06:13.217] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1009', password: '123456' },
+  costTime: 21,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2019-12-19T17:06:13.228] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '331' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>JOINT</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>JOINT</h1>\n    <p>Welcome to JOINT</p>\n    <p><a href="/logout">注销</a></p>\n    <p>用户名：王五</p>\n    <p><a href="/users/userInfo">用户详情页</a></p>   \n  </body>\n</html>\n' } }
+[2019-12-19T17:06:15.532] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1709' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T17:06:17.459] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '647' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td>1001</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T17:07:30.709] [INFO] response - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '778' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程编辑页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h2>编辑你的日程</h2>\r\n\r\n  <form action="users/doedit" method="POST">\r\n\r\n  <!-- <input type="text" name="user_id" placeholder="输入id" />\r\n  <br/>\r\n  <br/> -->\r\n   6：00--10:00:<input type="text" name="time_one" value="1"/>\r\n   <br/>\r\n   <br/>\r\n\r\n   10:00--14:00:<input type="text" name="time_two" value="1"/>\r\n   <br/>\r\n   <br/>\r\n\r\n    14:00--18：00:<input type="text" name="time_three" value="1"/>\r\n    <br/>\r\n    <br/>\r\n\r\n    18:00--20：00:<input type="text" name="time_four" value="1"/>\r\n    <br/>\r\n    <br/>\r\n    \r\n    <input type="submit" value="提交" />\r\n\r\n  </form>\r\n    \r\n  </body>\r\n</html>' } }
+[2019-12-19T17:07:38.378] [INFO] response - { method: 'POST',
+  url: '/users/users/doedit',
+  body:
+   { time_one: '1',
+     time_two: '12313u2313',
+     time_three: '1沃尔沃若无若翁',
+     time_four: '1' },
+  costTime: 4,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userInfo',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userInfo">/users/userInfo</a>.' } }
+[2019-12-19T17:07:38.401] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1762' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>12313u2313</td>\n          <td>1沃尔沃若无若翁</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>12313u2313</td>\n          <td>1沃尔沃若无若翁</td>\n          <td>1</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T17:08:41.010] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1762' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>12313u2313</td>\n          <td>1沃尔沃若无若翁</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>12313u2313</td>\n          <td>1沃尔沃若无若翁</td>\n          <td>1</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T17:08:42.150] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '639' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T17:08:54.810] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '648' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td>1002</td>\r\n          <td>12</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T17:09:54.930] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '647' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td>1006</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td>1</td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T17:18:19.320] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '639' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T17:18:38.237] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 932,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '639' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T17:20:28.081] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '639' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T17:20:31.358] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1762' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n        </tr>\n        \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1002</td>\n          <td>12</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1006</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>12</td>\n        </tr>\n          \n        <tr>\n          <td>1001</td>\n          <td>1</td>\n          <td>12313</td>\n          <td>1123</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>12313u2313</td>\n          <td>1沃尔沃若无若翁</td>\n          <td>1</td>\n        </tr>\n          \n        <tr>\n          <td>1009</td>\n          <td>1</td>\n          <td>12313u2313</td>\n          <td>1沃尔沃若无若翁</td>\n          <td>1</td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2019-12-19T17:20:32.605] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '639' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2019-12-19T17:20:47.522] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '639' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        <tr>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td></td>\r\n          <td><a href="/users/edit">编辑</a></td>\r\n        </tr>\r\n  \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }

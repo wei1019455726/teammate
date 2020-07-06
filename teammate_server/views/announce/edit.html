@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/select/bootstrap/css/bootstrap.min.css" />
+    <link href="/select/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />
+    
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">
+    <script src="/select/jquery.min.js"></script>
+    <script src="/select/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/select/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="/select/bootstrap-select/js/i18n/defaults-zh_CN.min.js"></script>
+    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>
+    
+
+    <title>新增通告</title>
+</head>
+
+<body>
+    <div class="panel panel-default" >
+        <div class="panel-heading">
+            新增通告
+        </div>
+
+        <div class="panel-body">
+            <div class="input-form">
+                <form action="/announces/doEdit" class="form" method="post" enctype="multipart/form-data">
+
+                    <ul>
+                        <input type="hidden" name="id" value="<%=result.id%>">
+
+                        <li> 通告标题: <input type="text" name="announce_title" value="<%=result.announce_title%>"/></li>
+
+                        <li> 通告类别: 
+                            <select name="announce_status">
+                                <option value="0" <%if(result.announce_status == 0) {%>selected<%}%> >学术研究类</option>
+                                <option value="1" <%if(result.announce_status == 1) {%>selected<%}%> >娱乐活动类</option>
+                                <option value="2" <%if(result.announce_status == 2) {%>selected<%}%> >体育艺术类</option>
+                            </select>
+                        </li>
+
+                        <li> 发布人姓名: <input type="text" name="announce_sperson" value="<%=result.announce_sperson%>"/></li>
+
+                        <li> 发布人电话: <input type="text" name="announce_phone" value="<%=result.announce_phone%>"/></li>
+
+                        <li> 通告时间: <input style="width: 180px; background-color: #ffffff;" id="announce_time" name="announce_time" value="<%=result.announce_time%>"></li>
+
+                        <li>
+                            <li>原图片：
+                            <img src="/uploads/<%=result.announce_photo%>" alt="" style="width: 80px;height: 80px;">
+                            </li>
+                            <li>上传新图片：
+                            <input type="file" name="announce_photo" id="announce_photo">                                                                                  
+                            <input type="hidden" id="announce_photoVal" name="announce_photoVal">
+                            <%if(result.account_photo){%>
+                                <img alt="预览图片" class="allpreview" src="/uploads/<%=result.announce_photo%>">
+                                <%}else{%>
+                                <img alt="预览图片" class="preview">
+                                <%}%>
+                            </li>
+                       </li>
+                        
+                        <li> 通告内容: <textarea name="announce_content" cols="60" rows="4" value="<%=result.announce_content%>"></textarea></li>
+
+                        <li>
+                            <br />
+                            <button type="submit" class="btn btn-default submit">提交</button>
+                        </li>
+
+                    </ul>
+                   
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    //时间插件
+    $(function () {
+        var now = new Date(),
+            minDate = new Date(now.getFullYear() - 20, now.getMonth(), now.getDate()),
+            maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());
+
+            mobiscroll.datetime('#announce_time', {
+            theme: 'ios',  //theme：主题，
+            lang: 'zh',
+            display: 'inline', //display:呈现方式，值有top,bottom,inline，
+            min: minDate,
+            max: maxDate,
+            rows:5//显示多少行，定义3就显示3行
+        })
+    })
+
+ //上传单张图片
+ $('#announce_photo').change(function () {
+        if (this.files.length != 0) {
+            var file = this.files[0], //当前文件对象
+                reader = new FileReader(); //FileReader接口提供了读取文件的方法和包含读取结果的事件模型
+            if (!reader) {
+                this.value = '';//计算机本地路径清空 例如: C:\fakepath\1.jpg---由于浏览器的安全机制，input file的路径时被fakepath代替，隐藏了真实物理路径，保护用户电脑隐私。因为文件路径会暴露你的用户名或者其他内容
+                return;
+            };
+            console.log(file.size, file.type)
+            //  if(file.size >= 1024 * 1024 / 2){
+            //      fade("请上传小于512kb的图片！")
+            //      return
+            //  }
+            if (!/image/g.test(file.type)) {//判断类型是不是图片
+                fade("请上传图片文件!")
+                $('#announce_photoVal').val('')
+                $('form .preview').attr('src', '')
+                $('form .preview').fadeOut() //淡出效果来隐藏元素
+                return
+            }
+            reader.onload = function (e) {
+                this.value = '';
+                $('form .preview').attr('src', e.target.result)
+                $('form .preview').fadeIn()
+                var image = new Image();
+                //这里只是回调函数赋值给onload属性，并没有调用。异步事件
+                image.onload = function () {
+                    var canvas = document.createElement('canvas');
+                    var ctx = canvas.getContext("2d");
+                    canvas.width = 100;
+                    canvas.height = 100;
+                    ctx.clearRect(0, 0, 100, 100);//clearRect() 方法清空给定矩形内的指定像素。
+                    ctx.drawImage(image, 0, 0, 100, 100);
+                    var blob = canvas.toDataURL("image/png");//canvas转换为base64
+                    $('#announce_photoVal').val(blob)
+                }
+                
+                image.src = e.target.result
+
+            };
+            reader.readAsDataURL(file);//readAsDataURL方法可以将读取到的文件编码成Data URL,镶嵌在网页中，显示需要用img标签
+        };
+    })
+
+
+</script>
+
+
+     
+</body>
+
+</html>

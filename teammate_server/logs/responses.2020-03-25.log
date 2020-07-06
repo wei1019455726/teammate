@@ -1,0 +1,204 @@
+[2020-03-25T14:53:19.829] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 308,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '270' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>joint</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>      \r\n    <h1>JOINT</h1>\r\n    <p><a href="/login">登陆</a></p>\r\n    <p><a href="/register">注册</a></p>\r\n  </body>\r\n</html>' } }
+[2020-03-25T14:53:23.169] [INFO] response - { method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '806' },
+     body:
+      '<!-- <h1>抱歉，找不到你的诗和远方了！</h1>\n<h2>404</h2>\n<pre>NotFoundError: Not Found\n    at Object.throw (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\后端\\node_modules\\koa\\lib\\context.js:97:11)\n    at module.exports (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\后端\\middlewares\\error.js:6:22)</pre> -->\n\n\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-03-25T14:53:32.891] [INFO] response - { method: 'GET',
+  url: '/login',
+  body: {},
+  costTime: 31,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1849' },
+     body:
+      '<!DOCTYPE html>\n<html>\n<head>\n    <link rel="stylesheet" href=\'/stylesheets/login.css\'>\n    <title>登陆</title>\n</head>\n<body>\n    <div class="header" id="head">\n      <div class="title">JOINt系统登陆</div>\n    </div>\n          \n    <div class="wrap" id="wrap">\n        <div class="logGet">\n                <!-- 头部提示信息 -->\n                <div class="logD logDtip">\n                    <p class="p1">登录</p>\n                </div>\n                <form action="/checkLogin" method="POST">\n                  <!-- 输入框 -->\n                  <div class="lgD">\n                      <input type="text" name="user_id"\n                          placeholder="输入id" />\n                  </div>\n                  <div class="lgD">\n                      <input type="password" name="password"\n                          placeholder="输入用户密码" />\n                  </div>\n                  <div class="logC">\n                      <button type="submit">登 录</button>\n                  </div>\n                  <!-- <div class="logC">\n                    <p>没有账号? <button href="/register">点击创建</button></p>\n                </div> -->\n                </form>\n            </div>\n      </div>\n      <div class="footer" id="foot">\n        <div class="copyright">\n          <p>Copyright © 2019 huaruan.com Inc. All Rights Reserved.</p>\n          <div class="img">\n              <i class="icon"></i><span>联系邮箱：123123@sise.com</span>\n          </div>\n          \n          <div class="img">\n              <i class="icon1"></i><span>联系地址：广州大学华软软件学院</span>\n          </div>\n            \n          <div class="img">\n            <i class="icon2"></i><span>联系电话：12345678</span>\n          </div>\n       \n       \n        </div>\n          \n      </div>\n</body>\n</html>' } }
+[2020-03-25T14:53:40.118] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 57,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-03-25T14:53:40.161] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '333' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>JOINT</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>JOINT</h1>\n    <p>Welcome to JOINT</p>\n    <p><a href="/logout">注销</a></p>\n    <p>用户名：zhangliu</p>\n    <p><a href="/users/userInfo">用户详情页</a></p>   \n  </body>\n</html>\n' } }
+[2020-03-25T14:53:42.190] [INFO] response - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: 98,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '996' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>用户日程页面</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>欢迎回来</h1>\n    <a href="add">添加日程</a>\n    <a href="myself">查看你的日程</a>\n\n    <table class="table">\n         \n        <tr>\n          <th>ID</th>\n          <th>6：00--10:00</th>\n          <th>10:00--14:00</th>\n          <th>14:00--18：00</th>\n          <th>18:00--20：00</th>\n          <th>不看他的</th>\n        </tr>\n        \n        <tr>\n          <td>1002</td>\n          <td>睡觉</td>\n          <td>吃饭</td>\n          <td>吃饭</td>\n          <td>玩游戏</td>\n          <td><a href="/users/delect/1002">x</a></td>\n        </tr>\n          \n        <tr>\n          <td>1003</td>\n          <td>睡觉</td>\n          <td>喝水</td>\n          <td>玩游戏</td>\n          <td>合会</td>\n          <td><a href="/users/delect/1003">x</a></td>\n        </tr>\n          \n  \n      </table>\n  </body>\n</html>\n' } }
+[2020-03-25T14:53:46.534] [INFO] response - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '458' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>个人日程页面</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>\r\n    <h1>你的日程</h1>\r\n    <table class="table">\r\n         \r\n        <tr>\r\n          <th>ID</th>\r\n          <th>6：00--10:00</th>\r\n          <th>10:00--14:00</th>\r\n          <th>14:00--18：00</th>\r\n          <th>18:00--20：00</th>\r\n        </tr>\r\n        \r\n      </table>\r\n\r\n  </body>\r\n</html>\r\n' } }
+[2020-03-25T21:42:55.966] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 54,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '270' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>joint</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>      \r\n    <h1>JOINT</h1>\r\n    <p><a href="/login">登陆</a></p>\r\n    <p><a href="/register">注册</a></p>\r\n  </body>\r\n</html>' } }
+[2020-03-25T21:42:56.183] [INFO] response - { method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '806' },
+     body:
+      '<!-- <h1>抱歉，找不到你的诗和远方了！</h1>\n<h2>404</h2>\n<pre>NotFoundError: Not Found\n    at Object.throw (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\后端\\node_modules\\koa\\lib\\context.js:97:11)\n    at module.exports (F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\后端\\middlewares\\error.js:6:22)</pre> -->\n\n\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-03-25T21:42:59.734] [INFO] response - { method: 'GET',
+  url: '/login',
+  body: {},
+  costTime: 30,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1849' },
+     body:
+      '<!DOCTYPE html>\n<html>\n<head>\n    <link rel="stylesheet" href=\'/stylesheets/login.css\'>\n    <title>登陆</title>\n</head>\n<body>\n    <div class="header" id="head">\n      <div class="title">JOINt系统登陆</div>\n    </div>\n          \n    <div class="wrap" id="wrap">\n        <div class="logGet">\n                <!-- 头部提示信息 -->\n                <div class="logD logDtip">\n                    <p class="p1">登录</p>\n                </div>\n                <form action="/checkLogin" method="POST">\n                  <!-- 输入框 -->\n                  <div class="lgD">\n                      <input type="text" name="user_id"\n                          placeholder="输入id" />\n                  </div>\n                  <div class="lgD">\n                      <input type="password" name="password"\n                          placeholder="输入用户密码" />\n                  </div>\n                  <div class="logC">\n                      <button type="submit">登 录</button>\n                  </div>\n                  <!-- <div class="logC">\n                    <p>没有账号? <button href="/register">点击创建</button></p>\n                </div> -->\n                </form>\n            </div>\n      </div>\n      <div class="footer" id="foot">\n        <div class="copyright">\n          <p>Copyright © 2019 huaruan.com Inc. All Rights Reserved.</p>\n          <div class="img">\n              <i class="icon"></i><span>联系邮箱：123123@sise.com</span>\n          </div>\n          \n          <div class="img">\n              <i class="icon1"></i><span>联系地址：广州大学华软软件学院</span>\n          </div>\n            \n          <div class="img">\n            <i class="icon2"></i><span>联系电话：12345678</span>\n          </div>\n       \n       \n        </div>\n          \n      </div>\n</body>\n</html>' } }
+[2020-03-25T21:43:08.963] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 88,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-03-25T21:43:09.017] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '333' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>JOINT</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>JOINT</h1>\n    <p>Welcome to JOINT</p>\n    <p><a href="/logout">注销</a></p>\n    <p>用户名：zhangliu</p>\n    <p><a href="/users/userInfo">用户详情页</a></p>   \n  </body>\n</html>\n' } }

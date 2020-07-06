@@ -1,0 +1,593 @@
+[2020-05-30T14:00:16.344] [INFO] response - { method: 'GET',
+  url: '/verify',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'image/svg+xml',
+        'content-length': '11244' },
+     body:
+      '<svg xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0,0,100,40"><rect width="100%" height="100%" fill="#cc9966"/><path d="M9 16 C46 38,58 7,87 19" stroke="#59e7a0" fill="none"/><path fill="#4c4c4c" d="M36.09 24.44L35.91 24.26L36.09 24.44Q35.76 24.31 35.49 24.31L35.54 24.37L35.55 24.37Q34.28 24.29 32.99 25.04L33.00 25.06L33.08 25.13Q31.75 25.97 31.75 27.67L31.90 27.83L31.87 27.80Q31.77 30.75 33.13 31.94L33.14 31.96L33.21 32.02Q33.99 33.01 36.03 33.01L36.02 33.00L36.13 33.11Q36.35 33.12 36.62 33.12L36.58 33.08L36.62 33.13Q38.02 33.00 39.04 31.54L39.16 31.65L39.12 31.62Q40.00 30.21 39.93 28.62L39.90 28.58L39.90 28.58Q40.15 28.36 40.15 27.98L39.97 27.80L40.09 27.93Q40.03 26.27 38.80 25.23L38.85 25.27L38.86 25.29Q37.64 24.25 36.04 24.38ZM40.03 33.44L40.03 33.44L40.06 33.47Q39.20 35.22 35.87 35.33L35.81 35.27L35.82 35.28Q32.65 35.24 31.22 33.81L31.26 33.85L31.24 33.83Q29.97 32.28 29.25 28.00L29.27 28.02L29.33 28.08Q28.95 26.41 28.95 25.29L29.04 25.37L29.06 25.39Q29.01 23.75 29.65 22.79L29.61 22.75L29.71 22.84Q30.87 21.56 33.52 21.56L33.50 21.54L33.52 21.56Q39.20 21.60 40.90 23.91L40.94 23.95L41.00 24.01Q41.16 23.28 41.53 21.85L41.40 21.72L41.43 21.75Q42.47 21.40 44.65 20.69L44.84 20.88L44.74 20.79Q42.65 25.90 42.45 31.54L42.29 31.38L42.42 31.51Q42.25 37.06 44.16 42.26L44.07 42.17L44.13 42.23Q42.48 41.57 40.89 41.33L40.87 41.31L40.98 41.43Q40.07 37.80 39.97 33.38ZM40.68 41.63L40.66 41.61L40.64 41.59Q41.42 41.86 42.67 42.13L42.70 42.16L42.66 42.12Q42.84 42.74 43.35 44.00L43.26 43.91L43.25 43.90Q45.53 44.52 47.57 45.67L47.71 45.81L47.66 45.76Q44.09 39.92 44.09 32.30L44.14 32.35L44.08 32.29Q44.02 26.56 46.23 21.39L46.17 21.33L46.22 21.38Q45.68 21.72 44.46 22.30L44.52 22.37L44.52 22.36Q44.62 21.47 45.19 20.08L45.34 20.22L45.32 20.20Q43.87 20.62 41.01 21.41L40.99 21.38L41.11 21.50Q40.98 21.98 40.71 23.04L40.62 22.95L40.69 23.02Q38.96 21.40 33.49 21.26L33.43 21.20L33.38 21.15Q30.64 21.20 29.42 22.52L29.42 22.53L29.32 22.42Q28.58 23.38 28.61 25.08L28.72 25.19L28.76 25.23Q28.88 27.93 29.76 31.29L29.63 31.16L29.75 31.28Q30.34 33.43 31.15 34.28L31.05 34.18L31.49 34.62L31.45 34.58Q32.46 37.02 37.32 37.22L37.25 37.15L37.39 37.29Q38.33 37.35 39.96 37.08L39.80 36.91L39.86 36.98Q40.10 39.57 40.65 41.60ZM37.75 26.47L37.69 26.41L37.66 26.38Q38.75 26.51 39.49 26.79L39.33 26.63L39.48 26.77Q39.56 27.16 39.66 27.70L39.74 27.78L39.65 27.69Q39.84 28.29 39.77 28.83L39.59 28.65L39.61 28.67Q39.70 30.46 38.78 31.61L38.74 31.57L38.75 31.58Q37.82 32.96 36.15 32.79L36.14 32.78L36.09 32.73Q34.85 32.64 34.00 32.27L34.17 32.44L34.05 32.32Q33.70 31.56 33.70 30.47L33.71 30.49L33.70 30.47Q33.78 30.29 33.78 30.02L33.64 29.87L33.64 29.87Q33.67 28.34 34.86 27.30L34.97 27.41L35.01 27.45Q36.16 26.38 37.73 26.45Z"/><path fill="#465753" d="M18.05 14.15L17.95 14.05L18.04 14.14Q17.43 14.51 17.29 15.23L17.24 15.17L17.22 19.75L17.23 19.76Q18.20 19.70 20.17 19.46L20.28 19.57L20.19 19.48Q20.20 19.91 20.17 20.65L20.28 20.77L20.22 20.71Q20.22 21.42 20.22 21.83L20.13 21.74L18.71 21.81L18.79 21.90Q18.07 21.96 17.29 21.96L17.35 22.02L17.36 22.03Q17.25 25.66 17.18 33.13L17.13 33.08L17.24 33.19Q15.17 33.16 13.84 33.77L13.97 33.90L13.91 33.84Q14.83 28.30 14.73 21.84L14.72 21.83L14.73 21.85Q14.15 21.80 12.99 21.57L12.95 21.53L12.93 21.51Q12.95 20.64 12.78 18.91L12.92 19.04L12.95 19.08Q13.80 19.39 14.65 19.56L14.77 19.67L14.66 19.56Q14.64 19.00 14.37 16.79L14.30 16.73L14.43 16.86Q14.22 15.01 14.22 14.16L14.26 14.20L14.13 14.07Q14.08 12.53 15.34 12.02L15.46 12.14L15.45 12.13Q16.16 11.78 20.48 11.03L20.56 11.12L20.50 11.06Q21.25 10.96 22.00 10.86L22.04 10.90L21.92 10.78Q21.83 11.57 21.69 12.35L21.69 12.35L21.34 13.67L21.30 13.63Q20.70 13.47 20.25 13.57L20.25 13.57L20.32 13.64Q19.73 13.59 18.03 14.13ZM22.92 15.18L22.98 15.24L22.98 15.24Q23.27 13.25 23.81 10.97L23.81 10.97L23.75 10.91Q23.27 11.28 22.11 11.82L22.00 11.71L22.39 10.23L22.33 10.17Q21.22 10.32 19.01 10.80L19.20 10.98L19.02 10.80Q18.13 11.03 15.27 11.85L15.15 11.73L15.28 11.85Q13.73 12.07 13.73 13.73L13.78 13.79L13.71 13.71Q13.75 14.03 13.82 14.34L13.91 14.43L13.82 14.34Q14.02 15.52 14.12 16.71L14.18 16.77L14.43 19.23L14.42 19.22Q13.08 18.76 12.50 18.36L12.54 18.40L12.45 18.30Q12.56 19.16 12.59 20.08L12.65 20.13L12.84 21.99L12.83 21.98Q13.33 22.01 14.05 22.08L14.09 22.12L14.08 23.98L14.58 24.14L14.46 24.02Q14.44 29.58 13.56 34.44L13.59 34.47L13.44 34.32Q14.31 33.86 15.36 33.62L15.41 33.67L15.26 35.52L15.24 35.51Q16.39 35.30 17.54 35.26L17.53 35.25L17.58 35.30Q18.72 35.32 19.84 35.56L19.75 35.46L19.84 35.55Q19.09 31.09 19.09 23.99L18.92 23.83L19.08 23.98Q19.91 23.83 21.78 23.90L21.80 23.92L21.94 22.40L21.79 22.24Q21.77 21.37 21.81 20.52L21.87 20.59L21.94 20.66Q21.44 20.67 20.49 20.91L20.52 20.94L20.47 20.89Q20.60 20.40 20.70 19.21L20.65 19.16L20.61 19.12Q19.85 19.31 19.13 19.38L19.24 19.49L19.14 19.39Q19.21 18.20 19.31 16.94L19.29 16.92L19.28 16.91Q19.38 16.30 19.86 15.99L19.76 15.90L19.78 15.91Q20.76 15.43 21.49 15.36L21.38 15.25L21.48 15.35Q22.24 15.32 22.99 15.25Z"/><path fill="#322b24" d="M53.23 33.67L53.22 33.66L53.30 33.74Q51.93 33.69 50.53 33.32L50.63 33.42L50.55 33.34Q49.46 32.52 49.32 31.05L49.46 31.19L49.42 31.15Q49.38 30.98 49.55 28.63L49.45 28.53L49.42 28.50Q50.35 28.34 52.15 28.00L52.20 28.05L52.00 28.70L52.10 28.80Q51.79 30.29 53.05 30.80L53.08 30.83L53.18 30.93Q53.85 31.20 55.72 31.20L55.67 31.15L55.66 31.13Q57.13 31.05 57.30 30.98L57.27 30.95L57.25 30.92Q58.12 30.84 58.76 30.40L58.71 30.35L58.65 30.29Q60.06 29.59 59.89 27.72L59.85 27.68L59.80 27.63Q59.65 25.47 58.10 24.07L58.09 24.06L58.15 24.12Q56.63 22.76 54.42 22.76L54.44 22.78L54.43 22.56L54.44 22.58Q54.74 22.50 55.52 22.43L55.46 22.37L55.45 22.36Q57.18 22.28 58.40 21.18L58.39 21.18L58.35 21.13Q59.61 20.06 59.75 18.40L59.74 18.39L59.71 18.36Q59.78 18.05 59.78 17.75L59.88 17.85L59.86 17.83Q59.91 16.52 58.68 15.70L58.63 15.65L58.69 15.71Q57.43 14.82 56.00 14.92L56.16 15.08L56.15 15.07Q54.98 14.92 53.89 15.30L53.77 15.17L53.82 15.23Q52.48 15.65 52.21 16.67L52.24 16.70L52.20 16.67Q52.05 17.36 52.12 18.04L52.09 18.01L52.08 18.01Q51.24 17.88 49.41 17.24L49.33 17.16L49.38 17.21Q49.14 15.67 49.17 14.93L49.18 14.93L49.23 14.99Q49.41 13.70 50.36 13.09L50.29 13.02L50.31 13.04Q51.51 12.44 52.94 12.44L53.01 12.51L53.02 12.52Q55.90 12.54 58.72 12.78L58.61 12.67L58.69 12.75Q63.24 13.16 62.97 16.52L62.81 16.36L62.81 16.36Q62.77 17.72 62.33 19.11L62.32 19.10L62.28 19.06Q61.58 21.93 59.47 22.74L59.41 22.68L59.54 22.81Q61.77 23.17 62.31 26.17L62.34 26.19L62.33 26.18Q62.51 27.18 62.58 28.98L62.56 28.97L62.71 29.11Q62.84 33.08 58.73 33.49L58.54 33.30L58.53 33.30Q58.00 33.48 53.28 33.72ZM57.93 35.72L57.91 35.69L57.90 35.69Q58.51 35.79 61.06 35.86L61.01 35.81L60.99 35.78Q62.57 35.87 64.04 35.30L64.11 35.37L63.98 35.24Q65.15 34.51 64.98 32.95L64.84 32.80L64.94 32.90Q64.90 31.77 64.63 30.21L64.47 30.06L64.63 30.22Q63.91 26.13 62.18 24.67L62.21 24.70L61.92 24.25L61.98 24.27L61.89 24.18Q63.55 22.98 64.23 19.07L64.11 18.95L64.18 19.02Q64.25 18.65 64.35 17.80L64.36 17.81L64.30 17.75Q64.34 17.05 64.28 16.44L64.32 16.48L64.26 16.42Q64.30 15.10 63.14 14.49L63.06 14.40L63.03 14.44L62.91 14.32Q62.80 13.60 61.78 13.12L61.62 12.96L61.68 13.02Q60.30 12.39 55.72 12.12L55.74 12.14L55.67 12.08Q54.30 12.13 52.87 12.13L52.75 12.01L52.91 12.18Q51.46 12.15 50.10 12.72L50.11 12.73L49.97 12.60Q48.87 13.27 48.87 14.83L48.94 14.90L48.87 14.83Q49.00 14.58 49.24 17.57L49.11 17.45L49.16 17.50Q49.41 17.54 50.87 18.09L50.89 18.10L51.00 18.22Q51.00 18.69 50.97 19.13L50.95 19.11L50.79 18.96Q50.90 19.51 50.94 19.99L50.88 19.93L51.00 20.05Q52.44 20.23 54.24 20.34L54.36 20.46L54.25 20.34Q54.33 18.69 55.32 17.94L55.26 17.89L55.27 17.90Q56.04 17.34 57.84 17.14L57.86 17.16L57.81 17.10Q58.80 17.08 59.31 17.25L59.34 17.27L59.32 17.26Q59.27 17.28 59.31 17.38L59.42 17.49L59.43 17.68L59.53 18.18L59.57 18.22Q59.57 18.39 59.54 18.53L59.35 18.34L59.48 18.48Q59.37 19.96 58.01 21.02L57.93 20.93L57.94 20.94Q57.14 21.77 55.34 21.94L55.38 21.98L55.32 21.93Q54.77 22.15 53.98 22.15L54.07 22.24L54.03 22.20Q53.91 22.35 54.05 22.96L54.21 23.13L54.18 23.09Q55.66 23.01 56.95 23.66L56.94 23.64L56.88 23.69L55.43 23.80L55.46 23.83Q55.61 24.25 55.71 24.80L55.64 24.72L55.54 24.63Q57.46 24.57 58.98 25.76L59.11 25.89L59.08 25.86Q59.34 26.25 59.62 27.72L59.60 27.70L59.63 27.73Q59.79 30.34 57.18 30.71L57.14 30.68L57.16 30.70Q55.21 30.86 54.70 30.83L54.81 30.93L54.78 30.90Q54.34 30.77 53.87 30.70L53.81 30.65L53.78 30.21L53.97 29.89L53.94 29.48L54.11 29.34L54.05 29.29Q53.07 29.22 52.35 29.39L52.37 29.40L52.43 29.47Q52.38 29.25 52.38 29.08L52.32 29.02L52.33 29.03Q52.37 28.86 52.37 28.66L52.48 28.77L52.48 28.77Q52.47 28.35 52.60 27.71L52.52 27.62L52.63 27.73Q50.95 27.93 49.29 28.23L49.20 28.14L49.25 28.19Q49.19 28.57 49.08 29.57L49.26 29.75L49.13 29.62Q49.14 30.73 49.14 31.28L49.06 31.20L49.01 31.14Q49.15 33.05 50.37 33.73L50.32 33.68L50.30 33.66Q51.60 35.68 55.82 35.51L55.85 35.54L55.97 35.66Q56.56 35.57 57.92 35.71Z"/><path fill="#35443d" d="M75.11 23.57L74.94 23.40L75.03 23.50Q72.67 23.42 71.76 24.47L71.74 24.46L71.78 24.49Q70.84 25.53 70.84 27.87L71.00 28.03L70.89 27.92Q70.90 32.48 75.01 32.31L74.95 32.26L74.97 32.27Q76.82 32.43 78.03 31.03L78.04 31.05L78.02 31.03Q79.30 29.70 79.09 27.86L79.05 27.83L79.18 27.95Q79.08 25.58 78.30 24.66L78.40 24.76L78.38 24.74Q77.06 23.55 75.09 23.55ZM79.60 32.32L79.45 32.16L79.58 32.30Q78.53 34.51 74.35 34.51L74.30 34.46L72.93 34.38L73.00 34.45Q70.97 34.52 69.98 33.50L69.85 33.38L69.92 33.45Q69.03 32.55 68.79 30.41L68.72 30.34L68.70 30.32Q68.53 28.96 68.46 27.36L68.46 27.36L68.52 27.42Q68.57 26.62 68.44 24.89L68.44 24.89L68.35 24.81Q68.27 20.99 72.90 20.99L72.81 20.90L74.29 20.99L74.29 20.99Q76.91 21.02 78.78 22.18L78.68 22.08L78.69 22.09Q79.41 22.54 79.85 23.15L79.95 23.25L79.80 23.10Q80.06 22.41 80.54 20.95L80.52 20.93L80.58 20.99Q81.61 20.76 83.68 20.22L83.72 20.26L83.79 20.32Q81.53 24.15 81.53 28.84L81.48 28.79L81.54 28.85Q81.44 32.08 82.67 34.84L82.67 34.84L82.62 34.79Q81.57 34.49 79.87 34.29L79.91 34.32L79.95 34.37Q79.87 33.70 79.59 32.31ZM82.38 36.79L82.46 36.88L84.52 37.47L84.53 37.48Q85.49 37.63 86.38 38.04L86.43 38.09L86.34 38.00Q83.18 34.23 83.18 28.79L83.25 28.87L83.06 28.67Q83.16 24.73 85.07 21.33L84.97 21.23L85.03 21.30Q84.44 21.48 83.25 21.82L83.31 21.88L83.39 21.97Q83.51 21.10 84.29 19.74L84.37 19.82L84.45 19.90Q83.80 19.92 80.23 20.67L80.22 20.66L79.89 22.47L79.83 22.41Q78.12 20.74 74.18 20.54L74.34 20.70L74.31 20.67Q73.30 20.68 71.29 20.81L71.25 20.77L71.26 20.78Q67.91 21.03 68.01 24.63L68.03 24.66L68.05 24.68Q68.26 27.74 68.77 31.72L68.68 31.63L68.64 31.96L68.68 32.00Q68.80 32.76 69.51 33.75L69.54 33.78L69.62 33.86Q69.68 33.91 69.85 34.02L69.87 34.04L69.84 34.01Q70.08 34.45 70.42 34.96L70.46 35.01L70.43 34.97Q71.71 36.36 74.74 36.53L74.64 36.43L74.76 36.56Q76.09 36.52 76.22 36.52L76.22 36.51L77.70 36.60L77.76 36.66Q80.61 36.66 81.70 35.26L81.56 35.13L81.64 35.20Q81.87 35.67 82.41 36.83ZM76.55 25.43L76.56 25.43L76.59 25.46Q77.75 25.43 78.50 25.84L78.65 26.00L78.52 25.86Q78.82 26.60 78.82 27.89L78.90 27.98L78.79 27.87Q78.92 29.53 77.79 30.81L77.90 30.92L77.83 30.85Q76.79 32.22 75.09 32.05L75.09 32.05L75.09 32.06Q73.70 31.96 72.79 31.59L72.90 31.70L72.90 31.70Q72.58 30.80 72.58 29.71L72.72 29.85L72.63 29.76Q72.81 26.68 75.15 25.83L75.05 25.73L75.19 25.87Q75.85 25.44 76.57 25.44Z"/></svg>' } }
+[2020-05-30T14:00:16.569] [INFO] response - { method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-30T14:00:26.561] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { account: '1002', password: '123456', code: 'fq3a' },
+  costTime: 66,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-05-30T14:00:26.658] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3297' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>老二</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n\n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>        \n\t  </li>\n     \n     \n      <li>\n        <h4 class="M2"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n    \n\n    <li>\n        <h4 class="M3"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M4"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M5"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M6"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome"  scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n\n' } }
+[2020-05-30T14:00:26.900] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '478' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n\r\n    <div class="jumbotron">\r\n        <h1>Hello, world!</h1>\r\n      </div>\r\n\r\n\r\n</body>\r\n</html>\r\n' } }
+[2020-05-30T14:00:31.094] [INFO] response - { method: 'GET',
+  url: '/users/add',
+  body: {},
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2631' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>增加用户</title>\r\n</head>\r\n\r\n<body>\r\n<div class="panel panel-primary">\r\n    <div class="panel-heading">\r\n        新增用户\r\n    </div>\r\n\r\n    <div class="message">消息提醒</div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/users/doAdd" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 用户账号: <input type="text" name="account" /></li>\r\n\r\n                    <li> 用户密码: <input type="password" name="password"></li>\r\n\r\n                    <li> 用户姓名: <input type="text" name="user_name" /></li>\r\n\r\n                    <li> 用户性别:\r\n                         <select name="user_sex">\r\n                             <option value="1">男</option>\r\n                             <option value="2">女</option>\r\n                         </select>\r\n                    </li>\r\n\r\n                    <li> 联系方式: <input type="text" name="user_phone" /></li>\r\n                  \r\n\r\n                    <li> 用户状态:\r\n                        <select name="user_status">\r\n                           \r\n                            <option value="0">未审核</option>\r\n                            <option value="1">审核成功</option>\r\n                            <option value="2">审核失败</option>\r\n\r\n                        </select>\r\n                        \r\n                        </li>\r\n                  \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n\r\n<script>\r\n     //消息提醒\r\n     function  fade(txt) {\r\n            $(\'.message\').text(txt) //内容撑开\r\n            $(\'.message\').animate({\r\n                top: 0\r\n            })\r\n            setTimeout(function () {\r\n                $(\'.message\').animate({\r\n                    top: \'-100%\'\r\n                })\r\n            }, 1500)\r\n        }\r\n\r\n\r\n</script>\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-30T14:14:51.212] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { password: '123456' },
+  costTime: 126,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-30T14:19:00.910] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { password: '123456' },
+  costTime: 17,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-30T14:30:23.902] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-30T14:31:48.222] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 6,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-30T14:31:48.332] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-30T14:35:18.461] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 15,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-30T14:40:44.359] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-30T14:51:20.664] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 17,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-30T15:11:56.091] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { account: '1001', password: '123456' },
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-05-30T16:55:41.116] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_name: '李新威',
+     user_tel: '12111111111',
+     password: '21505aa07ec05013303dac7527e41b0e',
+     user_id: '1006',
+     solt: '78d369ef-7bc8-44a6-82ba-aef19e8b9f1b' },
+  costTime: 90,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 0, data: [Object] } } }
+[2020-05-30T17:05:39.380] [INFO] response - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_name: '李新威',
+     user_phone: '1211111111',
+     password: '67af89c974daa0954a1107089cb83466',
+     account: '1005',
+     solt: 'fcdd17ca-0f4e-4266-ac50-c7cd0e55ffdd' },
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 0, data: [Object] } } }
+[2020-05-30T17:41:24.956] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { account: '1001', password: '123456' },
+  costTime: 151,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-05-30T22:51:42.448] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { account: '1001', password: '123456' },
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 0, data: [Object] } } }
+[2020-05-30T22:54:45.639] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { account: '1001', password: '123456' },
+  costTime: 32,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 0, data: [Object] } } }
+[2020-05-30T22:55:47.437] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { account: '1001', password: '123456' },
+  costTime: 32,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 0, data: [Object] } } }
+[2020-05-30T23:12:50.915] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { account: '1001', password: '123456' },
+  costTime: 34,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 0, data: [Object] } } }
+[2020-05-30T23:13:18.152] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { account: '1002', password: '123456' },
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 0, data: [Object] } } }
+[2020-05-30T23:16:53.152] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { account: '1001', password: '123456' },
+  costTime: 34,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-05-30T23:23:57.738] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { account: '1001', password: '123456' },
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-05-30T23:24:57.789] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { account: '1001', password: '123456' },
+  costTime: 31,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-05-30T23:24:57.991] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-05-30T23:27:16.931] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { account: '1001', password: '123456' },
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-05-30T23:27:17.179] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-05-30T23:29:17.704] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { account: '1001', password: '123456' },
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-05-30T23:29:17.921] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-05-30T23:30:50.988] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { account: '1001', password: '123456' },
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-05-30T23:30:51.209] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-05-30T23:43:30.548] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { account: '1001', password: '123456' },
+  costTime: 30,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-05-30T23:43:30.759] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-05-30T23:57:36.583] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { account: '1001', password: '123456' },
+  costTime: 31,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-05-30T23:57:36.679] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8082',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }

@@ -1,0 +1,1123 @@
+[2019-12-16T20:46:16.819] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\index.html:4
+       2| <html>
+       3|   <head>
+    >> 4|     <title><%= title %></title>
+       5|     <link rel='stylesheet' href='/stylesheets/style.css' />
+       6|   </head>
+       7|   <body>
+   
+   title is not defined
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\index.html' } }
+[2019-12-16T20:46:21.805] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\index.html:4
+       2| <html>
+       3|   <head>
+    >> 4|     <title><%= title %></title>
+       5|     <link rel='stylesheet' href='/stylesheets/style.css' />
+       6|   </head>
+       7|   <body>
+   
+   title is not defined
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\index.html' } }
+[2019-12-16T20:47:19.098] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\index.html:4
+       2| <html>
+       3|   <head>
+    >> 4|     <title><%= title %></title>
+       5|     <link rel='stylesheet' href='/stylesheets/style.css' />
+       6|   </head>
+       7|   <body>
+   
+   title is not defined
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\index.html' } }
+[2019-12-16T20:47:26.880] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\index.html:4
+       2| <html>
+       3|   <head>
+    >> 4|     <title><%= title %></title>
+       5|     <link rel='stylesheet' href='/stylesheets/style.css' />
+       6|   </head>
+       7|   <body>
+   
+   title is not defined
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\index.html' } }
+[2019-12-16T20:47:55.909] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\index.html:4
+       2| <html>
+       3|   <head>
+    >> 4|     <title><%= title %></title>
+       5|     <link rel='stylesheet' href='/stylesheets/style.css' />
+       6|   </head>
+       7|   <body>
+   
+   title is not defined
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\index.html' } }
+[2019-12-16T20:49:18.107] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\index.html:4
+       2| <html>
+       3|   <head>
+    >> 4|     <title><%= title %></title>
+       5|     <link rel='stylesheet' href='/stylesheets/style.css' />
+       6|   </head>
+       7|   <body>
+   
+   title is not defined
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\index.html' } }
+[2019-12-16T20:49:20.258] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\index.html:4
+       2| <html>
+       3|   <head>
+    >> 4|     <title><%= title %></title>
+       5|     <link rel='stylesheet' href='/stylesheets/style.css' />
+       6|   </head>
+       7|   <body>
+   
+   title is not defined
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\index.html' } }
+[2019-12-16T20:49:21.690] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\index.html:4
+       2| <html>
+       3|   <head>
+    >> 4|     <title><%= title %></title>
+       5|     <link rel='stylesheet' href='/stylesheets/style.css' />
+       6|   </head>
+       7|   <body>
+   
+   title is not defined
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\index.html' } }
+[2019-12-16T20:49:22.791] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\index.html:4
+       2| <html>
+       3|   <head>
+    >> 4|     <title><%= title %></title>
+       5|     <link rel='stylesheet' href='/stylesheets/style.css' />
+       6|   </head>
+       7|   <body>
+   
+   title is not defined
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\index.html' } }
+[2019-12-16T20:50:42.926] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\index.html:4
+       2| <html>
+       3|   <head>
+    >> 4|     <title><%= title %></title>
+       5|     <link rel='stylesheet' href='/stylesheets/style.css' />
+       6|   </head>
+       7|   <body>
+   
+   title is not defined
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\index.html' } }
+[2019-12-16T20:51:35.553] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\index.html:4
+       2| <html>
+       3|   <head>
+    >> 4|     <!-- <title><%= title %></title> -->
+       5|     <link rel='stylesheet' href='/stylesheets/style.css' />
+       6|   </head>
+       7|   <body>
+   
+   title is not defined
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\index.html' } }
+[2019-12-16T20:52:09.822] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\index.html:9
+       7|   <body>
+       8| 
+    >> 9|     <%if(!userInfo.user_id){%>
+       10|     <p><a href="/login">登陆</a></p>
+       11|     <p><a href="/register">注册</a></p>
+       12|     <%}else{%>
+   
+   userInfo is not defined
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:7)
+       at returnedFn (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\index.html' } }
+[2019-12-16T21:00:35.276] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\index.html:4
+       2| <html>
+       3|   <head>
+    >> 4|     <title><%= title %></title>
+       5|     <link rel='stylesheet' href='/stylesheets/style.css' />
+       6|   </head>
+       7|   <body>
+   
+   title is not defined
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\index.html' } }
+[2019-12-16T21:17:46.270] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\index.html:4
+       2| <html>
+       3|   <head>
+    >> 4|     <title><%= title %></title>
+       5|     <link rel='stylesheet' href='/stylesheets/style.css' />
+       6|   </head>
+       7|   <body>
+   
+   title is not defined
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\index.html' } }
+[2019-12-16T21:21:46.502] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\index.html:4
+       2| <html>
+       3|   <head>
+    >> 4|     <title><%= title %></title>
+       5|     <link rel='stylesheet' href='/stylesheets/style.css' />
+       6|   </head>
+       7|   <body>
+   
+   title is not defined
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\index.html' } }
+[2019-12-16T23:42:07.563] [ERROR] error - { method: 'POST',
+  url: '/users/users/add',
+  body:
+   { time_one: '1', time_two: '1', time_three: '1', time_four: '1' },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'user_id' of undefined
+       at add (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:8:30)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2019-12-17T00:28:56.647] [ERROR] error - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: undefined,
+  err:
+   { Error: ENOENT: no such file or directory, open 'F:\users\myself.html'
+     errno: -4058,
+     code: 'ENOENT',
+     syscall: 'open',
+     path: 'F:\\users\\myself.html' } }
+[2019-12-17T00:30:21.394] [ERROR] error - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: undefined,
+  err:
+   { Error: ENOENT: no such file or directory, stat 'F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\myself.html'
+     errno: -4058,
+     code: 'ENOENT',
+     syscall: 'stat',
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\myself.html' } }
+[2019-12-17T00:30:45.559] [ERROR] error - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token ) in F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\users\myself.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:288:16)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:644:58
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2019-12-17T00:33:10.114] [ERROR] error - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\users\myself.html:18
+       16|           <th>18:00--20：00</th>
+       17|         </tr>
+    >> 18|         <% body.forEach(function(body){%>
+       19|         <tr>
+       20|           <td><%=body.user_id %></td>
+       21|           <td><%=body.tome_one %></td>
+   
+   body is not defined
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:8)
+       at returnedFn (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\users\\myself.html' } }
+[2019-12-17T00:43:30.103] [ERROR] error - { method: 'POST',
+  url: '/users/users/add',
+  body:
+   { time_one: '1', time_two: '1', time_three: '1', time_four: '1' },
+  costTime: undefined,
+  err:
+   ReferenceError: user_id is not defined
+       at add (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:9:38)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2019-12-17T00:44:49.618] [ERROR] error - { method: 'POST',
+  url: '/users/users/add',
+  body:
+   { time_one: '1', time_two: '1', time_three: '1', time_four: '1' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "user_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2019-12-17T00:51:43.053] [ERROR] error - { method: 'POST',
+  url: '/users/users/add',
+  body:
+   { time_one: '1', time_two: '1', time_three: '1', time_four: '1' },
+  costTime: undefined,
+  err:
+   ReferenceError: user_id is not defined
+       at add (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:10:21)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2019-12-17T00:59:10.968] [ERROR] error - { method: 'POST',
+  url: '/users/users/add',
+  body:
+   { time_one: '1', time_two: '1', time_three: '1', time_four: '1' },
+  costTime: undefined,
+  err:
+   ReferenceError: user_id is not defined
+       at add (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:12:46)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2019-12-17T00:59:37.139] [ERROR] error - { method: 'POST',
+  url: '/users/users/add',
+  body:
+   { time_one: '1', time_two: '1', time_three: '1', time_four: '1' },
+  costTime: undefined,
+  err:
+   ReferenceError: user_id is not defined
+       at add (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:12:46)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2019-12-17T01:00:36.999] [ERROR] error - { method: 'POST',
+  url: '/users/users/add',
+  body:
+   { time_one: '1', time_two: '1', time_three: '1', time_four: '1' },
+  costTime: undefined,
+  err:
+   ReferenceError: S is not defined
+       at add (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:15:1)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2019-12-17T01:03:07.844] [ERROR] error - { method: 'POST',
+  url: '/users/users/add',
+  body:
+   { time_one: '1', time_two: '1', time_three: '1', time_four: '1' },
+  costTime: undefined,
+  err:
+   ReferenceError: user_id is not defined
+       at add (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:13:48)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2019-12-17T01:03:33.738] [ERROR] error - { method: 'POST',
+  url: '/users/users/add',
+  body:
+   { time_one: '1', time_two: '1', time_three: '1', time_four: '1' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "user_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2019-12-17T14:09:22.206] [ERROR] error - { method: 'POST',
+  url: '/users/users/add',
+  body:
+   { time_one: '1', time_two: '1', time_three: '1', time_four: '1' },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'user_id' of undefined
+       at add (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:17:33)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2019-12-17T14:10:44.377] [ERROR] error - { method: 'POST',
+  url: '/users/users/add',
+  body:
+   { time_one: '1', time_two: '1', time_three: '1', time_four: '1' },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'user_id' of undefined
+       at add (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:17:33)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2019-12-17T14:57:05.640] [ERROR] error - { method: 'POST',
+  url: '/users/users/add',
+  body:
+   { time_one: '1', time_two: '1', time_three: '1', time_four: '1' },
+  costTime: undefined,
+  err:
+   ReferenceError: user_id is not defined
+       at add (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:16:46)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2019-12-17T14:57:35.368] [ERROR] error - { method: 'POST',
+  url: '/users/users/add',
+  body:
+   { time_one: '1', time_two: '1', time_three: '1', time_four: '1' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "user_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2019-12-17T16:07:01.636] [ERROR] error - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllTime (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\service\user_dao.js:35:27)
+       at userInfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:25:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32) }
+[2019-12-17T16:07:37.015] [ERROR] error - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllTime (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\service\user_dao.js:35:27)
+       at userInfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:25:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32) }
+[2019-12-17T16:09:08.444] [ERROR] error - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllTime (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\service\user_dao.js:35:27)
+       at userInfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:25:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32) }
+[2019-12-17T16:09:20.410] [ERROR] error - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllTime (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\service\user_dao.js:35:27)
+       at userInfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:25:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32) }
+[2019-12-17T16:10:07.976] [ERROR] error - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllTime (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\service\user_dao.js:35:27)
+       at userInfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:25:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32) }
+[2019-12-17T16:10:16.354] [ERROR] error - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllTime (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\service\user_dao.js:35:27)
+       at userInfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:25:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32) }
+[2019-12-17T16:16:11.388] [ERROR] error - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllTime (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\service\user_dao.js:23:27)
+       at userInfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:25:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32) }
+[2019-12-17T16:16:43.329] [ERROR] error - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllTime (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\service\user_dao.js:26:27)
+       at userInfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:25:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32) }
+[2019-12-17T16:17:33.459] [ERROR] error - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllTime (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\service\user_dao.js:26:27)
+       at userInfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:25:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32) }
+[2019-12-17T16:17:44.839] [ERROR] error - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllTime (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\service\user_dao.js:26:27)
+       at userInfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:25:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32) }
+[2019-12-17T16:18:40.118] [ERROR] error - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllTime (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\service\user_dao.js:26:27)
+       at userInfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:25:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32) }
+[2019-12-17T16:18:50.897] [ERROR] error - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllTime (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\service\user_dao.js:26:27)
+       at userInfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:25:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32) }
+[2019-12-17T16:43:06.821] [ERROR] error - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllTime (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\service\user_dao.js:26:27)
+       at userInfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:25:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32) }

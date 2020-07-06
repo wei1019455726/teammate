@@ -1,0 +1,602 @@
+[2020-05-29T00:00:07.546] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3323' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>老二</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n\n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>        \n\t  </li>\n     \n     \n      <li>\n        <h4 class="M2"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n    \n\n    <li>\n        <h4 class="M3"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M4"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M5"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M6"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-29T00:00:07.661] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '478' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n\r\n    <div class="jumbotron">\r\n        <h1>Hello, world!</h1>\r\n      </div>\r\n\r\n\r\n</body>\r\n</html>\r\n' } }
+[2020-05-29T00:00:09.559] [INFO] response - { method: 'GET',
+  url: '/announces/add',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2666' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n\r\n\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    \r\n    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">\r\n    <script src="/select/jquery.min.js"></script>\r\n\r\n\r\n    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>\r\n    \r\n\r\n    <title>新增通告</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            新增通告\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n        <div class="panel-body">\r\n            <div class="input-form">\r\n                <form action="/announces/doAdd" class="form" method="post" enctype="multipart/form-data">\r\n\r\n                    <ul>\r\n                        <li> 通告标题: <input type="text" name="announce_title" /></li>\r\n\r\n                        <li> 发布人姓名: <input type="text" name="announce_sperson" /></li>\r\n\r\n                        <li> 发布人电话: <input type="text" name="announce_phone" /></li>\r\n\r\n                        <li> 通告时间: <input style="width: 180px; background-color: #ffffff;" id="announce_time" name="announce_time"></li>\r\n\r\n                        <li> 通告图片: <input type="file" name="announce_photo" /></li>\r\n                        \r\n                        <li> 通告内容: <textarea name="announce_content" cols="60" rows="4" ></textarea></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n                   \r\n                </form>\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n    </div>\r\n\r\n<script>\r\n    $(function () {\r\n        var now = new Date(),\r\n            minDate = new Date(now.getFullYear() - 20, now.getMonth(), now.getDate()),\r\n            maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());\r\n\r\n        mobiscroll.datetime(\'#announce_time\', {\r\n            theme: \'mobiscroll\',\r\n            lang: \'zh\',\r\n            display: \'center\',\r\n            min: minDate,\r\n            max: maxDate\r\n        })\r\n    })\r\n\r\n    \r\n</script>\r\n\r\n<script>\r\n\r\n    var ue = UE.getEditor(\'editor\'); //注意和第五条的 id 对应起来\r\n\r\n</script>\r\n\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-29T00:00:09.592] [INFO] response - { method: 'GET',
+  url: '/select/jquery.min.js',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-29T00:07:39.444] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3323' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>老二</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n\n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>        \n\t  </li>\n     \n     \n      <li>\n        <h4 class="M2"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n    \n\n    <li>\n        <h4 class="M3"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M4"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M5"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M6"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-29T00:07:39.672] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '478' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n\r\n    <div class="jumbotron">\r\n        <h1>Hello, world!</h1>\r\n      </div>\r\n\r\n\r\n</body>\r\n</html>\r\n' } }
+[2020-05-29T00:07:42.227] [INFO] response - { method: 'GET',
+  url: '/announces/add',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2666' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n\r\n\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    \r\n    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">\r\n    <script src="/select/jquery.min.js"></script>\r\n\r\n\r\n    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>\r\n    \r\n\r\n    <title>新增通告</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            新增通告\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n        <div class="panel-body">\r\n            <div class="input-form">\r\n                <form action="/announces/doAdd" class="form" method="post" enctype="multipart/form-data">\r\n\r\n                    <ul>\r\n                        <li> 通告标题: <input type="text" name="announce_title" /></li>\r\n\r\n                        <li> 发布人姓名: <input type="text" name="announce_sperson" /></li>\r\n\r\n                        <li> 发布人电话: <input type="text" name="announce_phone" /></li>\r\n\r\n                        <li> 通告时间: <input style="width: 180px; background-color: #ffffff;" id="announce_time" name="announce_time"></li>\r\n\r\n                        <li> 通告图片: <input type="file" name="announce_photo" /></li>\r\n                        \r\n                        <li> 通告内容: <textarea name="announce_content" cols="60" rows="4" ></textarea></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n                   \r\n                </form>\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n    </div>\r\n\r\n<script>\r\n    $(function () {\r\n        var now = new Date(),\r\n            minDate = new Date(now.getFullYear() - 20, now.getMonth(), now.getDate()),\r\n            maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());\r\n\r\n        mobiscroll.datetime(\'#announce_time\', {\r\n            theme: \'mobiscroll\',\r\n            lang: \'zh\',\r\n            display: \'center\',\r\n            min: minDate,\r\n            max: maxDate\r\n        })\r\n    })\r\n\r\n    \r\n</script>\r\n\r\n<script>\r\n\r\n    var ue = UE.getEditor(\'editor\'); //注意和第五条的 id 对应起来\r\n\r\n</script>\r\n\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-29T00:07:59.485] [INFO] response - { method: 'POST',
+  url: '/announces/doAdd',
+  body:
+   { announce_title: '测试',
+     announce_sperson: '测试',
+     announce_phone: '12049213850',
+     announce_time: '2020/05/29 01:07',
+     announce_content: '测试2' },
+  costTime: 6,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/announces/announcelist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '77' },
+     body:
+      'Redirecting to <a href="/announces/announcelist">/announces/announcelist</a>.' } }
+[2020-05-29T00:07:59.504] [INFO] response - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5101' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>比赛通告列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-primary" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            比赛通告列表\r\n        </div>\r\n\r\n\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="panel-body">\r\n                <form role="form" class="form-inline" method="GET" action="/announces/announcelist">\r\n                    <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                        <label for="name">输入比赛标题</label>\r\n                        <input type="text" class="form-control" id="name" name="keyword"\r\n                            placeholder="请输入比赛标题">\r\n                    </div>\r\n                    <div class="row templatemo-form-buttons">\r\n                        <div class="col-md-2">\r\n                            <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n                        </div>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="col-md-10 col-md-offset-1">\r\n                <div class="table-responsive">\r\n                    <table class="table table-striped table-hover table-bordered">\r\n                        <thead>\r\n                            <tr>\r\n                                <th>比赛通告id</th>\r\n                                <th>比赛通告标题</th>\r\n                                <th>比赛通告内容</th>\r\n                                <th>比赛发布人姓名</th>\r\n                                <th>比赛发布人电话</th>\r\n                                <th>比赛通告时间</th>\r\n                                <th>比赛照片</th>\r\n                                <th>操作</th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                         \r\n                            \r\n                                <tr>\r\n                                    <td>1</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>测试</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-25</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=1" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/1" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n                                <tr>\r\n                                    <td>3</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>张三</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-26</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=3" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/3" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n                                <tr>\r\n                                    <td>4</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>测试</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-25</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=4" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/4" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n\r\n                        </tbody>\r\n        </table>\r\n\r\n\r\n        \r\n        \r\n       \r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-29T00:26:57.614] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3323' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>老二</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n\n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>        \n\t  </li>\n     \n     \n      <li>\n        <h4 class="M2"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n    \n\n    <li>\n        <h4 class="M3"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M4"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M5"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M6"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-29T00:26:57.759] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '478' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n\r\n    <div class="jumbotron">\r\n        <h1>Hello, world!</h1>\r\n      </div>\r\n\r\n\r\n</body>\r\n</html>\r\n' } }
+[2020-05-29T00:26:59.704] [INFO] response - { method: 'GET',
+  url: '/announces/add',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2666' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n\r\n\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    \r\n    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">\r\n    <script src="/select/jquery.min.js"></script>\r\n\r\n\r\n    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>\r\n    \r\n\r\n    <title>新增通告</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            新增通告\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n        <div class="panel-body">\r\n            <div class="input-form">\r\n                <form action="/announces/doAdd" class="form" method="post" enctype="multipart/form-data">\r\n\r\n                    <ul>\r\n                        <li> 通告标题: <input type="text" name="announce_title" /></li>\r\n\r\n                        <li> 发布人姓名: <input type="text" name="announce_sperson" /></li>\r\n\r\n                        <li> 发布人电话: <input type="text" name="announce_phone" /></li>\r\n\r\n                        <li> 通告时间: <input style="width: 180px; background-color: #ffffff;" id="announce_time" name="announce_time"></li>\r\n\r\n                        <li> 通告图片: <input type="file" name="announce_photo" /></li>\r\n                        \r\n                        <li> 通告内容: <textarea name="announce_content" cols="60" rows="4" ></textarea></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n                   \r\n                </form>\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n    </div>\r\n\r\n<script>\r\n    $(function () {\r\n        var now = new Date(),\r\n            minDate = new Date(now.getFullYear() - 20, now.getMonth(), now.getDate()),\r\n            maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());\r\n\r\n        mobiscroll.datetime(\'#announce_time\', {\r\n            theme: \'mobiscroll\',\r\n            lang: \'zh\',\r\n            display: \'center\',\r\n            min: minDate,\r\n            max: maxDate\r\n        })\r\n    })\r\n\r\n    \r\n</script>\r\n\r\n<script>\r\n\r\n    var ue = UE.getEditor(\'editor\'); //注意和第五条的 id 对应起来\r\n\r\n</script>\r\n\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-29T00:27:11.593] [INFO] response - { method: 'POST',
+  url: '/announces/doAdd',
+  body:
+   { announce_title: '测试',
+     announce_sperson: '测试',
+     announce_phone: '12049213850',
+     announce_time: '2020/05/29 00:27',
+     announce_content: '侧耳' },
+  costTime: 6,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/announces/announcelist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '77' },
+     body:
+      'Redirecting to <a href="/announces/announcelist">/announces/announcelist</a>.' } }
+[2020-05-29T00:27:11.611] [INFO] response - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5101' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>比赛通告列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-primary" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            比赛通告列表\r\n        </div>\r\n\r\n\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="panel-body">\r\n                <form role="form" class="form-inline" method="GET" action="/announces/announcelist">\r\n                    <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                        <label for="name">输入比赛标题</label>\r\n                        <input type="text" class="form-control" id="name" name="keyword"\r\n                            placeholder="请输入比赛标题">\r\n                    </div>\r\n                    <div class="row templatemo-form-buttons">\r\n                        <div class="col-md-2">\r\n                            <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n                        </div>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="col-md-10 col-md-offset-1">\r\n                <div class="table-responsive">\r\n                    <table class="table table-striped table-hover table-bordered">\r\n                        <thead>\r\n                            <tr>\r\n                                <th>比赛通告id</th>\r\n                                <th>比赛通告标题</th>\r\n                                <th>比赛通告内容</th>\r\n                                <th>比赛发布人姓名</th>\r\n                                <th>比赛发布人电话</th>\r\n                                <th>比赛通告时间</th>\r\n                                <th>比赛照片</th>\r\n                                <th>操作</th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                         \r\n                            \r\n                                <tr>\r\n                                    <td>1</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>测试</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-25</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=1" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/1" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n                                <tr>\r\n                                    <td>3</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>张三</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-26</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=3" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/3" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n                                <tr>\r\n                                    <td>4</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>测试</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-25</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=4" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/4" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n\r\n                        </tbody>\r\n        </table>\r\n\r\n\r\n        \r\n        \r\n       \r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-29T00:27:13.851] [INFO] response - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5101' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>比赛通告列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-primary" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            比赛通告列表\r\n        </div>\r\n\r\n\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="panel-body">\r\n                <form role="form" class="form-inline" method="GET" action="/announces/announcelist">\r\n                    <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                        <label for="name">输入比赛标题</label>\r\n                        <input type="text" class="form-control" id="name" name="keyword"\r\n                            placeholder="请输入比赛标题">\r\n                    </div>\r\n                    <div class="row templatemo-form-buttons">\r\n                        <div class="col-md-2">\r\n                            <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n                        </div>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="col-md-10 col-md-offset-1">\r\n                <div class="table-responsive">\r\n                    <table class="table table-striped table-hover table-bordered">\r\n                        <thead>\r\n                            <tr>\r\n                                <th>比赛通告id</th>\r\n                                <th>比赛通告标题</th>\r\n                                <th>比赛通告内容</th>\r\n                                <th>比赛发布人姓名</th>\r\n                                <th>比赛发布人电话</th>\r\n                                <th>比赛通告时间</th>\r\n                                <th>比赛照片</th>\r\n                                <th>操作</th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                         \r\n                            \r\n                                <tr>\r\n                                    <td>1</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>测试</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-25</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=1" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/1" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n                                <tr>\r\n                                    <td>3</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>张三</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-26</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=3" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/3" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n                                <tr>\r\n                                    <td>4</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>测试</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-25</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=4" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/4" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n\r\n                        </tbody>\r\n        </table>\r\n\r\n\r\n        \r\n        \r\n       \r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-29T00:27:34.943] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3323' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>老二</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n\n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>        \n\t  </li>\n     \n     \n      <li>\n        <h4 class="M2"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n    \n\n    <li>\n        <h4 class="M3"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M4"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M5"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M6"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-29T00:27:35.040] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '478' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n\r\n    <div class="jumbotron">\r\n        <h1>Hello, world!</h1>\r\n      </div>\r\n\r\n\r\n</body>\r\n</html>\r\n' } }
+[2020-05-29T00:27:37.348] [INFO] response - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5101' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>比赛通告列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-primary" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            比赛通告列表\r\n        </div>\r\n\r\n\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="panel-body">\r\n                <form role="form" class="form-inline" method="GET" action="/announces/announcelist">\r\n                    <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                        <label for="name">输入比赛标题</label>\r\n                        <input type="text" class="form-control" id="name" name="keyword"\r\n                            placeholder="请输入比赛标题">\r\n                    </div>\r\n                    <div class="row templatemo-form-buttons">\r\n                        <div class="col-md-2">\r\n                            <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n                        </div>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="col-md-10 col-md-offset-1">\r\n                <div class="table-responsive">\r\n                    <table class="table table-striped table-hover table-bordered">\r\n                        <thead>\r\n                            <tr>\r\n                                <th>比赛通告id</th>\r\n                                <th>比赛通告标题</th>\r\n                                <th>比赛通告内容</th>\r\n                                <th>比赛发布人姓名</th>\r\n                                <th>比赛发布人电话</th>\r\n                                <th>比赛通告时间</th>\r\n                                <th>比赛照片</th>\r\n                                <th>操作</th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                         \r\n                            \r\n                                <tr>\r\n                                    <td>1</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>测试</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-25</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=1" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/1" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n                                <tr>\r\n                                    <td>3</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>张三</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-26</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=3" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/3" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n                                <tr>\r\n                                    <td>4</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>测试</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-25</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=4" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/4" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n\r\n                        </tbody>\r\n        </table>\r\n\r\n\r\n        \r\n        \r\n       \r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-29T00:28:20.001] [INFO] response - { method: 'GET',
+  url: '/announces/add',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2666' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n\r\n\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    \r\n    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">\r\n    <script src="/select/jquery.min.js"></script>\r\n\r\n\r\n    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>\r\n    \r\n\r\n    <title>新增通告</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            新增通告\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n        <div class="panel-body">\r\n            <div class="input-form">\r\n                <form action="/announces/doAdd" class="form" method="post" enctype="multipart/form-data">\r\n\r\n                    <ul>\r\n                        <li> 通告标题: <input type="text" name="announce_title" /></li>\r\n\r\n                        <li> 发布人姓名: <input type="text" name="announce_sperson" /></li>\r\n\r\n                        <li> 发布人电话: <input type="text" name="announce_phone" /></li>\r\n\r\n                        <li> 通告时间: <input style="width: 180px; background-color: #ffffff;" id="announce_time" name="announce_time"></li>\r\n\r\n                        <li> 通告图片: <input type="file" name="announce_photo" /></li>\r\n                        \r\n                        <li> 通告内容: <textarea name="announce_content" cols="60" rows="4" ></textarea></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n                   \r\n                </form>\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n    </div>\r\n\r\n<script>\r\n    $(function () {\r\n        var now = new Date(),\r\n            minDate = new Date(now.getFullYear() - 20, now.getMonth(), now.getDate()),\r\n            maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());\r\n\r\n        mobiscroll.datetime(\'#announce_time\', {\r\n            theme: \'mobiscroll\',\r\n            lang: \'zh\',\r\n            display: \'center\',\r\n            min: minDate,\r\n            max: maxDate\r\n        })\r\n    })\r\n\r\n    \r\n</script>\r\n\r\n<script>\r\n\r\n    var ue = UE.getEditor(\'editor\'); //注意和第五条的 id 对应起来\r\n\r\n</script>\r\n\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-29T00:37:50.231] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3323' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>老二</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n\n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>        \n\t  </li>\n     \n     \n      <li>\n        <h4 class="M2"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n    \n\n    <li>\n        <h4 class="M3"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M4"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M5"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M6"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-29T00:37:50.366] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '478' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n\r\n    <div class="jumbotron">\r\n        <h1>Hello, world!</h1>\r\n      </div>\r\n\r\n\r\n</body>\r\n</html>\r\n' } }
+[2020-05-29T00:37:52.691] [INFO] response - { method: 'GET',
+  url: '/announces/add',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2666' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n\r\n\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    \r\n    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">\r\n    <script src="/select/jquery.min.js"></script>\r\n\r\n\r\n    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>\r\n    \r\n\r\n    <title>新增通告</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            新增通告\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n        <div class="panel-body">\r\n            <div class="input-form">\r\n                <form action="/announces/doAdd" class="form" method="post" enctype="multipart/form-data">\r\n\r\n                    <ul>\r\n                        <li> 通告标题: <input type="text" name="announce_title" /></li>\r\n\r\n                        <li> 发布人姓名: <input type="text" name="announce_sperson" /></li>\r\n\r\n                        <li> 发布人电话: <input type="text" name="announce_phone" /></li>\r\n\r\n                        <li> 通告时间: <input style="width: 180px; background-color: #ffffff;" id="announce_time" name="announce_time"></li>\r\n\r\n                        <li> 通告图片: <input type="file" name="announce_photo" /></li>\r\n                        \r\n                        <li> 通告内容: <textarea name="announce_content" cols="60" rows="4" ></textarea></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n                   \r\n                </form>\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n    </div>\r\n\r\n<script>\r\n    $(function () {\r\n        var now = new Date(),\r\n            minDate = new Date(now.getFullYear() - 20, now.getMonth(), now.getDate()),\r\n            maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());\r\n\r\n        mobiscroll.datetime(\'#announce_time\', {\r\n            theme: \'mobiscroll\',\r\n            lang: \'zh\',\r\n            display: \'center\',\r\n            min: minDate,\r\n            max: maxDate\r\n        })\r\n    })\r\n\r\n    \r\n</script>\r\n\r\n<script>\r\n\r\n    var ue = UE.getEditor(\'editor\'); //注意和第五条的 id 对应起来\r\n\r\n</script>\r\n\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-29T00:38:11.793] [INFO] response - { method: 'POST',
+  url: '/announces/doAdd',
+  body:
+   { announce_title: '测试',
+     announce_sperson: '测试',
+     announce_phone: '12049213850',
+     announce_time: '2020/05/29 00:37',
+     announce_content: '测试' },
+  costTime: 8,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/announces/announcelist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '77' },
+     body:
+      'Redirecting to <a href="/announces/announcelist">/announces/announcelist</a>.' } }
+[2020-05-29T00:38:11.820] [INFO] response - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5101' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>比赛通告列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-primary" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            比赛通告列表\r\n        </div>\r\n\r\n\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="panel-body">\r\n                <form role="form" class="form-inline" method="GET" action="/announces/announcelist">\r\n                    <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                        <label for="name">输入比赛标题</label>\r\n                        <input type="text" class="form-control" id="name" name="keyword"\r\n                            placeholder="请输入比赛标题">\r\n                    </div>\r\n                    <div class="row templatemo-form-buttons">\r\n                        <div class="col-md-2">\r\n                            <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n                        </div>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="col-md-10 col-md-offset-1">\r\n                <div class="table-responsive">\r\n                    <table class="table table-striped table-hover table-bordered">\r\n                        <thead>\r\n                            <tr>\r\n                                <th>比赛通告id</th>\r\n                                <th>比赛通告标题</th>\r\n                                <th>比赛通告内容</th>\r\n                                <th>比赛发布人姓名</th>\r\n                                <th>比赛发布人电话</th>\r\n                                <th>比赛通告时间</th>\r\n                                <th>比赛照片</th>\r\n                                <th>操作</th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                         \r\n                            \r\n                                <tr>\r\n                                    <td>1</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>测试</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-25</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=1" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/1" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n                                <tr>\r\n                                    <td>3</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>张三</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-26</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=3" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/3" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n                                <tr>\r\n                                    <td>4</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>测试</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-25</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=4" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/4" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n\r\n                        </tbody>\r\n        </table>\r\n\r\n\r\n        \r\n        \r\n       \r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-29T00:47:52.221] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3323' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>老二</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n\n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>        \n\t  </li>\n     \n     \n      <li>\n        <h4 class="M2"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n    \n\n    <li>\n        <h4 class="M3"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M4"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M5"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M6"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-29T00:47:52.362] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '478' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n\r\n    <div class="jumbotron">\r\n        <h1>Hello, world!</h1>\r\n      </div>\r\n\r\n\r\n</body>\r\n</html>\r\n' } }
+[2020-05-29T00:47:54.183] [INFO] response - { method: 'GET',
+  url: '/announces/add',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2666' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n\r\n\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    \r\n    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">\r\n    <script src="/select/jquery.min.js"></script>\r\n\r\n\r\n    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>\r\n    \r\n\r\n    <title>新增通告</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            新增通告\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n        <div class="panel-body">\r\n            <div class="input-form">\r\n                <form action="/announces/doAdd" class="form" method="post" enctype="multipart/form-data">\r\n\r\n                    <ul>\r\n                        <li> 通告标题: <input type="text" name="announce_title" /></li>\r\n\r\n                        <li> 发布人姓名: <input type="text" name="announce_sperson" /></li>\r\n\r\n                        <li> 发布人电话: <input type="text" name="announce_phone" /></li>\r\n\r\n                        <li> 通告时间: <input style="width: 180px; background-color: #ffffff;" id="announce_time" name="announce_time"></li>\r\n\r\n                        <li> 通告图片: <input type="file" name="announce_photo" /></li>\r\n                        \r\n                        <li> 通告内容: <textarea name="announce_content" cols="60" rows="4" ></textarea></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n                   \r\n                </form>\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n    </div>\r\n\r\n<script>\r\n    $(function () {\r\n        var now = new Date(),\r\n            minDate = new Date(now.getFullYear() - 20, now.getMonth(), now.getDate()),\r\n            maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());\r\n\r\n        mobiscroll.datetime(\'#announce_time\', {\r\n            theme: \'mobiscroll\',\r\n            lang: \'zh\',\r\n            display: \'center\',\r\n            min: minDate,\r\n            max: maxDate\r\n        })\r\n    })\r\n\r\n    \r\n</script>\r\n\r\n<script>\r\n\r\n    var ue = UE.getEditor(\'editor\'); //注意和第五条的 id 对应起来\r\n\r\n</script>\r\n\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-29T00:48:07.641] [INFO] response - { method: 'POST',
+  url: '/announces/doAdd',
+  body:
+   { announce_title: '测试',
+     announce_sperson: '测试',
+     announce_phone: '12049213850',
+     announce_time: '2020/05/29 00:47',
+     announce_content: '测试' },
+  costTime: 6,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/announces/announcelist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '77' },
+     body:
+      'Redirecting to <a href="/announces/announcelist">/announces/announcelist</a>.' } }
+[2020-05-29T00:48:07.660] [INFO] response - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5101' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>比赛通告列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-primary" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            比赛通告列表\r\n        </div>\r\n\r\n\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="panel-body">\r\n                <form role="form" class="form-inline" method="GET" action="/announces/announcelist">\r\n                    <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n                        <label for="name">输入比赛标题</label>\r\n                        <input type="text" class="form-control" id="name" name="keyword"\r\n                            placeholder="请输入比赛标题">\r\n                    </div>\r\n                    <div class="row templatemo-form-buttons">\r\n                        <div class="col-md-2">\r\n                            <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n                        </div>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n            <div class="col-md-10 col-md-offset-1">\r\n                <div class="table-responsive">\r\n                    <table class="table table-striped table-hover table-bordered">\r\n                        <thead>\r\n                            <tr>\r\n                                <th>比赛通告id</th>\r\n                                <th>比赛通告标题</th>\r\n                                <th>比赛通告内容</th>\r\n                                <th>比赛发布人姓名</th>\r\n                                <th>比赛发布人电话</th>\r\n                                <th>比赛通告时间</th>\r\n                                <th>比赛照片</th>\r\n                                <th>操作</th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                         \r\n                            \r\n                                <tr>\r\n                                    <td>1</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>测试</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-25</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=1" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/1" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n                                <tr>\r\n                                    <td>3</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>张三</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-26</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=3" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/3" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n                                <tr>\r\n                                    <td>4</td>\r\n                                    <td>测试</td>                 \r\n                                    <td>测试</td>\r\n                                    <td>测试</td>\r\n                                    <td>12049213850</td>\r\n                                    <td>2020-05-25</td>\r\n                                    <td>\r\n                                        <a href="/announces/edit?id=4" class="btn btn-info">修改</a>\r\n                                        <a href="/announces/delect/4" class="btn btn-danger delete">删除</a>\r\n                                    </td>\r\n                                </tr>\r\n           \r\n                            \r\n\r\n                        </tbody>\r\n        </table>\r\n\r\n\r\n        \r\n        \r\n       \r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-29T00:52:00.650] [INFO] response - { method: 'GET',
+  url: '/announces/add',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2666' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n\r\n\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    \r\n    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">\r\n    <script src="/select/jquery.min.js"></script>\r\n\r\n\r\n    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>\r\n    \r\n\r\n    <title>新增通告</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            新增通告\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n        <div class="panel-body">\r\n            <div class="input-form">\r\n                <form action="/announces/doAdd" class="form" method="post" enctype="multipart/form-data">\r\n\r\n                    <ul>\r\n                        <li> 通告标题: <input type="text" name="announce_title" /></li>\r\n\r\n                        <li> 发布人姓名: <input type="text" name="announce_sperson" /></li>\r\n\r\n                        <li> 发布人电话: <input type="text" name="announce_phone" /></li>\r\n\r\n                        <li> 通告时间: <input style="width: 180px; background-color: #ffffff;" id="announce_time" name="announce_time"></li>\r\n\r\n                        <li> 通告图片: <input type="file" name="announce_photo" /></li>\r\n                        \r\n                        <li> 通告内容: <textarea name="announce_content" cols="60" rows="4" ></textarea></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n                   \r\n                </form>\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n    </div>\r\n\r\n<script>\r\n    $(function () {\r\n        var now = new Date(),\r\n            minDate = new Date(now.getFullYear() - 20, now.getMonth(), now.getDate()),\r\n            maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());\r\n\r\n        mobiscroll.datetime(\'#announce_time\', {\r\n            theme: \'mobiscroll\',\r\n            lang: \'zh\',\r\n            display: \'center\',\r\n            min: minDate,\r\n            max: maxDate\r\n        })\r\n    })\r\n\r\n    \r\n</script>\r\n\r\n<script>\r\n\r\n    var ue = UE.getEditor(\'editor\'); //注意和第五条的 id 对应起来\r\n\r\n</script>\r\n\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-29T00:54:38.808] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3323' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>老二</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n\n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>        \n\t  </li>\n     \n     \n      <li>\n        <h4 class="M2"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n    \n\n    <li>\n        <h4 class="M3"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M4"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M5"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M6"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-29T00:54:38.956] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '478' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n\r\n    <div class="jumbotron">\r\n        <h1>Hello, world!</h1>\r\n      </div>\r\n\r\n\r\n</body>\r\n</html>\r\n' } }
+[2020-05-29T00:54:41.064] [INFO] response - { method: 'GET',
+  url: '/announces/add',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2666' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n\r\n\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    \r\n    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">\r\n    <script src="/select/jquery.min.js"></script>\r\n\r\n\r\n    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>\r\n    \r\n\r\n    <title>新增通告</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            新增通告\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n        <div class="panel-body">\r\n            <div class="input-form">\r\n                <form action="/announces/doAdd" class="form" method="post" enctype="multipart/form-data">\r\n\r\n                    <ul>\r\n                        <li> 通告标题: <input type="text" name="announce_title" /></li>\r\n\r\n                        <li> 发布人姓名: <input type="text" name="announce_sperson" /></li>\r\n\r\n                        <li> 发布人电话: <input type="text" name="announce_phone" /></li>\r\n\r\n                        <li> 通告时间: <input style="width: 180px; background-color: #ffffff;" id="announce_time" name="announce_time"></li>\r\n\r\n                        <li> 通告图片: <input type="file" name="announce_photo" /></li>\r\n                        \r\n                        <li> 通告内容: <textarea name="announce_content" cols="60" rows="4" ></textarea></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n                   \r\n                </form>\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n    </div>\r\n\r\n<script>\r\n    $(function () {\r\n        var now = new Date(),\r\n            minDate = new Date(now.getFullYear() - 20, now.getMonth(), now.getDate()),\r\n            maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());\r\n\r\n        mobiscroll.datetime(\'#announce_time\', {\r\n            theme: \'mobiscroll\',\r\n            lang: \'zh\',\r\n            display: \'center\',\r\n            min: minDate,\r\n            max: maxDate\r\n        })\r\n    })\r\n\r\n    \r\n</script>\r\n\r\n<script>\r\n\r\n    var ue = UE.getEditor(\'editor\'); //注意和第五条的 id 对应起来\r\n\r\n</script>\r\n\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-29T00:55:06.937] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3323' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>老二</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n\n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>        \n\t  </li>\n     \n     \n      <li>\n        <h4 class="M2"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n    \n\n    <li>\n        <h4 class="M3"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M4"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M5"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M6"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }

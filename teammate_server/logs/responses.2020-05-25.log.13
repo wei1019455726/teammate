@@ -1,0 +1,1139 @@
+[2020-05-25T10:40:14.442] [INFO] response - { method: 'GET',
+  url: '/ueditor/lang/zh-cn/zh-cn.js',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T10:40:14.446] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap/js/bootstrap.min.js',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T10:40:14.470] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/js/bootstrap-select.min.js',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T10:40:14.482] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/js/i18n/defaults-zh_CN.min.js',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T10:40:14.513] [INFO] response - { method: 'GET',
+  url: '/ueditor/ueditor.config.js',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T10:40:14.521] [INFO] response - { method: 'GET',
+  url: '/ueditor/ueditor.all.min.js',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T10:40:14.528] [INFO] response - { method: 'GET',
+  url: '/ueditor/lang/zh-cn/zh-cn.js',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:03:39.965] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3323' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>老二</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n\n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>        \n\t  </li>\n     \n     \n      <li>\n        <h4 class="M2"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n    \n\n    <li>\n        <h4 class="M3"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M4"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M5"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M6"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-25T11:03:40.112] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '478' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n\r\n    <div class="jumbotron">\r\n        <h1>Hello, world!</h1>\r\n      </div>\r\n\r\n\r\n</body>\r\n</html>\r\n' } }
+[2020-05-25T11:03:42.772] [INFO] response - { method: 'GET',
+  url: '/announces/add',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3224' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link rel="stylesheet" href="/select/bootstrap/css/bootstrap.min.css" />\r\n    <link href="/select/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    \r\n    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">\r\n    <script src="/select/jquery.min.js"></script>\r\n    <script src="/select/bootstrap/js/bootstrap.min.js"></script>\r\n    <script src="/select/bootstrap-select/js/bootstrap-select.min.js"></script>\r\n    <script src="/select/bootstrap-select/js/i18n/defaults-zh_CN.min.js"></script>\r\n    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>\r\n    \r\n    <!--百度富文本编辑器-->\r\n    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>\r\n    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js"> </script>\r\n    <script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"></script>\r\n\r\n\r\n\r\n\r\n    <title>新增通告</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            新增通告\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n        <div class="panel-body">\r\n            <div class="input-form">\r\n                <form action="/announces/doAdd" class="form" method="post" enctype="multipart/form-data">\r\n\r\n                    <ul>\r\n                        <li> 通告标题: <input type="text" name="announce_title" /></li>\r\n\r\n                        <li> 发布人姓名: <input type="text" name="announce_sperson" /></li>\r\n\r\n                        <li> 发布人电话: <input type="text" name="announce_phone" /></li>\r\n\r\n                        <li> 通告时间: <input style="width: 180px; background-color: #ffffff;" id="announce_time" name="announce_time"></li>\r\n\r\n                        <li> 通告内容: <textarea name="description" cols="60" rows="4"></textarea></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    </div>\r\n\r\n<script>\r\n    $(function () {\r\n        var now = new Date(),\r\n            minDate = new Date(now.getFullYear() - 20, now.getMonth(), now.getDate()),\r\n            maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());\r\n\r\n        mobiscroll.datetime(\'#announce_time\', {\r\n            theme: \'mobiscroll\',\r\n            lang: \'zh\',\r\n            display: \'center\',\r\n            min: minDate,\r\n            max: maxDate\r\n        })\r\n    })\r\n</script>\r\n\r\n<script>\r\n\r\n    var ue = UE.getEditor(\'editor\'); //注意和第五条的 id 对应起来\r\n\r\n</script>\r\n\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-25T11:03:42.815] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap/css/bootstrap.min.css',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:03:42.830] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/css/bootstrap-select.min.css',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:03:42.830] [INFO] response - { method: 'GET',
+  url: '/select/jquery.min.js',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:03:42.834] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap/js/bootstrap.min.js',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:03:42.852] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/js/bootstrap-select.min.js',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:03:42.855] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/js/i18n/defaults-zh_CN.min.js',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:03:42.871] [INFO] response - { method: 'GET',
+  url: '/ueditor/ueditor.config.js',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:03:42.871] [INFO] response - { method: 'GET',
+  url: '/ueditor/ueditor.all.min.js',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:03:42.876] [INFO] response - { method: 'GET',
+  url: '/ueditor/lang/zh-cn/zh-cn.js',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:03:42.884] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap/js/bootstrap.min.js',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:03:42.897] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/js/bootstrap-select.min.js',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:03:42.904] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/js/i18n/defaults-zh_CN.min.js',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:03:42.931] [INFO] response - { method: 'GET',
+  url: '/ueditor/ueditor.config.js',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:03:42.936] [INFO] response - { method: 'GET',
+  url: '/ueditor/ueditor.all.min.js',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:03:42.942] [INFO] response - { method: 'GET',
+  url: '/ueditor/lang/zh-cn/zh-cn.js',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:04:24.467] [INFO] response - { method: 'POST',
+  url: '/announces/doAdd',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:05:20.788] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3323' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>老二</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n\n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>        \n\t  </li>\n     \n     \n      <li>\n        <h4 class="M2"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n    \n\n    <li>\n        <h4 class="M3"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M4"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M5"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M6"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-25T11:05:20.887] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '478' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n\r\n    <div class="jumbotron">\r\n        <h1>Hello, world!</h1>\r\n      </div>\r\n\r\n\r\n</body>\r\n</html>\r\n' } }
+[2020-05-25T11:05:23.378] [INFO] response - { method: 'GET',
+  url: '/announces/add',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3224' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link rel="stylesheet" href="/select/bootstrap/css/bootstrap.min.css" />\r\n    <link href="/select/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    \r\n    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">\r\n    <script src="/select/jquery.min.js"></script>\r\n    <script src="/select/bootstrap/js/bootstrap.min.js"></script>\r\n    <script src="/select/bootstrap-select/js/bootstrap-select.min.js"></script>\r\n    <script src="/select/bootstrap-select/js/i18n/defaults-zh_CN.min.js"></script>\r\n    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>\r\n    \r\n    <!--百度富文本编辑器-->\r\n    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>\r\n    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js"> </script>\r\n    <script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"></script>\r\n\r\n\r\n\r\n\r\n    <title>新增通告</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            新增通告\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n        <div class="panel-body">\r\n            <div class="input-form">\r\n                <form action="/announces/doAdd" class="form" method="post" enctype="multipart/form-data">\r\n\r\n                    <ul>\r\n                        <li> 通告标题: <input type="text" name="announce_title" /></li>\r\n\r\n                        <li> 发布人姓名: <input type="text" name="announce_sperson" /></li>\r\n\r\n                        <li> 发布人电话: <input type="text" name="announce_phone" /></li>\r\n\r\n                        <li> 通告时间: <input style="width: 180px; background-color: #ffffff;" id="announce_time" name="announce_time"></li>\r\n\r\n                        <li> 通告内容: <textarea name="description" cols="60" rows="4"></textarea></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    </div>\r\n\r\n<script>\r\n    $(function () {\r\n        var now = new Date(),\r\n            minDate = new Date(now.getFullYear() - 20, now.getMonth(), now.getDate()),\r\n            maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());\r\n\r\n        mobiscroll.datetime(\'#announce_time\', {\r\n            theme: \'mobiscroll\',\r\n            lang: \'zh\',\r\n            display: \'center\',\r\n            min: minDate,\r\n            max: maxDate\r\n        })\r\n    })\r\n</script>\r\n\r\n<script>\r\n\r\n    var ue = UE.getEditor(\'editor\'); //注意和第五条的 id 对应起来\r\n\r\n</script>\r\n\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-25T11:05:23.411] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap/css/bootstrap.min.css',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:05:23.417] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/css/bootstrap-select.min.css',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:05:23.430] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap/js/bootstrap.min.js',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:05:23.433] [INFO] response - { method: 'GET',
+  url: '/select/jquery.min.js',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:05:23.452] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/js/bootstrap-select.min.js',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:05:23.464] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/js/i18n/defaults-zh_CN.min.js',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:05:23.466] [INFO] response - { method: 'GET',
+  url: '/ueditor/ueditor.all.min.js',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:05:23.470] [INFO] response - { method: 'GET',
+  url: '/ueditor/ueditor.config.js',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:05:23.474] [INFO] response - { method: 'GET',
+  url: '/ueditor/lang/zh-cn/zh-cn.js',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:05:23.609] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap/js/bootstrap.min.js',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:05:23.643] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/js/bootstrap-select.min.js',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:05:23.653] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/js/i18n/defaults-zh_CN.min.js',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:05:23.667] [INFO] response - { method: 'GET',
+  url: '/ueditor/ueditor.config.js',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:05:23.675] [INFO] response - { method: 'GET',
+  url: '/ueditor/ueditor.all.min.js',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:05:23.682] [INFO] response - { method: 'GET',
+  url: '/ueditor/lang/zh-cn/zh-cn.js',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:05:33.192] [INFO] response - { method: 'POST',
+  url: '/announces/doAdd',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:08:46.020] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3323' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>老二</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n\n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>        \n\t  </li>\n     \n     \n      <li>\n        <h4 class="M2"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n    \n\n    <li>\n        <h4 class="M3"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M4"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M5"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M6"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-25T11:08:46.122] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '478' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n\r\n    <div class="jumbotron">\r\n        <h1>Hello, world!</h1>\r\n      </div>\r\n\r\n\r\n</body>\r\n</html>\r\n' } }
+[2020-05-25T11:08:47.954] [INFO] response - { method: 'GET',
+  url: '/announces/add',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3224' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link rel="stylesheet" href="/select/bootstrap/css/bootstrap.min.css" />\r\n    <link href="/select/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    \r\n    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">\r\n    <script src="/select/jquery.min.js"></script>\r\n    <script src="/select/bootstrap/js/bootstrap.min.js"></script>\r\n    <script src="/select/bootstrap-select/js/bootstrap-select.min.js"></script>\r\n    <script src="/select/bootstrap-select/js/i18n/defaults-zh_CN.min.js"></script>\r\n    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>\r\n    \r\n    <!--百度富文本编辑器-->\r\n    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>\r\n    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js"> </script>\r\n    <script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"></script>\r\n\r\n\r\n\r\n\r\n    <title>新增通告</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            新增通告\r\n        </div>\r\n        <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n        <div class="row">\r\n        <div class="panel-body">\r\n            <div class="input-form">\r\n                <form action="/announces/doAdd" class="form" method="post" enctype="multipart/form-data">\r\n\r\n                    <ul>\r\n                        <li> 通告标题: <input type="text" name="announce_title" /></li>\r\n\r\n                        <li> 发布人姓名: <input type="text" name="announce_sperson" /></li>\r\n\r\n                        <li> 发布人电话: <input type="text" name="announce_phone" /></li>\r\n\r\n                        <li> 通告时间: <input style="width: 180px; background-color: #ffffff;" id="announce_time" name="announce_time"></li>\r\n\r\n                        <li> 通告内容: <textarea name="description" cols="60" rows="4"></textarea></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    </div>\r\n\r\n<script>\r\n    $(function () {\r\n        var now = new Date(),\r\n            minDate = new Date(now.getFullYear() - 20, now.getMonth(), now.getDate()),\r\n            maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());\r\n\r\n        mobiscroll.datetime(\'#announce_time\', {\r\n            theme: \'mobiscroll\',\r\n            lang: \'zh\',\r\n            display: \'center\',\r\n            min: minDate,\r\n            max: maxDate\r\n        })\r\n    })\r\n</script>\r\n\r\n<script>\r\n\r\n    var ue = UE.getEditor(\'editor\'); //注意和第五条的 id 对应起来\r\n\r\n</script>\r\n\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-25T11:08:48.006] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap/css/bootstrap.min.css',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:08:48.007] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/css/bootstrap-select.min.css',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:08:48.012] [INFO] response - { method: 'GET',
+  url: '/select/jquery.min.js',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:08:48.012] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap/js/bootstrap.min.js',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:08:48.037] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/js/i18n/defaults-zh_CN.min.js',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:08:48.038] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/js/bootstrap-select.min.js',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:08:48.041] [INFO] response - { method: 'GET',
+  url: '/ueditor/ueditor.config.js',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:08:48.041] [INFO] response - { method: 'GET',
+  url: '/ueditor/ueditor.all.min.js',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:08:48.058] [INFO] response - { method: 'GET',
+  url: '/ueditor/lang/zh-cn/zh-cn.js',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:08:48.071] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap/js/bootstrap.min.js',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:08:48.085] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/js/bootstrap-select.min.js',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:08:48.092] [INFO] response - { method: 'GET',
+  url: '/select/bootstrap-select/js/i18n/defaults-zh_CN.min.js',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:08:48.104] [INFO] response - { method: 'GET',
+  url: '/ueditor/ueditor.config.js',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:08:48.111] [INFO] response - { method: 'GET',
+  url: '/ueditor/ueditor.all.min.js',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T11:08:48.118] [INFO] response - { method: 'GET',
+  url: '/ueditor/lang/zh-cn/zh-cn.js',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-25T15:09:25.745] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 31,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1252' },
+     body:
+      '<!DOCTYPE html>\n<head>\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n\t<title>登录</title>\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \n</head>\n<body>\n\t<div class="container">\n\t\t<section id="content">\n\t\t\t<form action="/checkLogin" method="post">\n\t\t\t\t<h1>登录</h1>\n\t\t\t\t<div>\n\t\t\t\t\t<input type="text" placeholder="账号" required="" id="account" name="account"/>\n\t\t\t\t</div>\n\t\t\t\t<div>\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\n\t\t\t\t</div>\n\n\t\t\t\t<div> <input placeholder="验证码" id="verify" type="text" name="code">\n\t\t\t\t\t<img id="verify_img" src="/verify" title="看不清？点击刷新"  style="position: relative;top: 15px;"\n\t\t\t\t\t\tonclick="javascript:this.src=\'/verify?mt=\'+Math.random()">\n\t\t\t\t</div>\n\n\t\t\t\t<div class="">\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\n\t\t\t\t</div>\n\n\t\t\t\t<div>\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\n\t\t\t\t</div>\n\t\t\t</form><!-- form -->\n\n\t\t</section><!-- content -->\n\t</div>\n\t<!-- container -->\n</body>\n</html>' } }
+[2020-05-25T15:09:26.073] [INFO] response - { method: 'GET',
+  url: '/verify',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'image/svg+xml',
+        'content-length': '8108' },
+     body:
+      '<svg xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0,0,100,40"><rect width="100%" height="100%" fill="#cc9966"/><path fill="#555557" d="M64.04 18.39L64.03 18.38L64.11 18.46Q62.65 14.90 57.11 15.07L57.06 15.01L57.09 15.04Q53.03 15.03 51.26 16.32L51.32 16.38L51.29 16.34Q49.26 18.03 49.26 21.70L49.18 21.62L49.18 23.28L49.27 23.37Q49.24 31.22 57.29 31.22L57.22 31.15L57.32 31.25Q59.17 31.26 60.49 30.55L60.40 30.46L60.41 30.47Q62.12 29.63 61.99 27.96L61.90 27.87L61.85 27.83Q61.72 25.99 58.42 25.18L58.52 25.27L56.66 25.15L56.74 25.23Q55.90 25.24 55.05 25.27L55.05 25.27L55.06 25.29Q54.96 24.33 54.92 22.63L54.95 22.66L54.94 22.65Q61.87 22.75 65.61 22.44L65.46 22.30L65.47 22.30Q65.42 23.04 65.42 23.75L65.52 23.85L65.54 23.87Q65.54 24.58 65.57 25.29L65.51 25.23L65.54 25.26Q64.47 25.18 64.47 25.18L64.51 25.22L64.46 25.17Q63.26 25.19 63.60 25.19L63.65 25.24L63.56 25.15Q64.53 26.60 64.87 28.37L64.96 28.46L64.93 28.43Q65.08 29.12 65.08 29.53L65.01 29.45L64.98 29.42Q65.05 33.65 57.20 33.65L57.31 33.75L57.31 33.76Q50.81 33.61 48.49 31.74L48.64 31.88L48.62 31.86Q46.85 29.76 46.85 25.23L46.81 25.19L46.82 25.20Q46.80 24.23 46.66 21.81L46.74 21.89L46.68 21.83Q46.57 19.75 46.61 18.53L46.45 18.38L46.56 18.48Q46.67 15.94 47.89 14.52L47.92 14.54L47.95 14.57Q50.21 12.72 54.56 12.55L54.50 12.48L56.91 12.45L56.80 12.34Q59.61 12.29 62.67 12.67L62.66 12.66L62.69 12.70Q66.00 13.08 66.85 15.97L66.86 15.98L66.83 15.95Q66.01 16.86 64.14 18.49ZM65.26 20.32L65.48 20.44L65.52 20.48Q66.60 19.52 68.26 17.75L68.10 17.59L68.18 17.68Q67.85 16.76 66.97 15.23L67.14 15.40L67.02 15.29Q65.92 12.86 62.52 12.28L62.57 12.33L62.65 12.41Q60.63 12.19 56.79 11.92L56.91 12.05L54.53 12.18L54.45 12.10Q49.88 12.32 47.57 14.09L47.52 14.04L47.52 14.04Q46.32 15.52 46.22 18.28L46.17 18.23L46.24 18.30Q46.19 17.84 46.39 22.74L46.42 22.77L46.51 22.85Q46.37 23.90 46.43 26.35L46.50 26.41L46.45 26.36Q46.78 30.50 48.34 32.23L48.34 32.22L48.28 32.17Q48.52 32.82 49.30 33.60L49.45 33.75L49.27 33.57Q51.86 35.24 56.79 35.54L56.95 35.71L59.54 35.88L59.45 35.79Q60.90 35.91 62.70 35.81L62.66 35.78L62.72 35.84Q63.99 35.75 65.86 35.27L65.93 35.34L65.85 35.26Q67.66 34.89 67.63 32.82L67.52 32.71L67.56 32.76Q67.60 31.67 66.64 29.19L66.67 29.21L66.54 29.09Q66.25 28.25 65.77 27.53L65.86 27.62L65.82 27.58Q66.43 27.68 67.48 27.85L67.44 27.81L67.39 27.76Q67.10 24.51 67.14 23.90L67.16 23.92L67.24 24.01Q66.78 23.89 66.41 23.85L66.53 23.97L66.46 23.91Q66.10 23.85 65.76 23.92L65.80 23.96L65.81 23.97Q65.89 23.06 65.96 22.11L65.83 21.98L65.85 22.01Q60.20 22.41 54.59 22.30L54.63 22.34L54.71 22.42Q54.67 23.17 54.67 23.98L54.66 23.97L54.78 25.65L54.69 25.56Q55.01 25.54 55.38 25.51L55.43 25.55L55.53 25.66Q55.80 25.55 56.21 25.55L56.20 25.54L56.28 25.63Q56.28 26.03 56.32 26.47L56.24 26.40L56.20 26.36Q56.31 26.88 56.28 27.32L56.22 27.26L56.26 27.30Q57.13 27.22 58.05 27.19L58.14 27.28L58.08 27.22Q58.94 27.16 59.86 27.19L59.93 27.27L60.00 27.34Q60.82 27.44 61.60 27.78L61.67 27.85L61.69 27.91L61.59 27.80Q61.74 29.18 60.24 29.99L60.28 30.03L60.26 30.01Q58.75 30.81 57.22 30.81L57.33 30.92L57.33 30.92Q53.76 30.79 51.59 29.22L51.61 29.25L51.58 29.22Q50.87 27.55 51.01 25.28L50.88 25.15L50.87 25.14Q51.20 20.91 52.85 19.13L52.78 19.06L52.75 19.04Q54.54 17.38 58.72 17.11L58.69 17.09L58.60 16.99Q62.00 16.92 63.73 18.52L63.60 18.40L63.61 18.41Q63.84 18.67 63.94 18.84L63.90 18.79L63.89 18.68L63.89 18.68Q64.51 19.40 65.02 20.39L65.12 20.49L65.43 20.49Z"/><path fill="#545454" d="M34.67 10.27L34.76 10.36L34.76 10.36Q35.42 11.97 36.92 12.28L36.94 12.30L36.87 12.23Q37.37 12.35 37.98 12.18L38.03 12.23L38.14 12.35Q37.95 17.63 37.88 22.87L37.83 22.81L37.80 22.79Q37.87 28.05 38.08 33.36L37.88 33.16L37.88 33.16Q37.76 33.25 37.49 33.25L37.39 33.14L37.38 33.14Q36.08 33.23 34.92 34.86L34.85 34.79L34.95 34.89Q35.59 28.73 35.56 22.61L35.52 22.58L35.42 22.47Q35.33 16.30 34.59 10.18ZM34.63 35.96L34.54 35.87L34.48 35.81Q35.52 34.26 36.47 33.86L36.38 33.76L36.47 33.85Q36.31 34.68 36.31 35.57L36.44 35.70L36.35 35.60Q36.94 35.21 37.66 35.32L37.67 35.33L37.78 35.44Q39.46 35.59 40.55 38.00L40.71 38.16L40.56 38.02Q39.65 31.43 39.65 24.77L39.60 24.72L39.66 24.77Q39.50 17.72 40.25 11.19L40.40 11.35L40.30 11.24Q39.49 13.01 38.47 13.56L38.43 13.52L38.33 13.42Q38.49 12.66 38.56 11.71L38.39 11.55L38.46 11.61Q37.80 12.10 37.12 11.97L37.04 11.89L37.11 11.96Q35.05 11.50 34.17 8.95L34.16 8.94L34.19 8.98Q35.15 15.71 35.21 22.44L35.29 22.51L35.16 22.38Q35.31 29.13 34.53 35.86Z"/><path d="M18 38 C34 22,37 11,91 36" stroke="#e33fba" fill="none"/><path fill="#27292e" d="M24.73 33.76L24.63 33.67L24.64 33.67Q22.09 30.30 19.74 22.59L19.64 22.48L19.72 22.57Q19.19 20.71 18.48 18.81L18.40 18.73L15.88 26.61L15.77 26.50Q14.24 30.99 12.10 33.88L11.97 33.75L11.98 33.76Q11.24 33.84 9.78 33.98L9.91 34.10L9.76 33.95Q9.93 32.96 9.93 31.84L9.93 31.84L9.93 31.85Q9.94 26.49 7.50 21.02L7.46 20.98L7.40 20.92Q4.78 14.94-0.45 10.49L-0.44 10.50L-0.59 10.34Q1.48 11.13 3.59 11.60L3.58 11.60L3.52 11.54Q11.18 18.99 12.33 28.78L12.32 28.77L12.49 28.94Q13.84 25.86 15.13 21.07L15.20 21.14L15.22 21.16Q16.91 14.39 17.35 13.13L17.27 13.04L19.42 13.19L19.38 13.16Q20.06 15.02 20.64 17.09L20.59 17.05L21.61 20.93L21.60 20.92Q23.09 25.87 24.35 28.76L24.35 28.76L24.30 28.71Q25.82 18.37 32.89 11.81L32.95 11.87L32.92 11.84Q34.17 11.42 36.82 10.84L36.83 10.85L36.89 10.92Q32.14 14.76 29.42 20.24L29.34 20.16L29.41 20.22Q26.67 25.82 26.67 31.87L26.75 31.94L26.73 31.92Q26.62 32.80 26.69 33.82L26.70 33.83L25.73 33.78L25.64 33.68Q25.23 33.76 24.72 33.76ZM30.23 36.28L30.34 36.39L30.26 36.30Q29.06 33.02 29.16 29.56L29.25 29.65L29.30 29.70Q29.53 19.32 37.89 11.95L37.98 12.04L37.94 12.00Q37.04 12.15 35.30 12.63L35.27 12.59L35.27 12.59Q36.09 11.82 37.79 10.22L37.79 10.22L37.84 10.27Q35.42 10.90 32.80 11.35L32.88 11.42L32.94 11.49Q26.26 17.86 24.56 26.32L24.47 26.23L24.52 26.28Q23.92 24.73 21.37 14.50L21.39 14.51L21.35 14.47Q21.15 14.71 20.30 14.71L20.17 14.59L19.97 13.70L19.87 13.61Q19.88 13.24 19.67 12.80L19.56 12.69L17.11 12.82L17.10 12.81Q16.33 14.96 15.19 19.53L15.18 19.53L15.21 19.55Q14.04 24.09 13.15 26.30L13.19 26.34L13.18 26.33Q11.78 19.28 6.81 13.64L6.86 13.68L6.75 13.57Q6.42 13.62 5.57 13.45L5.57 13.45L5.46 13.34Q4.84 12.61 3.44 11.15L3.45 11.16L3.46 11.17Q0.44 10.46-1.50 9.74L-1.54 9.71L-1.45 9.79Q3.49 13.85 6.41 19.39L6.46 19.44L6.55 19.53Q9.60 25.40 9.60 31.65L9.49 31.54L9.55 31.60Q9.54 32.99 9.37 34.42L9.44 34.48L9.32 34.37Q9.65 34.48 10.05 34.40L9.98 34.32L10.08 34.43Q10.36 34.22 10.57 34.22L10.56 34.21L10.69 35.26L10.54 35.11Q10.59 35.56 10.66 36.04L10.66 36.04L10.78 36.17Q11.68 35.98 13.72 35.84L13.81 35.93L13.77 35.89Q17.03 31.10 19.48 22.70L19.37 22.59L19.38 22.60Q21.97 30.56 24.62 34.09L24.51 33.99L24.53 34.01Q24.99 34.05 25.73 34.16L25.74 34.16L25.79 34.21Q26.58 35.17 27.53 36.12L27.50 36.09L27.40 35.99Q28.07 36.02 30.22 36.26Z"/><path fill="#352635" d="M70.64 41.98L70.70 42.04L70.65 41.99Q73.23 38.52 75.81 32.98L75.84 33.01L75.89 33.06Q73.03 27.14 67.59 19.93L67.66 20.00L67.54 19.88Q69.29 20.95 71.77 21.52L71.75 21.50L71.74 21.49Q74.96 25.74 77.14 30.40L77.15 30.40L77.06 30.32Q79.08 25.68 81.84 21.74L81.85 21.75L81.84 21.74Q83.68 21.31 85.55 20.59L85.58 20.62L85.62 20.66Q82.66 24.16 79.57 30.78L79.46 30.68L76.91 36.01L77.01 36.11Q75.68 38.87 74.12 41.21L74.02 41.11L74.04 41.13Q72.04 41.61 70.75 42.09ZM76.25 43.28L76.20 43.23L76.26 43.28Q77.65 40.57 78.95 37.64L78.97 37.66L81.35 31.96L81.47 32.08Q84.46 24.77 87.42 21.20L87.43 21.22L87.44 21.22Q86.28 21.87 84.58 22.48L84.71 22.61L85.53 21.25L85.47 21.19Q86.06 20.66 86.60 20.05L86.47 19.91L86.55 19.99Q84.25 21.02 81.70 21.43L81.60 21.33L81.60 21.33Q79.22 24.90 77.49 28.88L77.53 28.92L77.43 28.82Q75.91 25.81 74.32 23.29L74.29 23.27L74.44 23.41Q74.18 23.32 73.85 23.29L73.97 23.40L73.99 23.42Q73.54 23.27 73.37 23.27L73.34 23.24L73.34 23.24Q72.74 22.19 71.89 21.17L71.78 21.06L71.82 21.10Q69.13 20.65 66.68 19.12L66.56 19.00L66.57 19.01Q72.23 26.23 75.52 33.03L75.46 32.96L75.55 33.05Q73.46 37.43 69.83 42.46L69.93 42.56L69.98 42.61Q70.71 42.36 71.43 42.23L71.27 42.07L72.84 41.87L72.84 41.87Q72.30 42.52 71.25 43.98L71.26 44.00L71.25 43.98Q73.27 43.42 76.19 43.22Z"/></svg>' } }
+[2020-05-25T15:09:41.278] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { account: '1001', password: '123456', code: 'wigy' },
+  costTime: 49,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1252' },
+     body:
+      '<!DOCTYPE html>\n<head>\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n\t<title>登录</title>\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \n</head>\n<body>\n\t<div class="container">\n\t\t<section id="content">\n\t\t\t<form action="/checkLogin" method="post">\n\t\t\t\t<h1>登录</h1>\n\t\t\t\t<div>\n\t\t\t\t\t<input type="text" placeholder="账号" required="" id="account" name="account"/>\n\t\t\t\t</div>\n\t\t\t\t<div>\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\n\t\t\t\t</div>\n\n\t\t\t\t<div> <input placeholder="验证码" id="verify" type="text" name="code">\n\t\t\t\t\t<img id="verify_img" src="/verify" title="看不清？点击刷新"  style="position: relative;top: 15px;"\n\t\t\t\t\t\tonclick="javascript:this.src=\'/verify?mt=\'+Math.random()">\n\t\t\t\t</div>\n\n\t\t\t\t<div class="">\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\n\t\t\t\t</div>\n\n\t\t\t\t<div>\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\n\t\t\t\t</div>\n\t\t\t</form><!-- form -->\n\n\t\t</section><!-- content -->\n\t</div>\n\t<!-- container -->\n</body>\n</html>' } }
+[2020-05-25T15:09:41.326] [INFO] response - { method: 'GET',
+  url: '/verify',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'image/svg+xml',
+        'content-length': '8482' },
+     body:
+      '<svg xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0,0,100,40"><rect width="100%" height="100%" fill="#cc9966"/><path fill="#2c2937" d="M58.03 24.46L57.99 24.43L57.93 24.36Q55.60 24.17 54.41 25.26L54.57 25.42L54.49 25.35Q53.32 26.45 53.60 28.70L53.47 28.57L53.59 28.69Q53.80 30.87 54.88 31.99L55.01 32.12L54.98 32.09Q56.00 33.35 57.91 33.28L57.74 33.11L57.73 33.10Q58.34 33.21 58.51 33.21L58.38 33.07L58.48 33.17Q61.64 32.63 61.74 28.51L61.81 28.59L61.69 28.46Q61.73 26.33 61.11 25.61L61.21 25.71L61.23 25.72Q60.32 24.61 58.04 24.48ZM60.88 34.83L60.86 34.80L60.85 34.79Q59.76 35.41 58.37 35.34L58.42 35.39L58.37 35.34Q54.99 35.57 53.84 33.26L53.80 33.21L53.79 33.20Q53.56 37.91 52.37 41.72L52.31 41.66L52.41 41.75Q50.75 42.13 49.29 42.78L49.28 42.77L49.37 42.86Q51.63 37.50 51.39 31.28L51.40 31.30L51.39 31.28Q51.24 25.25 48.66 19.85L48.58 19.77L48.66 19.85Q50.40 20.91 51.93 21.32L51.95 21.34L52.25 22.50L52.38 22.62Q52.50 22.94 52.73 23.93L52.63 23.82L52.58 23.77Q53.58 22.02 56.78 21.85L56.69 21.76L56.74 21.81Q57.45 21.71 58.24 21.71L58.36 21.83L58.69 21.72L58.67 21.71Q58.90 21.83 59.07 21.87L59.00 21.79L59.34 21.86L59.28 21.80Q61.10 22.02 61.74 22.23L61.76 22.24L61.81 22.30Q63.15 22.72 63.93 23.57L63.84 23.47L63.94 23.57Q64.71 24.65 64.67 25.91L64.57 25.80L64.71 25.95Q64.65 28.43 63.94 30.81L64.03 30.90L63.85 30.72Q62.93 33.85 60.82 34.77ZM64.68 35.36L64.77 35.42L64.71 35.36Q65.75 33.65 66.02 29.98L65.96 29.91L65.92 29.87Q66.10 28.36 66.10 27.24L66.05 27.18L66.13 27.26Q66.14 25.91 65.46 24.65L65.56 24.75L65.38 24.58Q64.97 24.13 64.53 23.79L64.52 23.78L64.57 23.73L64.38 23.44L64.32 23.27L64.35 23.30Q62.74 21.42 58.86 21.42L58.87 21.43L58.24 21.34L58.39 21.49Q54.23 21.48 52.77 22.91L52.68 22.82L52.74 22.88Q52.48 22.31 52.34 21.87L52.45 21.98L52.23 21.04L52.20 21.02Q50.02 20.50 48.05 19.17L47.96 19.08L47.94 19.06Q50.82 24.67 51.09 31.12L51.08 31.11L51.10 31.13Q51.45 37.70 48.90 43.48L48.81 43.38L50.62 42.65L50.73 42.76Q50.33 43.25 49.72 44.64L49.85 44.77L49.83 44.75Q52.17 43.73 54.25 43.42L54.22 43.40L54.30 43.48Q55.22 39.09 55.36 35.76L55.48 35.89L55.47 35.88Q56.63 37.10 59.86 37.31L59.88 37.33L59.92 37.37Q63.45 37.60 64.74 35.43L64.80 35.48ZM59.63 26.37L59.58 26.32L59.62 26.36Q60.26 26.35 61.24 26.66L61.13 26.54L61.13 26.54Q61.43 27.49 61.39 28.54L61.45 28.60L61.41 28.56Q61.36 29.33 61.19 29.90L61.32 30.04L61.17 29.88Q60.54 32.48 58.30 32.75L58.36 32.81L58.52 32.87L58.37 32.72Q58.36 32.78 58.26 32.82L58.28 32.84L57.84 32.88L57.90 32.93Q56.66 32.75 55.78 32.31L55.81 32.34L55.61 30.61L55.44 30.44Q55.51 28.57 56.66 27.65L56.60 27.59L56.51 27.50Q57.47 26.59 59.61 26.35Z"/><path fill="#333333" d="M73.77 10.88L73.72 10.83L73.77 10.89Q74.76 12.90 76.50 12.90L76.59 12.99L76.43 12.83Q76.94 12.90 77.32 12.76L77.42 12.87L77.29 12.74Q77.23 17.43 77.19 23.14L77.20 23.15L77.07 23.02Q77.05 28.61 77.22 33.30L77.25 33.33L77.28 33.36Q76.94 33.22 76.60 33.22L76.52 33.14L76.59 33.21Q75.36 33.20 74.10 34.87L74.11 34.88L74.06 34.83Q74.66 28.84 74.63 22.85L74.75 22.98L74.66 22.89Q74.66 16.94 73.84 10.96ZM73.74 35.94L73.72 35.92L73.67 35.87Q74.44 34.47 75.50 33.82L75.52 33.84L75.57 33.90Q75.61 34.82 75.54 35.77L75.53 35.76L75.44 35.67Q76.10 35.20 76.78 35.30L76.78 35.31L76.94 35.47Q78.69 35.59 79.91 38.07L79.95 38.11L79.86 38.01Q78.93 31.58 78.93 25.08L78.90 25.05L78.82 24.97Q78.82 18.24 79.53 11.89L79.54 11.90L79.60 11.95Q78.72 13.62 77.77 14.20L77.64 14.08L77.71 14.14Q77.77 13.55 77.87 12.33L77.80 12.26L77.80 12.27Q77.00 12.55 76.32 12.45L76.37 12.50L76.46 12.58Q74.24 12.23 73.32 9.65L73.42 9.75L73.31 9.64Q74.41 16.46 74.52 22.85L74.42 22.75L74.51 22.84Q74.60 29.22 73.71 35.91Z"/><path d="M12 39 C56 24,49 6,80 18" stroke="#88a2f0" fill="none"/><path fill="#5b5d54" d="M35.96 24.30L36.06 24.41L35.98 24.33Q35.77 24.32 35.50 24.32L35.49 24.31L35.59 24.41Q34.27 24.28 32.98 25.03L32.99 25.04L32.97 25.02Q31.92 26.15 31.92 27.85L31.79 27.72L31.89 27.81Q31.77 30.75 33.12 31.94L33.11 31.92L33.13 31.94Q33.97 32.99 36.01 32.99L36.06 33.04L36.16 33.14Q36.26 33.03 36.53 33.03L36.52 33.02L36.56 33.06Q38.02 32.99 39.04 31.53L39.11 31.60L39.15 31.65Q39.98 30.20 39.92 28.60L39.95 28.63L39.93 28.62Q40.01 28.22 40.01 27.85L40.13 27.96L40.11 27.94Q40.04 26.28 38.82 25.25L38.86 25.28L38.90 25.33Q37.60 24.22 36.01 24.35ZM40.00 33.41L40.09 33.50L39.98 33.39Q39.20 35.23 35.87 35.33L35.78 35.24L35.79 35.25Q32.81 35.40 31.38 33.97L31.40 33.99L31.29 33.88Q30.09 32.40 29.37 28.12L29.31 28.06L29.41 28.16Q29.03 26.49 29.03 25.37L28.94 25.27L29.03 25.37Q28.99 23.73 29.64 22.78L29.67 22.81L29.70 22.84Q30.93 21.62 33.58 21.62L33.58 21.62L33.58 21.62Q39.11 21.51 40.81 23.82L40.93 23.94L40.97 23.98Q41.14 23.26 41.51 21.83L41.48 21.80L41.41 21.73Q42.54 21.47 44.71 20.75L44.82 20.86L44.70 20.74Q42.54 25.79 42.34 31.43L42.40 31.50L42.32 31.42Q42.17 36.98 44.08 42.18L44.14 42.24L43.96 42.06Q42.49 41.58 40.89 41.34L41.00 41.45L40.97 41.42Q40.22 37.94 40.11 33.52ZM40.72 41.68L40.63 41.58L40.70 41.66Q41.44 41.88 42.69 42.16L42.69 42.15L42.62 42.08Q42.83 42.74 43.34 43.99L43.29 43.94L43.23 43.88Q45.63 44.61 47.67 45.77L47.73 45.83L47.69 45.79Q44.14 39.96 44.14 32.35L43.97 32.18L44.14 32.35Q44.06 26.59 46.27 21.43L46.28 21.44L46.28 21.44Q45.63 21.67 44.41 22.25L44.44 22.28L44.46 22.30Q44.71 21.57 45.29 20.17L45.21 20.10L45.33 20.22Q43.93 20.68 41.07 21.47L41.01 21.40L41.14 21.54Q40.90 21.91 40.63 22.96L40.61 22.94L40.70 23.03Q38.91 21.34 33.44 21.21L33.44 21.21L33.38 21.15Q30.59 21.14 29.36 22.47L29.26 22.37L29.44 22.55Q28.67 23.47 28.70 25.17L28.62 25.09L28.63 25.10Q28.87 27.92 29.75 31.28L29.68 31.21L29.63 31.17Q30.21 33.31 31.02 34.16L31.15 34.28L31.42 34.55L31.43 34.57Q32.45 37.01 37.31 37.21L37.41 37.31L37.30 37.20Q38.32 37.34 39.95 37.07L39.94 37.06L39.91 37.03Q40.06 39.52 40.61 41.56ZM37.72 26.44L37.60 26.32L37.66 26.38Q38.71 26.47 39.45 26.74L39.43 26.73L39.49 26.78Q39.49 27.09 39.60 27.64L39.77 27.81L39.74 27.78Q39.67 28.12 39.61 28.67L39.67 28.72L39.61 28.67Q39.63 30.39 38.72 31.55L38.71 31.54L38.66 31.49Q37.78 32.93 36.12 32.76L36.09 32.73L36.00 32.63Q34.87 32.67 34.02 32.30L34.07 32.34L34.15 32.42Q33.67 31.53 33.67 30.44L33.74 30.51L33.69 30.47Q33.82 30.33 33.82 30.05L33.72 29.95L33.72 29.95Q33.78 28.44 34.97 27.41L34.90 27.34L34.90 27.34Q36.18 26.39 37.74 26.46Z"/><path fill="#2f2222" d="M17.99 14.09L18.02 14.12L18.02 14.12Q17.34 14.43 17.20 15.14L17.28 15.21L17.22 19.74L17.24 19.76Q18.28 19.78 20.25 19.54L20.22 19.52L20.32 19.62Q20.16 19.86 20.12 20.61L20.20 20.68L20.11 20.59Q20.26 21.46 20.26 21.87L20.26 21.87L18.84 21.94L18.73 21.83Q18.09 21.97 17.30 21.97L17.24 21.91L17.17 21.84Q17.32 25.73 17.26 33.21L17.14 33.10L17.17 33.12Q15.21 33.20 13.89 33.82L13.88 33.81L13.88 33.81Q14.84 28.31 14.74 21.85L14.83 21.94L14.80 21.92Q14.27 21.93 13.12 21.69L12.99 21.56L12.98 21.55Q12.99 20.68 12.82 18.94L12.79 18.91L12.84 18.97Q13.77 19.36 14.62 19.53L14.75 19.65L14.71 19.62Q14.59 18.95 14.32 16.74L14.41 16.83L14.29 16.72Q14.18 14.97 14.18 14.12L14.19 14.13L14.11 14.05Q14.23 12.68 15.49 12.17L15.52 12.20L15.46 12.14Q16.20 11.83 20.52 11.08L20.51 11.07L20.47 11.03Q21.12 10.83 21.87 10.73L21.95 10.81L21.87 10.73Q21.79 11.54 21.66 12.32L21.58 12.25L21.34 13.66L21.26 13.59Q20.72 13.49 20.28 13.59L20.38 13.70L20.24 13.55Q19.79 13.64 18.09 14.19ZM22.97 15.23L22.86 15.12L22.85 15.11Q23.28 13.27 23.83 10.99L23.78 10.94L23.79 10.95Q23.16 11.17 22.00 11.71L21.97 11.68L22.37 10.21L22.32 10.16Q21.38 10.48 19.17 10.96L19.13 10.91L19.02 10.80Q18.10 11.01 15.25 11.82L15.22 11.80L15.19 11.77Q13.80 12.15 13.80 13.81L13.75 13.76L13.79 13.80Q13.86 14.14 13.93 14.45L13.94 14.46L13.86 14.38Q13.98 15.48 14.08 16.67L14.21 16.80L14.41 19.21L14.29 19.09Q13.03 18.72 12.45 18.31L12.52 18.37L12.58 18.44Q12.73 19.34 12.77 20.25L12.62 20.11L12.83 21.98L12.78 21.93Q13.40 22.07 14.11 22.14L14.14 22.17L14.09 23.99L14.42 23.98L14.52 24.09Q14.29 29.42 13.40 34.28L13.42 34.30L13.47 34.35Q14.38 33.93 15.43 33.69L15.53 33.79L15.33 35.60L15.26 35.53Q16.34 35.25 17.50 35.22L17.61 35.32L17.45 35.17Q18.72 35.32 19.84 35.55L19.73 35.44L19.84 35.55Q19.01 31.01 19.01 23.91L19.09 23.99L18.98 23.88Q20.07 23.98 21.93 24.05L21.76 23.88L21.77 22.22L21.95 22.40Q21.79 21.39 21.83 20.54L21.89 20.61L21.92 20.63Q21.48 20.71 20.53 20.95L20.45 20.87L20.45 20.87Q20.54 20.35 20.65 19.16L20.56 19.07L20.57 19.09Q19.87 19.34 19.16 19.41L19.14 19.39L19.06 19.30Q19.07 18.06 19.17 16.80L19.27 16.90L19.28 16.91Q19.33 16.24 19.80 15.94L19.84 15.97L19.80 15.93Q20.68 15.35 21.41 15.28L21.53 15.40L21.44 15.32Q22.25 15.32 22.99 15.25Z"/></svg>' } }

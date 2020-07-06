@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+	<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> 
+</head>
+<body>
+	<div class="container">
+		<section id="content">
+			<form action="/checkLogin" method="post">
+				<h1>登录</h1>
+				<div>
+					<input type="text" placeholder="账号" required="" id="account" name="account"/>
+				</div>
+				<div>
+					<input type="password" placeholder="密码" required="" id="password" name="password"/>
+				</div>
+
+				<div> <input placeholder="验证码" id="verify" type="text" name="code">
+					<img id="verify_img" src="/verify" title="看不清？点击刷新"  style="position: relative;top: 15px;"
+						onclick="javascript:this.src='/verify?mt='+Math.random()">
+				</div>
+
+				<div class="">
+					<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>
+				</div>
+
+				<div>
+					<!-- <input type="submit" value="Log in" /> -->
+					<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>
+				</div>
+			</form><!-- form -->
+
+		</section><!-- content -->
+	</div>
+	<!-- container -->
+</body>
+</html>

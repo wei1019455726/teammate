@@ -1,0 +1,1312 @@
+[2020-06-17T17:25:31.808] [ERROR] error - { method: 'GET',
+  url: '/activitys/examine',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-17T17:42:31.651] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\index.html:18
+       16| 		<ul>
+       17| 		 	<li>欢迎您！</li>
+    >> 18| 			<li><%=userInfo.user_name%></li>
+       19| 			<li><a href="/logout">退出</a></li>
+       20| 		</ul>
+       21| 	</div>
+   
+   userInfo is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\index.html' } }
+[2020-06-17T17:42:58.302] [ERROR] error - { method: 'POST',
+  url: '/activitys/examine',
+  body: { id: '1', activity_status: '2' },
+  costTime: undefined,
+  err:
+   { AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+       at Function._optionsMustContainWhere (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:3427:5)
+       at Function.update (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:3053:10)
+       at Function.updateActivity (F:\找队友App\teammate_server\service\activity_dao.js:41:31)
+       at doExamine (F:\找队友App\teammate_server\controllers\activity.js:35:29)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+     generatedMessage: false,
+     name: 'AssertionError [ERR_ASSERTION]',
+     code: 'ERR_ASSERTION',
+     actual: undefined,
+     expected: true,
+     operator: '==' } }
+[2020-06-17T17:47:23.208] [ERROR] error - { method: 'POST',
+  url: '/activitys/examine',
+  body: { id: '1', activity_status: '2' },
+  costTime: undefined,
+  err:
+   { AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+       at Function._optionsMustContainWhere (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:3427:5)
+       at Function.update (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:3053:10)
+       at Function.updateActivity (F:\找队友App\teammate_server\service\activity_dao.js:41:31)
+       at doExamine (F:\找队友App\teammate_server\controllers\activity.js:32:29)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+     generatedMessage: false,
+     name: 'AssertionError [ERR_ASSERTION]',
+     code: 'ERR_ASSERTION',
+     actual: undefined,
+     expected: true,
+     operator: '==' } }
+[2020-06-17T17:52:42.801] [ERROR] error - { method: 'POST',
+  url: '/activitys/examine',
+  body: { id: '1', activity_status: '2' },
+  costTime: undefined,
+  err:
+   ReferenceError: id is not defined
+       at doExamine (F:\找队友App\teammate_server\controllers\activity.js:33:57)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2020-06-17T20:38:37.183] [ERROR] error - { method: 'GET',
+  url: '/api/announces/getOneAnnounce',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-17T20:38:37.194] [ERROR] error - { method: 'GET',
+  url: '/api/teams/activityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "announce_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-17T23:13:40.150] [ERROR] error - { method: 'GET',
+  url: '/api/announces/getOneAnnounce',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-17T23:13:40.156] [ERROR] error - { method: 'GET',
+  url: '/api/teams/activityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "announce_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-17T23:15:57.317] [ERROR] error - { method: 'GET',
+  url: '/api/announces/getOneAnnounce',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-17T23:15:57.322] [ERROR] error - { method: 'GET',
+  url: '/api/teams/activityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "announce_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-18T14:36:10.556] [ERROR] error - { method: 'POST',
+  url: '/api/teams/postactivity',
+  body:
+   { activity_title: '999',
+     activity_stime: '2020-06-17T16:00:00.000Z',
+     activity_etime: '2020-06-19T16:00:00.000Z',
+     activity_leader: '9威',
+     activity_cleader: '13111111112',
+     activity_person: 3,
+     activity_content: '99999',
+     id: 1 },
+  costTime: undefined,
+  err:
+   ReferenceError: data is not defined
+       at postactivity (F:\找队友App\teammate_server\controllers\client\team.js:6:21)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (F:\找队友App\teammate_server\routes\api\teams.js:11:11)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-06-18T14:37:03.187] [ERROR] error - { method: 'GET',
+  url: '/api/announces/getOneAnnounce',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-18T14:37:03.234] [ERROR] error - { method: 'GET',
+  url: '/api/teams/activityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "announce_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-18T15:29:35.306] [ERROR] error - { method: 'POST',
+  url: '/api/teams/postactivity',
+  body:
+   { activity_title: '测试测试',
+     activity_stime: '2020-06-04T16:00:00.000Z',
+     activity_etime: '2020-06-12T16:00:00.000Z',
+     activity_leader: '测试测试',
+     activity_cleader: '12111111111',
+     activity_person: 2,
+     activity_content: '测试测试',
+     id: 4 },
+  costTime: undefined,
+  err:
+   ReferenceError: user_activity is not defined
+       at Function.postUserActivityLeader (F:\找队友App\teammate_server\service\team_dao.js:24:13)
+       at postactivity (F:\找队友App\teammate_server\controllers\client\team.js:13:23)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2020-06-18T15:34:05.705] [ERROR] error - { method: 'POST',
+  url: '/api/teams/postactivity',
+  body:
+   { activity_title: '测试测试3',
+     activity_stime: '2020-06-07T16:00:00.000Z',
+     activity_etime: '2020-06-28T16:00:00.000Z',
+     activity_leader: '测试3',
+     activity_cleader: '14111111111',
+     activity_person: 2,
+     activity_content: '而是测试3',
+     id: 4 },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at postactivity (F:\找队友App\teammate_server\controllers\client\team.js:12:53)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2020-06-18T15:35:00.375] [ERROR] error - { method: 'POST',
+  url: '/api/teams/postactivity',
+  body:
+   { activity_title: '测试测试3',
+     activity_stime: '2020-06-07T16:00:00.000Z',
+     activity_etime: '2020-06-28T16:00:00.000Z',
+     activity_leader: '测试3',
+     activity_cleader: '14111111111',
+     activity_person: 2,
+     activity_content: '而是测试3',
+     id: 4 },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at postactivity (F:\找队友App\teammate_server\controllers\client\team.js:12:53)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2020-06-18T15:36:28.458] [ERROR] error - { method: 'POST',
+  url: '/api/teams/postactivity',
+  body:
+   { activity_title: '测试测试4',
+     activity_stime: '2020-06-02T16:00:00.000Z',
+     activity_etime: '2020-06-28T16:00:00.000Z',
+     activity_leader: '测试4',
+     activity_cleader: '12111111111',
+     activity_person: 2,
+     activity_content: '测试',
+     id: 1 },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at postactivity (F:\找队友App\teammate_server\controllers\client\team.js:12:57)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2020-06-18T15:42:02.929] [ERROR] error - { method: 'POST',
+  url: '/api/teams/postactivity',
+  body:
+   { activity_title: '1111',
+     activity_stime: '2020-06-01T16:00:00.000Z',
+     activity_etime: '2020-05-31T16:00:00.000Z',
+     activity_leader: '123',
+     activity_cleader: '12111111111',
+     activity_person: 2,
+     activity_content: '123',
+     id: 4 },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at postactivity (F:\找队友App\teammate_server\controllers\client\team.js:12:61) }
+[2020-06-18T15:42:27.955] [ERROR] error - { method: 'POST',
+  url: '/api/teams/postactivity',
+  body:
+   { activity_title: '1111',
+     activity_stime: '2020-06-01T16:00:00.000Z',
+     activity_etime: '2020-05-31T16:00:00.000Z',
+     activity_leader: '123',
+     activity_cleader: '12111111111',
+     activity_person: 2,
+     activity_content: '123',
+     id: 4 },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at postactivity (F:\找队友App\teammate_server\controllers\client\team.js:12:57) }
+[2020-06-18T15:58:36.797] [ERROR] error - { method: 'POST',
+  url: '/api/teams/postactivity',
+  body:
+   { activity_title: '123',
+     activity_stime: '2020-06-07T16:00:00.000Z',
+     activity_etime: '2020-06-22T16:00:00.000Z',
+     activity_leader: '123',
+     activity_cleader: '12111111111',
+     activity_person: 2,
+     activity_content: '123',
+     id: 4 },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at postactivity (F:\找队友App\teammate_server\controllers\client\team.js:12:57) }
+[2020-06-18T15:59:52.850] [ERROR] error - { method: 'POST',
+  url: '/api/teams/postactivity',
+  body:
+   { activity_title: '123',
+     activity_stime: '2020-06-07T16:00:00.000Z',
+     activity_etime: '2020-06-22T16:00:00.000Z',
+     activity_leader: '123',
+     activity_cleader: '12111111111',
+     activity_person: 2,
+     activity_content: '123',
+     id: 4 },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at postactivity (F:\找队友App\teammate_server\controllers\client\team.js:12:58) }
+[2020-06-18T16:00:27.494] [ERROR] error - { method: 'POST',
+  url: '/api/teams/postactivity',
+  body:
+   { activity_title: '123',
+     activity_stime: '2020-06-07T16:00:00.000Z',
+     activity_etime: '2020-06-22T16:00:00.000Z',
+     activity_leader: '123',
+     activity_cleader: '12111111111',
+     activity_person: 2,
+     activity_content: '123',
+     id: 4 },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at postactivity (F:\找队友App\teammate_server\controllers\client\team.js:12:63) }
+[2020-06-18T16:00:39.697] [ERROR] error - { method: 'POST',
+  url: '/api/teams/postactivity',
+  body:
+   { activity_title: '123',
+     activity_stime: '2020-06-07T16:00:00.000Z',
+     activity_etime: '2020-06-22T16:00:00.000Z',
+     activity_leader: '123',
+     activity_cleader: '12111111111',
+     activity_person: 2,
+     activity_content: '123',
+     id: 4 },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at postactivity (F:\找队友App\teammate_server\controllers\client\team.js:12:60) }
+[2020-06-18T16:01:13.413] [ERROR] error - { method: 'POST',
+  url: '/api/teams/postactivity',
+  body:
+   { activity_title: '123',
+     activity_stime: '2020-06-07T16:00:00.000Z',
+     activity_etime: '2020-06-22T16:00:00.000Z',
+     activity_leader: '123',
+     activity_cleader: '12111111111',
+     activity_person: 2,
+     activity_content: '123',
+     id: 4 },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at postactivity (F:\找队友App\teammate_server\controllers\client\team.js:12:60) }
+[2020-06-18T16:02:33.175] [ERROR] error - { method: 'POST',
+  url: '/api/teams/postactivity',
+  body:
+   { activity_title: '123',
+     activity_stime: '2020-06-07T16:00:00.000Z',
+     activity_etime: '2020-06-22T16:00:00.000Z',
+     activity_leader: '123',
+     activity_cleader: '12111111111',
+     activity_person: 2,
+     activity_content: '123',
+     id: 4 },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at postactivity (F:\找队友App\teammate_server\controllers\client\team.js:12:58) }
+[2020-06-18T16:02:56.430] [ERROR] error - { method: 'POST',
+  url: '/api/teams/postactivity',
+  body:
+   { activity_title: '123',
+     activity_stime: '2020-06-07T16:00:00.000Z',
+     activity_etime: '2020-06-22T16:00:00.000Z',
+     activity_leader: '123',
+     activity_cleader: '12111111111',
+     activity_person: 2,
+     activity_content: '123',
+     id: 4 },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at postactivity (F:\找队友App\teammate_server\controllers\client\team.js:12:61) }
+[2020-06-18T16:06:33.196] [ERROR] error - { method: 'POST',
+  url: '/api/teams/postactivity',
+  body:
+   { activity_title: '123',
+     activity_stime: '2020-06-10T16:00:00.000Z',
+     activity_etime: '2020-06-19T16:00:00.000Z',
+     activity_leader: '123',
+     activity_cleader: '12111111111',
+     activity_person: 2,
+     activity_content: '213',
+     id: 4 },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at postactivity (F:\找队友App\teammate_server\controllers\client\team.js:12:45) }
+[2020-06-18T17:48:29.640] [ERROR] error - { method: 'GET',
+  url: '/api/announces/getOneAnnounce',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-18T17:48:29.650] [ERROR] error - { method: 'GET',
+  url: '/api/teams/activityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "announce_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T10:51:58.404] [ERROR] error - { method: 'GET',
+  url: '/api/teams/useractivityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeEagerLoadingError: activity is not associated to user_activity!
+       at Function._getIncludedAssociation (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:715:13)
+       at Function._validateIncludedElement (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:619:53)
+       at options.include.options.include.map.include (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:516:37)
+       at Array.map (<anonymous>)
+       at Function._validateIncludedElements (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:511:39)
+       at Promise.try.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1726:14)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) name: 'SequelizeEagerLoadingError' } }
+[2020-06-19T10:52:26.428] [ERROR] error - { method: 'GET',
+  url: '/api/teams/useractivityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: user is not defined
+       at Function.getUseractivity (F:\找队友App\teammate_server\service\team_dao.js:92:9)
+       at useractivityinfo (F:\找队友App\teammate_server\controllers\client\team.js:48:44)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (F:\找队友App\teammate_server\routes\api\teams.js:11:11)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-06-19T11:53:08.580] [ERROR] error - { method: 'GET',
+  url: '/api/announces/getOneAnnounce',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T11:53:08.633] [ERROR] error - { method: 'GET',
+  url: '/api/teams/activityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "announce_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:06:09.201] [ERROR] error - { method: 'GET',
+  url: '/api/announces/getOneAnnounce',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:06:09.309] [ERROR] error - { method: 'GET',
+  url: '/api/teams/activityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "announce_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:08:02.342] [ERROR] error - { method: 'GET',
+  url: '/api/teams/activityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "announce_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:08:02.361] [ERROR] error - { method: 'GET',
+  url: '/api/announces/getOneAnnounce',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:09:21.889] [ERROR] error - { method: 'GET',
+  url: '/api/announces/getOneAnnounce',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:09:21.985] [ERROR] error - { method: 'GET',
+  url: '/api/teams/activityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "announce_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:09:48.082] [ERROR] error - { method: 'GET',
+  url: '/api/announces/getOneAnnounce',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:09:48.098] [ERROR] error - { method: 'GET',
+  url: '/api/teams/activityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "announce_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:10:09.751] [ERROR] error - { method: 'GET',
+  url: '/api/announces/getOneAnnounce',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:10:09.778] [ERROR] error - { method: 'GET',
+  url: '/api/teams/activityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "announce_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:10:47.804] [ERROR] error - { method: 'GET',
+  url: '/api/announces/getOneAnnounce',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:10:47.816] [ERROR] error - { method: 'GET',
+  url: '/api/teams/activityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "announce_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:10:56.801] [ERROR] error - { method: 'GET',
+  url: '/api/announces/getOneAnnounce',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:10:56.811] [ERROR] error - { method: 'GET',
+  url: '/api/teams/activityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "announce_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:11:26.365] [ERROR] error - { method: 'GET',
+  url: '/api/announces/getOneAnnounce',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:11:26.371] [ERROR] error - { method: 'GET',
+  url: '/api/teams/activityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "announce_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:12:04.350] [ERROR] error - { method: 'GET',
+  url: '/api/announces/getOneAnnounce',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:12:04.365] [ERROR] error - { method: 'GET',
+  url: '/api/teams/activityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "announce_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:13:16.745] [ERROR] error - { method: 'GET',
+  url: '/api/announces/getOneAnnounce',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:13:16.749] [ERROR] error - { method: 'GET',
+  url: '/api/teams/activityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "announce_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:13:24.926] [ERROR] error - { method: 'GET',
+  url: '/api/announces/getOneAnnounce',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T12:13:24.932] [ERROR] error - { method: 'GET',
+  url: '/api/teams/activityinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "announce_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }

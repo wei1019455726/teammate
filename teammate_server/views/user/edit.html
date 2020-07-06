@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />
+
+    <!--引入Jq插件-->
+    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>
+
+    <title>编辑用户</title>
+</head>
+
+<body>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            编辑用户
+        </div>
+
+        <div class="panel-body">
+            <div class="input-form">
+                <form action="/users/doEdit" class="form" method="post">
+
+                    <ul> 
+                        <input type="hidden" name="account" value="<%=userResult.account%>">
+
+                        <li> 用户密码: <input type="password" name="password"></li>
+
+                        <li> 用户姓名: <input type="text" name="userName" value="<%=userResult.user_name%>" /></li>
+
+                        <li> 用户性别:
+                            <select name="userSex">
+                                <option value="1" <%if(userResult.user_sex == 1) {%>selected<%}%> >男</option>
+                                <option value="2" <%if(userResult.user_sex == 2) {%>selected<%}%> >女</option>
+                            </select>
+                        </li>
+
+                        <li> 联系方式: <input type="text" name="userPhone" value="<%=userResult.user_phone%>" /></li>
+                                               
+
+                        <li> 用户状态:
+                            <select name="userStatus">
+                                <option value="0" <%if(userResult.user_status == 0) {%>selected<%}%> >未审核</option>
+                                <option value="1" <%if(userResult.user_status == 1) {%>selected<%}%> >审核成功</option>
+                                <option value="2" <%if(userResult.user_status == 2) {%>selected<%}%> >审核失败</option>
+                            </select>
+
+                        </li>
+
+                        <li> 用户角色:
+                        <%for(var i=0;i<roleResult.length;i++) {%>
+        
+                        <input type="radio" value="<%=roleResult[i].id%>" name="roleId">
+                        <%=roleResult[i].role_name%>
+                        
+                        <%}%>
+
+                        </li>
+
+                        <li>
+                            <br />
+                            <button type="submit" class="btn btn-default submit">确认修改</button>
+                        </li>
+
+                    </ul>
+
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+
+      
+
+    </script>
+
+
+</body>
+
+</html>

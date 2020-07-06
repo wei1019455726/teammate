@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+  <title>队伍信息列表</title>
+
+  <!--引入jq插件-->
+  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>
+
+  <!--引入base.js用于删除提醒-->
+  <script type="text/javascript" src="/javascripts/base.js"></script>
+
+</head>
+
+<body>
+
+<div class="panel panel-primary" style="margin: 10px 10px;">
+  <div class="panel-heading">
+    队伍信息列表
+  </div>
+
+  <div class="clearfix" style="margin-bottom: 10px;"></div>
+  <div class="row">
+    <div class="panel-body">
+        <form role="form" class="form-inline" method="GET" action="/activitys/activitylist">
+        <div class="col-md-offset-1 col-md-2 margin-bottom-15">
+                <label for="name">输入关键词</label>
+                <input type="text" class="form-control" value="" id="name" name="keyword" placeholder="请输入">
+            </div>
+    <div class="row templatemo-form-buttons">
+        <div class="col-md-2">
+                <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 40px;">查询</button>
+        </div>
+    </div>
+        </form>
+</div>
+ 
+
+  </div>
+  <div class="clearfix" style="margin-bottom: 10px;"></div>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered">
+          <thead>
+            <tr>
+              <th>队伍id</th>             
+              <th>比赛id</th>
+              <th>负责人账号</th>
+              <th>队伍成员</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+
+             
+            </tbody>
+        </table>
+
+
+
+
+        </div>
+        </div>
+    </div>
+
+    </div>
+
+     
+    
+
+</body>
+
+</html>

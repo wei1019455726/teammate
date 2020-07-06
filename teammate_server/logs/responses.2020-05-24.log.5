@@ -1,0 +1,523 @@
+[2020-05-24T00:23:10.887] [INFO] response - { method: 'POST',
+  url: '/users/doEdit',
+  body:
+   { account: '1003',
+     password: '5bba7ff8808595692fb2fc42cfd11dcf',
+     userName: '王五',
+     userSex: '2',
+     userPhone: '13049213960',
+     userStatus: '1',
+     roleId: '2',
+     solt: '4df60e94-c7fb-446c-ad08-4b6e1e1cf8a5' },
+  costTime: 118,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-05-24T00:30:11.680] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3323' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>老二</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n\n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>        \n\t  </li>\n     \n     \n      <li>\n        <h4 class="M2"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n    \n\n    <li>\n        <h4 class="M3"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M4"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M5"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M6"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-24T00:30:11.787] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '478' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n\r\n    <div class="jumbotron">\r\n        <h1>Hello, world!</h1>\r\n      </div>\r\n\r\n\r\n</body>\r\n</html>\r\n' } }
+[2020-05-24T00:30:14.036] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '6244' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入分页插件-->\r\n    <script type="text/javascript" src="/javascripts/jqPaginator.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-primary" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            <h3 class="panel-title">\r\n               管理员列表\r\n            </h3>\r\n        </div>\r\n        <div class="panel-body">          \r\n            <div class="clearfix" style="margin-bottom: 10px;">\r\n              </div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="account" class="control-label">账号</label>\r\n          <input type="text" class="form-control" id="account" value="" name="account">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="user_name" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="user_name" value="" name="userName">                 \r\n        </div>     \r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                    <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n                  <button type="reset" class="btn btn-default" style="margin-top: 24px;margin-left: 15px;">重置</button>    \r\n                </div>\r\n        </div>\r\n       \r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 20px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>账号</th>\r\n                <th>姓名</th>               \r\n                <th>状态</th>\r\n                <th>身份</th>\r\n                <th>操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                \r\n                    <tr>\r\n                      <td>1</td>\r\n                      <td>1001</td>\r\n                      <td>张三</td>\r\n                      <td>\r\n                              <p>已通过</p>\r\n                          </td>\r\n\r\n                      <td>\r\n\r\n                        \r\n  \r\n                        管理员\r\n  \r\n                        \r\n  \r\n                        </td>\r\n                      <td>\r\n                        <a  href="/users/edit?account=1001" class="btn btn-info" >编辑</a>\r\n                        <a href="/users/delect/1001" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>2</td>\r\n                      <td>1002</td>\r\n                      <td>老二</td>\r\n                      <td>\r\n                              <p>已通过</p>\r\n                          </td>\r\n\r\n                      <td>\r\n\r\n                        \r\n  \r\n                        管理员\r\n  \r\n                        \r\n  \r\n                        </td>\r\n                      <td>\r\n                        <a  href="/users/edit?account=1002" class="btn btn-info" >编辑</a>\r\n                        <a href="/users/delect/1002" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>3</td>\r\n                      <td>1003</td>\r\n                      <td>王五</td>\r\n                      <td>\r\n                              <p>已通过</p>\r\n                          </td>\r\n\r\n                      <td>\r\n\r\n                        \r\n  \r\n                        队长\r\n  \r\n                        \r\n  \r\n                        </td>\r\n                      <td>\r\n                        <a  href="/users/edit?account=1003" class="btn btn-info" >编辑</a>\r\n                        <a href="/users/delect/1003" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n            </tbody>\r\n        </table> \r\n        <div id="page" class="pagination pull-right"></div> \r\n        </div>\r\n        \r\n        </div>\r\n    </div>\r\n        </div>\r\n    </div>\r\n\r\n</body>\r\n\r\n<script>\r\n  $(\'#page\').jqPaginator({\r\n        totalPages: 1,   //设置分页的总页数\r\n        visiblePages: 8,  //设置当前可视页码数（例如有100页，当前第1页，则显示1 - 7页）\r\n        currentPage: 1,    //设置当前的页码\r\n        onPageChange: function (num, type) {    //回调函数，当换页时触发（包括初始化第一页的时候），会传入两个参数： 1、“目标页"的页码，Number类型  2、触发类型，可能的值：“init”（初始化），“change”（点击分页）\r\n          console.log(\'当前第\' + num + \'页\',type);\r\n\r\n          if(type == \'change\'){\r\n              location.href="/users/userList?page=" + num + "&account=" + "&userName=";\r\n          }\r\n\r\n        }\r\n      });\r\n</script>\r\n\r\n<style> \r\n  .black_overlay{ \r\n      display: none; \r\n      position: absolute; \r\n      top: 0%; \r\n      left: 0%; \r\n      width: 100%; \r\n      height: 100%; \r\n      background-color: black; \r\n      z-index:1001; \r\n      -moz-opacity: 0.8; \r\n      opacity:.80; \r\n      filter: alpha(opacity=88); \r\n  } \r\n  .white_content { \r\n      display: none; \r\n      position: absolute; \r\n      top: 25%; \r\n      left: 25%; \r\n      width: 55%; \r\n      height: 55%; \r\n      padding: 20px; \r\n      border: 10px solid rgb(120, 196, 231); \r\n      border-radius: 20px;\r\n      background-color: white; \r\n      z-index:1002; \r\n      overflow: auto; \r\n  } \r\n</style> \r\n</html>' } }
+[2020-05-24T00:30:16.136] [INFO] response - { method: 'GET',
+  url: '/users/edit?account=1003',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2951' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>编辑用户</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default">\r\n        <div class="panel-heading">\r\n            编辑用户\r\n        </div>\r\n\r\n        <div class="panel-body">\r\n            <div class="input-form">\r\n                <form action="/users/doEdit" class="form" method="post">\r\n\r\n                    <ul> \r\n                        <input type="hidden" name="account" value="1003">\r\n\r\n                        <li> 用户密码: <input type="password" name="password"></li>\r\n\r\n                        <li> 用户姓名: <input type="text" name="userName" value="王五" /></li>\r\n\r\n                        <li> 用户性别:\r\n                            <select name="userSex">\r\n                                <option value="1"  >男</option>\r\n                                <option value="2" selected >女</option>\r\n                            </select>\r\n                        </li>\r\n\r\n                        <li> 联系方式: <input type="text" name="userPhone" value="13049213960" /></li>\r\n                                               \r\n\r\n                        <li> 用户状态:\r\n                            <select name="userStatus">\r\n                                <option value="0"  >未审核</option>\r\n                                <option value="1" selected >审核成功</option>\r\n                                <option value="2"  >审核失败</option>\r\n                            </select>\r\n\r\n                        </li>\r\n\r\n                        <li> 用户角色:\r\n                        \r\n        \r\n                        <input type="radio" value="1" name="roleId">\r\n                        管理员\r\n                        \r\n                        \r\n        \r\n                        <input type="radio" value="2" name="roleId">\r\n                        队长\r\n                        \r\n                        \r\n        \r\n                        <input type="radio" value="3" name="roleId">\r\n                        队员\r\n                        \r\n                        \r\n\r\n                        </li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">确认修改</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n\r\n    <script>\r\n\r\n      \r\n\r\n    </script>\r\n\r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-24T00:30:21.095] [INFO] response - { method: 'POST',
+  url: '/users/doEdit',
+  body:
+   { account: '1003',
+     password: '5bba7ff8808595692fb2fc42cfd11dcf',
+     userName: '王五',
+     userSex: '1',
+     userPhone: '13049213960',
+     userStatus: '1',
+     solt: '4df60e94-c7fb-446c-ad08-4b6e1e1cf8a5' },
+  costTime: 53,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/user/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '59' },
+     body:
+      'Redirecting to <a href="/user/userlist">/user/userlist</a>.' } }
+[2020-05-24T00:30:21.104] [INFO] response - { method: 'GET',
+  url: '/user/userlist',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-24T00:30:32.993] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3323' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>老二</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n\n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>        \n\t  </li>\n     \n     \n      <li>\n        <h4 class="M2"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n    \n\n    <li>\n        <h4 class="M3"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M4"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M5"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M6"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-24T00:30:33.097] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '478' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n\r\n    <div class="jumbotron">\r\n        <h1>Hello, world!</h1>\r\n      </div>\r\n\r\n\r\n</body>\r\n</html>\r\n' } }
+[2020-05-24T00:30:35.584] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '6244' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入分页插件-->\r\n    <script type="text/javascript" src="/javascripts/jqPaginator.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-primary" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            <h3 class="panel-title">\r\n               管理员列表\r\n            </h3>\r\n        </div>\r\n        <div class="panel-body">          \r\n            <div class="clearfix" style="margin-bottom: 10px;">\r\n              </div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="account" class="control-label">账号</label>\r\n          <input type="text" class="form-control" id="account" value="" name="account">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="user_name" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="user_name" value="" name="userName">                 \r\n        </div>     \r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                    <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n                  <button type="reset" class="btn btn-default" style="margin-top: 24px;margin-left: 15px;">重置</button>    \r\n                </div>\r\n        </div>\r\n       \r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 20px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>账号</th>\r\n                <th>姓名</th>               \r\n                <th>状态</th>\r\n                <th>身份</th>\r\n                <th>操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                \r\n                    <tr>\r\n                      <td>1</td>\r\n                      <td>1001</td>\r\n                      <td>张三</td>\r\n                      <td>\r\n                              <p>已通过</p>\r\n                          </td>\r\n\r\n                      <td>\r\n\r\n                        \r\n  \r\n                        管理员\r\n  \r\n                        \r\n  \r\n                        </td>\r\n                      <td>\r\n                        <a  href="/users/edit?account=1001" class="btn btn-info" >编辑</a>\r\n                        <a href="/users/delect/1001" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>2</td>\r\n                      <td>1002</td>\r\n                      <td>老二</td>\r\n                      <td>\r\n                              <p>已通过</p>\r\n                          </td>\r\n\r\n                      <td>\r\n\r\n                        \r\n  \r\n                        管理员\r\n  \r\n                        \r\n  \r\n                        </td>\r\n                      <td>\r\n                        <a  href="/users/edit?account=1002" class="btn btn-info" >编辑</a>\r\n                        <a href="/users/delect/1002" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>3</td>\r\n                      <td>1003</td>\r\n                      <td>王五</td>\r\n                      <td>\r\n                              <p>已通过</p>\r\n                          </td>\r\n\r\n                      <td>\r\n\r\n                        \r\n  \r\n                        队长\r\n  \r\n                        \r\n  \r\n                        </td>\r\n                      <td>\r\n                        <a  href="/users/edit?account=1003" class="btn btn-info" >编辑</a>\r\n                        <a href="/users/delect/1003" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n            </tbody>\r\n        </table> \r\n        <div id="page" class="pagination pull-right"></div> \r\n        </div>\r\n        \r\n        </div>\r\n    </div>\r\n        </div>\r\n    </div>\r\n\r\n</body>\r\n\r\n<script>\r\n  $(\'#page\').jqPaginator({\r\n        totalPages: 1,   //设置分页的总页数\r\n        visiblePages: 8,  //设置当前可视页码数（例如有100页，当前第1页，则显示1 - 7页）\r\n        currentPage: 1,    //设置当前的页码\r\n        onPageChange: function (num, type) {    //回调函数，当换页时触发（包括初始化第一页的时候），会传入两个参数： 1、“目标页"的页码，Number类型  2、触发类型，可能的值：“init”（初始化），“change”（点击分页）\r\n          console.log(\'当前第\' + num + \'页\',type);\r\n\r\n          if(type == \'change\'){\r\n              location.href="/users/userList?page=" + num + "&account=" + "&userName=";\r\n          }\r\n\r\n        }\r\n      });\r\n</script>\r\n\r\n<style> \r\n  .black_overlay{ \r\n      display: none; \r\n      position: absolute; \r\n      top: 0%; \r\n      left: 0%; \r\n      width: 100%; \r\n      height: 100%; \r\n      background-color: black; \r\n      z-index:1001; \r\n      -moz-opacity: 0.8; \r\n      opacity:.80; \r\n      filter: alpha(opacity=88); \r\n  } \r\n  .white_content { \r\n      display: none; \r\n      position: absolute; \r\n      top: 25%; \r\n      left: 25%; \r\n      width: 55%; \r\n      height: 55%; \r\n      padding: 20px; \r\n      border: 10px solid rgb(120, 196, 231); \r\n      border-radius: 20px;\r\n      background-color: white; \r\n      z-index:1002; \r\n      overflow: auto; \r\n  } \r\n</style> \r\n</html>' } }
+[2020-05-24T00:30:38.526] [INFO] response - { method: 'GET',
+  url: '/users/edit?account=1003',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2951' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>编辑用户</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default">\r\n        <div class="panel-heading">\r\n            编辑用户\r\n        </div>\r\n\r\n        <div class="panel-body">\r\n            <div class="input-form">\r\n                <form action="/users/doEdit" class="form" method="post">\r\n\r\n                    <ul> \r\n                        <input type="hidden" name="account" value="1003">\r\n\r\n                        <li> 用户密码: <input type="password" name="password"></li>\r\n\r\n                        <li> 用户姓名: <input type="text" name="userName" value="王五" /></li>\r\n\r\n                        <li> 用户性别:\r\n                            <select name="userSex">\r\n                                <option value="1" selected >男</option>\r\n                                <option value="2"  >女</option>\r\n                            </select>\r\n                        </li>\r\n\r\n                        <li> 联系方式: <input type="text" name="userPhone" value="13049213960" /></li>\r\n                                               \r\n\r\n                        <li> 用户状态:\r\n                            <select name="userStatus">\r\n                                <option value="0"  >未审核</option>\r\n                                <option value="1" selected >审核成功</option>\r\n                                <option value="2"  >审核失败</option>\r\n                            </select>\r\n\r\n                        </li>\r\n\r\n                        <li> 用户角色:\r\n                        \r\n        \r\n                        <input type="radio" value="1" name="roleId">\r\n                        管理员\r\n                        \r\n                        \r\n        \r\n                        <input type="radio" value="2" name="roleId">\r\n                        队长\r\n                        \r\n                        \r\n        \r\n                        <input type="radio" value="3" name="roleId">\r\n                        队员\r\n                        \r\n                        \r\n\r\n                        </li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">确认修改</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n\r\n    <script>\r\n\r\n      \r\n\r\n    </script>\r\n\r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-24T00:30:41.710] [INFO] response - { method: 'POST',
+  url: '/users/doEdit',
+  body:
+   { account: '1003',
+     password: '5bba7ff8808595692fb2fc42cfd11dcf',
+     userName: '王五',
+     userSex: '1',
+     userPhone: '13049213960',
+     userStatus: '1',
+     roleId: '3',
+     solt: '4df60e94-c7fb-446c-ad08-4b6e1e1cf8a5' },
+  costTime: 259,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userlist">/users/userlist</a>.' } }
+[2020-05-24T00:30:41.739] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '6244' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入分页插件-->\r\n    <script type="text/javascript" src="/javascripts/jqPaginator.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-primary" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            <h3 class="panel-title">\r\n               管理员列表\r\n            </h3>\r\n        </div>\r\n        <div class="panel-body">          \r\n            <div class="clearfix" style="margin-bottom: 10px;">\r\n              </div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="account" class="control-label">账号</label>\r\n          <input type="text" class="form-control" id="account" value="" name="account">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="user_name" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="user_name" value="" name="userName">                 \r\n        </div>     \r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                    <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n                  <button type="reset" class="btn btn-default" style="margin-top: 24px;margin-left: 15px;">重置</button>    \r\n                </div>\r\n        </div>\r\n       \r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 20px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>账号</th>\r\n                <th>姓名</th>               \r\n                <th>状态</th>\r\n                <th>身份</th>\r\n                <th>操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                \r\n                    <tr>\r\n                      <td>1</td>\r\n                      <td>1001</td>\r\n                      <td>张三</td>\r\n                      <td>\r\n                              <p>已通过</p>\r\n                          </td>\r\n\r\n                      <td>\r\n\r\n                        \r\n  \r\n                        管理员\r\n  \r\n                        \r\n  \r\n                        </td>\r\n                      <td>\r\n                        <a  href="/users/edit?account=1001" class="btn btn-info" >编辑</a>\r\n                        <a href="/users/delect/1001" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>2</td>\r\n                      <td>1002</td>\r\n                      <td>老二</td>\r\n                      <td>\r\n                              <p>已通过</p>\r\n                          </td>\r\n\r\n                      <td>\r\n\r\n                        \r\n  \r\n                        管理员\r\n  \r\n                        \r\n  \r\n                        </td>\r\n                      <td>\r\n                        <a  href="/users/edit?account=1002" class="btn btn-info" >编辑</a>\r\n                        <a href="/users/delect/1002" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>3</td>\r\n                      <td>1003</td>\r\n                      <td>王五</td>\r\n                      <td>\r\n                              <p>已通过</p>\r\n                          </td>\r\n\r\n                      <td>\r\n\r\n                        \r\n  \r\n                        队员\r\n  \r\n                        \r\n  \r\n                        </td>\r\n                      <td>\r\n                        <a  href="/users/edit?account=1003" class="btn btn-info" >编辑</a>\r\n                        <a href="/users/delect/1003" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n            </tbody>\r\n        </table> \r\n        <div id="page" class="pagination pull-right"></div> \r\n        </div>\r\n        \r\n        </div>\r\n    </div>\r\n        </div>\r\n    </div>\r\n\r\n</body>\r\n\r\n<script>\r\n  $(\'#page\').jqPaginator({\r\n        totalPages: 1,   //设置分页的总页数\r\n        visiblePages: 8,  //设置当前可视页码数（例如有100页，当前第1页，则显示1 - 7页）\r\n        currentPage: 1,    //设置当前的页码\r\n        onPageChange: function (num, type) {    //回调函数，当换页时触发（包括初始化第一页的时候），会传入两个参数： 1、“目标页"的页码，Number类型  2、触发类型，可能的值：“init”（初始化），“change”（点击分页）\r\n          console.log(\'当前第\' + num + \'页\',type);\r\n\r\n          if(type == \'change\'){\r\n              location.href="/users/userList?page=" + num + "&account=" + "&userName=";\r\n          }\r\n\r\n        }\r\n      });\r\n</script>\r\n\r\n<style> \r\n  .black_overlay{ \r\n      display: none; \r\n      position: absolute; \r\n      top: 0%; \r\n      left: 0%; \r\n      width: 100%; \r\n      height: 100%; \r\n      background-color: black; \r\n      z-index:1001; \r\n      -moz-opacity: 0.8; \r\n      opacity:.80; \r\n      filter: alpha(opacity=88); \r\n  } \r\n  .white_content { \r\n      display: none; \r\n      position: absolute; \r\n      top: 25%; \r\n      left: 25%; \r\n      width: 55%; \r\n      height: 55%; \r\n      padding: 20px; \r\n      border: 10px solid rgb(120, 196, 231); \r\n      border-radius: 20px;\r\n      background-color: white; \r\n      z-index:1002; \r\n      overflow: auto; \r\n  } \r\n</style> \r\n</html>' } }
+[2020-05-24T00:30:59.035] [INFO] response - { method: 'GET',
+  url: '/users/userlist?account=1003&userName=',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4892' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入分页插件-->\r\n    <script type="text/javascript" src="/javascripts/jqPaginator.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-primary" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            <h3 class="panel-title">\r\n               管理员列表\r\n            </h3>\r\n        </div>\r\n        <div class="panel-body">          \r\n            <div class="clearfix" style="margin-bottom: 10px;">\r\n              </div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="account" class="control-label">账号</label>\r\n          <input type="text" class="form-control" id="account" value="1003" name="account">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="user_name" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="user_name" value="" name="userName">                 \r\n        </div>     \r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                    <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n                  <button type="reset" class="btn btn-default" style="margin-top: 24px;margin-left: 15px;">重置</button>    \r\n                </div>\r\n        </div>\r\n       \r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 20px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>账号</th>\r\n                <th>姓名</th>               \r\n                <th>状态</th>\r\n                <th>身份</th>\r\n                <th>操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                \r\n                    <tr>\r\n                      <td>3</td>\r\n                      <td>1003</td>\r\n                      <td>王五</td>\r\n                      <td>\r\n                              <p>已通过</p>\r\n                          </td>\r\n\r\n                      <td>\r\n\r\n                        \r\n  \r\n                        队员\r\n  \r\n                        \r\n  \r\n                        </td>\r\n                      <td>\r\n                        <a  href="/users/edit?account=1003" class="btn btn-info" >编辑</a>\r\n                        <a href="/users/delect/1003" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n            </tbody>\r\n        </table> \r\n        <div id="page" class="pagination pull-right"></div> \r\n        </div>\r\n        \r\n        </div>\r\n    </div>\r\n        </div>\r\n    </div>\r\n\r\n</body>\r\n\r\n<script>\r\n  $(\'#page\').jqPaginator({\r\n        totalPages: 1,   //设置分页的总页数\r\n        visiblePages: 8,  //设置当前可视页码数（例如有100页，当前第1页，则显示1 - 7页）\r\n        currentPage: 1,    //设置当前的页码\r\n        onPageChange: function (num, type) {    //回调函数，当换页时触发（包括初始化第一页的时候），会传入两个参数： 1、“目标页"的页码，Number类型  2、触发类型，可能的值：“init”（初始化），“change”（点击分页）\r\n          console.log(\'当前第\' + num + \'页\',type);\r\n\r\n          if(type == \'change\'){\r\n              location.href="/users/userList?page=" + num + "&account=1003" + "&userName=";\r\n          }\r\n\r\n        }\r\n      });\r\n</script>\r\n\r\n<style> \r\n  .black_overlay{ \r\n      display: none; \r\n      position: absolute; \r\n      top: 0%; \r\n      left: 0%; \r\n      width: 100%; \r\n      height: 100%; \r\n      background-color: black; \r\n      z-index:1001; \r\n      -moz-opacity: 0.8; \r\n      opacity:.80; \r\n      filter: alpha(opacity=88); \r\n  } \r\n  .white_content { \r\n      display: none; \r\n      position: absolute; \r\n      top: 25%; \r\n      left: 25%; \r\n      width: 55%; \r\n      height: 55%; \r\n      padding: 20px; \r\n      border: 10px solid rgb(120, 196, 231); \r\n      border-radius: 20px;\r\n      background-color: white; \r\n      z-index:1002; \r\n      overflow: auto; \r\n  } \r\n</style> \r\n</html>' } }
+[2020-05-24T21:12:02.752] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 143,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1252' },
+     body:
+      '<!DOCTYPE html>\n<head>\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n\t<title>登录</title>\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \n</head>\n<body>\n\t<div class="container">\n\t\t<section id="content">\n\t\t\t<form action="/checkLogin" method="post">\n\t\t\t\t<h1>登录</h1>\n\t\t\t\t<div>\n\t\t\t\t\t<input type="text" placeholder="账号" required="" id="account" name="account"/>\n\t\t\t\t</div>\n\t\t\t\t<div>\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\n\t\t\t\t</div>\n\n\t\t\t\t<div> <input placeholder="验证码" id="verify" type="text" name="code">\n\t\t\t\t\t<img id="verify_img" src="/verify" title="看不清？点击刷新"  style="position: relative;top: 15px;"\n\t\t\t\t\t\tonclick="javascript:this.src=\'/verify?mt=\'+Math.random()">\n\t\t\t\t</div>\n\n\t\t\t\t<div class="">\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\n\t\t\t\t</div>\n\n\t\t\t\t<div>\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\n\t\t\t\t</div>\n\t\t\t</form><!-- form -->\n\n\t\t</section><!-- content -->\n\t</div>\n\t<!-- container -->\n</body>\n</html>' } }
+[2020-05-24T21:12:03.197] [INFO] response - { method: 'GET',
+  url: '/verify',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'image/svg+xml',
+        'content-length': '9802' },
+     body:
+      '<svg xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0,0,100,40"><rect width="100%" height="100%" fill="#cc9966"/><path d="M18 18 C56 25,31 5,86 34" stroke="#cbe480" fill="none"/><path fill="#4f4c49" d="M14.67 24.11L14.73 24.17L14.72 24.17Q14.66 27.91 14.01 31.61L14.13 31.73L14.16 31.76Q16.11 31.20 18.87 31.10L18.85 31.08L18.81 31.04Q20.01 31.22 20.96 30.32L20.88 30.24L20.90 30.25Q21.84 29.34 21.84 28.15L21.85 28.17L21.92 28.23Q21.86 27.90 21.83 27.67L21.93 27.77L21.91 27.75Q21.83 25.18 19.82 24.44L19.73 24.34L19.80 24.42Q19.00 24.02 18.39 24.09L18.50 24.20L18.53 24.24Q17.47 24.05 16.55 24.09L16.55 24.09L16.66 24.19Q15.52 24.05 14.61 24.05ZM13.64 14.86L13.57 14.78L13.63 14.85Q14.44 17.83 14.68 21.74L14.59 21.65L14.59 21.66Q15.90 21.77 18.28 21.80L18.24 21.77L18.37 21.90Q20.91 21.86 21.22 18.69L21.15 18.63L21.17 18.64Q21.42 16.99 20.16 16.24L20.23 16.31L20.22 16.30Q19.38 15.81 15.44 15.23L15.40 15.19L15.41 15.20Q14.46 15.07 13.65 14.86ZM10.32 35.23L10.36 35.27L10.40 35.30Q12.52 29.27 12.29 22.68L12.23 22.62L12.32 22.72Q12.14 16.28 9.52 10.50L9.40 10.37L9.39 10.37Q12.88 12.73 18.43 12.95L18.39 12.91L18.32 12.84Q23.87 13.05 24.17 15.63L24.20 15.66L24.29 15.75Q24.61 18.24 23.35 20.62L23.37 20.64L23.22 20.49Q22.59 21.87 21.17 22.48L21.15 22.46L21.16 22.48Q24.39 23.05 24.59 27.85L24.66 27.91L24.68 27.94Q24.68 28.85 24.61 30.11L24.62 30.12L24.59 30.09Q24.70 31.43 23.87 32.26L23.79 32.18L23.73 32.11Q23.02 33.08 21.83 33.21L21.71 33.09L21.81 33.19Q20.41 33.18 19.46 33.18L19.47 33.19L19.63 33.35Q14.46 33.28 10.42 35.32ZM21.72 35.48L21.74 35.50L21.76 35.52Q22.59 35.57 24.26 35.67L24.37 35.78L24.30 35.72Q25.50 35.69 26.49 34.91L26.51 34.93L26.51 34.94Q27.23 34.12 27.13 32.73L27.09 32.69L27.17 32.77Q27.09 31.91 26.44 28.82L26.41 28.78L26.44 28.81Q25.92 26.01 24.25 24.69L24.07 24.51L23.82 23.88L23.78 23.84Q25.23 22.54 25.74 19.17L25.77 19.20L25.84 19.27Q25.84 18.11 25.77 16.85L25.82 16.90L25.84 16.92Q25.89 15.85 24.90 15.10L24.80 15.00L24.88 15.08Q24.46 14.76 24.35 14.73L24.47 14.85L24.53 14.90Q24.31 14.44 23.56 13.73L23.51 13.68L23.51 13.68Q22.09 12.66 18.31 12.49L18.37 12.55L18.28 12.46Q12.33 12.19 8.76 9.60L8.83 9.67L8.88 9.72Q11.73 15.91 12.01 22.64L11.96 22.59L12.06 22.69Q12.28 29.61 9.77 35.80L9.89 35.92L11.59 34.94L11.68 35.02Q11.27 35.98 10.83 37.00L10.89 37.06L10.97 37.13Q14.65 35.31 19.14 35.31L19.29 35.46L19.25 35.43Q20.51 35.43 21.80 35.56ZM19.93 26.18L19.82 26.06L19.82 26.07Q20.45 25.98 21.27 26.39L21.39 26.51L21.37 26.49Q21.34 26.67 21.48 27.63L21.66 27.80L21.62 27.76Q21.65 28.85 20.82 29.78L20.93 29.90L20.82 29.78Q20.02 30.75 18.76 30.65L18.86 30.75L17.39 30.71L17.40 30.72Q16.86 30.89 16.21 30.99L16.08 30.86L16.20 30.98Q16.42 29.30 16.49 26.21L16.44 26.15L16.47 26.18Q17.06 26.12 18.18 26.09L18.23 26.14L18.26 26.17Q19.37 26.13 19.92 26.16ZM18.98 17.58L18.86 17.46L19.22 17.48L19.38 17.64Q19.51 17.56 19.68 17.60L19.70 17.62L20.01 17.59L20.41 17.82L20.83 17.76L20.89 17.83Q20.94 18.01 20.94 18.29L21.01 18.35L21.01 18.82L21.01 18.82Q20.85 19.78 20.06 20.62L20.16 20.71L20.11 20.67Q19.34 21.51 18.25 21.51L18.27 21.52L18.32 21.57Q17.29 21.46 17.29 21.46L17.44 21.62L17.36 21.53Q16.18 21.51 16.49 21.51L16.39 21.42L16.39 21.41Q16.52 20.21 16.24 17.49L16.13 17.38L16.10 17.35Q17.55 17.51 18.91 17.51Z"/><path fill="#4e4f4f" d="M53.37 27.39L53.44 27.45L53.38 27.39Q53.32 29.99 52.27 34.14L52.14 34.01L52.30 34.17Q50.60 34.54 49.18 35.26L49.12 35.20L49.08 35.16Q51.55 29.03 51.31 22.40L51.29 22.38L51.36 22.46Q51.00 15.73 48.24 9.72L48.19 9.66L48.29 9.76Q49.98 10.84 51.64 11.35L51.72 11.42L51.79 11.50Q53.60 17.62 53.60 23.57L53.59 23.56L53.50 23.47Q53.61 24.87 53.54 26.19L53.55 26.20L53.52 26.17Q54.56 25.11 59.22 20.69L59.22 20.69L59.30 20.77Q60.25 20.73 61.13 20.67L61.15 20.68L62.86 20.39L62.91 20.44Q60.16 23.20 56.32 26.56L56.19 26.44L56.29 26.53Q59.35 29.05 65.13 34.25L65.14 34.26L65.01 34.13Q62.54 33.30 59.89 33.13L60.00 33.24L60.09 33.32Q57.68 31.29 53.33 27.35ZM62.30 35.67L62.16 35.53L62.16 35.53Q66.37 36.27 69.16 38.01L69.31 38.15L69.33 38.17Q68.09 36.83 65.74 34.69L65.88 34.83L65.76 34.71Q66.06 34.87 66.30 34.97L66.20 34.87L66.36 35.03Q64.34 33.09 62.34 31.39L62.45 31.51L58.55 28.08L58.43 27.96Q62.82 24.16 65.00 21.57L65.14 21.72L65.07 21.64Q63.96 21.69 61.75 21.93L61.76 21.95L61.68 21.86Q63.20 20.67 63.82 19.92L63.79 19.89L63.70 19.81Q61.34 20.36 59.13 20.36L59.02 20.26L59.19 20.42Q57.75 21.40 55.30 23.78L55.42 23.90L55.33 23.81Q55.40 18.70 54.51 13.50L54.60 13.59L54.58 13.57Q53.85 13.32 52.53 13.08L52.58 13.13L52.64 13.20Q52.45 12.49 52.04 11.17L51.92 11.05L51.96 11.08Q49.65 10.41 47.64 9.01L47.65 9.02L47.73 9.10Q50.76 15.16 51.07 22.40L51.02 22.35L51.08 22.41Q51.31 29.40 48.62 35.86L48.70 35.94L48.69 35.93Q49.21 35.56 50.40 34.98L50.34 34.93L50.36 34.94Q50.22 35.76 49.65 37.05L49.66 37.07L49.64 37.05Q52.15 36.05 54.05 35.71L54.12 35.78L54.15 35.81Q54.64 33.55 55.08 29.74L55.11 29.77L54.95 29.61Q57.29 31.65 62.16 35.52Z"/><path fill="#393a3b" d="M80.95 34.24L80.87 34.16L80.94 34.23Q79.68 32.63 78.52 29.88L78.59 29.95L76.77 25.44L76.73 25.40Q75.27 28.94 74.73 30.09L74.76 30.13L74.69 30.05Q73.44 32.72 72.01 34.42L72.01 34.41L72.03 34.43Q71.75 34.49 71.07 34.59L71.00 34.52L70.99 34.51Q70.96 27.86 65.76 22.55L65.81 22.61L65.80 22.60Q64.18 20.91 62.38 19.58L62.54 19.74L62.42 19.62Q64.10 20.15 65.76 20.42L65.70 20.35L65.70 20.35Q71.14 24.80 72.43 30.38L72.56 30.51L72.40 30.35Q73.26 28.77 74.32 25.91L74.35 25.94L74.40 25.99Q75.54 22.58 76.05 21.43L75.96 21.34L77.30 21.42L77.36 21.47Q78.13 22.99 79.19 25.92L79.21 25.95L79.24 25.97Q80.27 29.08 80.85 30.34L80.91 30.39L80.83 30.31Q82.54 24.78 87.43 20.70L87.32 20.59L87.42 20.69Q88.44 20.56 90.89 20.05L90.95 20.11L91.01 20.17Q83.18 25.43 82.13 34.33L82.04 34.25L81.53 34.21L81.59 34.27Q81.25 34.20 80.94 34.23ZM83.67 36.48L85.43 36.58L85.52 36.67Q85.17 35.23 85.17 33.87L85.16 33.87L85.26 33.97Q85.15 30.96 86.40 28.07L86.41 28.08L86.42 28.09Q88.18 24.03 91.85 21.28L91.82 21.26L91.82 21.26Q90.69 21.44 89.02 21.75L89.19 21.91L89.19 21.92Q90.94 20.43 92.09 19.62L92.07 19.59L89.81 19.99L89.85 20.03Q88.62 20.09 87.43 20.23L87.57 20.36L87.55 20.35Q82.92 24.11 81.19 28.60L81.09 28.50L81.13 28.55Q80.63 26.69 79.41 22.88L79.30 22.77L79.28 22.75Q79.17 22.94 78.93 22.94L78.90 22.91L78.36 22.85L78.36 22.84Q78.20 22.52 77.48 20.95L77.47 20.94L75.67 20.97L75.81 21.11Q74.77 23.44 72.90 28.47L72.90 28.47L72.98 28.55Q71.78 25.25 69.03 22.32L69.07 22.36L69.03 22.33Q68.91 22.44 68.64 22.41L68.49 22.26L67.96 22.14L67.99 22.17Q67.36 21.57 65.76 20.14L65.64 20.02L65.72 20.10Q62.89 19.51 61.39 19.07L61.37 19.04L61.42 19.10Q70.91 25.66 70.57 34.87L70.57 34.88L70.66 34.96Q70.71 34.84 71.03 34.81L71.10 34.87L71.20 34.98Q71.42 34.84 71.59 34.84L71.65 34.90L71.70 34.95Q71.68 34.80 71.85 36.67L71.81 36.62L73.48 36.42L73.50 36.44Q75.75 33.87 77.75 28.74L77.78 28.76L77.89 28.87Q79.22 32.31 80.89 34.69L80.85 34.65L80.85 34.65Q81.14 34.64 81.38 34.66L81.36 34.64L81.31 34.59Q81.63 34.69 81.87 34.69L81.86 34.68L83.54 36.36Z"/><path fill="#4b4a4e" d="M36.56 15.12L36.56 15.11L35.27 15.32L35.32 15.37Q33.30 15.46 33.09 17.26L32.95 17.12L32.96 17.12Q33.01 17.89 33.04 18.77L32.92 18.65L33.09 18.82Q33.10 20.53 34.22 21.72L34.08 21.57L34.11 21.61Q35.25 22.81 36.95 22.68L36.89 22.62L37.05 22.78Q38.80 22.56 39.48 21.74L39.41 21.67L39.45 21.71Q40.53 21.03 40.77 19.02L40.61 18.86L40.64 18.89Q40.98 16.99 39.86 16.24L39.82 16.20L39.78 16.16Q38.93 15.38 36.55 15.11ZM41.96 23.37L41.96 23.37L40.83 25.44L40.85 25.46Q38.41 29.71 35.04 33.35L35.18 33.49L35.16 33.46Q33.64 33.54 31.23 34.25L31.16 34.19L31.30 34.33Q35.98 28.64 38.80 24.36L38.89 24.45L38.89 24.45Q37.87 24.93 36.41 24.99L36.36 24.95L36.50 25.08Q33.81 25.21 32.45 23.45L32.37 23.37L32.31 23.31Q31.29 21.95 30.31 17.87L30.23 17.80L30.26 17.83Q30.42 17.58 30.29 16.75L30.23 16.69L30.26 16.72Q30.13 15.89 30.13 15.48L30.12 15.47L30.12 15.48Q29.99 13.75 30.94 13.20L31.08 13.34L31.07 13.33Q32.14 12.64 33.81 12.64L33.78 12.61L33.85 12.67Q36.67 12.64 36.67 12.64L36.63 12.60L36.59 12.56Q38.53 12.60 39.65 12.77L39.75 12.87L39.66 12.78Q41.53 12.98 42.34 13.42L42.36 13.44L42.48 13.55Q43.66 14.20 43.83 15.76L43.83 15.76L43.74 15.67Q43.82 15.96 43.65 18.34L43.60 18.28L43.60 18.28Q43.26 20.19 43.06 20.94L42.98 20.86L43.05 20.93Q42.67 22.15 41.99 23.40ZM43.83 25.69L43.75 25.60L43.85 25.70Q44.54 23.54 45.02 19.70L45.13 19.81L45.06 19.74Q45.26 17.73 45.22 16.95L45.28 17.00L45.32 17.04Q45.29 15.38 44.23 14.56L44.24 14.57L43.92 14.42L43.90 14.40Q43.65 13.71 42.84 13.13L42.93 13.23L42.96 13.25Q40.95 12.40 36.66 12.26L36.68 12.28L36.58 12.18Q35.71 12.16 33.53 12.16L33.57 12.20L33.54 12.17Q32.02 12.21 30.69 12.82L30.63 12.76L30.69 12.82Q29.69 13.55 29.76 15.18L29.79 15.22L29.76 15.19Q29.81 15.88 29.98 17.68L30.15 17.85L29.96 17.66Q30.51 20.01 30.75 20.76L30.85 20.86L30.94 20.95Q31.39 22.55 32.24 23.71L32.28 23.75L32.17 23.64Q32.54 24.08 32.87 24.42L32.86 24.40L32.87 24.41Q32.98 24.69 33.55 25.50L33.63 25.58L33.50 25.45Q34.99 26.84 36.73 27.01L36.59 26.88L36.63 26.91Q35.03 29.39 33.63 31.09L33.53 30.99L30.26 34.85L30.38 34.98Q32.39 34.30 33.85 33.99L33.78 33.92L33.78 33.92Q33.18 34.78 31.79 36.31L31.76 36.28L31.81 36.33Q34.57 35.52 37.35 35.49L37.23 35.37L37.30 35.43Q39.24 32.99 43.11 26.53L43.20 26.61L43.26 26.75L43.12 26.61Q43.47 26.08 43.78 25.63ZM38.44 17.41L38.30 17.26L38.44 17.41Q38.93 17.25 39.34 17.35L39.41 17.42L39.39 17.40Q39.88 17.42 40.22 17.52L40.31 17.61L40.27 17.57Q40.26 17.80 40.33 18.17L40.35 18.19L40.38 18.23Q40.41 18.56 40.30 18.89L40.48 19.07L40.39 18.99Q40.44 20.60 39.39 21.58L39.35 21.55L39.39 21.58Q38.49 22.45 37.03 22.42L36.96 22.35L36.93 22.31Q36.59 22.35 35.23 22.08L35.16 22.02L35.20 22.05Q35.00 21.27 35.00 20.62L34.96 20.59L35.12 20.74Q34.99 20.44 34.99 20.24L34.91 20.16L35.05 20.30Q34.93 18.22 36.97 17.50L37.03 17.56L36.97 17.49Q37.60 17.31 38.34 17.31Z"/></svg>' } }
+[2020-05-24T21:12:04.264] [INFO] response - { method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '473' },
+     body:
+      '\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>' } }
+[2020-05-24T21:12:15.191] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { account: '1002', password: '123', code: '' },
+  costTime: 251,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1252' },
+     body:
+      '<!DOCTYPE html>\n<head>\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n\t<title>登录</title>\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \n</head>\n<body>\n\t<div class="container">\n\t\t<section id="content">\n\t\t\t<form action="/checkLogin" method="post">\n\t\t\t\t<h1>登录</h1>\n\t\t\t\t<div>\n\t\t\t\t\t<input type="text" placeholder="账号" required="" id="account" name="account"/>\n\t\t\t\t</div>\n\t\t\t\t<div>\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\n\t\t\t\t</div>\n\n\t\t\t\t<div> <input placeholder="验证码" id="verify" type="text" name="code">\n\t\t\t\t\t<img id="verify_img" src="/verify" title="看不清？点击刷新"  style="position: relative;top: 15px;"\n\t\t\t\t\t\tonclick="javascript:this.src=\'/verify?mt=\'+Math.random()">\n\t\t\t\t</div>\n\n\t\t\t\t<div class="">\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\n\t\t\t\t</div>\n\n\t\t\t\t<div>\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\n\t\t\t\t</div>\n\t\t\t</form><!-- form -->\n\n\t\t</section><!-- content -->\n\t</div>\n\t<!-- container -->\n</body>\n</html>' } }
+[2020-05-24T21:12:15.259] [INFO] response - { method: 'GET',
+  url: '/verify',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'image/svg+xml',
+        'content-length': '8265' },
+     body:
+      '<svg xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0,0,100,40"><rect width="100%" height="100%" fill="#cc9966"/><path fill="#30362a" d="M34.28 30.66L34.27 30.65L34.24 30.63Q35.30 31.48 36.56 31.34L36.47 31.26L36.49 31.28Q39.06 31.40 39.64 28.41L39.74 28.51L39.71 28.48Q40.32 25.73 40.32 22.70L40.23 22.61L40.25 20.32L40.30 20.37Q40.28 19.23 39.97 18.10L39.98 18.11L40.02 18.15Q38.93 20.22 37.16 24.47L37.16 24.47L37.20 24.51Q35.25 28.57 34.16 30.54ZM38.69 15.87L38.68 15.86L38.77 15.95Q37.72 15.20 36.53 15.20L36.62 15.30L36.58 15.26Q35.17 15.03 34.18 15.85L34.19 15.86L34.14 15.81Q33.25 16.72 33.08 18.05L32.98 17.95L33.06 18.02Q32.66 19.16 32.63 20.48L32.72 20.57L32.75 20.60Q32.81 20.66 32.81 23.21L32.70 23.10L32.72 23.12Q32.63 25.14 33.04 28.37L33.22 28.55L33.12 28.46Q34.82 24.20 38.73 15.91ZM40.12 32.70L40.17 32.75L40.17 32.75Q38.64 33.60 36.57 33.60L36.44 33.47L35.09 33.58L35.10 33.59Q32.19 33.57 31.17 32.04L31.09 31.96L31.19 32.06Q30.46 30.11 30.39 27.49L30.40 27.50L30.30 27.40Q30.31 25.88 30.24 22.78L30.19 22.73L30.29 22.83Q30.26 21.75 30.13 19.03L30.11 19.01L30.14 19.05Q29.92 16.86 30.20 15.09L30.19 15.09L30.33 15.23Q30.65 12.48 34.52 12.28L34.51 12.27L34.66 12.41Q35.30 12.35 36.49 12.38L36.37 12.26L36.53 12.42Q41.58 12.54 42.53 15.63L42.55 15.66L42.57 15.67Q43.06 17.31 43.02 18.98L42.92 18.88L43.09 19.04Q42.87 23.35 42.80 24.43L42.79 24.42L42.86 24.49Q42.69 27.89 42.42 29.04L42.31 28.94L42.42 29.05Q41.84 31.84 40.15 32.72ZM44.61 32.57L44.65 32.61L44.63 32.59Q44.72 29.99 44.69 28.40L44.66 28.37L44.61 24.27L44.74 24.40Q44.60 21.64 44.12 16.72L44.15 16.74L44.17 16.76Q43.73 15.16 42.57 14.48L42.45 14.36L42.46 14.38Q41.12 12.15 36.50 12.02L36.45 11.96L36.49 12.01Q35.78 12.04 34.59 12.07L34.55 12.03L34.46 11.95Q30.43 12.03 29.99 14.81L29.96 14.79L30.10 14.93Q29.59 16.83 29.69 18.70L29.83 18.84L29.71 18.72Q30.05 22.66 30.01 25.65L30.09 25.73L30.08 25.72Q29.94 28.91 30.04 29.82L30.19 29.97L30.04 29.82Q30.52 32.72 31.88 33.43L31.75 33.30L31.75 33.30Q33.10 35.30 36.67 35.54L36.77 35.64L36.74 35.61Q39.95 35.83 40.53 35.80L40.54 35.80L40.45 35.71Q43.01 35.59 44.03 34.16L44.05 34.18L44.01 34.15Q44.39 33.47 44.46 32.41ZM36.93 31.04L36.96 31.07L36.78 30.89Q37.40 29.61 38.35 27.19L38.46 27.30L39.98 23.52L39.87 23.41Q39.98 25.01 39.64 28.00L39.66 28.02L39.52 27.88Q39.07 30.60 36.93 31.04ZM35.02 19.91L35.17 20.06L35.01 19.90Q35.48 18.37 36.09 17.86L36.04 17.81L36.16 17.92Q36.46 17.45 37.62 17.28L37.76 17.42L37.61 17.27Q36.16 20.62 34.50 24.76L34.44 24.71L34.47 24.74Q34.44 22.30 35.06 19.95Z"/><path d="M20 23 C65 23,59 8,80 21" stroke="#e939e9" fill="none"/><path fill="#404d47" d="M17.63 18.66L17.54 18.57L17.55 18.58Q14.74 18.63 13.11 17.68L13.03 17.60L13.13 17.70Q15.35 16.45 19.70 12.68L19.69 12.66L19.68 12.65Q20.23 12.39 21.39 11.84L21.36 11.82L21.41 11.86Q20.17 17.12 20.07 22.80L20.24 22.97L20.25 22.97Q20.11 28.62 21.06 34.06L20.94 33.94L20.95 33.94Q19.54 33.38 17.64 33.28L17.61 33.26L17.56 33.21Q17.52 29.56 17.52 25.93L17.41 25.81L17.55 25.96Q17.56 22.29 17.59 18.62ZM17.20 20.58L17.20 33.59L17.15 33.54Q18.28 33.59 19.13 33.76L19.09 33.71L19.15 33.78Q19.20 34.37 19.37 35.60L19.43 35.65L19.41 35.64Q21.94 36.09 24.12 38.10L24.05 38.03L24.08 38.06Q21.99 31.82 21.95 25.16L21.87 25.07L21.81 25.01Q21.77 18.38 23.40 11.92L23.41 11.93L23.39 11.91Q23.00 12.37 21.57 13.35L21.44 13.23L21.52 13.31Q21.67 12.61 21.94 11.25L21.95 11.25L21.96 11.26Q20.68 11.85 19.39 12.19L19.42 12.23L19.49 12.29Q16.13 15.49 12.29 17.53L12.20 17.44L12.34 17.59Q13.53 18.50 15.64 18.81L15.56 18.73L15.61 18.78Q15.09 19.31 13.93 20.26L13.92 20.25L13.87 20.20Q15.22 20.57 17.19 20.57L17.21 20.58Z"/><path fill="#31313e" d="M74.94 33.42L74.93 33.41L74.88 33.36Q71.12 32.82 69.49 31.53L69.51 31.56L69.48 31.52Q67.88 30.26 67.50 27.58L67.50 27.58L67.38 27.46Q67.51 27.27 67.20 23.03L67.06 22.89L67.13 22.95Q67.11 21.85 67.04 20.72L67.20 20.89L67.11 20.79Q66.99 16.32 68.96 14.76L69.00 14.80L68.85 14.65Q71.25 12.80 78.18 12.19L78.25 12.25L78.18 12.18Q79.50 12.18 80.97 12.22L80.93 12.18L80.89 12.14Q80.86 12.11 83.51 12.11L83.57 12.17L83.62 12.22Q84.22 12.07 85.75 12.20L85.83 12.29L85.79 12.25Q85.40 13.15 84.49 15.91L84.48 15.90L84.53 15.95Q82.52 14.72 79.83 14.72L79.86 14.75L79.88 14.77Q79.15 14.72 78.44 14.78L78.42 14.77L78.52 14.87Q73.98 15.29 71.74 17.06L71.78 17.10L71.72 17.04Q69.98 18.54 69.85 21.53L69.72 21.39L69.85 21.52Q69.80 22.05 69.83 23.17L69.71 23.06L69.80 23.15Q69.86 27.42 72.00 29.29L72.05 29.34L72.04 29.33Q73.99 31.07 78.44 31.34L78.36 31.26L78.33 31.23Q81.21 31.46 83.89 29.86L83.87 29.83L83.85 29.82Q84.39 32.26 84.93 33.48L85.05 33.60L84.94 33.49Q83.20 33.86 81.74 33.83L81.56 33.65L81.58 33.67Q77.71 33.74 74.92 33.40ZM88.35 36.66L88.38 36.70L88.34 36.66Q86.80 34.03 86.19 31.72L86.21 31.74L86.04 31.57Q85.67 31.81 84.79 32.15L84.89 32.25L84.86 32.22Q84.56 31.52 84.39 30.77L84.35 30.72L84.00 29.18L84.09 29.27Q81.16 31.10 78.37 31.00L78.40 31.03L78.40 31.03Q74.46 30.73 72.39 29.16L72.51 29.29L72.44 29.22Q71.36 27.52 71.42 24.90L71.48 24.96L71.57 25.05Q71.68 21.01 73.89 19.11L73.78 19.00L73.86 19.08Q75.83 17.44 80.01 16.90L80.01 16.90L79.93 16.82Q80.69 16.77 81.34 16.77L81.35 16.78L81.26 16.69Q83.87 16.82 85.74 18.18L85.62 18.06L85.71 18.15Q86.19 16.28 87.27 13.39L87.15 13.26L87.15 13.27Q86.88 13.24 86.39 13.19L86.51 13.31L86.39 13.18Q86.04 13.28 85.81 13.28L85.81 13.29L85.78 13.26Q85.85 12.68 86.26 11.80L86.32 11.86L86.34 11.87Q86.10 11.84 83.87 11.77L83.94 11.84L83.92 11.82Q81.68 11.74 81.10 11.77L81.08 11.75L81.12 11.79Q71.71 12.06 68.61 14.38L68.49 14.26L68.69 14.45Q66.81 16.01 66.81 19.51L66.77 19.47L66.83 19.53Q66.74 20.42 66.84 22.83L66.86 22.85L66.88 22.88Q66.92 25.97 67.12 27.50L67.24 27.62L67.28 27.66Q67.58 30.41 69.01 31.77L68.89 31.65L69.02 31.78Q69.35 32.28 70.47 33.30L70.52 33.35L70.46 33.29Q73.51 35.01 78.20 35.69L78.17 35.66L78.21 35.70Q83.83 36.43 88.29 36.60Z"/><path fill="#263531" d="M58.05 22.53L58.06 22.54L57.99 22.47Q54.76 22.30 53.77 25.29L53.87 25.38L53.75 25.27Q53.50 26.31 53.40 27.26L53.41 27.27L53.37 27.23Q53.18 29.04 54.06 30.23L54.18 30.35L54.07 30.25Q55.20 31.23 57.41 31.27L57.42 31.29L57.45 31.31Q59.07 31.33 60.33 30.31L60.31 30.29L60.35 30.33Q61.57 29.27 61.57 27.68L61.59 27.71L61.60 27.71Q61.72 27.52 61.65 27.18L61.51 27.04L61.48 27.02Q61.28 22.43 57.88 22.36ZM57.89 33.59L57.91 33.60L57.81 33.50Q54.46 33.76 52.86 31.96L52.78 31.88L52.84 31.94Q52.75 32.97 52.34 34.19L52.31 34.16L52.18 34.03Q50.47 34.74 49.35 35.25L49.35 35.24L49.33 35.22Q51.44 30.06 51.44 24.25L51.43 24.24L51.42 24.23Q51.43 16.83 48.37 9.82L48.35 9.80L48.19 9.64Q50.38 10.95 51.57 11.36L51.52 11.31L51.60 11.39Q53.32 17.16 53.46 22.36L53.46 22.36L53.52 22.41Q54.92 20.15 58.25 20.18L58.24 20.17L58.15 20.08Q61.10 20.18 62.43 21.84L62.34 21.75L62.39 21.81Q63.92 23.74 64.05 26.94L64.09 26.97L64.07 26.95Q64.31 28.18 64.25 29.61L64.18 29.55L64.09 29.46Q64.22 30.91 63.44 31.93L63.28 31.77L63.26 31.75Q61.75 33.33 57.87 33.57ZM62.85 35.90L62.75 35.80L62.68 35.73Q64.13 35.85 65.46 35.24L65.54 35.32L65.45 35.23Q66.41 34.05 66.45 32.32L66.55 32.42L66.55 32.42Q66.40 31.83 66.27 30.78L66.26 30.77L66.24 30.76Q66.33 30.30 66.23 29.49L66.19 29.44L66.13 29.39Q65.48 25.20 64.09 23.37L64.11 23.38L64.04 23.32Q64.07 23.31 63.36 22.53L63.26 22.44L63.36 22.54Q63.12 22.27 62.65 21.55L62.54 21.45L62.64 21.55Q61.12 19.72 58.13 19.76L58.11 19.73L58.15 19.77Q56.30 19.80 55.18 20.34L55.23 20.39L55.34 20.50Q54.92 16.35 54.38 13.49L54.44 13.55L54.36 13.47Q53.69 13.31 52.37 12.97L52.48 13.09L52.40 13.01Q52.27 12.33 51.86 11.04L51.89 11.07L51.92 11.10Q49.76 10.40 47.76 9.01L47.75 9.00L47.69 8.94Q51.12 16.32 51.12 24.17L51.05 24.09L51.06 24.10Q51.02 30.28 48.81 35.82L48.91 35.93L48.94 35.95Q49.40 35.50 50.59 34.99L50.72 35.12L50.58 34.98Q50.36 35.64 49.81 37.00L49.81 37.00L49.85 37.04Q51.65 36.25 54.13 35.77L54.12 35.77L54.57 34.24L54.46 34.13Q56.67 35.80 62.86 35.90ZM59.33 24.42L59.33 24.42L59.43 24.52Q60.33 24.50 60.81 24.84L60.69 24.73L60.80 24.84Q61.10 25.31 61.31 27.11L61.33 27.14L61.25 27.06Q61.42 28.72 60.30 29.90L60.30 29.89L60.28 29.88Q59.24 31.13 57.50 31.03L57.44 30.97L57.47 31.00Q56.66 31.13 55.33 30.69L55.30 30.66L55.37 30.73Q55.05 30.17 55.05 29.70L55.16 29.80L55.15 29.79Q55.08 26.97 56.48 25.55L56.52 25.59L56.53 25.63L56.52 25.62Q57.80 24.39 59.37 24.46Z"/></svg>' } }
+[2020-05-24T21:12:30.916] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { account: '1002', password: '123456', code: '10bc' },
+  costTime: 56,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-05-24T21:12:30.993] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3323' },
+     body:
+      '<!DOCTYPE html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n<title>后台管理系统</title>\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\n<link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\n<script type="text/javascript" src="/javascripts/menu.js"></script>\n</head>\n\n<body>\n<div class="top"></div>\n<div id="header">\n\t<div class="logo">后台管理</div>\n\t<div class="navigation">\n\t\t<ul>\n\t\t \t<li>欢迎您！</li>\n\t\t\t<li>老二</li>\n\t\t\t<li><a href="/logout">退出</a></li>\n\t\t</ul>\n\t</div>\n</div>\n<div id="content">\n\t<div class="left_menu">\n\t\t<ul id="nav_dot">\n\n\t  <li>\n        <h4 class="M1"><span></span>用户管理</h4>\n        <div class="list-item none">\n            <a href=\'/users/userlist\' target="iframe1">用户列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/users/add\' target="iframe1">增加用户</a>\n        </div>        \n\t  </li>\n     \n     \n      <li>\n        <h4 class="M2"><span></span>角色权限管理</h4>\n        <div class="list-item none">\n            <a href=\'/roles/rolelist\' target="iframe1">角色列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/roles/add\' target="iframe1">增加角色</a>\n        </div>\n    </li>\n    \n\n    <li>\n        <h4 class="M3"><span></span>比赛活动管理</h4>\n        <div class="list-item none">\n            <a href=\'/activitys/activitylist\' target="iframe1">比赛活动列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/activitys/examine\' target="iframe1">比赛活动队伍审核</a>\n        </div>       \n    </li>\n\n    <li>\n        <h4 class="M4"><span></span>队伍管理</h4>\n        <div class="list-item none">\n            <a href=\'/teams/teamlist\' target="iframe1">队伍信息列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/task\' target="iframe1">队伍任务表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/teams/message\' target="iframe1">队伍留言表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M5"><span></span>个人信息管理</h4>\n        <div class="list-item none">\n            <a href=\'/myself/myselflist\' target="iframe1">个人审核表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/myself/schedel\' target="iframe1">日程表</a>\n        </div>\n        \n    </li>\n\n    <li>\n        <h4 class="M6"><span></span>比赛通告管理</h4>\n        <div class="list-item none">\n            <a href=\'/announces/announcelist\' target="iframe1">比赛通告列表</a>\n        </div>\n        <div class="list-item none">\n            <a href=\'/announces/add\' target="iframe1">增加比赛通告</a>\n        </div>\n    </li>\n\n    </ul>\n    </div>\t\n    <div class="m-right">\n        <div class="main">\n            <iframe frameborder="0" name="iframe1" src="welcome" frameborder="false" scrolling="auto"  width="100%" height="100%">\n                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\n            </iframe>\n        </div>\n</div>\n</div>\n<script>navList(12);</script>\n</body>\n</html>\n' } }
+[2020-05-24T21:12:31.301] [INFO] response - { method: 'GET',
+  url: '/welcome',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '478' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n\r\n    <div class="jumbotron">\r\n        <h1>Hello, world!</h1>\r\n      </div>\r\n\r\n\r\n</body>\r\n</html>\r\n' } }
+[2020-05-24T21:12:37.123] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 60,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '6244' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入分页插件-->\r\n    <script type="text/javascript" src="/javascripts/jqPaginator.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-primary" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            <h3 class="panel-title">\r\n               管理员列表\r\n            </h3>\r\n        </div>\r\n        <div class="panel-body">          \r\n            <div class="clearfix" style="margin-bottom: 10px;">\r\n              </div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="account" class="control-label">账号</label>\r\n          <input type="text" class="form-control" id="account" value="" name="account">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="user_name" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="user_name" value="" name="userName">                 \r\n        </div>     \r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                    <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n                  <button type="reset" class="btn btn-default" style="margin-top: 24px;margin-left: 15px;">重置</button>    \r\n                </div>\r\n        </div>\r\n       \r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 20px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>账号</th>\r\n                <th>姓名</th>               \r\n                <th>状态</th>\r\n                <th>身份</th>\r\n                <th>操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                \r\n                    <tr>\r\n                      <td>1</td>\r\n                      <td>1001</td>\r\n                      <td>张三</td>\r\n                      <td>\r\n                              <p>已通过</p>\r\n                          </td>\r\n\r\n                      <td>\r\n\r\n                        \r\n  \r\n                        管理员\r\n  \r\n                        \r\n  \r\n                        </td>\r\n                      <td>\r\n                        <a  href="/users/edit?account=1001" class="btn btn-info" >编辑</a>\r\n                        <a href="/users/delect/1001" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>2</td>\r\n                      <td>1002</td>\r\n                      <td>老二</td>\r\n                      <td>\r\n                              <p>已通过</p>\r\n                          </td>\r\n\r\n                      <td>\r\n\r\n                        \r\n  \r\n                        管理员\r\n  \r\n                        \r\n  \r\n                        </td>\r\n                      <td>\r\n                        <a  href="/users/edit?account=1002" class="btn btn-info" >编辑</a>\r\n                        <a href="/users/delect/1002" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>3</td>\r\n                      <td>1003</td>\r\n                      <td>王五</td>\r\n                      <td>\r\n                              <p>已通过</p>\r\n                          </td>\r\n\r\n                      <td>\r\n\r\n                        \r\n  \r\n                        队员\r\n  \r\n                        \r\n  \r\n                        </td>\r\n                      <td>\r\n                        <a  href="/users/edit?account=1003" class="btn btn-info" >编辑</a>\r\n                        <a href="/users/delect/1003" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n            </tbody>\r\n        </table> \r\n        <div id="page" class="pagination pull-right"></div> \r\n        </div>\r\n        \r\n        </div>\r\n    </div>\r\n        </div>\r\n    </div>\r\n\r\n</body>\r\n\r\n<script>\r\n  $(\'#page\').jqPaginator({\r\n        totalPages: 1,   //设置分页的总页数\r\n        visiblePages: 8,  //设置当前可视页码数（例如有100页，当前第1页，则显示1 - 7页）\r\n        currentPage: 1,    //设置当前的页码\r\n        onPageChange: function (num, type) {    //回调函数，当换页时触发（包括初始化第一页的时候），会传入两个参数： 1、“目标页"的页码，Number类型  2、触发类型，可能的值：“init”（初始化），“change”（点击分页）\r\n          console.log(\'当前第\' + num + \'页\',type);\r\n\r\n          if(type == \'change\'){\r\n              location.href="/users/userList?page=" + num + "&account=" + "&userName=";\r\n          }\r\n\r\n        }\r\n      });\r\n</script>\r\n\r\n<style> \r\n  .black_overlay{ \r\n      display: none; \r\n      position: absolute; \r\n      top: 0%; \r\n      left: 0%; \r\n      width: 100%; \r\n      height: 100%; \r\n      background-color: black; \r\n      z-index:1001; \r\n      -moz-opacity: 0.8; \r\n      opacity:.80; \r\n      filter: alpha(opacity=88); \r\n  } \r\n  .white_content { \r\n      display: none; \r\n      position: absolute; \r\n      top: 25%; \r\n      left: 25%; \r\n      width: 55%; \r\n      height: 55%; \r\n      padding: 20px; \r\n      border: 10px solid rgb(120, 196, 231); \r\n      border-radius: 20px;\r\n      background-color: white; \r\n      z-index:1002; \r\n      overflow: auto; \r\n  } \r\n</style> \r\n</html>' } }
+[2020-05-24T21:12:42.031] [INFO] response - { method: 'GET',
+  url: '/users/edit?account=1003',
+  body: {},
+  costTime: 46,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2951' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>编辑用户</title>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-default">\r\n        <div class="panel-heading">\r\n            编辑用户\r\n        </div>\r\n\r\n        <div class="panel-body">\r\n            <div class="input-form">\r\n                <form action="/users/doEdit" class="form" method="post">\r\n\r\n                    <ul> \r\n                        <input type="hidden" name="account" value="1003">\r\n\r\n                        <li> 用户密码: <input type="password" name="password"></li>\r\n\r\n                        <li> 用户姓名: <input type="text" name="userName" value="王五" /></li>\r\n\r\n                        <li> 用户性别:\r\n                            <select name="userSex">\r\n                                <option value="1" selected >男</option>\r\n                                <option value="2"  >女</option>\r\n                            </select>\r\n                        </li>\r\n\r\n                        <li> 联系方式: <input type="text" name="userPhone" value="13049213960" /></li>\r\n                                               \r\n\r\n                        <li> 用户状态:\r\n                            <select name="userStatus">\r\n                                <option value="0"  >未审核</option>\r\n                                <option value="1" selected >审核成功</option>\r\n                                <option value="2"  >审核失败</option>\r\n                            </select>\r\n\r\n                        </li>\r\n\r\n                        <li> 用户角色:\r\n                        \r\n        \r\n                        <input type="radio" value="1" name="roleId">\r\n                        管理员\r\n                        \r\n                        \r\n        \r\n                        <input type="radio" value="2" name="roleId">\r\n                        队长\r\n                        \r\n                        \r\n        \r\n                        <input type="radio" value="3" name="roleId">\r\n                        队员\r\n                        \r\n                        \r\n\r\n                        </li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">确认修改</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n\r\n    <script>\r\n\r\n      \r\n\r\n    </script>\r\n\r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-24T21:12:50.129] [INFO] response - { method: 'POST',
+  url: '/users/doEdit',
+  body:
+   { account: '1003',
+     password: 'c1bf64bd7a212d03863a0316a4ac1d42',
+     userName: '王五',
+     userSex: '1',
+     userPhone: '13049213960',
+     userStatus: '1',
+     solt: 'cae84c3f-6960-4b5f-b229-db507ee5e236' },
+  costTime: 1,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userlist">/users/userlist</a>.' } }
+[2020-05-24T21:12:50.147] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '6244' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <!--引入分页插件-->\r\n    <script type="text/javascript" src="/javascripts/jqPaginator.js"></script>\r\n\r\n    <!--引入base.js用于改变状态-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n</head>\r\n\r\n<body>\r\n    <div class="panel panel-primary" style="margin: 10px 10px;">\r\n        <div class="panel-heading">\r\n            <h3 class="panel-title">\r\n               管理员列表\r\n            </h3>\r\n        </div>\r\n        <div class="panel-body">          \r\n            <div class="clearfix" style="margin-bottom: 10px;">\r\n              </div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="account" class="control-label">账号</label>\r\n          <input type="text" class="form-control" id="account" value="" name="account">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="user_name" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="user_name" value="" name="userName">                 \r\n        </div>     \r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                    <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n                  <button type="reset" class="btn btn-default" style="margin-top: 24px;margin-left: 15px;">重置</button>    \r\n                </div>\r\n        </div>\r\n       \r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 20px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>账号</th>\r\n                <th>姓名</th>               \r\n                <th>状态</th>\r\n                <th>身份</th>\r\n                <th>操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                \r\n                    <tr>\r\n                      <td>1</td>\r\n                      <td>1001</td>\r\n                      <td>张三</td>\r\n                      <td>\r\n                              <p>已通过</p>\r\n                          </td>\r\n\r\n                      <td>\r\n\r\n                        \r\n  \r\n                        管理员\r\n  \r\n                        \r\n  \r\n                        </td>\r\n                      <td>\r\n                        <a  href="/users/edit?account=1001" class="btn btn-info" >编辑</a>\r\n                        <a href="/users/delect/1001" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>2</td>\r\n                      <td>1002</td>\r\n                      <td>老二</td>\r\n                      <td>\r\n                              <p>已通过</p>\r\n                          </td>\r\n\r\n                      <td>\r\n\r\n                        \r\n  \r\n                        管理员\r\n  \r\n                        \r\n  \r\n                        </td>\r\n                      <td>\r\n                        <a  href="/users/edit?account=1002" class="btn btn-info" >编辑</a>\r\n                        <a href="/users/delect/1002" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n                    <tr>\r\n                      <td>3</td>\r\n                      <td>1003</td>\r\n                      <td>王五</td>\r\n                      <td>\r\n                              <p>已通过</p>\r\n                          </td>\r\n\r\n                      <td>\r\n\r\n                        \r\n  \r\n                        队员\r\n  \r\n                        \r\n  \r\n                        </td>\r\n                      <td>\r\n                        <a  href="/users/edit?account=1003" class="btn btn-info" >编辑</a>\r\n                        <a href="/users/delect/1003" class="btn btn-danger delete">删除</a></td>\r\n                    </tr>\r\n                      \r\n            </tbody>\r\n        </table> \r\n        <div id="page" class="pagination pull-right"></div> \r\n        </div>\r\n        \r\n        </div>\r\n    </div>\r\n        </div>\r\n    </div>\r\n\r\n</body>\r\n\r\n<script>\r\n  $(\'#page\').jqPaginator({\r\n        totalPages: 1,   //设置分页的总页数\r\n        visiblePages: 8,  //设置当前可视页码数（例如有100页，当前第1页，则显示1 - 7页）\r\n        currentPage: 1,    //设置当前的页码\r\n        onPageChange: function (num, type) {    //回调函数，当换页时触发（包括初始化第一页的时候），会传入两个参数： 1、“目标页"的页码，Number类型  2、触发类型，可能的值：“init”（初始化），“change”（点击分页）\r\n          console.log(\'当前第\' + num + \'页\',type);\r\n\r\n          if(type == \'change\'){\r\n              location.href="/users/userList?page=" + num + "&account=" + "&userName=";\r\n          }\r\n\r\n        }\r\n      });\r\n</script>\r\n\r\n<style> \r\n  .black_overlay{ \r\n      display: none; \r\n      position: absolute; \r\n      top: 0%; \r\n      left: 0%; \r\n      width: 100%; \r\n      height: 100%; \r\n      background-color: black; \r\n      z-index:1001; \r\n      -moz-opacity: 0.8; \r\n      opacity:.80; \r\n      filter: alpha(opacity=88); \r\n  } \r\n  .white_content { \r\n      display: none; \r\n      position: absolute; \r\n      top: 25%; \r\n      left: 25%; \r\n      width: 55%; \r\n      height: 55%; \r\n      padding: 20px; \r\n      border: 10px solid rgb(120, 196, 231); \r\n      border-radius: 20px;\r\n      background-color: white; \r\n      z-index:1002; \r\n      overflow: auto; \r\n  } \r\n</style> \r\n</html>' } }
+[2020-05-24T21:12:54.850] [INFO] response - { method: 'GET',
+  url: '/users/add',
+  body: {},
+  costTime: 37,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2631' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>增加用户</title>\r\n</head>\r\n\r\n<body>\r\n<div class="panel panel-primary">\r\n    <div class="panel-heading">\r\n        新增用户\r\n    </div>\r\n\r\n    <div class="message">消息提醒</div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/users/doAdd" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 用户账号: <input type="text" name="account" /></li>\r\n\r\n                    <li> 用户密码: <input type="password" name="password"></li>\r\n\r\n                    <li> 用户姓名: <input type="text" name="user_name" /></li>\r\n\r\n                    <li> 用户性别:\r\n                         <select name="user_sex">\r\n                             <option value="1">男</option>\r\n                             <option value="2">女</option>\r\n                         </select>\r\n                    </li>\r\n\r\n                    <li> 联系方式: <input type="text" name="user_phone" /></li>\r\n                  \r\n\r\n                    <li> 用户状态:\r\n                        <select name="user_status">\r\n                           \r\n                            <option value="0">未审核</option>\r\n                            <option value="1">审核成功</option>\r\n                            <option value="2">审核失败</option>\r\n\r\n                        </select>\r\n                        \r\n                        </li>\r\n                  \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n\r\n<script>\r\n     //消息提醒\r\n     function  fade(txt) {\r\n            $(\'.message\').text(txt) //内容撑开\r\n            $(\'.message\').animate({\r\n                top: 0\r\n            })\r\n            setTimeout(function () {\r\n                $(\'.message\').animate({\r\n                    top: \'-100%\'\r\n                })\r\n            }, 1500)\r\n        }\r\n\r\n\r\n</script>\r\n\r\n     \r\n</body>\r\n\r\n</html>' } }
+[2020-05-24T21:13:01.585] [INFO] response - { method: 'GET',
+  url: '/roles/rolelist',
+  body: {},
+  costTime: 38,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3309' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>角色列表</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-primary" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    角色列表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="role_name" class="control-label">角色名</label>\r\n          <input type="text" class="form-control" id="role_name" value="" name="role_name">                  \r\n        </div>             \r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>\r\n                  <button type="reset" class="btn btn-default" style="margin-top: 24px;margin-left: 20px;">重置</button>    \r\n                </div>\r\n        </div>\r\n       \r\n        </form>\r\n \r\n\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>角色id</th>\r\n              <th>角色名</th>\r\n              <th>角色描述</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td>管理员</td>\r\n\r\n               <td>负责管理后台系统</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td>队长</td>\r\n\r\n               <td>负责管理队伍</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>3</td>\r\n\r\n               <td>队员</td>\r\n\r\n               <td>参与比赛活动</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=3" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=role&id=3" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-24T21:13:03.907] [INFO] response - { method: 'GET',
+  url: '/roles/add',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1204' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    <title>增加角色</title>\r\n</head>\r\n\r\n<body>\r\n<div class="panel panel-primary">\r\n    <div class="panel-heading">\r\n        新增角色\r\n    </div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/roles/doAdd" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 角色名称: <input type="text" name="role_name" /></li>\r\n\r\n\r\n                    <li> 角色描述: <textarea name="description" cols="30" rows="4"></textarea></li>\r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n     \r\n</body>\r\n\r\n</html>' } }

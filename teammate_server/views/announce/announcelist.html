@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <title>比赛通告列表</title>
+
+    <!--引入Jq插件-->
+    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>
+
+    <!--引入base.js用于改变状态-->
+    <script type="text/javascript" src="/javascripts/base.js"></script>
+
+</head>
+
+<body>
+    <div class="panel panel-primary" style="margin: 10px 10px;">
+        <div class="panel-heading">
+            比赛通告列表
+        </div>
+
+
+        <div class="clearfix" style="margin-bottom: 10px;"></div>
+        <div class="row">
+            <div class="panel-body">
+                <form role="form" class="form-inline" method="GET" action="/announces/announcelist">
+                    <div class="col-md-offset-1 col-md-2 margin-bottom-15">
+                        <label for="name">输入比赛标题</label>
+                        <input type="text" class="form-control" id="name" name="keyword"
+                            placeholder="请输入比赛标题">
+                    </div>
+                    <div class="row templatemo-form-buttons">
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary" style="margin-top: 24px;margin-left: 20px;">查询</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="clearfix" style="margin-bottom: 10px;"></div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover table-bordered">
+                        <thead>
+                            <tr>
+                                <th>比赛通告id</th>
+                                <th>比赛通告标题</th>
+                                <th>比赛发布人姓名</th>
+                                <th>比赛发布人电话</th>
+                                <th>比赛通告时间</th>
+                                <th>比赛通告类别</th>
+                                <th>比赛通告照片</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                         
+                            <%for(var i=0;i<body.length;i++) {%>
+                                <tr>
+                                    <td><%=body[i].id%></td>
+                                    <td><%=body[i].announce_title%></td>                 
+                                    <td><%=body[i].announce_sperson%></td>
+                                    <td><%=body[i].announce_phone%></td>
+                                    <td><%=body[i].announce_time%></td>
+                                    <td>
+
+                                        <% if(body[i].announce_status == 0){%>
+                                         
+                                            <p>学术研究类</p>
+                
+                                        <%} else if(body[i].announce_status == 1) {%>
+                
+                                            <p>娱乐活动类</p>
+                
+                                        <%} else {%>
+                
+                                            <p>体育艺术类</p>
+                
+                                        <%}%>
+                                      
+                                      </td>
+                                    <td><img src="/uploads/<%=body[i].announce_photo%>" alt="" style="width: 80px;height: 80px;"></td>
+                                    <td>
+                                        <a href="/announces/edit?id=<%=body[i].id%>" class="btn btn-info">修改</a>
+                                        <a href="/announces/delect/<%=body[i].id %>" class="btn btn-danger delete">删除</a>
+                                    </td>
+                                </tr>
+           
+                            <%}%>
+
+                        </tbody>
+        </table>
+
+
+        
+        
+       
+
+
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+
+</html>

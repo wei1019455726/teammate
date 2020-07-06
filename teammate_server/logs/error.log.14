@@ -1,0 +1,1451 @@
+[2020-05-18T13:25:06.045] [ERROR] error - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'findAll' of undefined
+       at Function.getAllAnnounce (F:\找队友App\teammate_server\service\announce_dao.js:15:31)
+       at announcelist (F:\找队友App\teammate_server\controllers\announce.js:5:36)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-18T13:26:19.773] [ERROR] error - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'findAll' of undefined
+       at Function.getAllAnnounce (F:\找队友App\teammate_server\service\announce_dao.js:15:31)
+       at announcelist (F:\找队友App\teammate_server\controllers\announce.js:5:36)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-18T13:27:04.969] [ERROR] error - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: announceDao.getAllAnnounce is not a function
+       at announcelist (F:\找队友App\teammate_server\controllers\announce.js:5:36)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-18T13:27:29.377] [ERROR] error - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'findAll' of undefined
+       at Function.getAllAnnounce (F:\找队友App\teammate_server\service\announce_dao.js:15:31)
+       at announcelist (F:\找队友App\teammate_server\controllers\announce.js:5:36)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-18T13:31:32.368] [ERROR] error - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'findAll' of undefined
+       at Function.getAllAnnounce (F:\找队友App\teammate_server\service\announce_dao.js:15:31)
+       at announcelist (F:\找队友App\teammate_server\controllers\announce.js:5:36)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-18T13:31:39.766] [ERROR] error - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'findAll' of undefined
+       at Function.getAllAnnounce (F:\找队友App\teammate_server\service\announce_dao.js:15:31)
+       at announcelist (F:\找队友App\teammate_server\controllers\announce.js:5:36)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-18T13:32:54.880] [ERROR] error - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\announce\announcelist.html:82
+       80| 
+       81|         <div class="pull-left">
+    >> 82|             当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       83|         </div>
+       84|         
+       85|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:41:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\找队友App\\teammate_server\\views\\announce\\announcelist.html' } }
+[2020-05-18T13:33:16.585] [ERROR] error - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\announce\announcelist.html:87
+       85|                 <li><a href="/announces/announcelist">首页</a></li>
+       86|                 <li><a
+    >> 87|                         href="/announces/announcelist?index=<%=paging.index==1?1:(parseInt(paging.index)-1)%>&keyword=<%=keyword%>">上一页</a>
+       88|                 </li>
+       89|                 <li><a
+       90|                         href="/announces/announcelist?index=<%=paging.index==paging.totalPages?paging.totalPages:(parseInt(paging.index)+1)%>&keyword=<%=keyword%>">下一页</a>
+   
+   paging is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:41:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\找队友App\\teammate_server\\views\\announce\\announcelist.html' } }
+[2020-05-18T15:37:17.137] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\index.html:17
+       15| 		<ul>
+       16| 		 	<li>欢迎您！</li>
+    >> 17| 			<li><%=userInfo.user_name%></li>
+       18| 			<li><a href="/logout">退出</a></li>
+       19| 		</ul>
+       20| 	</div>
+   
+   userInfo is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\index.html' } }
+[2020-05-23T14:22:06.018] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\index.html:18
+       16| 		<ul>
+       17| 		 	<li>欢迎您！</li>
+    >> 18| 			<li><%=userInfo.user_name%></li>
+       19| 			<li><a href="/logout">退出</a></li>
+       20| 		</ul>
+       21| 	</div>
+   
+   userInfo is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\index.html' } }
+[2020-05-23T14:34:48.396] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { TypeError: F:\找队友App\teammate_server\views\index.html:26
+       24| 	<div class="left_menu">
+       25| 		<ul id="nav_dot">
+    >> 26| <%if(userInfo.roles[0].role_name == '管理员') {%>      
+       27| 	  <li>
+       28|         <h4 class="M1"><span></span>用户管理</h4>
+       29|         <div class="list-item none">
+   
+   Cannot read property '0' of undefined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:24)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\index.html' } }
+[2020-05-23T14:35:14.456] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { TypeError: F:\找队友App\teammate_server\views\index.html:26
+       24| 	<div class="left_menu">
+       25| 		<ul id="nav_dot">
+    >> 26| <!-- <%if(userInfo.roles[0].role_name == '管理员') {%>       -->
+       27| 	  <li>
+       28|         <h4 class="M1"><span></span>用户管理</h4>
+       29|         <div class="list-item none">
+   
+   Cannot read property '0' of undefined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:24)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\index.html' } }
+[2020-05-23T15:27:27.816] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: userList is not defined
+       at userlist (F:\找队友App\teammate_server\controllers\user.js:31:30) }
+[2020-05-23T15:28:29.517] [ERROR] error - { method: 'GET',
+  url: '/users/userlist?account=1001&userName=',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: Op is not defined
+       at userlist (F:\找队友App\teammate_server\controllers\user.js:23:54)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-23T16:08:07.191] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\user\userlist.html:70
+       68|                       <td><%=body[i].account %></td>
+       69|                       <td><%=body[i].user_name %></td>
+    >> 70|                       <td><% if(userList[i].user_status == 0){%>
+       71|                                 待审核                 
+       72|                           <%} else if(userList[i].user_status == 1) {%>
+       73|                       已通过
+   
+   userList is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:29:8)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path: 'F:\\找队友App\\teammate_server\\views\\user\\userlist.html' } }
+[2020-05-23T16:09:04.813] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\user\userlist.html:70
+       68|                       <td><%=body[i].account %></td>
+       69|                       <td><%=body[i].user_name %></td>
+    >> 70|                       <td><% if(userList[i].user_status == 0){%>
+       71|                               <p>待审核</p>                
+       72|                           <%} else if(userList[i].user_status == 1) {%>
+       73|                               <p>已通过</p>
+   
+   userList is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:29:8)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path: 'F:\\找队友App\\teammate_server\\views\\user\\userlist.html' } }
+[2020-05-23T16:28:07.842] [ERROR] error - { method: 'POST',
+  url: '/users/doAdd',
+  body:
+   { account: '1003',
+     password: '123456',
+     user_name: '王五',
+     user_sex: '2',
+     user_phone: '13049213960',
+     user_status: '0' },
+  costTime: undefined,
+  err:
+   ReferenceError: uuid is not defined
+       at doAdd (F:\找队友App\teammate_server\controllers\user.js:54:20)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2020-05-23T16:41:43.264] [ERROR] error - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: roleDao is not defined
+       at edit (F:\找队友App\teammate_server\controllers\user.js:74:28)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-23T16:42:59.157] [ERROR] error - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "account" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-05-23T16:43:41.310] [ERROR] error - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "account" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-05-23T16:43:42.307] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\user\userlist.html:88
+       86|                         <%}%></td>
+       87|                       <td>
+    >> 88|                         <a  href="/users/edit?account=<%=userList[i].account%>" class="btn btn-info" >编辑</a>
+       89|                         <a href="/users/delect/<%=body[i].account %>" class="btn btn-danger delete">删除</a></td>
+       90|                     </tr>
+       91|                       <%}%>
+   
+   userList is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:56:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path: 'F:\\找队友App\\teammate_server\\views\\user\\userlist.html' } }
+[2020-05-23T16:43:43.505] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\user\userlist.html:88
+       86|                         <%}%></td>
+       87|                       <td>
+    >> 88|                         <a  href="/users/edit?account=<%=userList[i].account%>" class="btn btn-info" >编辑</a>
+       89|                         <a href="/users/delect/<%=body[i].account %>" class="btn btn-danger delete">删除</a></td>
+       90|                     </tr>
+       91|                       <%}%>
+   
+   userList is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:56:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path: 'F:\\找队友App\\teammate_server\\views\\user\\userlist.html' } }
+[2020-05-23T16:46:43.200] [ERROR] error - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "account" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-05-23T16:46:53.429] [ERROR] error - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "account" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\找队友App\teammate_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\找队友App\teammate_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\找队友App\teammate_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\找队友App\teammate_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-05-23T17:44:16.957] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\index.html:18
+       16| 		<ul>
+       17| 		 	<li>欢迎您！</li>
+    >> 18| 			<li><%=userInfo.user_name%></li>
+       19| 			<li><a href="/logout">退出</a></li>
+       20| 		</ul>
+       21| 	</div>
+   
+   userInfo is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\index.html' } }
+[2020-05-23T17:46:50.566] [ERROR] error - { method: 'POST',
+  url: '/users/doEdit',
+  body:
+   { account: '1003',
+     password: '',
+     userName: '王五',
+     userSex: '2',
+     userPhone: '13049213960',
+     userStatus: '1',
+     roleId: '1' },
+  costTime: undefined,
+  err:
+   TypeError: userDao.deleteUserRole is not a function
+       at doEdit (F:\找队友App\teammate_server\controllers\user.js:96:25)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2020-05-24T00:12:26.842] [ERROR] error - { method: 'POST',
+  url: '/users/doEdit',
+  body:
+   { account: '1003',
+     password: '1234567',
+     userName: '王五',
+     userSex: '2',
+     userPhone: '13049213960',
+     userStatus: '1',
+     roleId: '3' },
+  costTime: undefined,
+  err:
+   ReferenceError: md5Solt is not defined
+       at doEdit (F:\找队友App\teammate_server\controllers\user.js:118:39) }
+[2020-05-24T21:28:36.232] [ERROR] error - { method: 'POST',
+  url: '/roles/doAdd',
+  body: { role_name: '李新威', description: '狗' },
+  costTime: undefined,
+  err:
+   ReferenceError: Op is not defined
+       at Function.getOneRoleInfo (F:\找队友App\teammate_server\service\role_dao.js:32:18)
+       at doAdd (F:\找队友App\teammate_server\controllers\role.js:20:39)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2020-05-24T22:23:59.000] [ERROR] error - { method: 'POST',
+  url: '/roles/doAdd',
+  body: { role_name: '文科', description: '大神' },
+  costTime: undefined,
+  err:
+   ReferenceError: alert is not defined
+       at doAdd (F:\找队友App\teammate_server\controllers\role.js:37:19) }
+[2020-05-24T22:27:40.847] [ERROR] error - { method: 'POST',
+  url: '/roles/doAdd',
+  body: { role_name: '李怀兴', description: '憨憨' },
+  costTime: undefined,
+  err:
+   ReferenceError: window is not defined
+       at doAdd (F:\找队友App\teammate_server\controllers\role.js:38:19) }
+[2020-05-24T23:06:08.933] [ERROR] error - { method: 'POST',
+  url: '/roles/doAdd',
+  body: { role_name: '李新威', description: '狗' },
+  costTime: undefined,
+  err:
+   ReferenceError: alert is not defined
+       at doAdd (F:\找队友App\teammate_server\controllers\role.js:39:29) }
+[2020-05-24T23:10:05.692] [ERROR] error - { method: 'POST',
+  url: '/roles/doAdd',
+  body: { role_name: '李新威', description: '狗' },
+  costTime: undefined,
+  err:
+   ReferenceError: confirm is not defined
+       at doAdd (F:\找队友App\teammate_server\controllers\role.js:39:19) }
+[2020-05-25T11:08:57.344] [ERROR] error - { method: 'POST',
+  url: '/announces/doAdd',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'announce_time' of undefined
+       at doAdd (F:\找队友App\teammate_server\controllers\announce.js:16:42)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-25T15:09:18.106] [ERROR] error - { method: 'POST',
+  url: '/announces/doAdd',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'announce_time' of undefined
+       at doAdd (F:\找队友App\teammate_server\controllers\announce.js:16:42)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-25T15:09:20.657] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\index.html:18
+       16| 		<ul>
+       17| 		 	<li>欢迎您！</li>
+    >> 18| 			<li><%=userInfo.user_name%></li>
+       19| 			<li><a href="/logout">退出</a></li>
+       20| 		</ul>
+       21| 	</div>
+   
+   userInfo is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\index.html' } }
+[2020-05-25T15:10:28.448] [ERROR] error - { method: 'POST',
+  url: '/announces/doAdd',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'announce_time' of undefined
+       at doAdd (F:\找队友App\teammate_server\controllers\announce.js:16:42)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-25T15:13:20.734] [ERROR] error - { method: 'POST',
+  url: '/announces/doAdd',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'body' of undefined
+       at doAdd (F:\找队友App\teammate_server\controllers\announce.js:24:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-25T15:26:53.232] [ERROR] error - { method: 'POST',
+  url: '/announces/doAdd',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'announce_time' of undefined
+       at doAdd (F:\找队友App\teammate_server\controllers\announce.js:16:42)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-25T15:28:03.973] [ERROR] error - { method: 'POST',
+  url: '/announces/doAdd',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'announce_title' of undefined
+       at doAdd (F:\找队友App\teammate_server\controllers\announce.js:17:43)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-25T15:34:37.510] [ERROR] error - { method: 'POST',
+  url: '/announces/doAdd',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'announce_time' of undefined
+       at router.post (F:\找队友App\teammate_server\routes\announces.js:9:38)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-25T15:53:01.779] [ERROR] error - { method: 'POST',
+  url: '/announces/doAdd',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'replace' of undefined
+       at doAdd (F:\找队友App\teammate_server\controllers\announce.js:16:60)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-25T16:01:10.489] [ERROR] error - { method: 'POST',
+  url: '/announces/doAdd',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'announce_time' of undefined
+       at doAdd (F:\找队友App\teammate_server\controllers\announce.js:16:42)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-25T16:20:16.995] [ERROR] error - { method: 'POST',
+  url: '/announces/doAdd',
+  body:
+   { announce_title: '测试',
+     announce_sperson: '测试',
+     announce_phone: '12049213850',
+     announce_time: '20200525',
+     description: '测试\r\n\r\n' },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'announce_time' of undefined
+       at doAdd (F:\找队友App\teammate_server\controllers\announce.js:16:42)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2020-05-25T16:22:51.463] [ERROR] error - { method: 'POST',
+  url: '/announces/doAdd',
+  body:
+   { announce_title: '测试',
+     announce_sperson: '测试',
+     announce_phone: '12049213850',
+     announce_time: '20200525',
+     description: '测试' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Field 'announce_content' doesn't have a default value
+       at Query.formatError (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Field 'announce_content' doesn't have a default value
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'announce_content\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `announce` (`id`,`announce_title`,`announce_time`,`announce_sperson`) VALUES (DEFAULT,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Field 'announce_content' doesn't have a default value
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'announce_content\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `announce` (`id`,`announce_title`,`announce_time`,`announce_sperson`) VALUES (DEFAULT,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `announce` (`id`,`announce_title`,`announce_time`,`announce_sperson`) VALUES (DEFAULT,?,?,?);',
+     parameters: [ '测试', 'Invalid date', '测试' ] } }
+[2020-05-25T18:00:20.836] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\index.html:18
+       16| 		<ul>
+       17| 		 	<li>欢迎您！</li>
+    >> 18| 			<li><%=userInfo.user_name%></li>
+       19| 			<li><a href="/logout">退出</a></li>
+       20| 		</ul>
+       21| 	</div>
+   
+   userInfo is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\index.html' } }
+[2020-05-25T18:00:24.804] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\index.html:18
+       16| 		<ul>
+       17| 		 	<li>欢迎您！</li>
+    >> 18| 			<li><%=userInfo.user_name%></li>
+       19| 			<li><a href="/logout">退出</a></li>
+       20| 		</ul>
+       21| 	</div>
+   
+   userInfo is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\index.html' } }
+[2020-05-25T21:44:45.755] [ERROR] error - { method: 'POST',
+  url: '/announces/doAdd',
+  body:
+   { announce_title: '测试',
+     announce_sperson: '测试',
+     announce_phone: '12049213850',
+     announce_time: '20200525',
+     announce_content: '测试',
+     entryDate: '' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Field 'announce_phone' doesn't have a default value
+       at Query.formatError (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Field 'announce_phone' doesn't have a default value
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'announce_phone\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `announce` (`id`,`announce_title`,`announce_time`,`announce_sperson`,`announce_content`) VALUES (DEFAULT,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Field 'announce_phone' doesn't have a default value
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'announce_phone\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `announce` (`id`,`announce_title`,`announce_time`,`announce_sperson`,`announce_content`) VALUES (DEFAULT,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `announce` (`id`,`announce_title`,`announce_time`,`announce_sperson`,`announce_content`) VALUES (DEFAULT,?,?,?,?);',
+     parameters: [ '测试', 'Invalid date', '测试', '测试' ] } }
+[2020-05-25T21:45:41.016] [ERROR] error - { method: 'POST',
+  url: '/announces/doAdd',
+  body:
+   { announce_title: '测试',
+     announce_sperson: '测试',
+     announce_phone: '12049213850',
+     announce_time: '20200525',
+     announce_content: '测试',
+     entryDate: '' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Incorrect date value: 'Invalid date' for column 'announce_time' at row 1
+       at Query.formatError (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Incorrect date value: 'Invalid date' for column 'announce_time' at row 1
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_TRUNCATED_WRONG_VALUE',
+        errno: 1292,
+        sqlState: '22007',
+        sqlMessage:
+         'Incorrect date value: \'Invalid date\' for column \'announce_time\' at row 1',
+        sql:
+         'INSERT INTO `announce` (`id`,`announce_title`,`announce_time`,`announce_sperson`,`announce_phone`,`announce_content`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Incorrect date value: 'Invalid date' for column 'announce_time' at row 1
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_TRUNCATED_WRONG_VALUE',
+        errno: 1292,
+        sqlState: '22007',
+        sqlMessage:
+         'Incorrect date value: \'Invalid date\' for column \'announce_time\' at row 1',
+        sql:
+         'INSERT INTO `announce` (`id`,`announce_title`,`announce_time`,`announce_sperson`,`announce_phone`,`announce_content`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `announce` (`id`,`announce_title`,`announce_time`,`announce_sperson`,`announce_phone`,`announce_content`) VALUES (DEFAULT,?,?,?,?,?);',
+     parameters: [ '测试', 'Invalid date', '测试', '12049213850', '测试' ] } }
+[2020-05-25T21:46:22.314] [ERROR] error - { method: 'POST',
+  url: '/announces/doAdd',
+  body:
+   { announce_title: '测试',
+     announce_sperson: '测试',
+     announce_phone: '12049213850',
+     announce_time: '20200525',
+     announce_content: '测试',
+     entryDate: '' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Incorrect date value: 'Invalid date' for column 'announce_time' at row 1
+       at Query.formatError (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Incorrect date value: 'Invalid date' for column 'announce_time' at row 1
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_TRUNCATED_WRONG_VALUE',
+        errno: 1292,
+        sqlState: '22007',
+        sqlMessage:
+         'Incorrect date value: \'Invalid date\' for column \'announce_time\' at row 1',
+        sql:
+         'INSERT INTO `announce` (`id`,`announce_title`,`announce_time`,`announce_sperson`,`announce_phone`,`announce_content`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Incorrect date value: 'Invalid date' for column 'announce_time' at row 1
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_TRUNCATED_WRONG_VALUE',
+        errno: 1292,
+        sqlState: '22007',
+        sqlMessage:
+         'Incorrect date value: \'Invalid date\' for column \'announce_time\' at row 1',
+        sql:
+         'INSERT INTO `announce` (`id`,`announce_title`,`announce_time`,`announce_sperson`,`announce_phone`,`announce_content`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `announce` (`id`,`announce_title`,`announce_time`,`announce_sperson`,`announce_phone`,`announce_content`) VALUES (DEFAULT,?,?,?,?,?);',
+     parameters: [ '测试', 'Invalid date', '测试', '12049213850', '测试' ] } }
+[2020-05-25T21:51:07.995] [ERROR] error - { method: 'POST',
+  url: '/announces/doAdd',
+  body:
+   { announce_title: '测试',
+     announce_sperson: '测试',
+     announce_phone: '12049213850',
+     announce_time: '20200525',
+     announce_content: '测试',
+     entryDate: '' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Incorrect date value: 'Invalid date' for column 'announce_time' at row 1
+       at Query.formatError (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Incorrect date value: 'Invalid date' for column 'announce_time' at row 1
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_TRUNCATED_WRONG_VALUE',
+        errno: 1292,
+        sqlState: '22007',
+        sqlMessage:
+         'Incorrect date value: \'Invalid date\' for column \'announce_time\' at row 1',
+        sql:
+         'INSERT INTO `announce` (`id`,`announce_title`,`announce_time`,`announce_sperson`,`announce_phone`,`announce_content`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Incorrect date value: 'Invalid date' for column 'announce_time' at row 1
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_TRUNCATED_WRONG_VALUE',
+        errno: 1292,
+        sqlState: '22007',
+        sqlMessage:
+         'Incorrect date value: \'Invalid date\' for column \'announce_time\' at row 1',
+        sql:
+         'INSERT INTO `announce` (`id`,`announce_title`,`announce_time`,`announce_sperson`,`announce_phone`,`announce_content`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `announce` (`id`,`announce_title`,`announce_time`,`announce_sperson`,`announce_phone`,`announce_content`) VALUES (DEFAULT,?,?,?,?,?);',
+     parameters: [ '测试', 'Invalid date', '测试', '12049213850', '测试' ] } }
+[2020-05-28T10:38:22.828] [ERROR] error - { method: 'POST',
+  url: '/announces/doAdd',
+  body:
+   { announce_title: '测试',
+     announce_sperson: '李四',
+     announce_phone: '12049213850',
+     announce_time: '20200528',
+     announce_content: '测试' },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'filename' of undefined
+       at router.post (F:\找队友App\teammate_server\routes\announces.js:14:39)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18) }
+[2020-05-28T10:45:58.710] [ERROR] error - { method: 'POST',
+  url: '/announces/doAdd',
+  body:
+   { announce_title: '测试',
+     announce_sperson: '李四',
+     announce_phone: '12049213850',
+     announce_time: '20200525',
+     announce_content: '测试' },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'filename' of undefined
+       at router.post (F:\找队友App\teammate_server\routes\announces.js:14:39)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18) }
+[2020-05-28T10:46:00.721] [ERROR] error - { method: 'GET',
+  url: '/announces/announcelist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\announce\announcelist.html:70
+       68|                                     <td><%=body[i].announce_phone%></td>
+       69|                                     <td><%=body[i].announce_time%></td>
+    >> 70|                                     <!-- <td><img src="/uploads/<%=result[i].announce_photo%>" alt="" style="width: 80px;height: 80px;"></td> -->
+       71|                                     <td>
+       72|                                         <a href="/announces/edit?id=<%=body[i].id%>" class="btn btn-info">修改</a>
+       73|                                         <a href="/announces/delect/<%=body[i].id %>" class="btn btn-danger delete">删除</a>
+   
+   result is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:32:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\找队友App\\teammate_server\\views\\announce\\announcelist.html' } }

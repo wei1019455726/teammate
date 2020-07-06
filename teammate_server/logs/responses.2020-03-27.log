@@ -1,0 +1,339 @@
+[2020-03-27T16:41:56.781] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 77,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '270' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>joint</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>      \r\n    <h1>JOINT</h1>\r\n    <p><a href="/login">登陆</a></p>\r\n    <p><a href="/register">注册</a></p>\r\n  </body>\r\n</html>' } }
+[2020-03-27T16:41:58.673] [INFO] response - { method: 'GET',
+  url: '/register',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1958' },
+     body:
+      '\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <link rel="stylesheet" href=\'/stylesheets/login.css\'>\r\n    <title>登陆</title>\r\n</head>\r\n<body>\r\n    <div class="header" id="head">\r\n      <div class="title">JOINT系统注册</div>\r\n    </div>\r\n          \r\n    <div class="wrap" id="wrap">\r\n      \r\n        <div class="logGet">\r\n                <!-- 头部提示信息 -->\r\n                <div class="logD logDtip">\r\n                    <p class="p1">注册</p>                 \r\n                </div>\r\n                <form action="/register" method="POST">\r\n                  <!-- 输入框 -->\r\n                  <div class="lgD">\r\n                      <input type="text" name="user_id"\r\n                          placeholder="输入id" />\r\n                  </div>\r\n                  <div class="lgD">\r\n                      <input type="text" name="user_name"\r\n                          placeholder="输入用户名" />\r\n                  </div>\r\n                  <div class="lgD">\r\n                    <input type="password" name="password"\r\n                        placeholder="输入用户密码" />\r\n                </div>\r\n                  <div class="logC">\r\n                      <button type="submit">注 册</button>\r\n                  </div>\r\n\r\n                </form>\r\n            </div>\r\n      </div>\r\n      <div class="footer" id="foot">\r\n        <div class="copyright">\r\n          <p>Copyright © 2019 huaruan.com Inc. All Rights Reserved.</p>\r\n          <div class="img">\r\n              <i class="icon"></i><span>联系邮箱：123123@sise.com</span>\r\n          </div>\r\n          \r\n          <div class="img">\r\n              <i class="icon1"></i><span>联系地址：广州大学华软软件学院</span>\r\n          </div>\r\n            \r\n          <div class="img">\r\n            <i class="icon2"></i><span>联系电话：12345678</span>\r\n          </div>\r\n       \r\n       \r\n        </div>\r\n          \r\n      </div>\r\n      \r\n\r\n</body>\r\n</html>' } }
+[2020-03-27T16:42:12.893] [INFO] response - { method: 'POST',
+  url: '/register',
+  body:
+   { user_id: '10001',
+     user_name: '王五1',
+     password: '7c5021393eee973fa98538d341df6e8f',
+     solt: '54c66062-866b-465e-b464-e8861cd7bbd1' },
+  costTime: 7,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '33' },
+     body: 'Redirecting to <a href="/">/</a>.' } }
+[2020-03-27T16:42:12.926] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '270' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>joint</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>      \r\n    <h1>JOINT</h1>\r\n    <p><a href="/login">登陆</a></p>\r\n    <p><a href="/register">注册</a></p>\r\n  </body>\r\n</html>' } }
+[2020-03-27T16:50:59.120] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '270' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>joint</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>      \r\n    <h1>JOINT</h1>\r\n    <p><a href="/login">登陆</a></p>\r\n    <p><a href="/register">注册</a></p>\r\n  </body>\r\n</html>' } }
+[2020-03-27T16:51:00.682] [INFO] response - { method: 'GET',
+  url: '/register',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1958' },
+     body:
+      '\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <link rel="stylesheet" href=\'/stylesheets/login.css\'>\r\n    <title>登陆</title>\r\n</head>\r\n<body>\r\n    <div class="header" id="head">\r\n      <div class="title">JOINT系统注册</div>\r\n    </div>\r\n          \r\n    <div class="wrap" id="wrap">\r\n      \r\n        <div class="logGet">\r\n                <!-- 头部提示信息 -->\r\n                <div class="logD logDtip">\r\n                    <p class="p1">注册</p>                 \r\n                </div>\r\n                <form action="/register" method="POST">\r\n                  <!-- 输入框 -->\r\n                  <div class="lgD">\r\n                      <input type="text" name="user_id"\r\n                          placeholder="输入id" />\r\n                  </div>\r\n                  <div class="lgD">\r\n                      <input type="text" name="user_name"\r\n                          placeholder="输入用户名" />\r\n                  </div>\r\n                  <div class="lgD">\r\n                    <input type="password" name="password"\r\n                        placeholder="输入用户密码" />\r\n                </div>\r\n                  <div class="logC">\r\n                      <button type="submit">注 册</button>\r\n                  </div>\r\n\r\n                </form>\r\n            </div>\r\n      </div>\r\n      <div class="footer" id="foot">\r\n        <div class="copyright">\r\n          <p>Copyright © 2019 huaruan.com Inc. All Rights Reserved.</p>\r\n          <div class="img">\r\n              <i class="icon"></i><span>联系邮箱：123123@sise.com</span>\r\n          </div>\r\n          \r\n          <div class="img">\r\n              <i class="icon1"></i><span>联系地址：广州大学华软软件学院</span>\r\n          </div>\r\n            \r\n          <div class="img">\r\n            <i class="icon2"></i><span>联系电话：12345678</span>\r\n          </div>\r\n       \r\n       \r\n        </div>\r\n          \r\n      </div>\r\n      \r\n\r\n</body>\r\n</html>' } }
+[2020-03-27T16:51:10.239] [INFO] response - { method: 'POST',
+  url: '/register',
+  body:
+   { user_id: '1111111',
+     user_name: '1111111',
+     password: 'b82e9ba7c316a3e10b0e7e2081708732',
+     solt: 'e4e1ddd6-42e5-4476-ba71-8cc2da96f93d' },
+  costTime: 6,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '33' },
+     body: 'Redirecting to <a href="/">/</a>.' } }
+[2020-03-27T16:51:10.274] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '270' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>joint</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>      \r\n    <h1>JOINT</h1>\r\n    <p><a href="/login">登陆</a></p>\r\n    <p><a href="/register">注册</a></p>\r\n  </body>\r\n</html>' } }
+[2020-03-27T16:54:03.137] [INFO] response - { method: 'GET',
+  url: '/register',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1958' },
+     body:
+      '\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <link rel="stylesheet" href=\'/stylesheets/login.css\'>\r\n    <title>登陆</title>\r\n</head>\r\n<body>\r\n    <div class="header" id="head">\r\n      <div class="title">JOINT系统注册</div>\r\n    </div>\r\n          \r\n    <div class="wrap" id="wrap">\r\n      \r\n        <div class="logGet">\r\n                <!-- 头部提示信息 -->\r\n                <div class="logD logDtip">\r\n                    <p class="p1">注册</p>                 \r\n                </div>\r\n                <form action="/register" method="POST">\r\n                  <!-- 输入框 -->\r\n                  <div class="lgD">\r\n                      <input type="text" name="user_id"\r\n                          placeholder="输入id" />\r\n                  </div>\r\n                  <div class="lgD">\r\n                      <input type="text" name="user_name"\r\n                          placeholder="输入用户名" />\r\n                  </div>\r\n                  <div class="lgD">\r\n                    <input type="password" name="password"\r\n                        placeholder="输入用户密码" />\r\n                </div>\r\n                  <div class="logC">\r\n                      <button type="submit">注 册</button>\r\n                  </div>\r\n\r\n                </form>\r\n            </div>\r\n      </div>\r\n      <div class="footer" id="foot">\r\n        <div class="copyright">\r\n          <p>Copyright © 2019 huaruan.com Inc. All Rights Reserved.</p>\r\n          <div class="img">\r\n              <i class="icon"></i><span>联系邮箱：123123@sise.com</span>\r\n          </div>\r\n          \r\n          <div class="img">\r\n              <i class="icon1"></i><span>联系地址：广州大学华软软件学院</span>\r\n          </div>\r\n            \r\n          <div class="img">\r\n            <i class="icon2"></i><span>联系电话：12345678</span>\r\n          </div>\r\n       \r\n       \r\n        </div>\r\n          \r\n      </div>\r\n      \r\n\r\n</body>\r\n</html>' } }
+[2020-03-27T16:54:12.140] [INFO] response - { method: 'POST',
+  url: '/register',
+  body:
+   { user_id: '1111111',
+     user_name: '1111111',
+     password: '5780f6da778ea85abdefc69aa7e2c2df',
+     solt: '58d7ee2e-9780-4bdb-8977-9417c88c0d09' },
+  costTime: 3,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '33' },
+     body: 'Redirecting to <a href="/">/</a>.' } }
+[2020-03-27T16:54:12.159] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '270' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>joint</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>      \r\n    <h1>JOINT</h1>\r\n    <p><a href="/login">登陆</a></p>\r\n    <p><a href="/register">注册</a></p>\r\n  </body>\r\n</html>' } }
+[2020-03-27T17:05:56.240] [INFO] response - { method: 'GET',
+  url: '/login',
+  body: {},
+  costTime: 112,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1849' },
+     body:
+      '<!DOCTYPE html>\n<html>\n<head>\n    <link rel="stylesheet" href=\'/stylesheets/login.css\'>\n    <title>登陆</title>\n</head>\n<body>\n    <div class="header" id="head">\n      <div class="title">JOINt系统登陆</div>\n    </div>\n          \n    <div class="wrap" id="wrap">\n        <div class="logGet">\n                <!-- 头部提示信息 -->\n                <div class="logD logDtip">\n                    <p class="p1">登录</p>\n                </div>\n                <form action="/checkLogin" method="POST">\n                  <!-- 输入框 -->\n                  <div class="lgD">\n                      <input type="text" name="user_id"\n                          placeholder="输入id" />\n                  </div>\n                  <div class="lgD">\n                      <input type="password" name="password"\n                          placeholder="输入用户密码" />\n                  </div>\n                  <div class="logC">\n                      <button type="submit">登 录</button>\n                  </div>\n                  <!-- <div class="logC">\n                    <p>没有账号? <button href="/register">点击创建</button></p>\n                </div> -->\n                </form>\n            </div>\n      </div>\n      <div class="footer" id="foot">\n        <div class="copyright">\n          <p>Copyright © 2019 huaruan.com Inc. All Rights Reserved.</p>\n          <div class="img">\n              <i class="icon"></i><span>联系邮箱：123123@sise.com</span>\n          </div>\n          \n          <div class="img">\n              <i class="icon1"></i><span>联系地址：广州大学华软软件学院</span>\n          </div>\n            \n          <div class="img">\n            <i class="icon2"></i><span>联系电话：12345678</span>\n          </div>\n       \n       \n        </div>\n          \n      </div>\n</body>\n</html>' } }
+[2020-03-27T17:06:04.174] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '10001', password: '123456' },
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1849' },
+     body:
+      '<!DOCTYPE html>\n<html>\n<head>\n    <link rel="stylesheet" href=\'/stylesheets/login.css\'>\n    <title>登陆</title>\n</head>\n<body>\n    <div class="header" id="head">\n      <div class="title">JOINt系统登陆</div>\n    </div>\n          \n    <div class="wrap" id="wrap">\n        <div class="logGet">\n                <!-- 头部提示信息 -->\n                <div class="logD logDtip">\n                    <p class="p1">登录</p>\n                </div>\n                <form action="/checkLogin" method="POST">\n                  <!-- 输入框 -->\n                  <div class="lgD">\n                      <input type="text" name="user_id"\n                          placeholder="输入id" />\n                  </div>\n                  <div class="lgD">\n                      <input type="password" name="password"\n                          placeholder="输入用户密码" />\n                  </div>\n                  <div class="logC">\n                      <button type="submit">登 录</button>\n                  </div>\n                  <!-- <div class="logC">\n                    <p>没有账号? <button href="/register">点击创建</button></p>\n                </div> -->\n                </form>\n            </div>\n      </div>\n      <div class="footer" id="foot">\n        <div class="copyright">\n          <p>Copyright © 2019 huaruan.com Inc. All Rights Reserved.</p>\n          <div class="img">\n              <i class="icon"></i><span>联系邮箱：123123@sise.com</span>\n          </div>\n          \n          <div class="img">\n              <i class="icon1"></i><span>联系地址：广州大学华软软件学院</span>\n          </div>\n            \n          <div class="img">\n            <i class="icon2"></i><span>联系电话：12345678</span>\n          </div>\n       \n       \n        </div>\n          \n      </div>\n</body>\n</html>' } }
+[2020-03-27T17:06:58.137] [INFO] response - { method: 'GET',
+  url: '/register',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1958' },
+     body:
+      '\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <link rel="stylesheet" href=\'/stylesheets/login.css\'>\r\n    <title>登陆</title>\r\n</head>\r\n<body>\r\n    <div class="header" id="head">\r\n      <div class="title">JOINT系统注册</div>\r\n    </div>\r\n          \r\n    <div class="wrap" id="wrap">\r\n      \r\n        <div class="logGet">\r\n                <!-- 头部提示信息 -->\r\n                <div class="logD logDtip">\r\n                    <p class="p1">注册</p>                 \r\n                </div>\r\n                <form action="/register" method="POST">\r\n                  <!-- 输入框 -->\r\n                  <div class="lgD">\r\n                      <input type="text" name="user_id"\r\n                          placeholder="输入id" />\r\n                  </div>\r\n                  <div class="lgD">\r\n                      <input type="text" name="user_name"\r\n                          placeholder="输入用户名" />\r\n                  </div>\r\n                  <div class="lgD">\r\n                    <input type="password" name="password"\r\n                        placeholder="输入用户密码" />\r\n                </div>\r\n                  <div class="logC">\r\n                      <button type="submit">注 册</button>\r\n                  </div>\r\n\r\n                </form>\r\n            </div>\r\n      </div>\r\n      <div class="footer" id="foot">\r\n        <div class="copyright">\r\n          <p>Copyright © 2019 huaruan.com Inc. All Rights Reserved.</p>\r\n          <div class="img">\r\n              <i class="icon"></i><span>联系邮箱：123123@sise.com</span>\r\n          </div>\r\n          \r\n          <div class="img">\r\n              <i class="icon1"></i><span>联系地址：广州大学华软软件学院</span>\r\n          </div>\r\n            \r\n          <div class="img">\r\n            <i class="icon2"></i><span>联系电话：12345678</span>\r\n          </div>\r\n       \r\n       \r\n        </div>\r\n          \r\n      </div>\r\n      \r\n\r\n</body>\r\n</html>' } }
+[2020-03-27T17:07:18.339] [INFO] response - { method: 'POST',
+  url: '/register',
+  body:
+   { user_id: '10011',
+     user_name: 'asjdlk',
+     password: 'f63e5153675d7e4d57dac3d8d1c4bb15',
+     solt: '77be21b1-c996-4323-adb8-79034b520e6c' },
+  costTime: 2,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '33' },
+     body: 'Redirecting to <a href="/">/</a>.' } }
+[2020-03-27T17:07:18.354] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '270' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>joint</title>\r\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\r\n  </head>\r\n  <body>      \r\n    <h1>JOINT</h1>\r\n    <p><a href="/login">登陆</a></p>\r\n    <p><a href="/register">注册</a></p>\r\n  </body>\r\n</html>' } }
+[2020-03-27T17:07:27.315] [INFO] response - { method: 'GET',
+  url: '/login',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1849' },
+     body:
+      '<!DOCTYPE html>\n<html>\n<head>\n    <link rel="stylesheet" href=\'/stylesheets/login.css\'>\n    <title>登陆</title>\n</head>\n<body>\n    <div class="header" id="head">\n      <div class="title">JOINt系统登陆</div>\n    </div>\n          \n    <div class="wrap" id="wrap">\n        <div class="logGet">\n                <!-- 头部提示信息 -->\n                <div class="logD logDtip">\n                    <p class="p1">登录</p>\n                </div>\n                <form action="/checkLogin" method="POST">\n                  <!-- 输入框 -->\n                  <div class="lgD">\n                      <input type="text" name="user_id"\n                          placeholder="输入id" />\n                  </div>\n                  <div class="lgD">\n                      <input type="password" name="password"\n                          placeholder="输入用户密码" />\n                  </div>\n                  <div class="logC">\n                      <button type="submit">登 录</button>\n                  </div>\n                  <!-- <div class="logC">\n                    <p>没有账号? <button href="/register">点击创建</button></p>\n                </div> -->\n                </form>\n            </div>\n      </div>\n      <div class="footer" id="foot">\n        <div class="copyright">\n          <p>Copyright © 2019 huaruan.com Inc. All Rights Reserved.</p>\n          <div class="img">\n              <i class="icon"></i><span>联系邮箱：123123@sise.com</span>\n          </div>\n          \n          <div class="img">\n              <i class="icon1"></i><span>联系地址：广州大学华软软件学院</span>\n          </div>\n            \n          <div class="img">\n            <i class="icon2"></i><span>联系电话：12345678</span>\n          </div>\n       \n       \n        </div>\n          \n      </div>\n</body>\n</html>' } }
+[2020-03-27T17:07:37.494] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '10011', password: '123456' },
+  costTime: 12,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-03-27T17:07:37.923] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '331' },
+     body:
+      '<!DOCTYPE html>\n<html>\n  <head>\n    <title>JOINT</title>\n    <link rel=\'stylesheet\' href=\'/stylesheets/style.css\' />\n  </head>\n  <body>\n    <h1>JOINT</h1>\n    <p>Welcome to JOINT</p>\n    <p><a href="/logout">注销</a></p>\n    <p>用户名：asjdlk</p>\n    <p><a href="/users/userInfo">用户详情页</a></p>   \n  </body>\n</html>\n' } }

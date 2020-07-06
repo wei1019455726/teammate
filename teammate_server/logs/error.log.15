@@ -1,0 +1,1351 @@
+[2019-12-19T23:53:24.027] [ERROR] error - { method: 'GET',
+  url: '/users/userInfo',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\views\users\userInfo.html:29
+       27|           <td><%=body.time_three %></td>
+       28|           <td><%=body.time_four %></td>
+    >> 29|           <td><a href="/users/delect/<%=list.user_id %>">x</a></td>
+       30|         </tr>
+       31|           <%})%>
+       32|   
+   
+   list is not defined
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:29:23)
+       at Array.forEach (<anonymous>)
+       at eval (eval at compile (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:13)
+       at returnedFn (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\node.js服务端编程\\koa练习\\koa-01\\joint\\koaLogin_sequelize\\views\\users\\userInfo.html' } }
+[2019-12-19T23:56:43.121] [ERROR] error - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'user_id' of undefined
+       at myself (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:64:34)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2019-12-20T17:52:10.777] [ERROR] error - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '1009', username: '1234qweass', password: '123456' },
+  costTime: undefined,
+  err:
+   ReferenceError: uuid is not defined
+       at postregister (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:132:20)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2019-12-20T19:57:39.545] [ERROR] error - { method: 'POST',
+  url: '/api/users/postregister',
+  body:
+   { user_id: '10022',
+     username: 'sdfsad',
+     password: '23444e1bf196a60022b132ceb690d2d2',
+     solt: 'df00c48a-5e87-4bf3-8a9a-c2f6bd99ebb3' },
+  costTime: undefined,
+  err:
+   ReferenceError: user is not defined
+       at postregister (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:140:9)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2019-12-21T13:48:27.793] [ERROR] error - { method: 'GET',
+  url: '/api/users/myself',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'user_id' of undefined
+       at myself (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:65:34)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2019-12-21T13:54:14.942] [ERROR] error - { method: 'GET',
+  url: '/api/users/getmyself',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'user_id' of undefined
+       at getmyself (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:175:34)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2019-12-21T13:58:58.172] [ERROR] error - { method: 'GET',
+  url: '/api/users/getmyself',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'user_id' of undefined
+       at getmyself (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:177:38)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2019-12-21T14:16:50.013] [ERROR] error - { method: 'GET',
+  url: '/api/users/getmyself',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'user_id' of undefined
+       at getmyself (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:170:39)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2019-12-21T16:23:08.640] [ERROR] error - { method: 'GET',
+  url: '/api/users/timeinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: user_id is not defined
+       at timeinfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:201:45)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\routes\api\users.js:17:11)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2019-12-21T16:23:30.332] [ERROR] error - { method: 'GET',
+  url: '/api/users/timeinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: user_id is not defined
+       at timeinfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:201:45)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\routes\api\users.js:17:11)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2019-12-21T16:23:31.859] [ERROR] error - { method: 'GET',
+  url: '/api/users/timeinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: user_id is not defined
+       at timeinfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:201:45)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\routes\api\users.js:17:11)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2019-12-21T16:23:57.010] [ERROR] error - { method: 'GET',
+  url: '/api/users/timeinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: user_id is not defined
+       at timeinfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:201:45)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\routes\api\users.js:17:11)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2019-12-21T16:23:57.040] [ERROR] error - { method: 'GET',
+  url: '/api/users/timeinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: user_id is not defined
+       at timeinfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:201:45)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\routes\api\users.js:17:11)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2019-12-21T16:24:02.476] [ERROR] error - { method: 'GET',
+  url: '/api/users/timeinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: user_id is not defined
+       at timeinfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:201:45)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\routes\api\users.js:17:11)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2019-12-21T16:24:54.237] [ERROR] error - { method: 'GET',
+  url: '/api/users/timeinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: user_id is not defined
+       at timeinfo (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:201:45)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\routes\api\users.js:17:11)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2019-12-21T16:40:56.213] [ERROR] error - { method: 'GET',
+  url: '/api/users/timeinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "user_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2019-12-21T16:42:22.001] [ERROR] error - { method: 'GET',
+  url: '/api/users/timeinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "user_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2019-12-21T23:18:39.189] [ERROR] error - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'user_id' of undefined
+       at myself (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:65:34)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2019-12-24T20:47:05.872] [ERROR] error - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'user_id' of undefined
+       at myself (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:65:34)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2019-12-25T15:31:02.771] [ERROR] error - { method: 'POST',
+  url: '/users/edit/users/doedit',
+  body:
+   { time_one: '123',
+     time_two: '213',
+     time_three: '123',
+     time_four: '123' },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'user_id' of undefined
+       at doedit (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:40:38)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16)
+       at process._tickCallback (internal/process/next_tick.js:68:7) }
+[2019-12-25T15:31:09.023] [ERROR] error - { method: 'GET',
+  url: '/users/myself',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'user_id' of undefined
+       at myself (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\controllers\user.js:65:34)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\node.js服务端编程\koa练习\koa-01\joint\koaLogin_sequelize\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-16T17:37:02.060] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\login.html:34
+       32| 				</div>
+       33| 			</form><!-- form -->
+    >> 34| 			<%if(error){%>
+       35| 				<div style="color: red;"><%=error%></div>
+       36| 			<%}%>
+       37| 		</section><!-- content -->
+   
+   error is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:7)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\login.html' } }
+[2020-05-16T17:38:21.333] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\login.html:34
+       32| 				</div>
+       33| 			</form><!-- form -->
+    >> 34| 			<%if(error){%>
+       35| 				<div style="color: red;"><%=error%></div>
+       36| 			<%}%>
+       37| 		</section><!-- content -->
+   
+   error is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:7)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\login.html' } }
+[2020-05-16T17:39:23.965] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\login.html:34
+       32| 				</div>
+       33| 			</form><!-- form -->
+    >> 34| 			<%if(error){%>
+       35| 				<div style="color: red;"><%=error%></div>
+       36| 			<%}%>
+       37| 		</section><!-- content -->
+   
+   error is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:7)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\login.html' } }
+[2020-05-16T17:39:55.697] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\login.html:34
+       32| 				</div>
+       33| 			</form><!-- form -->
+    >> 34| 			<!-- <%if(error){%>
+       35| 				<div style="color: red;"><%=error%></div>
+       36| 			<%}%> -->
+       37| 		</section><!-- content -->
+   
+   error is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:7)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\login.html' } }
+[2020-05-16T17:42:40.704] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\login.html:34
+       32| 				</div>
+       33| 			</form><!-- form -->
+    >> 34| 			<%if(error){%>
+       35| 				<div style="color: red;"><%=error%></div>
+       36| 			<%}%>
+       37| 		</section><!-- content -->
+   
+   error is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:7)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\login.html' } }
+[2020-05-17T00:20:37.234] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\login.html:34
+       32| 				</div>
+       33| 			</form><!-- form -->
+    >> 34| 			<%if(error){%>
+       35| 				<div style="color: red;"><%=error%></div>
+       36| 			<%}%>
+       37| 		</section><!-- content -->
+   
+   error is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:7)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\login.html' } }
+[2020-05-17T00:22:51.414] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\login.html:34
+       32| 				</div>
+       33| 			</form><!-- form -->
+    >> 34| 			<%if(error){%>
+       35| 				<div style="color: red;"><%=error%></div>
+       36| 			<%}%>
+       37| 		</section><!-- content -->
+   
+   error is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:7)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\login.html' } }
+[2020-05-17T00:22:55.826] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\login.html:34
+       32| 				</div>
+       33| 			</form><!-- form -->
+    >> 34| 			<%if(error){%>
+       35| 				<div style="color: red;"><%=error%></div>
+       36| 			<%}%>
+       37| 		</section><!-- content -->
+   
+   error is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:7)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\login.html' } }
+[2020-05-17T10:21:39.656] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\login.html:34
+       32| 				</div>
+       33| 			</form><!-- form -->
+    >> 34| 			<%if(error){%>
+       35| 				<div style="color: red;"><%=error%></div>
+       36| 			<%}%>
+       37| 		</section><!-- content -->
+   
+   error is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:7)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\login.html' } }
+[2020-05-17T10:24:56.914] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\login.html:34
+       32| 				</div>
+       33| 			</form><!-- form -->
+    >> 34| 			<%if(error){%>
+       35| 				<div style="color: red;"><%=error%></div>
+       36| 			<%}%>
+       37| 		</section><!-- content -->
+   
+   error is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:7)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\login.html' } }
+[2020-05-17T17:33:26.605] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { Error: ENOENT: no such file or directory, stat 'F:\找队友App\teammate_server\views\users\userlist.html'
+     errno: -4058,
+     code: 'ENOENT',
+     syscall: 'stat',
+     path: 'F:\\找队友App\\teammate_server\\views\\users\\userlist.html' } }
+[2020-05-17T17:36:56.948] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { Error: ENOENT: no such file or directory, stat 'F:\找队友App\teammate_server\views\users\userlist.html'
+     errno: -4058,
+     code: 'ENOENT',
+     syscall: 'stat',
+     path: 'F:\\找队友App\\teammate_server\\views\\users\\userlist.html' } }
+[2020-05-17T17:36:59.475] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { Error: ENOENT: no such file or directory, stat 'F:\找队友App\teammate_server\views\users\userlist.html'
+     errno: -4058,
+     code: 'ENOENT',
+     syscall: 'stat',
+     path: 'F:\\找队友App\\teammate_server\\views\\users\\userlist.html' } }
+[2020-05-17T17:37:02.757] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { Error: ENOENT: no such file or directory, stat 'F:\找队友App\teammate_server\views\users\userlist.html'
+     errno: -4058,
+     code: 'ENOENT',
+     syscall: 'stat',
+     path: 'F:\\找队友App\\teammate_server\\views\\users\\userlist.html' } }
+[2020-05-17T17:38:04.513] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\index.html:17
+       15| 		<ul>
+       16| 		 	<li>欢迎您！</li>
+    >> 17| 			<li><%=userInfo.user_name%></li>
+       18| 			<li><a href="/logout">退出</a></li>
+       19| 		</ul>
+       20| 	</div>
+   
+   userInfo is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\index.html' } }
+[2020-05-17T17:38:53.990] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { Error: ENOENT: no such file or directory, stat 'F:\找队友App\teammate_server\views\users\userlist.html'
+     errno: -4058,
+     code: 'ENOENT',
+     syscall: 'stat',
+     path: 'F:\\找队友App\\teammate_server\\views\\users\\userlist.html' } }
+[2020-05-17T17:39:45.727] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: body is not defined
+       at userlist (F:\找队友App\teammate_server\controllers\user.js:5:21)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-17T17:40:58.720] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: body is not defined
+       at userlist (F:\找队友App\teammate_server\controllers\user.js:5:21)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-17T20:20:28.860] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\user\userlist.html:27
+       25|         <div class="col-md-offset-1 col-md-2 margin-bottom-15">
+       26|           <label for="account" class="control-label">账号</label>
+    >> 27|           <input type="text" class="form-control" id="account" value="<%=account%>" name="account">                  
+       28|         </div>
+       29|         <div class="col-md-2 margin-bottom-15">
+       30|           <label for="userName" class="control-label">姓名</label>
+   
+   account is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path: 'F:\\找队友App\\teammate_server\\views\\user\\userlist.html' } }
+[2020-05-18T09:46:51.990] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\index.html:17
+       15| 		<ul>
+       16| 		 	<li>欢迎您！</li>
+    >> 17| 			<li><%=userInfo.user_name%></li>
+       18| 			<li><a href="/logout">退出</a></li>
+       19| 		</ul>
+       20| 	</div>
+   
+   userInfo is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\index.html' } }
+[2020-05-18T10:03:13.991] [ERROR] error - { method: 'GET',
+  url: '/roles/rolelist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Table 'teammate.roles' doesn't exist
+       at Query.formatError (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Table 'teammate.roles' doesn't exist
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_SUCH_TABLE',
+        errno: 1146,
+        sqlState: '42S02',
+        sqlMessage: 'Table \'teammate.roles\' doesn\'t exist',
+        sql:
+         'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+        parameters: undefined },
+     original:
+      { Error: Table 'teammate.roles' doesn't exist
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_SUCH_TABLE',
+        errno: 1146,
+        sqlState: '42S02',
+        sqlMessage: 'Table \'teammate.roles\' doesn\'t exist',
+        sql:
+         'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+     parameters: undefined } }
+[2020-05-18T10:07:35.355] [ERROR] error - { method: 'GET',
+  url: '/roles/rolelist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Table 'teammate.roles' doesn't exist
+       at Query.formatError (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Table 'teammate.roles' doesn't exist
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_SUCH_TABLE',
+        errno: 1146,
+        sqlState: '42S02',
+        sqlMessage: 'Table \'teammate.roles\' doesn\'t exist',
+        sql:
+         'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+        parameters: undefined },
+     original:
+      { Error: Table 'teammate.roles' doesn't exist
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_SUCH_TABLE',
+        errno: 1146,
+        sqlState: '42S02',
+        sqlMessage: 'Table \'teammate.roles\' doesn\'t exist',
+        sql:
+         'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+     parameters: undefined } }
+[2020-05-18T10:07:38.239] [ERROR] error - { method: 'GET',
+  url: '/roles/rolelist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Table 'teammate.roles' doesn't exist
+       at Query.formatError (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Table 'teammate.roles' doesn't exist
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_SUCH_TABLE',
+        errno: 1146,
+        sqlState: '42S02',
+        sqlMessage: 'Table \'teammate.roles\' doesn\'t exist',
+        sql:
+         'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+        parameters: undefined },
+     original:
+      { Error: Table 'teammate.roles' doesn't exist
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_SUCH_TABLE',
+        errno: 1146,
+        sqlState: '42S02',
+        sqlMessage: 'Table \'teammate.roles\' doesn\'t exist',
+        sql:
+         'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+     parameters: undefined } }
+[2020-05-18T10:19:44.822] [ERROR] error - { method: 'GET',
+  url: '/roles/rolelist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Table 'teammate.roles' doesn't exist
+       at Query.formatError (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Table 'teammate.roles' doesn't exist
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_SUCH_TABLE',
+        errno: 1146,
+        sqlState: '42S02',
+        sqlMessage: 'Table \'teammate.roles\' doesn\'t exist',
+        sql:
+         'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+        parameters: undefined },
+     original:
+      { Error: Table 'teammate.roles' doesn't exist
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_SUCH_TABLE',
+        errno: 1146,
+        sqlState: '42S02',
+        sqlMessage: 'Table \'teammate.roles\' doesn\'t exist',
+        sql:
+         'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+     parameters: undefined } }
+[2020-05-18T10:26:22.015] [ERROR] error - { method: 'GET',
+  url: '/roles/rolelist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Table 'teammate.roles' doesn't exist
+       at Query.formatError (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Table 'teammate.roles' doesn't exist
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_SUCH_TABLE',
+        errno: 1146,
+        sqlState: '42S02',
+        sqlMessage: 'Table \'teammate.roles\' doesn\'t exist',
+        sql:
+         'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+        parameters: undefined },
+     original:
+      { Error: Table 'teammate.roles' doesn't exist
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_SUCH_TABLE',
+        errno: 1146,
+        sqlState: '42S02',
+        sqlMessage: 'Table \'teammate.roles\' doesn\'t exist',
+        sql:
+         'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+     parameters: undefined } }
+[2020-05-18T10:29:43.747] [ERROR] error - { method: 'GET',
+  url: '/roles/rolelist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Table 'teammate.roles' doesn't exist
+       at Query.formatError (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (F:\找队友App\teammate_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Table 'teammate.roles' doesn't exist
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_SUCH_TABLE',
+        errno: 1146,
+        sqlState: '42S02',
+        sqlMessage: 'Table \'teammate.roles\' doesn\'t exist',
+        sql:
+         'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+        parameters: undefined },
+     original:
+      { Error: Table 'teammate.roles' doesn't exist
+          at Packet.asError (F:\找队友App\teammate_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (F:\找队友App\teammate_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (F:\找队友App\teammate_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (F:\找队友App\teammate_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_SUCH_TABLE',
+        errno: 1146,
+        sqlState: '42S02',
+        sqlMessage: 'Table \'teammate.roles\' doesn\'t exist',
+        sql:
+         'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `role_name`, `description`, `createdAt`, `updatedAt` FROM `roles` AS `role`;',
+     parameters: undefined } }
+[2020-05-18T11:23:54.211] [ERROR] error - { method: 'GET',
+  url: '/activitys/activitylist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: activityDao.getAllActivity is not a function
+       at activitylist (F:\找队友App\teammate_server\controllers\activity.js:5:36)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at F:\找队友App\teammate_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at cors (F:\找队友App\teammate_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (F:\找队友App\teammate_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (F:\找队友App\teammate_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-05-18T11:26:46.405] [ERROR] error - { method: 'GET',
+  url: '/activitys/activitylist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\activity\activitylist.html:35
+       33|             <div class="col-md-offset-1 col-md-2 margin-bottom-15">
+       34|                     <label for="name">输入关键词</label>
+    >> 35|                     <input type="text" class="form-control" value="<%=keyword%>" id="name" name="keyword" placeholder="请输入活动标题">
+       36|                 </div>
+       37|         <div class="row templatemo-form-buttons">
+       38|             <div class="col-md-2">
+   
+   keyword is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\找队友App\\teammate_server\\views\\activity\\activitylist.html' } }
+[2020-05-18T11:26:54.017] [ERROR] error - { method: 'GET',
+  url: '/activitys/activitylist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\activity\activitylist.html:35
+       33|             <div class="col-md-offset-1 col-md-2 margin-bottom-15">
+       34|                     <label for="name">输入关键词</label>
+    >> 35|                     <input type="text" class="form-control" value="<%=keyword%>" id="name" name="keyword" placeholder="请输入活动标题">
+       36|                 </div>
+       37|         <div class="row templatemo-form-buttons">
+       38|             <div class="col-md-2">
+   
+   keyword is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\找队友App\\teammate_server\\views\\activity\\activitylist.html' } }
+[2020-05-18T11:27:25.518] [ERROR] error - { method: 'GET',
+  url: '/activitys/activitylist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\activity\activitylist.html:103
+       101| 
+       102|         $('#page').jqPaginator({
+    >> 103|             totalPages: <%=totalPages%>,   //设置分页的总页数
+       104|             visiblePages: 8,  //设置当前可视页码数（例如有100页，当前第1页，则显示1 - 7页）
+       105|             currentPage: <%=page%>,    //设置当前的页码
+       106|             onPageChange: function (num, type) {    //回调函数，当换页时触发（包括初始化第一页的时候），会传入两个参数： 1、“目标页"的页码，Number类型  2、触发类型，可能的值：“init”（初始化），“change”（点击分页）
+   
+   totalPages is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:53:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'F:\\找队友App\\teammate_server\\views\\activity\\activitylist.html' } }
+[2020-05-18T13:24:31.785] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: F:\找队友App\teammate_server\views\index.html:17
+       15| 		<ul>
+       16| 		 	<li>欢迎您！</li>
+    >> 17| 			<li><%=userInfo.user_name%></li>
+       18| 			<li><a href="/logout">退出</a></li>
+       19| 		</ul>
+       20| 	</div>
+   
+   userInfo is not defined
+       at eval (eval at compile (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (F:\找队友App\teammate_server\node_modules\ejs\lib\ejs.js:493:17)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (F:\找队友App\teammate_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (F:\找队友App\teammate_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at F:\找队友App\teammate_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) path: 'F:\\找队友App\\teammate_server\\views\\index.html' } }
